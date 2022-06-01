@@ -1,0 +1,3750 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Logarithms</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m31883</md:content-id>
+  <md:title>Logarithms</md:title>
+  <md:abstract/>
+  <md:uuid>9177c427-8ece-4899-aa63-9688b0170d7b</md:uuid>
+</metadata>
+
+<content>
+    <section id="cid1"><title>Introduction</title><para id="id189663">In mathematics many ideas are related. We saw that addition and subtraction are related and that multiplication and division are related. Similarly, exponentials and logarithms are related.</para>
+      
+      <para id="eip-160">Logarithms are commonly refered to as logs, are the "opposite" of exponentials, just as subtraction is the opposite of addition and division is the opposite of multiplication. Logs "undo" exponentials. Technically speaking, logs are the inverses of exponentials. The logarithm of a number <m:math><m:mi>x</m:mi></m:math> in the base <m:math><m:mi>a</m:mi></m:math> is defined as the number <m:math><m:mi>n</m:mi></m:math> such that <m:math><m:msup><m:mi>a</m:mi><m:mi>n</m:mi></m:msup><m:mo>=</m:mo><m:mi>x</m:mi></m:math>. 
+ 
+ 
+
+</para><para id="id190061">So, if <m:math overflow="scroll"><m:mrow><m:msup><m:mi>a</m:mi><m:mi>n</m:mi></m:msup><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math>, then:</para>
+      <equation id="uid1">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mi>a</m:mi>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mi>n</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+<note id="noteid821" type="aside"><title>Inverse Function </title><para id="id190127">When we say “inverse function” we mean that the answer becomes the
+question and the question becomes the answer. For example, in the equation <m:math overflow="scroll"><m:mrow><m:msup><m:mi>a</m:mi><m:mi>b</m:mi></m:msup><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> the
+“question” is “what is <m:math overflow="scroll"><m:mi>a</m:mi></m:math> raised to the power <m:math overflow="scroll"><m:mi>b</m:mi></m:math>?” The answer is “<m:math overflow="scroll"><m:mi>x</m:mi></m:math>.” The inverse function
+would be <m:math overflow="scroll"><m:mrow><m:mi>l</m:mi><m:mi>o</m:mi><m:msub><m:mi>g</m:mi><m:mi>a</m:mi></m:msub><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>b</m:mi></m:mrow></m:math> or “by what power must we raise <m:math overflow="scroll"><m:mi>a</m:mi></m:math> to obtain <m:math overflow="scroll"><m:mi>x</m:mi></m:math>?” The answer is “<m:math overflow="scroll"><m:mi>b</m:mi></m:math>.”  </para>
+</note>
+      <para id="id190234">The mathematical symbol for logarithm is <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and it is read “log to the base <m:math overflow="scroll"><m:mi>a</m:mi></m:math> of <m:math overflow="scroll"><m:mi>x</m:mi></m:math>”. For example, <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>10</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is “log to the base 10 of 100.”</para>
+<section id="secfhsst_id91"><title>Logarithm Symbols :</title><para id="id6241"> Write the following out in words. The first one is done for you.
+      <list id="id190310" display="block" list-type="enumerated">
+        <item id="uid2"><m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is log to the base 2 of 4
+</item>
+        <item id="uid3">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>10</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>14</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid4">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>16</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>4</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid5">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>8</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid6">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mi>y</m:mi>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+      </list></para>
+      
+      
+</section>
+    </section>
+    <section id="cid2">
+      <title>Definition of Logarithms</title>
+      <para id="id190683">The logarithm of a number is the value to which the base must be raised to give that number i.e. the exponent. From the first example of the activity <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math> means the power of 2 that will give 4. As <m:math overflow="scroll"><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math>, we see that</para>
+      <equation id="uid7">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>4</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>2</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id190764">The <emphasis effect="italics">exponential-form</emphasis> is then <m:math overflow="scroll"><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math> and the <emphasis effect="italics">logarithmic-form</emphasis> is <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>.</para>
+<definition id="fhsst_id181"><term id="termfhsst_id181"> Logarithms </term> <meaning id="meaningfhsst_id181">
+      <para id="id190827">If <m:math overflow="scroll"><m:mrow><m:msup><m:mi>a</m:mi><m:mi>n</m:mi></m:msup><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math>, then: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>n</m:mi></m:mrow></m:math>, where <m:math overflow="scroll"><m:mrow><m:mi>a</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math>; <m:math overflow="scroll"><m:mrow><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math>. </para>
+      </meaning></definition>
+<section id="secfhsst_id184"><title>Applying the definition :</title><para id="id6341"> Find the value of:
+      <list id="id190931" display="block" list-type="enumerated">
+        <item id="uid8">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>7</m:mn>
+              </m:msub>
+              <m:mn>343</m:mn>
+            </m:mrow>
+          </m:math>
+          <equation id="id190961">
+            <m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mi> Reasoning </m:mi>
+                      <m:mo>:</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>7</m:mn>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                      <m:mo>=</m:mo>
+                      <m:mn>343</m:mn>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi> therefore </m:mi>
+                        <m:mo>,</m:mo>
+                        <m:mspace width="3.33333pt"/>
+                      </m:mrow>
+                      <m:msub>
+                        <m:mo form="prefix">log</m:mo>
+                        <m:mn>7</m:mn>
+                      </m:msub>
+                      <m:mn>343</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>3</m:mn>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+        </item>
+        <item id="uid9">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mn>8</m:mn>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid10">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>4</m:mn>
+              </m:msub>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>64</m:mn>
+              </m:mfrac>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid11">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>10</m:mn>
+              </m:msub>
+              <m:mn>1</m:mn>
+              <m:mspace width="3.33333pt"/>
+              <m:mn>000</m:mn>
+            </m:mrow>
+          </m:math>
+        </item>
+      </list></para>
+      
+      
+</section>
+    </section>
+    <section id="cid3">
+      <title>Logarithm Bases</title>
+      <para id="id191146">Logarithms, like exponentials, also have a base and <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is not the same as <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>10</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</para>
+      <para id="id191197">We generally use the “common” base, 10, or the <emphasis effect="italics">natural</emphasis> base, <m:math overflow="scroll"><m:mi>e</m:mi></m:math>.</para>
+      <para id="id191214">The number <m:math overflow="scroll"><m:mi>e</m:mi></m:math> is an irrational number between <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>71</m:mn></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>72</m:mn></m:mrow></m:math>. It comes up surprisingly often in Mathematics, but for now suffice it to say that it is one of the two common bases.</para>
+<section id="secfhsst_id289"><title>
+      Natural Logarithm </title>
+      <para id="id191263">The natural logarithm (symbol <m:math overflow="scroll"><m:mo form="prefix">ln</m:mo></m:math>) is widely used in the sciences.
+The natural logarithm is to the base <m:math overflow="scroll"><m:mi>e</m:mi></m:math> which is approximately <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>71828183</m:mn><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo></m:mrow></m:math>. <m:math overflow="scroll"><m:mi>e</m:mi></m:math> is like <m:math overflow="scroll"><m:mi>π</m:mi></m:math>
+and is another example of an irrational number. </para>
+</section>
+      <para id="id191328">While the notation <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>10</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>e</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> may be used, <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>10</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is often written <m:math overflow="scroll"><m:mrow><m:mo form="prefix">log</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> in Science and <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>e</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is normally written as <m:math overflow="scroll"><m:mrow><m:mo form="prefix">ln</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> in both Science and Mathematics. So, if you see the <m:math overflow="scroll"><m:mo form="prefix">log</m:mo></m:math> symbol without a base, it means <m:math overflow="scroll"><m:msub><m:mo form="prefix">log</m:mo><m:mn>10</m:mn></m:msub></m:math>.</para>
+      <para id="id191486">It is often necessary or convenient to convert a log from one base to another. An engineer might need an approximate solution to a log in a base for which he does not have a table or calculator function, or it may be algebraically convenient to have two logs in the same base.</para>
+      <para id="id191492">Logarithms can be changed from one base to another, by using the change of base formula:</para>
+      <equation id="uid12">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mi>a</m:mi>
+            </m:msub>
+            <m:mi>x</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msub>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mi>b</m:mi>
+                </m:msub>
+                <m:mi>x</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:msub>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mi>b</m:mi>
+                </m:msub>
+                <m:mi>a</m:mi>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id191550">where <m:math overflow="scroll"><m:mi>b</m:mi></m:math> is any base you find convenient. Normally <m:math overflow="scroll"><m:mi>a</m:mi></m:math> and <m:math overflow="scroll"><m:mi>b</m:mi></m:math> are known,
+therefore <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>b</m:mi></m:msub><m:mi>a</m:mi></m:mrow></m:math> is normally a known, if irrational, number.</para>
+      <para id="id191598">For example, change <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mn>12</m:mn></m:mrow></m:math> in base 10 is:</para>
+      <equation id="id191620">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mn>12</m:mn>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msub>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>10</m:mn>
+                </m:msub>
+                <m:mn>12</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:msub>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>10</m:mn>
+                </m:msub>
+                <m:mn>2</m:mn>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+        </m:math>
+      </equation>
+<section id="secfhsst_id357"><title> Change of Base : Change the following to the indicated base:</title>
+      <list id="id191679" display="block" list-type="enumerated">
+        <item id="uid13"><m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to base 8
+</item>
+        <item id="uid14"><m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>10</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mn>14</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to base 2
+</item>
+        <item id="uid15"><m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>16</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to base 10
+</item>
+        <item id="uid16"><m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>x</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mn>8</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to base <m:math overflow="scroll"><m:mi>y</m:mi></m:math></item>
+        <item id="uid17"><m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>y</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> to base <m:math overflow="scroll"><m:mi>x</m:mi></m:math></item>
+      </list>
+      
+      
+</section><para id="eip-299"><figure id="logs-1" class="khanacademy">
+	  <title>Khan academy video on logarithms - 1</title>
+	  <media id="yt-media1" display="block" alt="video on logs 1">
+	  <flash id="yt-video1" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/mQTWzLpCcW0&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para>
+    </section>
+    <section id="cid4">
+      <title>Laws of Logarithms</title>
+      <para id="id191901">Just as for the exponents, logarithms have some laws which make working with them easier. These laws are based on the exponential laws and are summarised first and then explained in detail.</para>
+      <equation id="uid18">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>0</m:mn>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>a</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>1</m:mn>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>·</m:mo>
+                    <m:mi>y</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>y</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mfenced separators="" open="(" close=")">
+                    <m:mfrac>
+                      <m:mi>x</m:mi>
+                      <m:mi>y</m:mi>
+                    </m:mfrac>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>-</m:mo>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>y</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mi>b</m:mi>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mi>b</m:mi>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mfenced separators="" open="(" close=")">
+                    <m:mroot>
+                      <m:mi>x</m:mi>
+                      <m:mi>b</m:mi>
+                    </m:mroot>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mfrac>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mo form="prefix">log</m:mo>
+                      <m:mi>a</m:mi>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mi>b</m:mi>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+    </section>
+    <section id="cid5">
+      <title>Logarithm Law 1: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></title>
+      <equation id="id192283"><m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi> Since </m:mi>
+                  <m:mspace width="1.em"/>
+                  <m:msup>
+                    <m:mi mathvariant="normal">a</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>1</m:mn>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi> Then </m:mi>
+                    <m:mo>,</m:mo>
+                  </m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi mathvariant="normal">a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>a</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>0</m:mn>
+                  <m:mspace width="2.em"/>
+                  <m:mrow>
+                    <m:mi> by definition of logarithm</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id192426">For example,</para>
+      <equation id="id192429">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mn>1</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id192455">and</para>
+      <equation id="id192461">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>25</m:mn>
+            </m:msub>
+            <m:mn>1</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+<section id="secfhsst_id693"><title>Logarithm Law 1: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> : </title><para id="id73421">Simplify the following:
+      <list id="id192518" display="block" list-type="enumerated">
+        <item id="uid19">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>5</m:mn>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid20">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>10</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>×</m:mo>
+              <m:mn>100</m:mn>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid21">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mn>3</m:mn>
+              <m:mo>×</m:mo>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>16</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid22">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+              <m:mi>x</m:mi>
+              <m:mi>y</m:mi>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid23">
+          <m:math overflow="scroll">
+            <m:mfrac>
+              <m:mrow>
+                <m:msub>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mi>y</m:mi>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mi>x</m:mi>
+            </m:mfrac>
+          </m:math>
+        </item>
+      </list></para>
+      
+      
+</section>
+    </section>
+    <section id="cid6">
+      <title>Logarithm Law 2: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></title>
+      <equation id="id192773"><m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi> Since </m:mi>
+                  <m:mspace width="1.em"/>
+                  <m:msup>
+                    <m:mi mathvariant="normal">a</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mi>a</m:mi>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi> Then </m:mi>
+                    <m:mo>,</m:mo>
+                  </m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi mathvariant="normal">a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi mathvariant="normal">a</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>a</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mspace width="2.em"/>
+                  <m:mrow>
+                    <m:mi> by definition of logarithm</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id192918">For example,</para>
+      <equation id="id192921">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mn>2</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id192948">and</para>
+      <equation id="id192953">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>25</m:mn>
+            </m:msub>
+            <m:mn>25</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+<section id="secfhsst_id902"><title>Logarithm Law 2: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> : </title><para id="id87342">Simplify the following:
+      <list id="id193016" display="block" list-type="enumerated">
+        <item id="uid24">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>5</m:mn>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid25">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>10</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>10</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>×</m:mo>
+              <m:mn>100</m:mn>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid26">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mn>3</m:mn>
+              <m:mo>×</m:mo>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>16</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>16</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid27">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+              <m:mi>x</m:mi>
+              <m:mi>y</m:mi>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid28">
+          <m:math overflow="scroll">
+            <m:mfrac>
+              <m:mrow>
+                <m:msub>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mi>y</m:mi>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>y</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mi>x</m:mi>
+            </m:mfrac>
+          </m:math>
+        </item>
+      </list></para>
+      
+      
+</section>
+<note id="notfhsst_id996" type="tip">Useful to know and remember</note>
+      <para id="id193239"><emphasis effect="italics">When the base is 10, we do not need to state it.</emphasis>
+From the work done up to now, it is also useful to summarise the following facts:</para>
+      <list id="id193247" display="block" list-type="enumerated">
+        <item id="uid29">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid30">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>10</m:mn>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid31">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>100</m:mn>
+              <m:mo>=</m:mo>
+              <m:mn>2</m:mn>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid32">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>1000</m:mn>
+              <m:mo>=</m:mo>
+              <m:mn>3</m:mn>
+            </m:mrow>
+          </m:math>
+        </item>
+      </list>
+    </section>
+    <section id="cid7">
+      <title>Logarithm Law 3: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></title>
+      <para id="id193441">The derivation of this law is a bit trickier than the first two. Firstly, we need to relate <m:math overflow="scroll"><m:mi>x</m:mi></m:math> and <m:math overflow="scroll"><m:mi>y</m:mi></m:math> to the base <m:math overflow="scroll"><m:mi>a</m:mi></m:math>. So, assume that <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mi>m</m:mi></m:msup></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:math>. Then from Equation <link target-id="uid1"/>, we have that:
+</para>
+      <equation id="uid33">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mi>m</m:mi>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi> and </m:mi>
+                  <m:mspace width="1.em"/>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi mathvariant="normal">a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi mathvariant="normal">y</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mi>n</m:mi>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id193612">This means that we can write:</para>
+      <equation id="id193616"><m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>·</m:mo>
+                    <m:mi>y</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>a</m:mi>
+                      <m:mi>m</m:mi>
+                    </m:msup>
+                    <m:mo>·</m:mo>
+                    <m:msup>
+                      <m:mi>a</m:mi>
+                      <m:mi>n</m:mi>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>a</m:mi>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mi>n</m:mi>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mspace width="2.em"/>
+                  <m:mrow>
+                    <m:mi> Exponential laws</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>a</m:mi>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mo form="prefix">log</m:mo>
+                          <m:mi>a</m:mi>
+                        </m:msub>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mi>x</m:mi>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:msub>
+                          <m:mo form="prefix">log</m:mo>
+                          <m:mi>a</m:mi>
+                        </m:msub>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mi>y</m:mi>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>y</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id193908">For example, show that <m:math overflow="scroll"><m:mrow><m:mo form="prefix">log</m:mo><m:mo>(</m:mo><m:mn>10</m:mn><m:mo>·</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo form="prefix">log</m:mo><m:mn>10</m:mn><m:mo>+</m:mo><m:mo form="prefix">log</m:mo><m:mn>100</m:mn></m:mrow></m:math>. Start with calculating the left hand side:</para>
+      <equation id="id193952">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mn>10</m:mn>
+                  <m:mo>·</m:mo>
+                  <m:mn>100</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mn>1000</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>3</m:mn>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id194040">The right hand side:</para>
+      <equation id="id194046">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>10</m:mn>
+                  <m:mo>+</m:mo>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>100</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo>+</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>3</m:mn>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id194103">Both sides are equal. Therefore, <m:math overflow="scroll"><m:mrow><m:mo form="prefix">log</m:mo><m:mo>(</m:mo><m:mn>10</m:mn><m:mo>·</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo form="prefix">log</m:mo><m:mn>10</m:mn><m:mo>+</m:mo><m:mo form="prefix">log</m:mo><m:mn>100</m:mn></m:mrow></m:math>.</para>
+<section id="secfhsst_id1360"><title>Logarithm Law 3: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>·</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> : </title><para id="id7342">Write as seperate logs:
+      <list id="id194225" display="block" list-type="enumerated">
+        <item id="uid34">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>8</m:mn>
+                <m:mo>×</m:mo>
+                <m:mn>4</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid35">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>8</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>10</m:mn>
+                <m:mo>×</m:mo>
+                <m:mn>10</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid36">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>16</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mi>y</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid37">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mi>z</m:mi>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>x</m:mi>
+                <m:mi>y</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid38">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:msup>
+                  <m:mi>y</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+      </list></para>
+      
+      
+</section>
+    </section>
+    <section id="cid8">
+      <title>Logarithm Law 4: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mfenced separators="" open="(" close=")"><m:mfrac><m:mi>x</m:mi><m:mi>y</m:mi></m:mfrac></m:mfenced><m:mo>=</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></title>
+      <para id="id194516">The derivation of this law is identical to the derivation of Logarithm Law 3 and is left as an exercise.</para>
+      <para id="id194520">For example, show that <m:math overflow="scroll"><m:mrow><m:mo form="prefix">log</m:mo><m:mo>(</m:mo><m:mfrac><m:mn>10</m:mn><m:mn>100</m:mn></m:mfrac><m:mo>)</m:mo><m:mo>=</m:mo><m:mo form="prefix">log</m:mo><m:mn>10</m:mn><m:mo>-</m:mo><m:mo form="prefix">log</m:mo><m:mn>100</m:mn></m:mrow></m:math>. Start with calculating the left hand side:</para>
+      <equation id="id194564">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mfrac>
+                    <m:mn>10</m:mn>
+                    <m:mn>100</m:mn>
+                  </m:mfrac>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>10</m:mn>
+                  </m:mfrac>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id194662">The right hand side:</para>
+      <equation id="id194667">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>10</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>100</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id194728">Both sides are equal. Therefore, <m:math overflow="scroll"><m:mrow><m:mo form="prefix">log</m:mo><m:mo>(</m:mo><m:mfrac><m:mn>10</m:mn><m:mn>100</m:mn></m:mfrac><m:mo>)</m:mo><m:mo>=</m:mo><m:mo form="prefix">log</m:mo><m:mn>10</m:mn><m:mo>-</m:mo><m:mo form="prefix">log</m:mo><m:mn>100</m:mn></m:mrow></m:math>.</para>
+<section id="secfhsst_id1562"><title>Logarithm Law 4: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mfenced separators="" open="(" close=")"><m:mfrac><m:mi>x</m:mi><m:mi>y</m:mi></m:mfrac></m:mfenced><m:mo>=</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> :</title><para id="id641321">Write as seperate logs:
+      <list id="id194851" display="block" list-type="enumerated">
+        <item id="uid39">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mfrac>
+                  <m:mn>8</m:mn>
+                  <m:mn>5</m:mn>
+                </m:mfrac>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid40">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>8</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mfrac>
+                  <m:mn>100</m:mn>
+                  <m:mn>3</m:mn>
+                </m:mfrac>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid41">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>16</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mfrac>
+                  <m:mi>x</m:mi>
+                  <m:mi>y</m:mi>
+                </m:mfrac>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid42">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mi>z</m:mi>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mfrac>
+                  <m:mn>2</m:mn>
+                  <m:mi>y</m:mi>
+                </m:mfrac>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid43">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mfrac>
+                  <m:mi>y</m:mi>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+      </list></para>
+      
+      
+</section>
+    </section>
+    <section id="cid9">
+      <title>Logarithm Law 5: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mi>b</m:mi></m:msup><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>b</m:mi><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></title>
+      <para id="id195124">Once again, we need to relate <m:math overflow="scroll"><m:mi>x</m:mi></m:math> to the base <m:math overflow="scroll"><m:mi>a</m:mi></m:math>. So, we let <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mi>m</m:mi></m:msup></m:mrow></m:math>. Then,</para>
+      <equation id="id195165"><m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mi>b</m:mi>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:msup>
+                          <m:mi>a</m:mi>
+                          <m:mi>m</m:mi>
+                        </m:msup>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mi>b</m:mi>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>a</m:mi>
+                      <m:mrow>
+                        <m:mi>m</m:mi>
+                        <m:mo>·</m:mo>
+                        <m:mi>b</m:mi>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi> exponential laws</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi> But </m:mi>
+                    <m:mo>,</m:mo>
+                  </m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:mspace width="1.em"/>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi> Assumption that </m:mi><m:mspace width="2.pt"/>
+                  </m:mrow>
+                  <m:mi mathvariant="normal">x</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">a</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:msup>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo>∴</m:mo>
+                  <m:mspace width="1.em"/>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mi>b</m:mi>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>a</m:mi>
+                      <m:mrow>
+                        <m:mi>b</m:mi>
+                        <m:mo>·</m:mo>
+                        <m:msub>
+                          <m:mo form="prefix">log</m:mo>
+                          <m:mi>a</m:mi>
+                        </m:msub>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mi>x</m:mi>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mi>b</m:mi>
+                  <m:mo>·</m:mo>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi> Definition of logarithm</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id195532">For example, we can show that <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:msup><m:mn>5</m:mn><m:mn>3</m:mn></m:msup><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</para>
+      <equation id="id195588">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mn>5</m:mn>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mo>·</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mo>·</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mn>5</m:mn>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mn>5</m:mn>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mn>5</m:mn>
+                  <m:mspace width="1.em"/>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mo>∵</m:mo>
+                    <m:msub>
+                      <m:mo form="prefix">log</m:mo>
+                      <m:mi>a</m:mi>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>·</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mo form="prefix">log</m:mo>
+                      <m:mi>a</m:mi>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:msup>
+                        <m:mi>a</m:mi>
+                        <m:mi>m</m:mi>
+                      </m:msup>
+                      <m:mo>·</m:mo>
+                      <m:msup>
+                        <m:mi>a</m:mi>
+                        <m:mi>n</m:mi>
+                      </m:msup>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mn>5</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id195802">Therefore, <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:msup><m:mn>5</m:mn><m:mn>3</m:mn></m:msup><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</para>
+<section id="secfhsst_id2000"><title>Logarithm Law 5: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mi>b</m:mi></m:msup><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>b</m:mi><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> : </title><para id="id74321">Simplify the following:
+      <list id="id195919" display="block" list-type="enumerated">
+        <item id="uid44">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:msup>
+                  <m:mn>8</m:mn>
+                  <m:mn>4</m:mn>
+                </m:msup>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid45">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>8</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>10</m:mn>
+                </m:msup>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid46">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>16</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:msup>
+                  <m:mi>x</m:mi>
+                  <m:mi>y</m:mi>
+                </m:msup>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid47">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mi>z</m:mi>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:msup>
+                  <m:mi>y</m:mi>
+                  <m:mi>x</m:mi>
+                </m:msup>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid48">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:msup>
+                  <m:mi>y</m:mi>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:msup>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+      </list></para>
+      
+      
+</section>
+    </section>
+    <section id="cid10">
+      <title>Logarithm Law 6: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mfenced separators="" open="(" close=")"><m:mroot><m:mi>x</m:mi><m:mi>b</m:mi></m:mroot></m:mfenced><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>b</m:mi></m:mfrac></m:mrow></m:math></title>
+      <para id="id196204">The derivation of this law is identical to the derivation of Logarithm Law 5 and is left as an exercise.</para>
+      <para id="id196209">For example, we can show that <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mroot><m:mn>5</m:mn><m:mn>3</m:mn></m:mroot><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mn>5</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math>.</para>
+      <equation id="id196260">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mroot>
+                      <m:mn>5</m:mn>
+                      <m:mn>3</m:mn>
+                    </m:mroot>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mn>5</m:mn>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>3</m:mn>
+                      </m:mfrac>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:mfrac>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mn>5</m:mn>
+                  <m:mspace width="1.em"/>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mo>∵</m:mo>
+                    <m:msub>
+                      <m:mo form="prefix">log</m:mo>
+                      <m:mi>a</m:mi>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mi>b</m:mi>
+                      </m:msup>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mi>b</m:mi>
+                    <m:msub>
+                      <m:mo form="prefix">log</m:mo>
+                      <m:mi>a</m:mi>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mfrac>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mo form="prefix">log</m:mo>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mn>5</m:mn>
+                  </m:mrow>
+                  <m:mn>3</m:mn>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id196442">Therefore, <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mroot><m:mn>5</m:mn><m:mn>3</m:mn></m:mroot><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mn>5</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math>.</para>
+<section id="secfhsst_id2217"><title>Logarithm Law 6: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mfenced separators="" open="(" close=")"><m:mroot><m:mi>x</m:mi><m:mi>b</m:mi></m:mroot></m:mfenced><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>b</m:mi></m:mfrac></m:mrow></m:math> : </title><para id="id6342">Simplify the following:
+      <list id="id196560" display="block" list-type="enumerated">
+        <item id="uid49">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mroot>
+                  <m:mn>8</m:mn>
+                  <m:mn>4</m:mn>
+                </m:mroot>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid50">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>8</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mroot>
+                  <m:mn>10</m:mn>
+                  <m:mn>10</m:mn>
+                </m:mroot>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid51">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mn>16</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mroot>
+                  <m:mi>x</m:mi>
+                  <m:mi>y</m:mi>
+                </m:mroot>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid52">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mi>z</m:mi>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mroot>
+                  <m:mi>y</m:mi>
+                  <m:mi>x</m:mi>
+                </m:mroot>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid53">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mo form="prefix">log</m:mo>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mroot>
+                  <m:mi>y</m:mi>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:mroot>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </item>
+      </list></para>
+      
+      
+</section>
+<note id="notfhsst_id2316" type="tip">The final answer doesn't have to <emphasis effect="italics">look</emphasis> simple.</note>
+<para id="eip-81"><figure id="logs-2" class="khanacademy">
+	  <title>Khan academy video on logarithms - 2</title>
+	  <media id="yt-media2" display="block" alt="video on logs 2">
+	  <flash id="yt-video2" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/PupNgv49_WY&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><para id="eip-950"><figure id="logs-3" class="khanacademy">
+	  <title>Khan academy video on logarithms - 3</title>
+	  <media id="yt-media3" display="block" alt="video on logs 3">
+	  <flash id="yt-video3" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/TMmxKZaCqe0&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><exercise id="secfhsst_id2317"><title> Simplification of Logs </title>
+      <problem id="probfhsst_id2318">
+      <para id="id196800">Simplify, without use of a calculator:</para>
+      <equation id="id196806">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mn>3</m:mn>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>3</m:mn>
+            <m:mo>+</m:mo>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>125</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      </problem>
+      <solution id="solfhsst_id2334"> <list id="listfhsst_id2334" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Try to write any quantities as exponents </label>
+      <para id="id196857">125 can be written as <m:math overflow="scroll"><m:msup><m:mn>5</m:mn><m:mn>3</m:mn></m:msup></m:math>.</para>
+      </item> <item> <label> Simplify </label>
+      <equation id="id196879">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>+</m:mo>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>125</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>+</m:mo>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:msup>
+                    <m:mn>5</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>5</m:mn>
+                  <m:mspace width="1.em"/>
+                  <m:mo>∵</m:mo>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mi>b</m:mi>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mi>b</m:mi>
+                  <m:msub>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mi>a</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      </item> <item> <label> Final Answer </label>
+      <para id="id197026">We cannot simplify any further. The final answer is:</para>
+      <equation id="id197030">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mn>3</m:mn>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>3</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>3</m:mn>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>5</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      </item> </list> </solution>
+</exercise>
+
+<exercise id="secfhsst_id2433"><title> Simplification of Logs </title>
+      <problem id="probfhsst_id2434">
+      <para id="id197101">Simplify, without use of a calculator:</para>
+      <equation id="id197107">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msup>
+              <m:mn>8</m:mn>
+              <m:mfrac>
+                <m:mn>2</m:mn>
+                <m:mn>3</m:mn>
+              </m:mfrac>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mn>32</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      </problem>
+      <solution id="solfhsst_id2457"> <list id="listfhsst_id2457" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Try to write any quantities as exponents </label>
+      <para id="id197166">8 can be written as <m:math overflow="scroll"><m:msup><m:mn>2</m:mn><m:mn>3</m:mn></m:msup></m:math>. 32 can be written as <m:math overflow="scroll"><m:msup><m:mn>2</m:mn><m:mn>5</m:mn></m:msup></m:math>.</para>
+      </item> <item> <label> Re-write the question using the exponential forms of the numbers </label>
+      <equation id="id197203">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msup>
+              <m:mn>8</m:mn>
+              <m:mfrac>
+                <m:mn>2</m:mn>
+                <m:mn>3</m:mn>
+              </m:mfrac>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mn>32</m:mn>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:msup>
+                  <m:mn>2</m:mn>
+                  <m:mn>3</m:mn>
+                </m:msup>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mfrac>
+                <m:mn>2</m:mn>
+                <m:mn>3</m:mn>
+              </m:mfrac>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mn>2</m:mn>
+              <m:mn>5</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:math>
+      </equation>
+      </item> <item> <label> Determine which laws can be used. </label>
+      <para id="id197285">We can use:</para>
+      <equation id="id197289">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mi>a</m:mi>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:msup>
+                <m:mi>x</m:mi>
+                <m:mi>b</m:mi>
+              </m:msup>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mi>b</m:mi>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mi>a</m:mi>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      </item> <item> <label> Apply log laws to simplify </label>
+      <equation id="id197347">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:msup>
+                  <m:mn>2</m:mn>
+                  <m:mn>3</m:mn>
+                </m:msup>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mfrac>
+                <m:mn>2</m:mn>
+                <m:mn>3</m:mn>
+              </m:mfrac>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mn>2</m:mn>
+              <m:mn>5</m:mn>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>3</m:mn>
+                <m:mfrac>
+                  <m:mn>2</m:mn>
+                  <m:mn>3</m:mn>
+                </m:mfrac>
+              </m:mrow>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mn>5</m:mn>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mn>2</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      </item> <item> <label> Determine which laws can be used. </label>
+      <para id="id197441">We can now use <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+      </item> <item> <label> Apply log laws to simplify </label>
+      <equation id="id197471">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>3</m:mn>
+                <m:mfrac>
+                  <m:mn>2</m:mn>
+                  <m:mn>3</m:mn>
+                </m:mfrac>
+              </m:mrow>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mn>5</m:mn>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mn>2</m:mn>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mn>5</m:mn>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>4</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>5</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>9</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      </item> <item> <label> Final Answer </label>
+      <para id="id197560">The final answer is:</para>
+      <equation id="id197564">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msup>
+              <m:mn>8</m:mn>
+              <m:mfrac>
+                <m:mn>2</m:mn>
+                <m:mn>3</m:mn>
+              </m:mfrac>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mo form="prefix">log</m:mo>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mn>32</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>9</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      </item> </list> </solution>
+</exercise>
+<exercise id="secfhsst_id2665"><title> Simplify to one log </title>
+      <problem id="probfhsst_id2666">
+      <para id="id197633">Write <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mo form="prefix">log</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mo form="prefix">log</m:mo><m:mn>2</m:mn><m:mo>-</m:mo><m:mo form="prefix">log</m:mo><m:mn>5</m:mn></m:mrow></m:math> as the logarithm of a single number. </para>
+      </problem>
+      <solution id="solfhsst_id2669"> <list id="listfhsst_id2669" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Reverse law 5 </label>
+      <para id="id197691">
+        <m:math overflow="scroll">
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>3</m:mn>
+            <m:mo>+</m:mo>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>2</m:mn>
+            <m:mo>-</m:mo>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>5</m:mn>
+            <m:mo>=</m:mo>
+            <m:mo form="prefix">log</m:mo>
+            <m:msup>
+              <m:mn>3</m:mn>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>2</m:mn>
+            <m:mo>-</m:mo>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>5</m:mn>
+          </m:mrow>
+        </m:math>
+      </para>
+      </item> <item> <label> Apply laws 3 and 4 </label>
+      <para id="id197761"><m:math overflow="scroll"><m:mrow><m:mo>=</m:mo><m:mo form="prefix">log</m:mo><m:mo>(</m:mo><m:msup><m:mrow><m:mn>3</m:mn></m:mrow><m:mn>2</m:mn></m:msup><m:mo>×</m:mo><m:mn>2</m:mn><m:mo>÷</m:mo><m:mn>5</m:mn></m:mrow></m:math>)</para>
+      </item> <item> <label> Write the final answer </label>
+      <para id="id197801"><m:math overflow="scroll"><m:mrow><m:mo>=</m:mo><m:mo form="prefix">log</m:mo><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:math>
+ </para>
+      </item> </list> </solution>
+</exercise>
+<note id="notfhsst_id2705" type="tip">Exponent rule: <m:math overflow="scroll"><m:mrow><m:msup><m:mfenced separators="" open="(" close=")"><m:msup><m:mi>x</m:mi><m:mi>b</m:mi></m:msup></m:mfenced><m:mi>a</m:mi></m:msup><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mrow><m:mi>a</m:mi><m:mi>b</m:mi></m:mrow></m:msup></m:mrow></m:math></note>
+    </section>
+    <section id="cid11">
+      <title>Solving simple log equations</title>
+      <para id="id197893">In grade 10 you solved some exponential equations by trial and error, because you did not know the great power of logarithms yet. Now it is much easier to solve these equations by using logarithms.</para>
+      <para id="id197898">For example to solve <m:math overflow="scroll"><m:mi>x</m:mi></m:math> in <m:math overflow="scroll"><m:mrow><m:msup><m:mn>25</m:mn><m:mi>x</m:mi></m:msup><m:mo>=</m:mo><m:mn>50</m:mn></m:mrow></m:math> correct to two decimal places you simply apply the following reasoning. If the LHS = RHS then the logarithm of the LHS must be equal to the logarithm of the RHS. By applying Law 5, you will be able to use your calculator to solve for <m:math overflow="scroll"><m:mi>x</m:mi></m:math>.</para>
+<exercise id="secfhsst_id2711"><title> Solving Log equations </title>
+      <problem id="probfhsst_id2712">
+      <para id="id197953">Solve for <m:math overflow="scroll"><m:mi>x</m:mi></m:math>:   <m:math overflow="scroll"><m:mrow><m:msup><m:mn>25</m:mn><m:mi>x</m:mi></m:msup><m:mo>=</m:mo><m:mn>50</m:mn></m:mrow></m:math> correct to two decimal places. </para>
+      </problem>
+      <solution id="solfhsst_id2715"> <list id="listfhsst_id2715" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Taking the log of both sides </label>
+      <para id="id198005">
+        <m:math overflow="scroll">
+          <m:mrow>
+            <m:mo form="prefix">log</m:mo>
+            <m:msup>
+              <m:mn>25</m:mn>
+              <m:mi>x</m:mi>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>50</m:mn>
+          </m:mrow>
+        </m:math>
+      </para>
+      </item> <item> <label> Use Law 5 </label>
+      <para id="id198038">
+        <m:math overflow="scroll">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>25</m:mn>
+            <m:mo>=</m:mo>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>50</m:mn>
+          </m:mrow>
+        </m:math>
+      </para>
+      </item> <item> <label> Solve for <m:math overflow="scroll"><m:mi>x</m:mi></m:math> </label>
+      <para id="id198077">
+        <m:math overflow="scroll">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>50</m:mn>
+            <m:mo>÷</m:mo>
+            <m:mo form="prefix">log</m:mo>
+            <m:mn>25</m:mn>
+          </m:mrow>
+        </m:math>
+      </para>
+      <para id="id198104">
+        <m:math overflow="scroll">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+            <m:mo>,</m:mo>
+            <m:mn>21533</m:mn>
+            <m:mo>.</m:mo>
+            <m:mo>.</m:mo>
+            <m:mo>.</m:mo>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </para>
+      </item> <item> <label> Round off to required decimal place </label>
+      <para id="id198139"><m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>22</m:mn></m:mrow></m:math>
+ </para>
+      </item> </list> </solution>
+</exercise>
+      <para id="id198171">In general, the exponential equation should be simplified as much as possible. Then the aim is to make the unknown quantity (i.e. <m:math overflow="scroll"><m:mi>x</m:mi></m:math>) the subject of the equation.</para>
+      <para id="id198185">For example, the equation</para>
+      <equation id="id198189">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msup>
+              <m:mn>2</m:mn>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>+</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id198219">is solved by moving all terms with the unknown to one side of the equation and taking all constants to the other side of the equation</para>
+      <equation id="id198225">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msup>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                  </m:msup>
+                  <m:mo>·</m:mo>
+                  <m:msup>
+                    <m:mn>2</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>1</m:mn>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msup>
+                  <m:mn>2</m:mn>
+                  <m:mi>x</m:mi>
+                </m:msup>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:msup>
+                    <m:mn>2</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id198299">Then, take the logarithm of each side.</para>
+      <equation id="id198305"><m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mn>2</m:mn>
+                      <m:mi>x</m:mi>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:msup>
+                        <m:mn>2</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mfrac>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo>-</m:mo>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mn>2</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo>-</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:mrow>
+                    <m:mi> Divide both sides by </m:mi><m:mspace width="2pt"/>
+                  </m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo>∴</m:mo>
+                  <m:mspace width="1.em"/>
+                  <m:mi>x</m:mi>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo>-</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id198511">Substituting into the original equation, yields</para>
+      <equation id="id198517">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msup>
+              <m:mn>2</m:mn>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>+</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mn>2</m:mn>
+              <m:mn>0</m:mn>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id198557">Similarly, <m:math overflow="scroll"><m:mrow><m:msup><m:mn>9</m:mn><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:msup><m:mo>=</m:mo><m:msup><m:mn>3</m:mn><m:mn>4</m:mn></m:msup></m:mrow></m:math> is solved as follows:</para>
+      <equation id="id198597"><m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msup>
+                  <m:mn>9</m:mn>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:msup>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:msup>
+                  <m:mn>3</m:mn>
+                  <m:mn>4</m:mn>
+                </m:msup>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msup>
+                  <m:mn>3</m:mn>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:msup>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:msup>
+                  <m:mn>3</m:mn>
+                  <m:mn>4</m:mn>
+                </m:msup>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msup>
+                  <m:mn>3</m:mn>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:msup>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msup>
+                    <m:mn>3</m:mn>
+                    <m:mn>4</m:mn>
+                  </m:msup>
+                  <m:mspace width="1.em"/>
+                  <m:mrow>
+                    <m:mi> take the logarithm of both sides</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:msup>
+                    <m:mn>3</m:mn>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mo>-</m:mo>
+                      <m:mn>4</m:mn>
+                      <m:mi>x</m:mi>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:msup>
+                    <m:mn>3</m:mn>
+                    <m:mn>4</m:mn>
+                  </m:msup>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mn>4</m:mn>
+                  <m:mi>x</m:mi>
+                  <m:mo>)</m:mo>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>4</m:mn>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>)</m:mo>
+                  <m:mspace width="1.em"/>
+                  <m:mrow>
+                    <m:mi> divide both sides by</m:mi><m:mspace width="2pt"/>
+                  </m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mn>4</m:mn>
+                  <m:mi>x</m:mi>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>4</m:mn>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo>-</m:mo>
+                  <m:mn>4</m:mn>
+                  <m:mi>x</m:mi>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>2</m:mn>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo>∴</m:mo>
+                  <m:mi>x</m:mi>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo>-</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id198935">Substituting into the original equation, yields</para>
+      <equation id="id198941">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msup>
+              <m:mn>9</m:mn>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>-</m:mo>
+                <m:mn>2</m:mn>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mn>9</m:mn>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>+</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mn>3</m:mn>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mn>3</m:mn>
+              <m:mn>4</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:math>
+      </equation>
+<exercise id="secfhsst_id3264"><title> Exponential Equation </title>
+      <problem id="probfhsst_id3265">
+      <para id="id199041">Solve for <m:math overflow="scroll"><m:mi>x</m:mi></m:math> in <m:math overflow="scroll"><m:mrow><m:mn>7</m:mn><m:mo>·</m:mo><m:msup><m:mn>5</m:mn><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:msup><m:mo>=</m:mo><m:mn>35</m:mn></m:mrow></m:math> </para>
+      </problem>
+      <solution id="solfhsst_id3268"> <list id="listfhsst_id3268" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Identify the base with <m:math overflow="scroll"><m:mi>x</m:mi></m:math> as an exponent </label>
+      <para id="id199119">There are two possible bases: 5 and 7. <m:math overflow="scroll"><m:mi>x</m:mi></m:math> is an exponent of 5.</para>
+      </item> <item> <label> Eliminate the base with no <m:math overflow="scroll"><m:mi>x</m:mi></m:math> </label>
+      <para id="id199144">In order to eliminate 7, divide both sides of the equation by 7 to give:</para>
+      <equation id="id199148">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msup>
+              <m:mn>5</m:mn>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>3</m:mn>
+                <m:mi>x</m:mi>
+                <m:mo>+</m:mo>
+                <m:mn>3</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mn>5</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      </item> <item> <label> Take the logarithm of both sides </label>
+      <equation id="id199185">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mo form="prefix">log</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:msup>
+                <m:mn>5</m:mn>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:msup>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mo form="prefix">log</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>5</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      </item> <item> <label> Apply the log laws to make <m:math overflow="scroll"><m:mi>x</m:mi></m:math> the subject of the equation. </label>
+      <equation id="id199251"><m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>)</m:mo>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mn>5</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mn>5</m:mn>
+                  <m:mo>)</m:mo>
+                  <m:mspace width="1.em"/>
+                  <m:mrow>
+                    <m:mi> divide both sides of the equation by </m:mi><m:mspace width="2pt"/>
+                  </m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mn>5</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>1</m:mn>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mi>x</m:mi>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo>-</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>x</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo>-</m:mo>
+                  <m:mfrac>
+                    <m:mn>2</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      </item> <item> <label> Substitute into the original equation to check answer. </label>
+      <equation id="id199413">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mn>7</m:mn>
+            <m:mo>·</m:mo>
+            <m:msup>
+              <m:mn>5</m:mn>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mo>-</m:mo>
+                <m:mn>3</m:mn>
+                <m:mfrac>
+                  <m:mn>2</m:mn>
+                  <m:mn>3</m:mn>
+                </m:mfrac>
+                <m:mo>+</m:mo>
+                <m:mn>3</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mn>7</m:mn>
+            <m:mo>·</m:mo>
+            <m:msup>
+              <m:mn>5</m:mn>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mo>-</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>+</m:mo>
+                <m:mn>3</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mn>7</m:mn>
+            <m:mo>·</m:mo>
+            <m:msup>
+              <m:mn>5</m:mn>
+              <m:mn>1</m:mn>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mn>35</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      </item> </list> </solution>
+</exercise>
+      <section id="uid54"><title>Exercises</title><para id="id199523">Solve for <m:math overflow="scroll"><m:mi>x</m:mi></m:math>:
+        <list id="id199536" display="block" list-type="enumerated">
+          <item id="uid55">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:msub>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>3</m:mn>
+                </m:msub>
+                <m:mi>x</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid56">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mn>27</m:mn>
+                  </m:mrow>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:mi>x</m:mi>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid57">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:msup>
+                  <m:mn>3</m:mn>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:msup>
+                  <m:mn>27</m:mn>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:msup>
+              </m:mrow>
+            </m:math>
+          </item>
+        </list></para>
+      </section>
+    </section>
+    <section id="cid12"><title>Logarithmic applications in the Real World</title><para id="id199668">Logarithms are part of a number of formulae used in the Physical Sciences. There are formulae that deal with earthquakes, with sound, and pH-levels to mention a few. To work out time periods is growth or decay, logs are used to solve the particular equation.</para>
+<exercise id="secfhsst_id3533"><title> Using the growth formula </title>
+      <problem id="probfhsst_id3534">
+      <para id="id199685">A city grows 5% every 2 years. How long will it take for the city to triple its size? </para>
+      </problem>
+      <solution id="solfhsst_id3537"> <list id="listfhsst_id3537" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Use the formula </label>
+      <para id="id199710"><m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mi>P</m:mi><m:msup><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo>)</m:mo></m:mrow><m:mi>n</m:mi></m:msup></m:mrow></m:math>
+Assume <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math>, then <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:math>.
+For this example <m:math overflow="scroll"><m:mi>n</m:mi></m:math> represents a period of 2 years, therefore the <m:math overflow="scroll"><m:mi>n</m:mi></m:math> is halved for this purpose.</para>
+      </item> <item> <label> Substitute information given into formula </label>
+      <equation id="id199797"><m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mn>3</m:mn>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>05</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mfrac>
+                    <m:mi>n</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:msup>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>3</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mi>n</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>×</m:mo>
+                  <m:mrow>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo>,</m:mo>
+                      <m:mn>05</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi> using law 5</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>n</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo form="prefix">log</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>÷</m:mo>
+                  <m:mrow>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo>,</m:mo>
+                      <m:mn>05</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>n</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>45</m:mn>
+                  <m:mo>,</m:mo>
+                  <m:mn>034</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      </item> <item> <label> Final answer </label>
+      <para id="id199962">So it will take approximately 45 years for the population to triple in size.
+ </para>
+      </item> </list> </solution>
+</exercise>
+      
+<exercise id="secfhsst_id3660"><title> Logs in Compound Interest </title>
+        <problem id="probfhsst_id3661">
+        <para id="uid205343">I have R12 000 to invest. I need the money to grow to at least R30 000. If it is invested at a compound interest rate of 13% per annum, for how long (in full years) does my investment need to grow ?</para>
+        </problem>
+        <solution id="solfhsst_id3664"> <list id="listfhsst_id3664" list-type="enumerated" number-style="arabic" class="stepwise">
+        
+        
+        <item> <label> The formula to use </label>
+        <equation id="id200078">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mi>A</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>P</m:mi>
+              <m:msup>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>+</m:mo>
+                  <m:mi>i</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mi>n</m:mi>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </equation>
+        </item> <item> <label> Substitute and solve for n </label>
+        <equation id="id200116">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mn>30000</m:mn>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>&lt;</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>12000</m:mn>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>+</m:mo>
+                        <m:mn>0</m:mn>
+                        <m:mo>,</m:mo>
+                        <m:mn>13</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mi>n</m:mi>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>1</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:msup>
+                      <m:mn>13</m:mn>
+                      <m:mi>n</m:mi>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>&gt;</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mn>5</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>n</m:mi>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>13</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>&gt;</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mo>(</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>n</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>&gt;</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mo>(</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mo>)</m:mo>
+                    <m:mo>÷</m:mo>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>13</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>n</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>&gt;</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>7</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>4972</m:mn>
+                    <m:mo>...</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        </item> <item> <label> Determine the final answer </label>
+        <para id="id200315">In this case we round up, because 7 years will not yet deliver the required R 30 000.
+The investment need to stay in the bank for at least 8 years.</para>
+</item> </list> </solution>
+</exercise>
+<section id="uid58">
+        <title>Exercises</title>
+        <list id="id199987" display="block" list-type="enumerated">
+          <item id="uid59">The population of a certain bacteria is expected to grow exponentially at a rate of 15 % every hour. If the initial population is 5 000, how long will it take for the population to reach 100 000 ?
+</item>
+          <item id="uid60">Plus Bank is offering a savings account with an interest rate if 10 % per annum compounded monthly. You can afford to save R 300 per month. How long will it take you to save R 20 000 ? (Give your answer in years and months)
+</item>
+        </list>
+      </section>
+    </section>
+    <section id="cid13">
+      <title>End of Chapter Exercises</title>
+      <list id="id200331" display="block" list-type="enumerated">
+        <item id="uid61">Show that
+<equation id="id200347"><m:math overflow="scroll" mode="display"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mfenced separators="" open="(" close=")"><m:mfrac><m:mi>x</m:mi><m:mi>y</m:mi></m:mfrac></m:mfenced><m:mo>=</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></equation></item>
+        <item id="uid62">Show that
+<equation id="id200430"><m:math overflow="scroll" mode="display"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mfenced separators="" open="(" close=")"><m:mroot><m:mi>x</m:mi><m:mi>b</m:mi></m:mroot></m:mfenced><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mi>a</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>b</m:mi></m:mfrac></m:mrow></m:math></equation></item>
+        <item id="uid63">Without using a calculator show that:
+<equation id="id200500"><m:math overflow="scroll" mode="display"><m:mrow><m:mo form="prefix">log</m:mo><m:mfrac><m:mn>75</m:mn><m:mn>16</m:mn></m:mfrac><m:mo>-</m:mo><m:mn>2</m:mn><m:mo form="prefix">log</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>9</m:mn></m:mfrac><m:mo>+</m:mo><m:mo form="prefix">log</m:mo><m:mfrac><m:mn>32</m:mn><m:mn>243</m:mn></m:mfrac><m:mo>=</m:mo><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:mrow></m:math></equation></item>
+        <item id="uid64">Given that <m:math overflow="scroll"><m:mrow><m:msup><m:mn>5</m:mn><m:mi>n</m:mi></m:msup><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mi>y</m:mi></m:mrow></m:math><list id="id200612" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid65">Write <m:math overflow="scroll"><m:mi>y</m:mi></m:math> in terms of <m:math overflow="scroll"><m:mi>n</m:mi></m:math></item><item id="uid66">Express <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>8</m:mn></m:msub><m:mn>4</m:mn><m:mi>y</m:mi></m:mrow></m:math> in terms of <m:math overflow="scroll"><m:mi>n</m:mi></m:math></item><item id="uid67">Express <m:math overflow="scroll"><m:msup><m:mn>50</m:mn><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math> in terms of <m:math overflow="scroll"><m:mi>x</m:mi></m:math> and <m:math overflow="scroll"><m:mi>y</m:mi></m:math></item></list></item>
+        <item id="uid68">Simplify, without the use of a calculator:
+<list id="id200746" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid69"><m:math overflow="scroll"><m:mrow><m:msup><m:mn>8</m:mn><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:msup><m:mo>+</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mn>32</m:mn></m:mrow></m:math></item><item id="uid70"><m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>3</m:mn></m:msub><m:mn>9</m:mn><m:mo>-</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mn>5</m:mn></m:msub><m:msqrt><m:mn>5</m:mn></m:msqrt></m:mrow></m:math></item><item id="uid71"><m:math overflow="scroll"><m:mrow><m:msup><m:mfenced open="(" close=")"><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mn>5</m:mn><m:mrow><m:msup><m:mn>4</m:mn><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo>-</m:mo><m:msup><m:mn>9</m:mn><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mstyle></m:mfenced><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle></m:msup><m:mo>+</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mn>3</m:mn></m:msub><m:msup><m:mn>9</m:mn><m:mrow><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>12</m:mn></m:mrow></m:msup></m:mrow></m:math></item></list></item>
+        <item id="uid72">Simplify to a single number, without use of a calculator:
+<list id="id200946" display="block" list-type="enumerated"><item id="uid73"><m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>5</m:mn></m:msub><m:mn>125</m:mn><m:mo>+</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:mo form="prefix">log</m:mo><m:mn>32</m:mn><m:mo>-</m:mo><m:mo form="prefix">log</m:mo><m:mn>8</m:mn></m:mrow><m:mrow><m:mo form="prefix">log</m:mo><m:mn>8</m:mn></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></item><item id="uid74"><m:math overflow="scroll"><m:mrow><m:mo form="prefix">log</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mo form="prefix">log</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow></m:math></item></list></item>
+        <item id="uid75">Given:    <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>3</m:mn></m:msub><m:mn>6</m:mn><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>6</m:mn></m:msub><m:mn>5</m:mn><m:mo>=</m:mo><m:mi>b</m:mi></m:mrow></m:math><list id="id201109" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid76">Express <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>3</m:mn></m:msub><m:mn>2</m:mn></m:mrow></m:math> in terms of <m:math overflow="scroll"><m:mi>a</m:mi></m:math>.
+</item><item id="uid77">Hence, or otherwise, find <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>3</m:mn></m:msub><m:mn>10</m:mn></m:mrow></m:math> in terms of <m:math overflow="scroll"><m:mi>a</m:mi></m:math> and <m:math overflow="scroll"><m:mi>b</m:mi></m:math>.
+</item></list></item>
+        <item id="uid78">Given:    <m:math overflow="scroll"><m:mrow><m:mi>p</m:mi><m:msup><m:mi>q</m:mi><m:mi>k</m:mi></m:msup><m:mo>=</m:mo><m:mi>q</m:mi><m:msup><m:mi>p</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:math>
+Prove:    <m:math overflow="scroll"><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:msub><m:mo form="prefix">log</m:mo><m:mi>q</m:mi></m:msub><m:mi>p</m:mi></m:mrow></m:math></item>
+        <item id="uid79">Evaluate without using a calculator: <m:math overflow="scroll"><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mn>7</m:mn></m:msub><m:mn>49</m:mn><m:mo>)</m:mo></m:mrow><m:mn>5</m:mn></m:msup><m:mo>+</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mn>5</m:mn></m:msub><m:mspace width="0.222222em"/><m:mfenced open="(" close=")"><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mn>125</m:mn></m:mfrac></m:mstyle></m:mfenced><m:mo>-</m:mo><m:mn>13</m:mn><m:mspace width="0.222222em"/><m:msub><m:mo form="prefix">log</m:mo><m:mn>9</m:mn></m:msub><m:mn>1</m:mn></m:mrow></m:math></item>
+        <item id="uid80">If <m:math overflow="scroll"><m:mrow><m:mo form="prefix">log</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>7</m:mn></m:mrow></m:math>, determine, <emphasis effect="bold">without using a calculator</emphasis>:
+<list id="id201414" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid81"><m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mn>5</m:mn></m:mrow></m:math></item><item id="uid82"><m:math overflow="scroll"><m:msup><m:mn>10</m:mn><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow></m:msup></m:math></item></list></item>
+        <item id="uid83">Given:       <m:math overflow="scroll"><m:mrow><m:mi>M</m:mi><m:mo>=</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math><list id="id201547" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid84">Determine the values of <m:math overflow="scroll"><m:mi>x</m:mi></m:math> for which <m:math overflow="scroll"><m:mi>M</m:mi></m:math> is defined.
+</item><item id="uid85">Solve for <m:math overflow="scroll"><m:mi>x</m:mi></m:math> if <m:math overflow="scroll"><m:mrow><m:mi>M</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math>.
+</item></list></item>
+        <item id="uid86">Solve:       <m:math overflow="scroll"><m:mrow><m:msup><m:mfenced open="(" close=")"><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mfenced><m:mrow><m:mo form="prefix">log</m:mo><m:mi>x</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>10</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> (Answer(s) may be left in surd form, if necessary.)
+</item>
+        <item id="uid87">Find the value of <m:math overflow="scroll"><m:msup><m:mrow><m:mo>(</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mn>27</m:mn></m:msub><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mn>3</m:mn></m:msup></m:math> without the use of a calculator.
+</item>
+        <item id="uid88">Simplify By using a calculator: <m:math overflow="scroll"><m:mrow><m:msub><m:mo form="prefix">log</m:mo><m:mn>4</m:mn></m:msub><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:msub><m:mo form="prefix">log</m:mo><m:mn>3</m:mn></m:msub><m:msqrt><m:mn>27</m:mn></m:msqrt></m:mrow></m:math></item>
+        <item id="uid89">Write <m:math overflow="scroll"><m:mrow><m:mo form="prefix">log</m:mo><m:mn>4500</m:mn></m:mrow></m:math> in terms of <m:math overflow="scroll"><m:mi>a</m:mi></m:math> and <m:math overflow="scroll"><m:mi>b</m:mi></m:math> if <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mo>=</m:mo><m:msup><m:mn>10</m:mn><m:mi>a</m:mi></m:msup></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mn>9</m:mn><m:mo>=</m:mo><m:msup><m:mn>10</m:mn><m:mi>b</m:mi></m:msup></m:mrow></m:math>.
+</item>
+        <item id="uid90">Calculate:       <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:msup><m:mn>5</m:mn><m:mn>2006</m:mn></m:msup><m:mo>-</m:mo><m:msup><m:mn>5</m:mn><m:mn>2004</m:mn></m:msup><m:mo>+</m:mo><m:mn>24</m:mn></m:mrow><m:mrow><m:msup><m:mn>5</m:mn><m:mn>2004</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mstyle></m:math></item>
+        <item id="uid91">Solve the following equation for <m:math overflow="scroll"><m:mi>x</m:mi></m:math> without the use of a calculator and using the fact that <m:math overflow="scroll"><m:mrow><m:msqrt><m:mn>10</m:mn></m:msqrt><m:mo>≈</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>16</m:mn><m:mo>:</m:mo></m:mrow></m:math><equation id="id201947"><m:math overflow="scroll" mode="display"><m:mrow><m:mn>2</m:mn><m:mo form="prefix">log</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mn>6</m:mn><m:mrow><m:mo form="prefix">log</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mfrac></m:mstyle><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math></equation></item>
+        <item id="uid92">Solve the following equation for <m:math overflow="scroll"><m:mi>x</m:mi></m:math>: <m:math overflow="scroll"><m:mrow><m:msup><m:mn>6</m:mn><m:mrow><m:mn>6</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>66</m:mn></m:mrow></m:math>    (Give answer correct to 2 decimal places.)
+</item>
+      </list>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,136 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Introduction and Notation</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39100</md:content-id>
+  <md:title>Introduction and Notation</md:title>
+  <md:abstract/>
+  <md:uuid>96398956-ae92-4327-bb7c-901c977fc85e</md:uuid>
+</metadata>
+
+<content>
+    
+    <section id="cid2">
+      <title>Introduction</title>
+      <para id="id123351">Mathematics education began with counting. In the beginning, fingers, beans and buttons were used to help with counting, but these are only practical for small numbers. What happens when a large number of items must be counted?</para>
+      <para id="id123356">This chapter focuses on how to use mathematical techniques to count combinations of items.</para>
+    </section>
+    <section id="cid3">
+      <title>Counting</title>
+      <para id="id123708">An important aspect of probability theory is the ability to determine the total number of possible outcomes when multiple events are considered.</para>
+      <para id="id123712">For example, what is the total number of possible outcomes when a die is rolled and then a coin is tossed? The roll of a die has six possible outcomes (1, 2, 3, 4, 5 or 6) and the toss of a coin, 2 outcomes (head or tails). Counting the possible outcomes can be tedious.</para>
+      <section id="uid1">
+        <title>Making a List</title>
+        <para id="id123726">The simplest method of counting the total number of outcomes is by making a list:</para>
+        <para id="id123730">1H, 1T, 2H, 2T, 3H, 3T, 4H, 4T, 5H, 5T, 6H, 6T</para>
+        <para id="id123736">or drawing up a table:</para>
+        <table id="id123739" summary="">
+          <tgroup cols="2">
+            <tbody>
+              <row>
+                <entry>die</entry>
+                <entry>coin</entry>
+              </row>
+              <row>
+                <entry>1</entry>
+                <entry>H</entry>
+              </row>
+              <row>
+                <entry>1</entry>
+                <entry>T</entry>
+              </row>
+              <row>
+                <entry>2</entry>
+                <entry>H</entry>
+              </row>
+              <row>
+                <entry>2</entry>
+                <entry>T</entry>
+              </row>
+              <row>
+                <entry>3</entry>
+                <entry>H</entry>
+              </row>
+              <row>
+                <entry>3</entry>
+                <entry>T</entry>
+              </row>
+              <row>
+                <entry>4</entry>
+                <entry>H</entry>
+              </row>
+              <row>
+                <entry>4</entry>
+                <entry>T</entry>
+              </row>
+              <row>
+                <entry>5</entry>
+                <entry>H</entry>
+              </row>
+              <row>
+                <entry>5</entry>
+                <entry>T</entry>
+              </row>
+              <row>
+                <entry>6</entry>
+                <entry>H</entry>
+              </row>
+              <row>
+                <entry>6</entry>
+                <entry>T</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        <para id="id124002">Both these methods result in 12 possible outcomes, but both these methods have a lot of repetition. Maybe there is a smarter way to write down the result?</para>
+      </section>
+      <section id="uid2">
+        <title>Tree Diagrams</title>
+        <para id="id124016">One method of eliminating some of the repetition is to use <emphasis effect="italics">tree diagrams</emphasis>. Tree diagrams are a graphical method of listing all possible combinations of events from a random experiment.</para>
+        <figure id="uid3">
+          <media id="uid3_media" alt="">
+            <image mime-type="image/png" src="../../media/MG12C12_001.png" id="uid3_onlineimage" width="191"><!-- NOTE: attribute width changes image size online (pixels). original width is 191. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/MG12C12_001.eps" id="uid3_printimage"/>
+          </media>
+          <caption>Example of a tree diagram. Each possible outcome is a branch of the tree.</caption>
+        </figure>
+      </section>
+    </section>
+    <section id="cid4">
+      <title>Notation</title>
+      <section id="uid4">
+        <title>The Factorial Notation</title>
+        <para id="id124055">For an integer <m:math overflow="scroll"><m:mi>n</m:mi></m:math>, the notation <m:math overflow="scroll"><m:mrow><m:mi>n</m:mi><m:mo>!</m:mo></m:mrow></m:math> (read <m:math overflow="scroll"><m:mi>n</m:mi></m:math> factorial) represents:</para>
+        <equation id="id124086">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mi>n</m:mi>
+              <m:mo>×</m:mo>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>-</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+              <m:mo>×</m:mo>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>-</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+              <m:mo>×</m:mo>
+              <m:mo>...</m:mo>
+              <m:mo>×</m:mo>
+              <m:mn>3</m:mn>
+              <m:mo>×</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>×</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id124139">with the following definition: <m:math overflow="scroll"><m:mrow><m:mn>0</m:mn><m:mo>!</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>.</para>
+        <para id="id123278">The factorial notation will be used often in this chapter.</para>
+      </section>
+   </section>
+  </content>
+</document>

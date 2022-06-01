@@ -1,0 +1,1095 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Investments &amp; Loans, Loan Schedules, Capital Outstanding, Formulae</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39194</md:content-id>
+  <md:title>Investments &amp; Loans, Loan Schedules, Capital Outstanding, Formulae</md:title>
+  <md:abstract/>
+  <md:uuid>628b91b1-7d80-49db-94ea-7df7f7c80efc</md:uuid>
+</metadata>
+
+<content>
+
+    <section id="cid5">
+      <title>Investments and Loans</title>
+      <para id="id68211">By now, you should be well equipped to perform calculations with compound interest. This section aims to allow you to use these valuable skills to critically analyse investment and loan options that you will come across in your later life. This way, you will be able to make informed decisions on options presented to you.</para>
+      <para id="id68217">At this stage, you should understand the mathematical theory behind compound interest. However, the numerical implications of compound interest are often subtle and far from obvious.</para>
+      <para id="id68222">Recall the example `Show me the money' in <link target-id="uid8">"Present Values of a series of Payments"</link>. For an extra payment of R29 052 a month, we could have paid off our loan in less than 14 years instead of 20 years. This provides a good illustration of the long term effect of compound interest that is often surprising. In the following section, we'll aim to explain the reason for the drastic reduction in the time it takes to repay the loan.</para>
+      <section id="uid27">
+        <title>Loan Schedules</title>
+        <para id="id68244">So far, we have been working out loan repayment amounts by taking all the payments and discounting them back to the present time. We are not considering the repayments individually. Think about the time you make a repayment to the bank. There are numerous questions that could be raised: how much do you still owe them? Since you are paying off the loan, surely you must owe them less money, but how much less? We know that we'll be paying interest on the money we still owe the bank. When exactly do we pay interest? How much interest are we paying?</para>
+        <para id="id68252">The answer to these questions lie in something called the load schedule.</para>
+        <para id="id68256">We will continue to use the earlier example. There is a loan amount of R190 000. We are paying it off over 20 years at an interest of 9% per annum payable monthly. We worked out that the repayments should be R1 709,48.</para>
+        <para id="id68263">Consider the first payment of R1 709,48 one month into the loan. First, we can work out how much interest we owe the bank at this moment. We borrowed R190 000 a month ago, so we should owe:</para>
+        <equation id="id68270">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>I</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>M</m:mi>
+                    <m:mo>×</m:mo>
+                    <m:mi>i</m:mi>
+                    <m:mn>12</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>R</m:mi>
+                    <m:mn>190</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mn>000</m:mn>
+                    <m:mo>×</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>75</m:mn>
+                    <m:mo>%</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>R</m:mi>
+                    <m:mn>1</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mn>425</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id68355">We are paying them R1 425 in interest. We call this the interest component of the repayment. We are only paying off R1 709,48 - R1 425 = R284.48 of what we owe! This is called the capital component. That means we still owe R190 000 - R284,48 = R189 715,52. This is called the capital outstanding. Let's see what happens at the end of the second month. The amount of interest we need to pay is the interest on the capital outstanding.</para>
+        <equation id="id68364">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>I</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>M</m:mi>
+                    <m:mo>×</m:mo>
+                    <m:mi>i</m:mi>
+                    <m:mn>12</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>R</m:mi>
+                    <m:mn>189</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mn>715</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>52</m:mn>
+                    <m:mo>×</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>75</m:mn>
+                    <m:mo>%</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>R</m:mi>
+                    <m:mn>1</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mn>422</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>87</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id68458">Since we don't owe the bank as much as we did last time, we also owe a little less interest. The capital component of the repayment is now R1 709,48 - R1 422,87 = R286,61. The capital outstanding will be R189 715,52 - R286,61 = R189 428,91. This way, we can break each of our repayments down into an interest part and the part that goes towards paying off the loan.</para>
+        <para id="id68467">This is a simple and repetitive process. <link target-id="uid28"/> is a table showing the breakdown of the first 12 payments. This is called a loan schedule.</para>
+        <table id="uid28" summary="">
+          <tgroup cols="13">
+            <colspec colnum="1" colname="c1"/>
+            <colspec colnum="2" colname="c2"/>
+            <colspec colnum="3" colname="c3"/>
+            <colspec colnum="4" colname="c4"/>
+            <colspec colnum="5" colname="c5"/>
+            <colspec colnum="6" colname="c6"/>
+            <colspec colnum="7" colname="c7"/>
+            <colspec colnum="8" colname="c8"/>
+            <colspec colnum="9" colname="c9"/>
+            <colspec colnum="10" colname="c10"/>
+            <colspec colnum="11" colname="c11"/>
+            <colspec colnum="12" colname="c12"/>
+            <colspec colnum="13" colname="c13"/>
+            <tbody>
+              <row>
+                <entry>Time</entry>
+                <entry namest="c2" nameend="c4">Repayment</entry>
+                <entry namest="c5" nameend="c7">Interest Component</entry>
+                <entry namest="c8" nameend="c10">Capital Component</entry>
+                <entry namest="c11" nameend="c13">Capital Outstanding</entry>
+              </row>
+              <row>
+                <entry>0</entry>
+                <entry namest="c2" nameend="c4"/>
+                <entry namest="c5" nameend="c7"/>
+                <entry namest="c8" nameend="c10"/>
+                <entry>R</entry>
+                <entry>190 000</entry>
+                <entry>00</entry>
+              </row>
+              <row>
+                <entry>1</entry>
+                <entry>R</entry>
+                <entry>1 709</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>1 425</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>284</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>189 715</entry>
+                <entry>52</entry>
+              </row>
+              <row>
+                <entry>2</entry>
+                <entry>R</entry>
+                <entry>1 709</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>1 422</entry>
+                <entry>87</entry>
+                <entry>R</entry>
+                <entry>286</entry>
+                <entry>61</entry>
+                <entry>R</entry>
+                <entry>189 428</entry>
+                <entry>91</entry>
+              </row>
+              <row>
+                <entry>3</entry>
+                <entry>R</entry>
+                <entry>1 709</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>1 420</entry>
+                <entry>72</entry>
+                <entry>R</entry>
+                <entry>288</entry>
+                <entry>76</entry>
+                <entry>R</entry>
+                <entry>189 140</entry>
+                <entry>14</entry>
+              </row>
+              <row>
+                <entry>4</entry>
+                <entry>R</entry>
+                <entry>1 709</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>1 418</entry>
+                <entry>55</entry>
+                <entry>R</entry>
+                <entry>290</entry>
+                <entry>93</entry>
+                <entry>R</entry>
+                <entry>188 849</entry>
+                <entry>21</entry>
+              </row>
+              <row>
+                <entry>5</entry>
+                <entry>R</entry>
+                <entry>1 709</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>1 416</entry>
+                <entry>37</entry>
+                <entry>R</entry>
+                <entry>293</entry>
+                <entry>11</entry>
+                <entry>R</entry>
+                <entry>188 556</entry>
+                <entry>10</entry>
+              </row>
+              <row>
+                <entry>6</entry>
+                <entry>R</entry>
+                <entry>1 709</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>1 414</entry>
+                <entry>17</entry>
+                <entry>R</entry>
+                <entry>295</entry>
+                <entry>31</entry>
+                <entry>R</entry>
+                <entry>188 260</entry>
+                <entry>79</entry>
+              </row>
+              <row>
+                <entry>7</entry>
+                <entry>R</entry>
+                <entry>1 709</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>1 411</entry>
+                <entry>96</entry>
+                <entry>R</entry>
+                <entry>297</entry>
+                <entry>52</entry>
+                <entry>R</entry>
+                <entry>187 963</entry>
+                <entry>27</entry>
+              </row>
+              <row>
+                <entry>8</entry>
+                <entry>R</entry>
+                <entry>1 709</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>1 409</entry>
+                <entry>72</entry>
+                <entry>R</entry>
+                <entry>299</entry>
+                <entry>76</entry>
+                <entry>R</entry>
+                <entry>187 663</entry>
+                <entry>51</entry>
+              </row>
+              <row>
+                <entry>9</entry>
+                <entry>R</entry>
+                <entry>1 709</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>1 407</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>302</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>187 361</entry>
+                <entry>51</entry>
+              </row>
+              <row>
+                <entry>10</entry>
+                <entry>R</entry>
+                <entry>1 709</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>1 405</entry>
+                <entry>21</entry>
+                <entry>R</entry>
+                <entry>304</entry>
+                <entry>27</entry>
+                <entry>R</entry>
+                <entry>187 057</entry>
+                <entry>24</entry>
+              </row>
+              <row>
+                <entry>11</entry>
+                <entry>R</entry>
+                <entry>1 709</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>1 402</entry>
+                <entry>93</entry>
+                <entry>R</entry>
+                <entry>306</entry>
+                <entry>55</entry>
+                <entry>R</entry>
+                <entry>186 750</entry>
+                <entry>69</entry>
+              </row>
+              <row>
+                <entry>12</entry>
+                <entry>R</entry>
+                <entry>1 709</entry>
+                <entry>48</entry>
+                <entry>R</entry>
+                <entry>1 400</entry>
+                <entry>63</entry>
+                <entry>R</entry>
+                <entry>308</entry>
+                <entry>85</entry>
+                <entry>R</entry>
+                <entry>186 441</entry>
+                <entry>84</entry>
+              </row>
+            </tbody>
+          </tgroup>
+          <caption>A loan schedule with repayments of R1 709,48 per month.</caption>
+        </table>
+        <para id="id69526">Now, let's see the same thing again, but with R2 000 being repaid each year. We expect the numbers to change. However, how much will they change by? As before, we owe R1 425 in interest in interest. After one month. However, we are paying R2 000 this time. That leaves R575 that goes towards paying off the capital outstanding, reducing it to R189 425. By the end of the second month, the interest owed is R1 420,69 (That's R189 425<m:math overflow="scroll"><m:mrow><m:mo>×</m:mo><m:mi>i</m:mi><m:mn>12</m:mn></m:mrow></m:math>). Our R2 000 pays for that interest, and reduces the capital amount owed by R2 000 - R1 420,69 = R579,31. This reduces the amount outstanding to R188 845,69.</para>
+        <para id="id69552">Doing the same calculations as before yields a new loan schedule shown in <link target-id="uid29"/>.</para>
+        <table id="uid29" summary="">
+          <tgroup cols="13">
+            <colspec colnum="1" colname="c1"/>
+            <colspec colnum="2" colname="c2"/>
+            <colspec colnum="3" colname="c3"/>
+            <colspec colnum="4" colname="c4"/>
+            <colspec colnum="5" colname="c5"/>
+            <colspec colnum="6" colname="c6"/>
+            <colspec colnum="7" colname="c7"/>
+            <colspec colnum="8" colname="c8"/>
+            <colspec colnum="9" colname="c9"/>
+            <colspec colnum="10" colname="c10"/>
+            <colspec colnum="11" colname="c11"/>
+            <colspec colnum="12" colname="c12"/>
+            <colspec colnum="13" colname="c13"/>
+            <tbody>
+              <row>
+                <entry>Time</entry>
+                <entry namest="c2" nameend="c4">Repayment</entry>
+                <entry namest="c5" nameend="c7">Interest Component</entry>
+                <entry namest="c8" nameend="c10">Capital Component</entry>
+                <entry namest="c11" nameend="c13">Capital Outstanding</entry>
+              </row>
+              <row>
+                <entry>0</entry>
+                <entry namest="c2" nameend="c4"/>
+                <entry namest="c5" nameend="c7"/>
+                <entry namest="c8" nameend="c10"/>
+                <entry>R</entry>
+                <entry>190 000</entry>
+                <entry>00</entry>
+              </row>
+              <row>
+                <entry>1</entry>
+                <entry>R</entry>
+                <entry>2 000</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>1 425</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>575</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>189 425</entry>
+                <entry>00</entry>
+              </row>
+              <row>
+                <entry>2</entry>
+                <entry>R</entry>
+                <entry>2 000</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>1 420</entry>
+                <entry>69</entry>
+                <entry>R</entry>
+                <entry>579</entry>
+                <entry>31</entry>
+                <entry>R</entry>
+                <entry>188 845</entry>
+                <entry>69</entry>
+              </row>
+              <row>
+                <entry>3</entry>
+                <entry>R</entry>
+                <entry>2 000</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>1 416</entry>
+                <entry>34</entry>
+                <entry>R</entry>
+                <entry>583</entry>
+                <entry>66</entry>
+                <entry>R</entry>
+                <entry>188 262</entry>
+                <entry>03</entry>
+              </row>
+              <row>
+                <entry>4</entry>
+                <entry>R</entry>
+                <entry>2 000</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>1 411</entry>
+                <entry>97</entry>
+                <entry>R</entry>
+                <entry>588</entry>
+                <entry>03</entry>
+                <entry>R</entry>
+                <entry>187 674</entry>
+                <entry>00</entry>
+              </row>
+              <row>
+                <entry>5</entry>
+                <entry>R</entry>
+                <entry>2 000</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>1 407</entry>
+                <entry>55</entry>
+                <entry>R</entry>
+                <entry>592</entry>
+                <entry>45</entry>
+                <entry>R</entry>
+                <entry>187 081</entry>
+                <entry>55</entry>
+              </row>
+              <row>
+                <entry>6</entry>
+                <entry>R</entry>
+                <entry>2 000</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>1 403</entry>
+                <entry>11</entry>
+                <entry>R</entry>
+                <entry>596</entry>
+                <entry>89</entry>
+                <entry>R</entry>
+                <entry>186 484</entry>
+                <entry>66</entry>
+              </row>
+              <row>
+                <entry>7</entry>
+                <entry>R</entry>
+                <entry>2 000</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>1 398</entry>
+                <entry>63</entry>
+                <entry>R</entry>
+                <entry>601</entry>
+                <entry>37</entry>
+                <entry>R</entry>
+                <entry>185 883</entry>
+                <entry>30</entry>
+              </row>
+              <row>
+                <entry>8</entry>
+                <entry>R</entry>
+                <entry>2 000</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>1 394</entry>
+                <entry>12</entry>
+                <entry>R</entry>
+                <entry>605</entry>
+                <entry>88</entry>
+                <entry>R</entry>
+                <entry>185 277</entry>
+                <entry>42</entry>
+              </row>
+              <row>
+                <entry>9</entry>
+                <entry>R</entry>
+                <entry>2 000</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>1 389</entry>
+                <entry>58</entry>
+                <entry>R</entry>
+                <entry>610</entry>
+                <entry>42</entry>
+                <entry>R</entry>
+                <entry>184 667</entry>
+                <entry>00</entry>
+              </row>
+              <row>
+                <entry>10</entry>
+                <entry>R</entry>
+                <entry>2 000</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>1 385</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>615</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>184 052</entry>
+                <entry>00</entry>
+              </row>
+              <row>
+                <entry>11</entry>
+                <entry>R</entry>
+                <entry>2 000</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>1 380</entry>
+                <entry>39</entry>
+                <entry>R</entry>
+                <entry>619</entry>
+                <entry>61</entry>
+                <entry>R</entry>
+                <entry>183 432</entry>
+                <entry>39</entry>
+              </row>
+              <row>
+                <entry>12</entry>
+                <entry>R</entry>
+                <entry>2 000</entry>
+                <entry>00</entry>
+                <entry>R</entry>
+                <entry>1 375</entry>
+                <entry>74</entry>
+                <entry>R</entry>
+                <entry>624</entry>
+                <entry>26</entry>
+                <entry>R</entry>
+                <entry>182 808</entry>
+                <entry>14</entry>
+              </row>
+            </tbody>
+          </tgroup>
+          <caption>A loan schedule with repayments of R2 000 per month.</caption>
+        </table>
+        <para id="id70610">The important numbers to notice is the “Capital Component" column. Note that when we are paying off R2 000 a month as compared to R1 709,48 a month, this column more than double. In the beginning of paying off a loan, very little of our money is used to pay off the capital outstanding. Therefore, even a small increase in repayment amounts can significantly increase the speed at which we are paying off the capital.</para>
+        <para id="id70619">What's more, look at the amount we are still owing after one year (i.e. at time 12). When we were paying R1 709,48 a month, we still owe R186 441,84. However, if we increase the repayments to R2 000 a month, the amount outstanding decreases by over R3 000 to R182 808,14. This means we would have paid off over R7 000 in our first year instead of less than R4 000. This increased speed at which we are paying off the capital portion of the loan is what allows us to pay off the whole loan in around 14 years instead of the original 20. Note however, the effect of paying R2 000 instead of R1 709,48 is more significant in the beginning of the loan than near the end of the loan.</para>
+        <para id="id70629">It is noted that in this instance, by paying slightly more than what the bank would ask you to pay, you can pay off a loan a lot quicker. The natural question to ask here is: why are banks asking us to pay the lower amount for much longer then? Are they trying to cheat us out of our money?</para>
+        <para id="id70635">There is no simple answer to this. Banks provide a service to us in return for a fee, so they are out to make a profit. However, they need to be careful not to cheat their customers for fear that they'll simply use another bank. The central issue here is one of scale. For us, the changes involved appear big. We are paying off our loan 6 years earlier by paying just a bit more a month. To a bank, however, it doesn't matter much either way. In all likelihood, it doesn't affect their profit margins one bit!</para>
+        <para id="id70642">Remember that the bank calculates repayment amounts using the same methods as we've been learning. They decide on the correct repayment amounts for a given interest rate and set of terms. Smaller repayment amounts will make the bank more money, because it will take you longer to pay off the loan and more interest will acumulate. Larger repayment amounts mean that you will pay off the loan faster, so you will accumulate less interest i.e. the bank will make less money off of you. It's a simple matter of less money now or more money later. Banks generally use a 20 year repayment period by default.</para>
+        <para id="id70651">Learning about financial mathematics enables you to duplicate these calculations for yourself. This way, you can decide what's best for you. You can decide how much you want to repay each month and you'll know of its effects. A bank wouldn't care much either way, so you should pick something that suits you.</para>
+<exercise id="secfhsst_id3136"><title> Monthly Payments </title>
+        <problem id="probfhsst_id3137">
+        <para id="id70670">Stefan and Marna want to buy a house that costs R 1 200 000. Their parents offer to put down a 20% payment towards the cost of the house. They need to get a moratage for the balance. What are their monthly repayments if the term of the home loan is 30 years and the interest is 7,5%, compounded monthly? </para>
+        </problem>
+        <solution id="solfhsst_id3140"> <list id="listfhsst_id3140" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Determine how much money they need to borrow </label>
+        <para id="id70698">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mi>R</m:mi>
+              <m:mn>1</m:mn>
+              <m:mspace width="3.33333pt"/>
+              <m:mn>200</m:mn>
+              <m:mspace width="3.33333pt"/>
+              <m:mn>00</m:mn>
+              <m:mo>-</m:mo>
+              <m:mi>R</m:mi>
+              <m:mn>240</m:mn>
+              <m:mspace width="3.33333pt"/>
+              <m:mn>000</m:mn>
+              <m:mo>=</m:mo>
+              <m:mi>R</m:mi>
+              <m:mn>960</m:mn>
+              <m:mspace width="3.33333pt"/>
+              <m:mn>000</m:mn>
+            </m:mrow>
+          </m:math>
+        </para>
+        </item> <item> <label> Determine how to approach the problem </label>
+        <para id="id70750">Use the formula:</para>
+        <equation id="id70753">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mi>P</m:mi>
+              <m:mo>=</m:mo>
+              <m:mstyle scriptlevel="0" displaystyle="true">
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>[</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>+</m:mo>
+                        <m:mi>i</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo>-</m:mo>
+                        <m:mi>n</m:mi>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mo>]</m:mo>
+                  </m:mrow>
+                  <m:mi>i</m:mi>
+                </m:mfrac>
+              </m:mstyle>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id70810">Where</para>
+        <para id="id70815">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mi>P</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>960</m:mn>
+              <m:mspace width="3.33333pt"/>
+              <m:mn>000</m:mn>
+            </m:mrow>
+          </m:math>
+        </para>
+        <para id="id70838">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mi>n</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>30</m:mn>
+              <m:mo>×</m:mo>
+              <m:mn>12</m:mn>
+              <m:mo>=</m:mo>
+              <m:mn>360</m:mn>
+              <m:mi> months </m:mi>
+            </m:mrow>
+          </m:math>
+        </para>
+        <para id="id70867">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mi>i</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>075</m:mn>
+              <m:mo>÷</m:mo>
+              <m:mn>12</m:mn>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>00625</m:mn>
+            </m:mrow>
+          </m:math>
+        </para>
+        </item> <item> <label> Solve the problem </label>
+        <equation id="id70905">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>R</m:mi>
+                    <m:mn>960</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mn>000</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mstyle scriptlevel="0" displaystyle="true">
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>x</m:mi>
+                        <m:mo>[</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>-</m:mo>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mn>1</m:mn>
+                            <m:mo>+</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mo>,</m:mo>
+                            <m:mn>00625</m:mn>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mo>-</m:mo>
+                            <m:mn>360</m:mn>
+                          </m:mrow>
+                        </m:msup>
+                        <m:mo>]</m:mo>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                        <m:mo>,</m:mo>
+                        <m:mn>00625</m:mn>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mstyle>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mn>143</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>0176273</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>x</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>R</m:mi>
+                    <m:mn>6</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mn>712</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>46</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        </item> <item> <label> Write the final answer </label>
+        <para id="id71045">The monthly repayments <m:math overflow="scroll"><m:mrow><m:mo>=</m:mo><m:mi>R</m:mi><m:mn>6</m:mn><m:mspace width="3.33333pt"/><m:mn>712</m:mn><m:mo>,</m:mo><m:mn>46</m:mn></m:mrow></m:math>
+ </para>
+        </item> </list> </solution>
+</exercise>
+      </section>
+      <section id="uid30">
+        <title>Exercises - Investments and Loans</title>
+        <list id="id71094" display="block" list-type="enumerated">
+          <item id="uid31">A property costs R1 800 000. Calculate the monthly repayments if the interest rate is 14% p.a. compounded monthly and the loan must be paid off in 20 years time.
+</item>
+          <item id="uid32">A loan of R 4 200 is to be returned in two equal annual instalments. If the rate of interest of 10% per annum, compounded annually, calculate the amount of each instalment.
+</item>
+        </list>
+      </section>
+      <section id="uid33">
+        <title>Calculating Capital Outstanding</title>
+        <para id="id71138">As defined in <link target-id="uid27">"Loan Schedules"</link>, Capital outstanding is the amount we still owe the people we borrowed money from at a given moment in time. We also saw how we can calculate this using loan schedules. However, there is a significant disadvantage to this method: it is very time consuming. For example, in order to calculate how much capital is still outstanding at time 12 using the loan schedule, we'll have to first calculate how much capital is outstanding at time 1 through to 11 as well. This is already quite a bit more work than we'd like to do. Can you imagine calculating the amount outstanding after 10 years (time 120)?</para>
+        <para id="id71151">Fortunately, there is an easier method. However, it is not immediately clear why this works, so let's take some time to examine the concept.</para>
+        <section id="uid34">
+          <title>Prospective method for Capital Outstanding</title>
+          <para id="id71165">Let's say that after a certain number of years, just after we made a repayment, we still owe amount <m:math overflow="scroll"><m:mi>Y</m:mi></m:math>. What do we know about <m:math overflow="scroll"><m:mi>Y</m:mi></m:math>? We know that using the loan schedule, we can calculate what it equals to, but that is a lot of repetitive work. We also know that <m:math overflow="scroll"><m:mi>Y</m:mi></m:math> is the amount that we are still going to pay off. In other words, all the repayments we are still going to make in the future will exactly pay off <m:math overflow="scroll"><m:mi>Y</m:mi></m:math>. This is true because in the end, after all the repayments, we won't be owing anything.</para>
+          <para id="id71209">Therefore, the present value of all outstanding future payments equal the present amount outstanding. This is the prospective method for calculating capital outstanding.</para>
+          <para id="id71213">Let's return to a previous example. Recall the case where we were trying to repay a loan of R200 000 over 20 years. A R10 000 deposit was put down, so the amount being payed off was R190 000. At an interest rate of 9% compounded monthly, the monthly repayment was R1 709,48. In <link target-id="uid28"/>, we can see that after 12 months, the amount outstanding was R186 441,84. Let's try to work this out using the the prospective method.</para>
+          <para id="id71228">After time 12, there are still <m:math overflow="scroll"><m:mrow><m:mn>19</m:mn><m:mo>×</m:mo><m:mn>12</m:mn><m:mo>=</m:mo><m:mn>228</m:mn></m:mrow></m:math> repayments left of R1 709,48 each. The present value is:</para>
+          <equation id="id71251">
+            <m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mi>n</m:mi>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mn>228</m:mn>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mi>i</m:mi>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mo>,</m:mo>
+                      <m:mn>75</m:mn>
+                      <m:mo>%</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mi>Y</m:mi>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>R</m:mi>
+                      <m:mn>1</m:mn>
+                      <m:mspace width="3.33333pt"/>
+                      <m:mn>709</m:mn>
+                      <m:mo>,</m:mo>
+                      <m:mn>48</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mo>-</m:mo>
+                          <m:mn>1</m:mn>
+                          <m:mo>,</m:mo>
+                          <m:msup>
+                            <m:mn>0075</m:mn>
+                            <m:mrow>
+                              <m:mo>-</m:mo>
+                              <m:mn>228</m:mn>
+                            </m:mrow>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mo>,</m:mo>
+                          <m:mn>0075</m:mn>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>R</m:mi>
+                      <m:mn>186</m:mn>
+                      <m:mspace width="3.33333pt"/>
+                      <m:mn>441</m:mn>
+                      <m:mo>,</m:mo>
+                      <m:mn>92</m:mn>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          <para id="id71385">Oops! This seems to be almost right, but not quite. We should have got R186 441,84. We are 8 cents out. However, this is in fact not a mistake. Remember that when we worked out the monthly repayments, we rounded to the nearest cents and arrived at R1 709,48. This was because one cannot make a payment for a fraction of a cent. Therefore, the rounding off error was carried through. That's why the two figures don't match exactly. In financial mathematics, this is largely unavoidable.</para>
+        </section>
+      </section>
+    </section>
+    <section id="cid6">
+      <title>Formulae Sheet</title>
+      <para id="id71404">As an easy reference, here are the key formulae that we derived and used during this chapter. While memorising them is nice (there are not many), it is the application that is useful. Financial experts are not paid a salary in order to recite formulae, they are paid a salary to use the right methods to solve financial problems.</para>
+      <section id="uid35">
+        <title>Definitions</title>
+        <table id="id71419" summary="">
+          <tgroup cols="2">
+            <tbody>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mi>P</m:mi>
+                  </m:math>
+                </entry>
+                <entry>Principal (the amount of money at the starting point of the calculation)</entry>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mi>i</m:mi>
+                  </m:math>
+                </entry>
+                <entry>interest rate, normally the effective rate per annum</entry>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mi>n</m:mi>
+                  </m:math>
+                </entry>
+                <entry>period for which the investment is made</entry>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mi>i</m:mi>
+                      <m:mi>T</m:mi>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>the interest rate paid <m:math overflow="scroll"><m:mi>T</m:mi></m:math> times per annum, i.e. <m:math overflow="scroll"><m:mrow><m:mi>i</m:mi><m:mi>T</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi> Nominal </m:mi><m:mi> Interest </m:mi><m:mi> Rate </m:mi></m:mrow><m:mi>T</m:mi></m:mfrac></m:mrow></m:math></entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+      <section id="uid36">
+        <title>Equations</title>
+        <equation id="id71547">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mfenced separators="" open="" close="}">
+                <m:mtable>
+                  <m:mtr>
+                    <m:mtd columnalign="left">
+                      <m:mrow>
+                        <m:mi> Present </m:mi>
+                        <m:mi> Value </m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mi> simple </m:mi>
+                      </m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                  <m:mtr>
+                    <m:mtd columnalign="left">
+                      <m:mrow>
+                        <m:mi> Future </m:mi>
+                        <m:mi> Value </m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mi> simple </m:mi>
+                      </m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                  <m:mtr>
+                    <m:mtd columnalign="left">
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi> Solve </m:mi>
+                          <m:mi> for </m:mi>
+                        </m:mrow>
+                        <m:mi mathvariant="normal">i</m:mi>
+                      </m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                  <m:mtr>
+                    <m:mtd columnalign="left">
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi> Solve </m:mi>
+                          <m:mi> for </m:mi>
+                        </m:mrow>
+                        <m:mi mathvariant="normal">n</m:mi>
+                      </m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                </m:mtable>
+              </m:mfenced>
+              <m:mo>=</m:mo>
+              <m:mi>P</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>+</m:mo>
+                <m:mi>i</m:mi>
+                <m:mo>·</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <equation id="id71647">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mfenced separators="" open="" close="}">
+                <m:mtable>
+                  <m:mtr>
+                    <m:mtd columnalign="left">
+                      <m:mrow>
+                        <m:mi> Present </m:mi>
+                        <m:mi> Value </m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mi> compound </m:mi>
+                      </m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                  <m:mtr>
+                    <m:mtd columnalign="left">
+                      <m:mrow>
+                        <m:mi> Future </m:mi>
+                        <m:mi> Value </m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mi> compound </m:mi>
+                      </m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                  <m:mtr>
+                    <m:mtd columnalign="left">
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi> Solve </m:mi>
+                          <m:mi> for </m:mi>
+                        </m:mrow>
+                        <m:mi mathvariant="normal">i</m:mi>
+                      </m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                  <m:mtr>
+                    <m:mtd columnalign="left">
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi> Solve </m:mi>
+                          <m:mi> for </m:mi>
+                        </m:mrow>
+                        <m:mi mathvariant="normal">n</m:mi>
+                      </m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                </m:mtable>
+              </m:mfenced>
+              <m:mo>=</m:mo>
+              <m:mi>P</m:mi>
+              <m:msup>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>+</m:mo>
+                  <m:mi>i</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mi>n</m:mi>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </equation>
+<note id="notfhsst_id3622" type="tip">Always keep the interest and the time period in the same units of time (e.g. both in years, or both in months etc.).</note>
+      </section>
+    </section>
+    <section id="cid7">
+      <title>End of Chapter Exercises</title>
+      <list id="id71764" display="block" list-type="enumerated">
+        <item id="uid37">Thabo is about to invest his R8 500 bonus in a special banking product which will pay 1% per annum for 1 month, then 2% per annum for the next 2 months, then 3% per annum for the next 3 months, 4% per annum for the next 4 months, and 0% for the rest of the year. The are going to charge him R100 to set up the account. How much can he expect to get back at the end of the period?
+</item>
+        <item id="uid38">A special bank account pays simple interest of 8% per annum. Calculate the opening balance required to generate a closing balance of R5 000 after 2 years.
+</item>
+        <item id="uid39">A different bank account pays compound interest of 8% per annum. Calculate the opening balance required to generate a closing balance of R5 000 after 2 years.
+</item>
+        <item id="uid40">Which of the two answers above is lower, and why?
+</item>
+        <item id="uid41">7 Months after an initial deposit, the value of a bank account which pays compound interest of 7,5% per annum is R3 650,81. What was the value of the initial deposit?
+</item>
+        <item id="uid42">Thabani and Lungelo are both using UKZN Bank for their saving. Suppose Lungelo makes a deposit of <m:math overflow="scroll"><m:mi>X</m:mi></m:math> today at interest rate of <m:math overflow="scroll"><m:mi>i</m:mi></m:math> for six years. Thabani makes a deposit of <m:math overflow="scroll"><m:mrow><m:mn>3</m:mn><m:mi>X</m:mi></m:mrow></m:math> at an interest rate of <m:math overflow="scroll"><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>05</m:mn></m:mrow></m:math>. Thabani made his deposit 3 years after Lungelo made his first deposit. If after 6 years, their investments are equal, calculate the value of <m:math overflow="scroll"><m:mi>i</m:mi></m:math> and find <m:math overflow="scroll"><m:mi>X</m:mi></m:math>. If the sum of their investment is R20 000, use <m:math overflow="scroll"><m:mi>X</m:mi></m:math> you got to find out how much Thabani got in 6 years.
+</item>
+        <item id="uid43">Sipho invests R500 at an interest rate of <m:math overflow="scroll"><m:mrow><m:mo form="prefix">log</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>12</m:mn><m:mo>)</m:mo></m:mrow></m:math> for 5 years. Themba, Sipho's sister invested R200 at interest rate <m:math overflow="scroll"><m:mi>i</m:mi></m:math> for 10 years on the same date that her brother made his first deposit. If after 5 years, Themba's accumulation equals Sipho's, find the interest rate <m:math overflow="scroll"><m:mi>i</m:mi></m:math> and find out whether Themba will be able to buy her favorite cell phone after 10 years which costs R2 000.
+</item>
+        <item id="uid44">Calculate the real cost of a loan of R10 000 for 5 years at 5% capitalised monthly. Repeat this for the case where it is capitalised half yearly i.e. Every 6 months.
+</item>
+        <item id="uid45">Determine how long, in years, it will take for the value of a motor vehicle to decrease
+to 25% of its original value if the rate of depreciation, based on the reducing-balance
+method, is 21% per annum.
+</item>
+      </list>
+    </section>
+  </content>
+</document>

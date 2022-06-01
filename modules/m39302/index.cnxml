@@ -1,0 +1,1586 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Arithmetic &amp; Geometric Sequences, Recursive Formulae</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39302</md:content-id>
+  <md:title>Arithmetic &amp; Geometric Sequences, Recursive Formulae</md:title>
+  <md:abstract/>
+  <md:uuid>5861a862-139c-4ce9-90ae-3c1f3936728e</md:uuid>
+</metadata>
+
+<content>
+    
+    <section id="cid2">
+      <title>Introduction</title>
+      <para id="id312825">In this chapter we extend the arithmetic and quadratic sequences studied in earlier grades, to geometric sequences. We also look at series, which is the summing of the terms in a sequence.</para>
+    </section>
+    <section id="cid3">
+      <title>Arithmetic Sequences</title>
+      <para id="id312840">The simplest type of numerical sequence is an <emphasis effect="italics">arithmetic sequence</emphasis>.</para>
+<definition id="fhsst_id73"><term id="termfhsst_id73"> Arithmetic Sequence </term> <meaning id="meaningfhsst_id73">
+      <para id="id313192">An <emphasis effect="italics">arithmetic</emphasis> (or <emphasis effect="italics">linear</emphasis>) <emphasis effect="italics">sequence</emphasis> is a sequence of numbers in which each new term is calculated by <emphasis effect="bold">adding</emphasis> a constant value to the previous term </para>
+      </meaning></definition>
+      <para id="id313224">For example,
+<m:math overflow="scroll"><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mo>...</m:mo></m:mrow></m:math>
+is an arithmetic sequence because you add 1 to the current term to get the next term:</para>
+      <table id="id313264" summary="">
+        <tgroup cols="2">
+          <tbody>
+            <row>
+              <entry>first term:</entry>
+              <entry>1</entry>
+            </row>
+            <row>
+              <entry>second term:</entry>
+              <entry>2=1+1</entry>
+            </row>
+            <row>
+              <entry>third term:</entry>
+              <entry>3=2+1</entry>
+            </row>
+            <row>
+              <entry>
+                <m:math overflow="scroll">
+                  <m:mo>⋮</m:mo>
+                </m:math>
+              </entry>
+              <entry/>
+            </row>
+            <row>
+              <entry><m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mi> th </m:mi></m:msup></m:math> term:</entry>
+              <entry>
+                <m:math overflow="scroll">
+                  <m:mrow>
+                    <m:mi>n</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mo>(</m:mo>
+                    <m:mi>n</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <!--empty paragraphs get left behind.-->
+<section id="secfhsst_id124"><title> Common Difference :</title> <para id="uid97123">Find the constant value that is added to get the following sequences and write out the next 5 terms.</para>
+      <list id="id313376" display="block" list-type="enumerated">
+        <item id="uid1">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>6</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>10</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>14</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>18</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>22</m:mn>
+              <m:mo>,</m:mo>
+              <m:mo>...</m:mo>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid2">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mo>-</m:mo>
+              <m:mn>5</m:mn>
+              <m:mo>,</m:mo>
+              <m:mo>-</m:mo>
+              <m:mn>3</m:mn>
+              <m:mo>,</m:mo>
+              <m:mo>-</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>3</m:mn>
+              <m:mo>,</m:mo>
+              <m:mo>...</m:mo>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid3">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>4</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>7</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>10</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>13</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>16</m:mn>
+              <m:mo>,</m:mo>
+              <m:mo>...</m:mo>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid4">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mo>-</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>10</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>21</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>32</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>43</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>54</m:mn>
+              <m:mo>,</m:mo>
+              <m:mo>...</m:mo>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid5">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mn>3</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>0</m:mn>
+              <m:mo>,</m:mo>
+              <m:mo>-</m:mo>
+              <m:mn>3</m:mn>
+              <m:mo>,</m:mo>
+              <m:mo>-</m:mo>
+              <m:mn>6</m:mn>
+              <m:mo>,</m:mo>
+              <m:mo>-</m:mo>
+              <m:mn>9</m:mn>
+              <m:mo>,</m:mo>
+              <m:mo>-</m:mo>
+              <m:mn>12</m:mn>
+              <m:mo>,</m:mo>
+              <m:mo>...</m:mo>
+            </m:mrow>
+          </m:math>
+        </item>
+      </list>
+      
+      
+</section>
+      <section id="uid6">
+        <title>General Equation for the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:msup></m:math>-term of an Arithmetic Sequence</title>
+        <para id="id313830">More formally, the number we start out with is called <emphasis effect="italics"><m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:math></emphasis> (the first term), and the difference between each successive term is denoted <emphasis effect="italics">d</emphasis>, called the <emphasis effect="italics">common difference</emphasis>.</para>
+        <para id="id313861">The general arithmetic sequence looks like:</para>
+        <equation id="id313865">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mi>d</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mi>d</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>+</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mi>d</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mi>d</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>4</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mi>d</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>+</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mi>d</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mi>d</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:mi>d</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mo>...</m:mo>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mi>d</m:mi>
+                    <m:mo>·</m:mo>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>n</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id314127">Thus, the equation for the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:msup></m:math>-term will be:</para>
+        <equation id="uid7">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:mi>d</m:mi>
+              <m:mo>·</m:mo>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id314194">Given <m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:math> and the common difference, <m:math overflow="scroll"><m:mi>d</m:mi></m:math>, the entire set of numbers belonging to an arithmetic sequence can be generated.</para>
+<definition id="fhsst_id425"><term id="termfhsst_id425"> Arithmetic Sequence </term> <meaning id="meaningfhsst_id425">
+        <para id="id314228">An <emphasis effect="italics">arithmetic</emphasis> (or <emphasis effect="italics">linear</emphasis>) <emphasis effect="italics">sequence</emphasis> is a sequence of numbers in which each new term is calculated by adding a constant value to the previous term:</para>
+        <equation id="uid8">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mi>n</m:mi>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mrow>
+                        <m:mi>n</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mi>d</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id314296">where</para>
+        <list id="id314301" display="block" list-type="bulleted">
+          <item id="uid9"><m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:math> represents the new term, the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:msup></m:math>-term, that is calculated;
+</item>
+          <item id="uid10"><m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:math> represents the previous term, the <m:math overflow="scroll"><m:msup><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:msup></m:math>-term;
+</item>
+          <item id="uid11"><m:math overflow="scroll"><m:mi>d</m:mi></m:math> represents some constant.
+</item>
+        </list>
+        
+        </meaning></definition>
+<note id="notfhsst_id465" type="tip">Test for Arithmetic Sequences</note>
+        <para id="id314432">A simple test for an arithmetic sequence is to check that the difference between consecutive terms is constant:</para>
+        <equation id="uid12">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>-</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub>
+              <m:mo>-</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>-</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mrow>
+                  <m:mi>n</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mi>d</m:mi>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id314515">This is quite an important equation, and is the definitive test for an arithmetic sequence. If this condition does not hold, the sequence is not an arithmetic sequence.</para>
+<section id="secfhsst_id509"><title> Plotting a graph of terms in an arithmetic sequence </title>
+        <para id="id314528">Plotting a graph of the terms of
+sequence sometimes helps in determining the type of sequence involved.
+For an arithmetic sequence, plotting <m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:math> vs. <m:math overflow="scroll"><m:mi>n</m:mi></m:math> results in:</para>
+        <para id="id314555">
+          <figure id="id314558">
+            <media id="id314558_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C3_001.png" id="id314558_onlineimage" width="229"><!-- NOTE: attribute width changes image size online (pixels). original width is 229. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C3_001.eps" id="id314558_printimage"/>
+            </media>
+          </figure>
+        </para>
+        
+</section>
+      </section>
+    </section>
+    <section id="cid4">
+      <title>Geometric Sequences</title>
+<definition id="fhsst_id527"><term id="termfhsst_id527"> Geometric Sequences </term> <meaning id="meaningfhsst_id527">
+      <para id="id314588">A geometric sequence is a sequence in which every number in the
+sequence is equal to the previous number in the sequence, <emphasis effect="bold">multiplied</emphasis> by a constant number. </para>
+      </meaning></definition>
+      <para id="id314605">This means that the <emphasis effect="italics">ratio</emphasis> between consecutive numbers in the geometric sequence is a
+constant. We will explain what we mean by ratio after looking at the following example.</para>
+      <section id="uid13">
+        <title>Example - A Flu Epidemic</title>
+<section id="secfhsst_id535"><title> What is influenza? </title>
+        <para id="id314629">Influenza (commonly called “the flu”) is caused by the influenza
+virus, which infects the respiratory tract (nose, throat, lungs). It can cause mild to severe
+illness that most of us get during winter time. The main way that the influenza virus is spread is
+from person to person in respiratory droplets of coughs and sneezes. (This is called “droplet
+spread”.) This can happen when droplets from a cough or sneeze of an infected person are propelled
+(generally, up to a metre) through the air and deposited on the mouth or nose of people nearby. It
+is good practise to cover your mouth when you cough or sneeze so as not to infect others around you
+when you have the flu. </para>
+</section>
+        <para id="id314652">Assume that you have the flu virus, and you forgot to cover your mouth when two friends came to
+visit while you were sick in bed. They leave, and the next day they also have the flu. Let's assume
+that they in turn spread the virus to two of their friends by the same droplet spread the following
+day. Assuming this pattern continues and each sick person infects 2 other friends, we can represent
+these events in the following manner:</para>
+        <figure id="uid14">
+          <media id="uid14_media" alt="">
+            <image mime-type="image/png" src="../../media/ch2sequencesexampleflu.png" id="uid14_onlineimage" width="226"><!-- NOTE: attribute width changes image size online (pixels). original width is 226. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/ch2sequencesexampleflu.eps" id="uid14_printimage"/>
+          </media>
+          <caption>Each person infects two more people with the flu virus.</caption>
+        </figure>
+        <para id="id314670">Again we can tabulate the events and formulate an equation for the general case:</para>
+        <table id="id314674" summary="">
+          <tgroup cols="2">
+            <tbody>
+              <row>
+                <entry><emphasis effect="bold">Day</emphasis>, <m:math overflow="scroll"><m:mi>n</m:mi></m:math></entry>
+                <entry>
+                  <emphasis effect="bold">Number of newly-infected people</emphasis>
+                </entry>
+              </row>
+              <row>
+                <entry>1</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry>2</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mn>4</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:msup>
+                        <m:mn>2</m:mn>
+                        <m:mn>1</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry>3</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mn>8</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>4</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:msup>
+                        <m:mn>2</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry>4</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mn>16</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>8</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:msup>
+                        <m:mn>2</m:mn>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry>5</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mn>32</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>16</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:msup>
+                        <m:mn>2</m:mn>
+                        <m:mn>4</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mo>⋮</m:mo>
+                  </m:math>
+                </entry>
+                <entry>                        <m:math overflow="scroll"><m:mo>⋮</m:mo></m:math></entry>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mi>n</m:mi>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mspace width="1.em"/>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:mo>...</m:mo>
+                      <m:mo>×</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>×</m:mo>
+                      <m:msup>
+                        <m:mn>2</m:mn>
+                        <m:mrow>
+                          <m:mi>n</m:mi>
+                          <m:mo>-</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        <para id="id315106">The above table represents the number of <emphasis effect="bold">newly-infected</emphasis> people after <m:math overflow="scroll"><m:mi>n</m:mi></m:math> days since you
+first infected your 2 friends.</para>
+        <para id="id315126">You sneeze and the virus is carried over to 2 people who start the chain (<m:math overflow="scroll"><m:mrow><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>).
+The next day, each one then infects 2 of their friends. Now 4 people are newly-infected.
+Each of them infects 2 people the third day, and 8 people are infected, and so on.
+These events can be written as a geometric sequence:</para>
+        <equation id="id315150">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>;</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mo>;</m:mo>
+                    <m:mn>8</m:mn>
+                    <m:mo>;</m:mo>
+                    <m:mn>16</m:mn>
+                    <m:mo>;</m:mo>
+                    <m:mn>32</m:mn>
+                    <m:mo>;</m:mo>
+                    <m:mo>...</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id315190">Note the common factor (2) between the events. Recall from the linear arithmetic sequence how the
+common difference between terms were established. In the geometric sequence we can determine the
+<emphasis effect="italics">common ratio</emphasis>, <m:math overflow="scroll"><m:mi>r</m:mi></m:math>, by</para>
+        <equation id="uid15">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mfrac>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msub>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mi>r</m:mi>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id315265">Or, more general,</para>
+        <equation id="uid16">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mfrac>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mi>n</m:mi>
+                </m:msub>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mrow>
+                    <m:mi>n</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mi>r</m:mi>
+            </m:mrow>
+          </m:math>
+        </equation>
+<section id="secfhsst_id820"><title> Common Factor of Geometric Sequence :</title> <para id="uid90832"> Determine the common factor for the following
+geometric sequences:</para>
+        <list id="id315317" display="block" list-type="enumerated">
+          <item id="uid17">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:mn>5</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>10</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>20</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>40</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>80</m:mn>
+                <m:mo>,</m:mo>
+                <m:mo>...</m:mo>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid18">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mo>,</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>4</m:mn>
+                </m:mfrac>
+                <m:mo>,</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>8</m:mn>
+                </m:mfrac>
+                <m:mo>,</m:mo>
+                <m:mo>...</m:mo>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid19">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:mn>7</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>28</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>112</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>448</m:mn>
+                <m:mo>,</m:mo>
+                <m:mo>...</m:mo>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid20">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>6</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>18</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>54</m:mn>
+                <m:mo>,</m:mo>
+                <m:mo>...</m:mo>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid21">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mn>3</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>30</m:mn>
+                <m:mo>,</m:mo>
+                <m:mo>-</m:mo>
+                <m:mn>300</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>3000</m:mn>
+                <m:mo>,</m:mo>
+                <m:mo>...</m:mo>
+              </m:mrow>
+            </m:math>
+          </item>
+        </list>
+        
+        
+</section>
+      </section>
+      <section id="uid22">
+        <title>General Equation for the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:msup></m:math>-term of a Geometric Sequence</title>
+        <para id="id315563">From the above example we know <m:math overflow="scroll"><m:mrow><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>, and we have seen from the table that the
+<m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:msup></m:math>-term is given by <m:math overflow="scroll"><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>×</m:mo><m:msup><m:mn>2</m:mn><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:math>. Thus, in general,</para>
+        <equation id="uid23">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>·</m:mo>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mrow>
+                  <m:mi>n</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id315699">where <m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:math> is the first term and <m:math overflow="scroll"><m:mi>r</m:mi></m:math> is called the <emphasis effect="italics">common ratio</emphasis>.</para>
+        <para id="id315733">So, if we want to know how many people are newly-infected after 10 days, we need to work
+out <m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mn>10</m:mn></m:msub></m:math>:</para>
+        <equation id="id315752">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>·</m:mo>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mrow>
+                        <m:mi>n</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>10</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>×</m:mo>
+                    <m:msup>
+                      <m:mn>2</m:mn>
+                      <m:mrow>
+                        <m:mn>10</m:mn>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>×</m:mo>
+                    <m:msup>
+                      <m:mn>2</m:mn>
+                      <m:mn>9</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>×</m:mo>
+                    <m:mn>512</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>1024</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id315891">That is, after 10 days, there are 1 024 newly-infected people.</para>
+        <para id="id315895">Or, how many days would pass before 16 384 people become newly infected with the flu virus?</para>
+        <equation id="id315900">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>·</m:mo>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mrow>
+                        <m:mi>n</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>16</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mn>384</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>×</m:mo>
+                    <m:msup>
+                      <m:mn>2</m:mn>
+                      <m:mrow>
+                        <m:mi>n</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>16</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mn>384</m:mn>
+                    <m:mo>÷</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:msup>
+                    <m:mn>2</m:mn>
+                    <m:mrow>
+                      <m:mi>n</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>8</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mn>192</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:msup>
+                    <m:mn>2</m:mn>
+                    <m:mrow>
+                      <m:mi>n</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msup>
+                    <m:mn>2</m:mn>
+                    <m:mn>13</m:mn>
+                  </m:msup>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:msup>
+                    <m:mn>2</m:mn>
+                    <m:mrow>
+                      <m:mi>n</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mn>13</m:mn>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>n</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>n</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>14</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id316129">That is, 14 days pass before 16 384 people are newly-infected.</para>
+<section id="secfhsst_id1198"><title> General Equation of Geometric Sequence :</title> <para id="uid39798">Determine the formula for the following geometric
+sequences:</para>
+        <list id="id316141" display="block" list-type="enumerated">
+          <item id="uid24">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:mn>5</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>10</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>20</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>40</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>80</m:mn>
+                <m:mo>,</m:mo>
+                <m:mo>...</m:mo>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid25">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mo>,</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>4</m:mn>
+                </m:mfrac>
+                <m:mo>,</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>8</m:mn>
+                </m:mfrac>
+                <m:mo>,</m:mo>
+                <m:mo>...</m:mo>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid26">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:mn>7</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>28</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>112</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>448</m:mn>
+                <m:mo>,</m:mo>
+                <m:mo>...</m:mo>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid27">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>6</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>18</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>54</m:mn>
+                <m:mo>,</m:mo>
+                <m:mo>...</m:mo>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid28">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mn>3</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>30</m:mn>
+                <m:mo>,</m:mo>
+                <m:mo>-</m:mo>
+                <m:mn>300</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>3000</m:mn>
+                <m:mo>,</m:mo>
+                <m:mo>...</m:mo>
+              </m:mrow>
+            </m:math>
+          </item>
+        </list>
+        
+        
+</section>
+      </section>
+      <section id="uid29">
+        <title>Exercises</title>
+        <list id="id316370" display="block" list-type="enumerated">
+          <item id="uid30">What is the important characteristic of an arithmetic sequence?
+</item>
+          <item id="uid31">Write down how you would go about finding the formula for the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mi> th </m:mi></m:msup></m:math> term of an
+arithmetic sequence?
+</item>
+          <item id="uid32">A single square is made from 4 matchsticks. Two squares in a row needs 7 matchsticks and 3
+squares in a row needs 10 matchsticks. Determine:
+<list id="id316426" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid33">the first term
+</item><item id="uid34">the common difference
+</item><item id="uid35">the formula for the general term
+</item><item id="uid36">how many matchsticks are in a row of 25 squares
+</item></list><figure id="id316482"><media id="id316482_media" alt=""><image mime-type="image/png" src="../../media/MG12C3_003.png" id="id316482_onlineimage" width="233"><!-- NOTE: attribute width changes image size online (pixels). original width is 233. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C3_003.eps" id="id316482_printimage"/></media></figure></item>
+          <item id="uid37"><m:math overflow="scroll"><m:mrow><m:mn>5</m:mn><m:mo>;</m:mo><m:mi>x</m:mi><m:mo>;</m:mo><m:mi>y</m:mi></m:mrow></m:math> is an arithmetic sequence and <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>;</m:mo><m:mi>y</m:mi><m:mo>;</m:mo><m:mn>81</m:mn></m:mrow></m:math> is a geometric sequence. All terms in
+the sequences are integers. Calculate the values of <m:math overflow="scroll"><m:mi>x</m:mi></m:math> and <m:math overflow="scroll"><m:mi>y</m:mi></m:math>.
+</item>
+        </list>
+      </section>
+    </section>
+    <section id="cid5">
+      <title>Recursive Formulae for Sequences</title>
+      <para id="id316567">When discussing arithmetic and quadratic sequences, we noticed that the difference between two
+consecutive terms in the sequence could be written in a general way.</para>
+      <para id="id316572">For an arithmetic sequence, where a new term is calculated by taking the previous term and adding a
+constant value, <m:math overflow="scroll"><m:mi>d</m:mi></m:math>:</para>
+      <equation id="id316585">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mrow>
+                      <m:mi>n</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:mi>d</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id316628">The above equation is an example of a <emphasis effect="italics">recursive equation</emphasis> since we can calculate the
+<m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:msup></m:math>-term only by considering the previous term in the sequence. Compare this with equation
+<link target-id="uid7"/>,</para>
+      <equation id="uid38">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:mi>d</m:mi>
+            <m:mo>·</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>-</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id316712">where one can directly calculate the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:msup></m:math>-term of an arithmetic sequence without knowing
+previous terms.</para>
+      <para id="id316736">For quadratic sequences, we noticed the difference between consecutive terms is given by
+<link target-id="id316743"/>:</para>
+      <equation id="id316743">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                  <m:mo>-</m:mo>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mrow>
+                      <m:mi>n</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mi>D</m:mi>
+                  <m:mo>·</m:mo>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>n</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mi>d</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id316805">Therefore, we re-write the equation as</para>
+      <equation id="uid39">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:mi>D</m:mi>
+            <m:mo>·</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>-</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mi>d</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id316868">which is then a recursive equation for a quadratic sequence with common second difference, <m:math overflow="scroll"><m:mi>D</m:mi></m:math>.</para>
+      <para id="id316883">Using <link target-id="uid16"/>, the recursive equation for a geometric sequence is:</para>
+      <equation id="uid40">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>r</m:mi>
+            <m:mo>·</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msub>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id316932">Recursive equations are extremely powerful: you can work out every term in the series just by
+knowing previous terms. As you can see from the examples above, working out <m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:math> using the previous
+term <m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:math> can be a much simpler computation than working out <m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:math> from scratch using a general
+formula. This means that using a recursive formula when using a computer to work out a sequence
+would mean the computer would finish its calculations significantly quicker.</para>
+<section id="secfhsst_id1475"><title> Recursive Formula :</title> <para id="uid9728924"> Write the first 5 terms of the following sequences, given their
+recursive formulae:</para>
+      <list id="id316997" display="block" list-type="enumerated">
+        <item id="uid41">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>2</m:mn>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mrow>
+                  <m:mi>n</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:mn>3</m:mn>
+              <m:mo>,</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid42">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mrow>
+                  <m:mi>n</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:msub>
+              <m:mo>,</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>11</m:mn>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid43">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>2</m:mn>
+              <m:msubsup>
+                <m:mi>a</m:mi>
+                <m:mrow>
+                  <m:mi>n</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mo>,</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>2</m:mn>
+            </m:mrow>
+          </m:math>
+        </item>
+      </list>
+      
+      
+</section>
+<section id="secfhsst_id1565"><title> <emphasis effect="bold">The Fibonacci Sequence</emphasis></title>
+      <para id="id317198">Consider the following sequence:</para>
+      <equation id="uid44">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mn>0</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>5</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>8</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>13</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>21</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>34</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mo>...</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id317271">The above sequence is called the <emphasis effect="italics">Fibonacci sequence</emphasis>. Each new term is calculated by adding the previous two terms. Hence, we can write down the recursive equation:</para>
+      <equation id="uid45">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mrow>
+                      <m:mi>n</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mrow>
+                      <m:mi>n</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>2</m:mn>
+                    </m:mrow>
+                  </m:msub>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      
+</section>
+</section>
+   
+  </content>
+</document>

@@ -1,0 +1,786 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Graphs of Inverse Functions</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39282</md:content-id>
+  <md:title>Graphs of Inverse Functions</md:title>
+  <md:abstract/>
+  <md:uuid>a3baec67-1536-4943-9ec4-1bf216fe98de</md:uuid>
+</metadata>
+
+<content>
+    
+ 
+    <section id="cid5">
+      <title>Graphs of Inverse Functions</title>
+      <para id="id123201">In earlier grades, you studied various types of functions and understood the effect of various parameters in the general equation. In this section, we will consider <emphasis effect="italics">inverse functions</emphasis>.</para>
+      <para id="id123211">An inverse function is a function which "does the reverse" of a given function. More formally, if <m:math overflow="scroll"><m:mi>f</m:mi></m:math> is a function with domain <m:math overflow="scroll"><m:mi>X</m:mi></m:math>, then <m:math overflow="scroll"><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math> is its inverse function if and only if for every <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>∈</m:mo><m:mi>X</m:mi></m:mrow></m:math> we have:</para>
+      <equation id="uid10">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msup>
+              <m:mi>f</m:mi>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>f</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mo>=</m:mo>
+            <m:mi>x</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id123306">A simple way to think about this is that a function, say <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math>, gives you a <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-value if you substitute an <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-value into <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math>. The inverse function tells you tells you which <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-value was used to get a particular <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-value when you substitue the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-value into <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>. There are some things which can complicate this for example, think about a <m:math overflow="scroll"><m:mo form="prefix">sin</m:mo></m:math> function, there are many <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-values that give you a peak as the function oscillates. This means that the inverse of a <m:math overflow="scroll"><m:mo form="prefix">sin</m:mo></m:math> function would be tricky to define because if you substitute the peak <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-value into it you won't know which of the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-values was used to get the peak.</para>
+      <equation id="id123456"><m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>y</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mi>f</m:mi>
+                  <m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>)</m:mo>
+                  <m:mspace width="1.em"/>
+                  <m:mrow>
+                    <m:mi> we have a function</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msub>
+                  <m:mi>y</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mi>f</m:mi>
+                  <m:mo>(</m:mo>
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>)</m:mo>
+                  </m:mrow></m:mtd></m:mtr>
+                  <m:mtr><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mrow>
+                    <m:mi> we substitute a specific x-value into the function to get a specific y-value</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd/>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mi> consider the inverse function</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>x</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>f</m:mi>
+                    <m:mrow>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>y</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>x</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>f</m:mi>
+                    <m:mrow>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>y</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow></m:mrow></m:mtd></m:mtr>
+                  <m:mtr><m:mtd/><m:mtd/><m:mtd><m:mrow>
+                    <m:mi> substituting the specific y-value into the inverse should return the specific x-value</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>f</m:mi>
+                    <m:mrow>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:msub>
+                  <m:mi>x</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id123761">This works both ways, if we don't have any complications like in the case of the <m:math overflow="scroll"><m:mo form="prefix">sin</m:mo></m:math> function, so we can write:</para>
+      <equation id="uid11">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msup>
+              <m:mi>f</m:mi>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>f</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mi>f</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:msup>
+                <m:mi>f</m:mi>
+                <m:mrow>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mi>x</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id123849">For example, if the function <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math> is given, then its inverse function is <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mn>3</m:mn></m:mfrac></m:mstyle></m:mrow></m:math>. This is usually written as:</para>
+      <equation id="uid12">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>f</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo lspace="0pt">:</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo>→</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msup>
+                  <m:mi>f</m:mi>
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:msup>
+              </m:mtd>
+              <m:mtd>
+                <m:mo lspace="0pt">:</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo>→</m:mo>
+                  <m:mstyle scriptlevel="0" displaystyle="true">
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>x</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>2</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:mfrac>
+                  </m:mstyle>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id124002">The superscript "-1" is not an exponent.</para>
+      <para id="id124006">If a function <m:math overflow="scroll"><m:mi>f</m:mi></m:math> has an inverse then <m:math overflow="scroll"><m:mi>f</m:mi></m:math> is said to be invertible.</para>
+      <para id="id124028">If <m:math overflow="scroll"><m:mi>f</m:mi></m:math> is a real-valued function, then for <m:math overflow="scroll"><m:mi>f</m:mi></m:math> to have a valid inverse, it must pass the <emphasis effect="bold">horizontal line test</emphasis>, that is a horizontal line <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>k</m:mi></m:mrow></m:math> placed anywhere on the graph of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> must pass through <m:math overflow="scroll"><m:mi>f</m:mi></m:math> exactly once for all real <m:math overflow="scroll"><m:mi>k</m:mi></m:math>.</para>
+      <para id="id124096">It is possible to work around this condition, by defining a “multi-valued“ function as an inverse.</para>
+      <para id="id124101">If one represents the function <m:math overflow="scroll"><m:mi>f</m:mi></m:math> graphically in a <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math>-coordinate system, the inverse function of the equation of a straight line, <m:math overflow="scroll"><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math>, is the reflection of the graph of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> across the line <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math>.</para>
+      <para id="id124167">Algebraically, one computes the inverse function of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> by solving the equation</para>
+      <equation id="id124179">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>f</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id124202">for <m:math overflow="scroll"><m:mi>x</m:mi></m:math>, and then exchanging <m:math overflow="scroll"><m:mi>y</m:mi></m:math> and <m:math overflow="scroll"><m:mi>x</m:mi></m:math> to get</para>
+      <equation id="id124234">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mi>f</m:mi>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="eip-87"><figure id="inverses-1" class="khanacademy">
+	  <title>Khan academy video on inverse functions - 1</title>
+	  <media id="yt-media1" display="block" alt="video on inverses 1">
+	  <flash id="yt-video1" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/W84lObmOp8M&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><section id="uid13">
+        <title>Inverse Function of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>q</m:mi></m:mrow></m:math></title>
+        <para id="id124294">The inverse function of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>q</m:mi></m:mrow></m:math> is determined by solving for <m:math overflow="scroll"><m:mi>x</m:mi></m:math> as:</para>
+        <equation id="uid14">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>y</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>a</m:mi>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mi>q</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>a</m:mi>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>y</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mi>q</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>x</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>y</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mi>q</m:mi>
+                    </m:mrow>
+                    <m:mi>a</m:mi>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mi>a</m:mi>
+                    </m:mfrac>
+                    <m:mi>y</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mfrac>
+                      <m:mi>q</m:mi>
+                      <m:mi>a</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id124440">Therefore the inverse of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>q</m:mi></m:mrow></m:math> is <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>a</m:mi></m:mfrac><m:mi>x</m:mi><m:mo>-</m:mo><m:mfrac><m:mi>q</m:mi><m:mi>a</m:mi></m:mfrac></m:mrow></m:math>.</para>
+        <para id="id124494">The inverse function of a straight line is also a straight line, except for the case where the straight line is a perfectly horizontal line, in which case the inverse is undefined.</para>
+        <para id="id124499">For example, the straight line equation given by <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow></m:math> has as inverse the function, <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>. The graphs of these functions are shown in <link target-id="uid15"/>. It can be seen that the two graphs are reflections of each other across the line <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math>.</para>
+        <figure id="uid15">
+          <media id="uid15_media" alt="">
+            <image mime-type="image/png" src="../../media/MG12C6_004.png" id="uid15_onlineimage" width="383"><!-- NOTE: attribute width changes image size online (pixels). original width is 383. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/MG12C6_004.eps" id="uid15_printimage"/>
+          </media>
+          <caption>The graphs of the function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow></m:math> and its inverse <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>. The line <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> is shown as a dashed line.</caption>
+        </figure>
+        <section id="uid16">
+          <title>Domain and Range</title>
+          <para id="id124679">We have seen that the domain of a function of the form <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>q</m:mi></m:mrow></m:math> is <m:math overflow="scroll"><m:mrow><m:mo>{</m:mo><m:mi>x</m:mi><m:mo>:</m:mo><m:mi>x</m:mi><m:mo>∈</m:mo><m:mi mathvariant="double-struck">R</m:mi><m:mo>}</m:mo></m:mrow></m:math> and the range is <m:math overflow="scroll"><m:mrow><m:mo>{</m:mo><m:mi>y</m:mi><m:mo>:</m:mo><m:mi>y</m:mi><m:mo>∈</m:mo><m:mi mathvariant="double-struck">R</m:mi><m:mo>}</m:mo></m:mrow></m:math>. Since the inverse function of a straight line is also a straight line, the inverse function will have the same domain and range as the original function.</para>
+        </section>
+        <section id="uid17">
+          <title>Intercepts</title>
+          <para id="id124766">The general form of the inverse function of the form <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>q</m:mi></m:mrow></m:math> is <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>a</m:mi></m:mfrac><m:mi>x</m:mi><m:mo>-</m:mo><m:mfrac><m:mi>q</m:mi><m:mi>a</m:mi></m:mfrac></m:mrow></m:math>.</para>
+          <para id="id124820">By setting <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> we have that the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-intercept is <m:math overflow="scroll"><m:mrow><m:msub><m:mi>y</m:mi><m:mrow><m:mi>i</m:mi><m:mi>n</m:mi><m:mi>t</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac><m:mi>q</m:mi><m:mi>a</m:mi></m:mfrac></m:mrow></m:math>. Similarly, by setting <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> we have that the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-intercept is <m:math overflow="scroll"><m:mrow><m:msub><m:mi>x</m:mi><m:mrow><m:mi>i</m:mi><m:mi>n</m:mi><m:mi>t</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>q</m:mi></m:mrow></m:math>.</para>
+          <para id="id124925">It is interesting to note that if <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>q</m:mi></m:mrow></m:math>, then <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>a</m:mi></m:mfrac><m:mi>x</m:mi><m:mo>-</m:mo><m:mfrac><m:mi>q</m:mi><m:mi>a</m:mi></m:mfrac></m:mrow></m:math> and the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-intercept of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> is the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-intercept of <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-intercept of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> is the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-intercept of <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</para>
+        </section>
+      </section>
+      <section id="uid18">
+        <title>Exercises</title>
+        <list id="id125130" display="block" list-type="enumerated">
+          <item id="uid19">Given <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow></m:math>, find <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item>
+          <item id="uid20">Consider the function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn></m:mrow></m:math>.
+<list id="id125236" display="block" list-type="enumerated"><item id="uid21">Is the relation a function?
+</item><item id="uid22">If it is a function, identify the domain and range.
+</item></list></item>
+          <item id="uid23">Sketch the graph of the function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math> and its inverse on the same set of axes.
+</item>
+          <item id="uid24">The inverse of a function is <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow></m:math>, what is the function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math>?
+</item>
+        </list>
+      </section>
+      <section id="uid25">
+        <title>Inverse Function of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></title>
+        <para id="id125401">The inverse relation, possibly a function, of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> is determined by solving for <m:math overflow="scroll"><m:mi>x</m:mi></m:math> as:</para>
+        <equation id="uid26">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>y</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>a</m:mi>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mi>y</m:mi>
+                    <m:mi>a</m:mi>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>x</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>±</m:mo>
+                    <m:msqrt>
+                      <m:mfrac>
+                        <m:mi>y</m:mi>
+                        <m:mi>a</m:mi>
+                      </m:mfrac>
+                    </m:msqrt>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <figure id="uid27">
+          <media id="uid27_media" alt="">
+            <image mime-type="image/png" src="../../media/MG12C6_005.png" id="uid27_onlineimage" width="508"><!-- NOTE: attribute width changes image size online (pixels). original width is 508. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/MG12C6_005.eps" id="uid27_printimage"/>
+          </media>
+          <caption>The function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> and its inverse <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>±</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:math>. The line <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> is shown as a dashed line.</caption>
+        </figure>
+        <para id="id125611">We see that the inverse ”function” of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> is not a function because it fails the vertical line test. If we draw a vertical line through the graph of <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>±</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:math>, the line intersects the graph more than once. There has to be a restriction on the domain of a parabola for the inverse to also be a function. Consider the function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>9</m:mn></m:mrow></m:math>. The inverse of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> can be found by witing <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math>. Then</para>
+        <equation id="id125734">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>x</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:msup>
+                      <m:mi>y</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>9</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msup>
+                    <m:mi>y</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>9</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>y</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>±</m:mo>
+                    <m:msqrt>
+                      <m:mrow>
+                        <m:mn>9</m:mn>
+                        <m:mo>-</m:mo>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                    </m:msqrt>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id125825">If we restrict the domain of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> to be <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow></m:math>, then <m:math overflow="scroll"><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow></m:msqrt></m:math> is a function. If the restriction on the domain of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> is <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>0</m:mn></m:mrow></m:math> then <m:math overflow="scroll"><m:mrow><m:mo>-</m:mo><m:msqrt><m:mrow><m:mn>9</m:mn><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow></m:msqrt></m:mrow></m:math> would be a function, inverse to <m:math overflow="scroll"><m:mi>f</m:mi></m:math>.</para>
+      </section>
+      <para id="eip-375"><figure id="inverses-2" class="khanacademy">
+	  <title>Khan academy video on inverse functions - 2</title>
+	  <media id="yt-media2" display="block" alt="video on inverses 2">
+	  <flash id="yt-video2" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/aeyFb2eVH1c&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><para id="eip-500"><figure id="inverses-3" class="khanacademy">
+	  <title>Khan academy video on inverse functions - 3</title>
+	  <media id="yt-media3" display="block" alt="video on inverses 3">
+	  <flash id="yt-video3" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/Bq9cq9FZuNM&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><section id="uid28">
+        <title>Exercises</title>
+        <list id="id125937" display="block" list-type="enumerated">
+          <item id="uid29">The graph of <m:math overflow="scroll"><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math> is shown. Find the equation of <m:math overflow="scroll"><m:mi>f</m:mi></m:math>, given that the graph of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> is a parabola. (Do not simplify your answer)
+<figure id="id125992"><media id="id125992_media" alt=""><image mime-type="image/png" src="../../media/MG12C6_007.png" id="id125992_onlineimage" width="387"><!-- NOTE: attribute width changes image size online (pixels). original width is 387. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C6_007.eps" id="id125992_printimage"/></media></figure></item>
+          <item id="uid30"><m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>.
+<list id="id126038" display="block" list-type="enumerated"><item id="uid31">Draw the graph of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> and state its domain and range.
+</item><item id="uid32">Find <m:math overflow="scroll"><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math> and, if it exists, state the domain and range.
+</item><item id="uid33">What must the domain of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> be, so that <m:math overflow="scroll"><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math> is a function ?
+</item></list></item>
+          <item id="uid34">Sketch the graph of <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:msqrt><m:mrow><m:mn>10</m:mn><m:mo>-</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math>. Label a point on the graph other than the intercepts with the axes.
+</item>
+          <item id="uid35">
+            <list id="id126180" display="block" list-type="enumerated">
+              <item id="uid36">Sketch the graph of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> labelling a point other than the origin on your graph.
+</item>
+              <item id="uid37">Find the equation of the inverse of the above graph in the form <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>...</m:mo></m:mrow></m:math>.
+</item>
+              <item id="uid38">Now sketch the graph of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:math>.
+</item>
+              <item id="uid39">The tangent to the graph of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:math> at the point A(9;3) intersects the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-axis at B. Find the equation of this tangent and hence or otherwise prove that the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-axis bisects the straight line AB.
+</item>
+            </list>
+          </item>
+          <item id="uid40">Given: <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:math>, find the inverse of <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> in the form <m:math overflow="scroll"><m:mrow><m:msup><m:mi>g</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>...</m:mo></m:mrow></m:math>.
+</item>
+        </list>
+      </section>
+      <section id="uid41">
+        <title>Inverse Function of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mi>x</m:mi></m:msup></m:mrow></m:math></title>
+        <para id="id126432">The inverse function of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> is determined by solving for <m:math overflow="scroll"><m:mi>x</m:mi></m:math> as follows:</para>
+        <equation id="uid42">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>y</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:msup>
+                    <m:mi>a</m:mi>
+                    <m:mi>x</m:mi>
+                  </m:msup>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mo>(</m:mo>
+                    <m:mi>y</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>a</m:mi>
+                      <m:mi>x</m:mi>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo form="prefix">log</m:mo>
+                    <m:mo>(</m:mo>
+                    <m:mi>a</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo>∴</m:mo>
+                    <m:mspace width="1.em"/>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mo form="prefix">log</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo form="prefix">log</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mi>a</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id126610">The inverse of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mn>10</m:mn><m:mi>x</m:mi></m:msup></m:mrow></m:math> is <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msup><m:mn>10</m:mn><m:mi>y</m:mi></m:msup></m:mrow></m:math>, which we write as <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo form="prefix">log</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math>. Therefore, if <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mn>10</m:mn><m:mi>x</m:mi></m:msup></m:mrow></m:math>, then <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mo form="prefix">log</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</para>
+        <figure id="uid43">
+          <media id="uid43_media" alt="">
+            <image mime-type="image/png" src="../../media/MG12C6_008.png" id="uid43_onlineimage" width="511"><!-- NOTE: attribute width changes image size online (pixels). original width is 511. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/MG12C6_008.eps" id="uid43_printimage"/>
+          </media>
+          <caption>The function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mn>10</m:mn><m:mi>x</m:mi></m:msup></m:mrow></m:math> and its inverse <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo form="prefix">log</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>. The line <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> is shown as a dashed line.</caption>
+        </figure>
+        <para id="id126831">The exponential function and the logarithmic function are inverses of each other; the graph of the one is the graph of the other, reflected in the line <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math>.
+The domain of the function is equal to the range of the inverse. The range of the function is equal to the domain of the inverse.</para>
+      </section>
+      <section id="uid44">
+        <title>Exercises</title>
+        <list id="id126860" display="block" list-type="enumerated"><item id="uid45">Given that <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:msup></m:mrow></m:math>, sketch the graphs of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> and <m:math overflow="scroll"><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math> on the same system of axes indicating a point on each graph (other than the intercepts) and showing clearly which is <m:math overflow="scroll"><m:mi>f</m:mi></m:math> and which is <m:math overflow="scroll"><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math>.
+</item>
+          <item id="uid46">Given that <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mn>4</m:mn><m:mrow><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math>,
+<list id="id127008" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid47">Sketch the graphs of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> and <m:math overflow="scroll"><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math> on the same system of axes indicating a point on each graph (other than the intercepts) and showing clearly which is <m:math overflow="scroll"><m:mi>f</m:mi></m:math> and which is <m:math overflow="scroll"><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math>.
+</item><item id="uid48">Write <m:math overflow="scroll"><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math> in the form <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>...</m:mo></m:mrow></m:math>.
+</item></list></item>
+          <item id="uid49">Given <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:math>, find the inverse of <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> in the form <m:math overflow="scroll"><m:mrow><m:msup><m:mi>g</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>...</m:mo></m:mrow></m:math></item>
+          <item id="uid50">Answer the following questions:
+            <list id="id127214" display="block" list-type="enumerated" number-style="lower-alpha">
+              <item id="uid51">Sketch the graph of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, labeling a point other than the origin on your graph.
+</item>
+              <item id="uid52">Find the equation of the inverse of the above graph in the form <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>...</m:mo></m:mrow></m:math></item>
+              <item id="uid53">Now, sketch <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:math>.
+</item>
+              <item id="uid54">The tangent to the graph of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:math> at the point <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo>(</m:mo><m:mn>9</m:mn><m:mo>;</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:math> intersects the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-axis at <m:math overflow="scroll"><m:mi>B</m:mi></m:math>. Find the equation of this tangent, and hence, or otherwise, prove that the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-axis bisects the straight line <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math>.
+</item>
+            </list>
+          </item>
+        </list>
+      </section>
+    </section>
+    <section id="cid6">
+      <title>End of Chapter Exercises</title>
+      <list id="id127401" display="block" list-type="enumerated"><item id="uid55">Sketch the graph of <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:msqrt><m:mrow><m:mn>10</m:mn><m:mo>-</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:math>. Is this graph a function ? Verify your answer.
+</item>
+        <item id="uid56"><m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math>,
+<list id="id127492" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid57">determine the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-intercept of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math></item><item id="uid58">determine <m:math overflow="scroll"><m:mi>x</m:mi></m:math> if <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math>.
+</item></list></item>
+        <item id="uid59">Below, you are given 3 graphs and 5 equations.
+<figure id="id127591"><media id="id127591_media" alt=""><image mime-type="image/png" src="../../media/MG12C6_002.png" id="id127591_onlineimage" width="492"><!-- NOTE: attribute width changes image size online (pixels). original width is 492. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C6_002.eps" id="id127591_printimage"/></media></figure><list id="id127597" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid60"><m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mn>3</m:mn></m:msub><m:mi>x</m:mi></m:mrow></m:math></item><item id="uid61"><m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mn>3</m:mn></m:msub><m:mi>x</m:mi></m:mrow></m:math></item><item id="uid62"><m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mo form="prefix">log</m:mo><m:mn>3</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item><item id="uid63"><m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mn>3</m:mn><m:mrow><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math></item><item id="uid64"><m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mn>3</m:mn><m:mi>x</m:mi></m:msup></m:mrow></m:math></item></list>
+Write the equation that best describes each graph.
+</item>
+        <item id="uid65">Given <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:math>, find the inverse of <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> in the form <m:math overflow="scroll"><m:mrow><m:msup><m:mi>g</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>...</m:mo></m:mrow></m:math></item>
+        <item id="uid66">Consider the equation <m:math overflow="scroll"><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mn>3</m:mn><m:mi>x</m:mi></m:msup></m:mrow></m:math><list id="id127901" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid67">Write down the inverse in the form <m:math overflow="scroll"><m:mrow><m:msup><m:mi>h</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo></m:mrow></m:math></item><item id="uid68">Sketch the graphs of <m:math overflow="scroll"><m:mrow><m:mi>h</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:msup><m:mi>h</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> on the same set of axes, labelling the intercepts with the axes.
+</item><item id="uid69">For which values of <m:math overflow="scroll"><m:mi>x</m:mi></m:math> is <m:math overflow="scroll"><m:mrow><m:msup><m:mi>h</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> undefined ?
+</item></list></item>
+        <item id="uid70">
+          <list id="id128060" display="block" list-type="enumerated" number-style="lower-alpha">
+            <item id="uid71">Sketch the graph of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math>, labelling a point other than the origin on your graph.
+</item>
+            <item id="uid72">Find the equation of the inverse of the above graph in the form <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>...</m:mo></m:mrow></m:math></item>
+            <item id="uid73">Now, sketch <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:math>.
+</item>
+            <item id="uid74">The tangent to the graph of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mrow></m:math> at the point <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo>(</m:mo><m:mn>9</m:mn><m:mo>;</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:math> intersects the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-axis at <m:math overflow="scroll"><m:mi>B</m:mi></m:math>. Find the equation of this tangent, and hence, or otherwise, prove that the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-axis bisects the straight line <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math>.
+</item>
+          </list>
+        </item>
+      </list>
+    </section>
+  </content>
+</document>

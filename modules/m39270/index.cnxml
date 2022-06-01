@@ -1,0 +1,1909 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Introduction, Limits, Average Gradient</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39270</md:content-id>
+  <md:title>Introduction, Limits, Average Gradient</md:title>
+  <md:abstract/>
+  <md:uuid>94ac03b3-a700-4f7c-bcd2-5e2ece305927</md:uuid>
+</metadata>
+
+<content>
+    
+    <section id="cid2">
+      <title>Why do I have to learn this stuff?</title>
+      <para id="id233226">Calculus is one of the central branches of mathematics and was developed from algebra and geometry. Calculus is built on the concept of limits, which will be discussed in this chapter. Calculus consists of two complementary ideas: differential calculus and integral calculus. We will only be dealing with differential calculus in this text. Differential calculus is concerned with the instantaneous rate of change of quantities with respect to other quantities, or more precisely, the local behaviour of functions. This can be illustrated by the slope of a function's graph. Examples of typical differential calculus problems include: finding the acceleration and velocity of a free-falling body at a particular moment and finding the optimal number of units a company should produce to maximize its profit.</para>
+      <para id="id233236">Calculus is fundamentally different from the mathematics that you have studied previously. Calculus is more dynamic and less static. It is concerned with change and motion. It deals with quantities that approach other quantities. For that reason it may be useful to have an overview of the subject before beginning its intensive study.</para>
+      <para id="id233243">Calculus is a tool to understand many phenomena, both natural and man-made, like how the wind blows, how water flows, how light travels, how sound travels, how the planets move and even economics.</para>
+      <para id="id233586">In this section we give a glimpse of some of the main ideas of calculus by showing how limits arise when we attempt to solve a variety of problems.</para>
+<section id="secfhsst_id72"><title> Integral Calculus </title>
+      <para id="id233596">Integral calculus is concerned with the accumulation of quantities, such as areas under a curve, linear distance traveled, or volume displaced. Differential and integral calculus act inversely to each other. Examples of typical integral calculus problems include finding areas and volumes, finding the amount of water pumped by a pump with a set power input but varying conditions of pumping losses and pressure and finding the amount of rain that fell in a certain area if the rain fell at a specific rate. </para>
+</section>
+<note id="notfhsst_id75"><title> Interesting Fact </title>
+      <para id="id233616">Both Isaac Newton (4 January 1643 – 31 March 1727) and Gottfried Leibnitz (1 July 1646 – 14 November 1716 (Hanover, Germany)) are credited with the `invention' of calculus. Newton was the first to apply calculus to general physics, while Leibnitz developed most of the notation that is still in use today.</para>
+      <para id="id233627">When Newton and Leibniz first published their results, there was some controversy over whether Leibniz's work was independent of Newton's. While Newton derived his results years before Leibniz, it was only some time after Leibniz published in 1684 that Newton published. Later, Newton would claim that Leibniz got the idea from Newton's notes on the subject; however examination of the papers of Leibniz and Newton show they arrived at their results independently, with Leibniz starting first with integration and Newton with differentiation. This controversy between Leibniz and Newton divided English-speaking mathematicians from those in Europe for many years, which slowed the development of mathematical analysis. Today, both Newton and Leibniz are given credit for independently developing calculus. It is Leibniz, however, who is credited with giving the new discipline the name it is known by today: "calculus". Newton's name for it was "the science of fluxions".</para>
+</note>
+    </section>
+    <section id="cid3">
+      <title>Limits</title>
+      <section id="uid1">
+        <title>A Tale of Achilles and the Tortoise</title>
+<note id="notfhsst_id84"><title> Interesting Fact </title>
+        <para id="id233667">Zeno (circa 490 BC - circa 430 BC) was a pre-Socratic Greek philosopher of southern Italy who is famous for his paradoxes.</para>
+</note>
+        <para id="id233679">One of Zeno's paradoxes can be summarised by:</para>
+        <para id="id233682">
+          <quote id="id233682_quote" display="block">Achilles and a tortoise agree to a race, but the tortoise is unhappy because Achilles is very fast. So, the tortoise asks Achilles for a head-start. Achilles agrees to give the tortoise a 1 000 m head start. Does Achilles overtake the tortoise?</quote>
+        </para>
+        <para id="id233691">We know how to solve this problem. We start by writing:</para>
+        <equation id="uid2">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mi>A</m:mi>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mi>A</m:mi>
+                    </m:msub>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>1000</m:mn>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi mathvariant="normal">v</m:mi>
+                      <m:mi mathvariant="normal">t</m:mi>
+                    </m:msub>
+                    <m:mi mathvariant="normal">t</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id233785">where</para>
+        <table id="id233790" summary="">
+          <tgroup cols="2">
+            <tbody>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mi>A</m:mi>
+                    </m:msub>
+                  </m:math>
+                </entry>
+                <entry>distance covered by Achilles</entry>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mi>A</m:mi>
+                    </m:msub>
+                  </m:math>
+                </entry>
+                <entry>Achilles' speed</entry>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mi>t</m:mi>
+                  </m:math>
+                </entry>
+                <entry>time taken by Achilles to overtake tortoise</entry>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mi>t</m:mi>
+                    </m:msub>
+                  </m:math>
+                </entry>
+                <entry>distance covered by the tortoise</entry>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mi>t</m:mi>
+                    </m:msub>
+                  </m:math>
+                </entry>
+                <entry>the tortoise's speed</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        <para id="id233905">If we assume that Achilles runs at 2 m<m:math overflow="scroll"><m:mo>·</m:mo></m:math>s<m:math overflow="scroll"><m:msup><m:mrow/><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math>and the tortoise runs at 0,25 m<m:math overflow="scroll"><m:mo>·</m:mo></m:math>s<m:math overflow="scroll"><m:msup><m:mrow/><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math>then Achilles will overtake the tortoise when both of them have covered the same distance. This means that Achilles overtakes the tortoise at a time calculated as:</para>
+        <equation id="uid3">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mi>A</m:mi>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:msub>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mi>A</m:mi>
+                    </m:msub>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>1000</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mi>t</m:mi>
+                    </m:msub>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mo>·</m:mo>
+                      <m:msup>
+                        <m:mi mathvariant="normal">s</m:mi>
+                        <m:mrow>
+                          <m:mo>-</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                    <m:mi mathvariant="normal">t</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>1000</m:mn>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mo>(</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>25</m:mn>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mo>·</m:mo>
+                      <m:msup>
+                        <m:mi mathvariant="normal">s</m:mi>
+                        <m:mrow>
+                          <m:mo>-</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                    <m:mi mathvariant="normal">t</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mo>·</m:mo>
+                      <m:msup>
+                        <m:mi mathvariant="normal">s</m:mi>
+                        <m:mrow>
+                          <m:mo>-</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>25</m:mn>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mo>·</m:mo>
+                      <m:msup>
+                        <m:mi mathvariant="normal">s</m:mi>
+                        <m:mrow>
+                          <m:mo>-</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                    <m:mi mathvariant="normal">t</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>1000</m:mn>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>t</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>1000</m:mn>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mfrac>
+                        <m:mn>3</m:mn>
+                        <m:mn>4</m:mn>
+                      </m:mfrac>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mo>·</m:mo>
+                        <m:msup>
+                          <m:mi mathvariant="normal">s</m:mi>
+                          <m:mrow>
+                            <m:mo>-</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>1000</m:mn>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mn>7</m:mn>
+                        <m:mn>4</m:mn>
+                      </m:mfrac>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mo>·</m:mo>
+                        <m:msup>
+                          <m:mi mathvariant="normal">s</m:mi>
+                          <m:mrow>
+                            <m:mo>-</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>4</m:mn>
+                        <m:mo>)</m:mo>
+                        <m:mo>(</m:mo>
+                        <m:mn>1000</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>7</m:mn>
+                    </m:mfrac>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>4000</m:mn>
+                      <m:mn>7</m:mn>
+                    </m:mfrac>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>571</m:mn>
+                    <m:mfrac>
+                      <m:mn>3</m:mn>
+                      <m:mn>7</m:mn>
+                    </m:mfrac>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id234546">However, Zeno (the Greek philosopher who thought up this problem) looked at it as follows:
+Achilles takes
+<m:math overflow="scroll"><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1000</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>500</m:mn><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>
+to travel the 1 000 m head start that the tortoise had. However, in this 500 s, the tortoise has travelled a further
+<m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>500</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>25</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>125</m:mn><m:mi mathvariant="normal">m</m:mi><m:mo>.</m:mo></m:mrow></m:math>
+Achilles then takes another
+<m:math overflow="scroll"><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>125</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>62</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>
+to travel the 125 m. In this 62,5 s, the tortoise travels a further
+<m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>62</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>25</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>625</m:mn><m:mi mathvariant="normal">m</m:mi><m:mo>.</m:mo></m:mrow></m:math>
+Zeno saw that Achilles would always get closer but wouldn't actually overtake the tortoise.</para>
+      </section>
+      <section id="uid4">
+        <title>Sequences, Series and Functions</title>
+        <para id="id234706">So what does Zeno, Achilles and the tortoise have to do with calculus?</para>
+        <para id="id234710">Well, in Grades 10 and 11 you studied sequences. For the sequence
+<m:math overflow="scroll"><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>,</m:mo><m:mo>...</m:mo></m:mrow></m:math>
+which is defined by the expression
+<m:math overflow="scroll"><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac></m:mrow></m:math>
+the terms get closer to 1 as <m:math overflow="scroll"><m:mi>n</m:mi></m:math> gets larger. Similarly, for the sequence
+<m:math overflow="scroll"><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac><m:mo>,</m:mo><m:mo>...</m:mo></m:mrow></m:math>
+which is defined by the expression
+<m:math overflow="scroll"><m:mrow><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac></m:mrow></m:math>
+the terms get closer to 0 as <m:math overflow="scroll"><m:mi>n</m:mi></m:math> gets larger. We have also seen that the infinite geometric series has a finite total. The infinite geometric series is</para>
+        <equation id="id234876">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>S</m:mi>
+                      <m:mi>∞</m:mi>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mi>∞</m:mi>
+                    </m:munderover>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>.</m:mo>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:mfrac>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mo>-</m:mo>
+                        <m:mi>r</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mspace width="2.em"/>
+                    <m:mi> for </m:mi>
+                    <m:mspace width="2.em"/>
+                    <m:mi>r</m:mi>
+                    <m:mo>≠</m:mo>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id234976">where <m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:math> is the first term of the series and <m:math overflow="scroll"><m:mi>r</m:mi></m:math> is the common ratio.</para>
+        <para id="id235002">We see that there are some functions where the value of the function gets close to or <emphasis effect="bold">approaches</emphasis> a certain value.</para>
+        <para id="id235011">Similarly, for the function:
+<m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>12</m:mn></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:mfrac></m:mrow></m:math>
+The numerator of the function can be factorised as:
+<m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math>
+Then we can cancel the <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn></m:mrow></m:math> from numerator and denominator and we are left with:
+<m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math>
+However, we are only able to cancel the <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math> term if <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>≠</m:mo><m:mo>-</m:mo><m:mn>6</m:mn></m:mrow></m:math>. If <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>6</m:mn></m:mrow></m:math>, then the denominator becomes 0 and the function is not defined. This means that the domain of the function does not include <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>6</m:mn></m:mrow></m:math>. But we can examine what happens to the values for <m:math overflow="scroll"><m:mi>y</m:mi></m:math> as <m:math overflow="scroll"><m:mi>x</m:mi></m:math> gets close to -6. These values are listed in <link target-id="uid5"/> which shows that as <m:math overflow="scroll"><m:mi>x</m:mi></m:math> gets closer to -6, <m:math overflow="scroll"><m:mi>y</m:mi></m:math> gets close to 8.</para>
+        <table id="uid5" summary="">
+          <tgroup cols="2">
+            <tbody>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mi>x</m:mi>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mi>y</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mi>x</m:mi>
+                          <m:mo>+</m:mo>
+                          <m:mn>6</m:mn>
+                          <m:mo>)</m:mo>
+                          <m:mo>(</m:mo>
+                          <m:mi>x</m:mi>
+                          <m:mo>-</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>x</m:mi>
+                          <m:mo>+</m:mo>
+                          <m:mn>6</m:mn>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry>-9</entry>
+                <entry>-11</entry>
+              </row>
+              <row>
+                <entry>-8</entry>
+                <entry>-10</entry>
+              </row>
+              <row>
+                <entry>-7</entry>
+                <entry>-9</entry>
+              </row>
+              <row>
+                <entry>-6.5</entry>
+                <entry>-8.5</entry>
+              </row>
+              <row>
+                <entry>-6.4</entry>
+                <entry>-8.4</entry>
+              </row>
+              <row>
+                <entry>-6.3</entry>
+                <entry>-8.3</entry>
+              </row>
+              <row>
+                <entry>-6.2</entry>
+                <entry>-8.2</entry>
+              </row>
+              <row>
+                <entry>-6.1</entry>
+                <entry>-8.1</entry>
+              </row>
+              <row>
+                <entry>-6.09</entry>
+                <entry>-8.09</entry>
+              </row>
+              <row>
+                <entry>-6.08</entry>
+                <entry>-8.08</entry>
+              </row>
+              <row>
+                <entry>-6.01</entry>
+                <entry>-8.01</entry>
+              </row>
+              <row>
+                <entry>-5.9</entry>
+                <entry>-7.9</entry>
+              </row>
+              <row>
+                <entry>-5.8</entry>
+                <entry>-7.8</entry>
+              </row>
+              <row>
+                <entry>-5.7</entry>
+                <entry>-7.7</entry>
+              </row>
+              <row>
+                <entry>-5.6</entry>
+                <entry>-7.6</entry>
+              </row>
+              <row>
+                <entry>-5.5</entry>
+                <entry>-7.5</entry>
+              </row>
+              <row>
+                <entry>-5</entry>
+                <entry>-7</entry>
+              </row>
+              <row>
+                <entry>-4</entry>
+                <entry>-6</entry>
+              </row>
+              <row>
+                <entry>-3</entry>
+                <entry>-5</entry>
+              </row>
+            </tbody>
+          </tgroup>
+          <caption>Values for the function <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math> as <m:math overflow="scroll"><m:mi>x</m:mi></m:math> gets close to -6.</caption>
+        </table>
+        <para id="id235764">The graph of this function is shown in <link target-id="uid6"/>. The graph is a straight line with slope 1 and intercept -2, but with a missing section at <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>6</m:mn></m:mrow></m:math>.</para>
+        <figure id="uid6">
+          <media id="uid6_media" alt="">
+            <image mime-type="image/png" src="../../media/MG12C7_001.png" id="uid6_onlineimage" width="162"><!-- NOTE: attribute width changes image size online (pixels). original width is 162. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/MG12C7_001.eps" id="uid6_printimage"/>
+          </media>
+          <caption>Graph of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:mfrac></m:mrow></m:math>.</caption>
+        </figure>
+        <para id="id235846">We say that a function is continuous if there are no values of the independent variable for which the function is undefined.</para>
+      </section>
+      <section id="uid7">
+        <title>Limits</title>
+        <para id="id235860">We can now introduce a new notation. For the function <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math>, we can write:
+<m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mo>-</m:mo><m:mn>6</m:mn></m:mrow></m:msub><m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>8</m:mn><m:mo>.</m:mo></m:mrow></m:math>
+This is read: <emphasis effect="italics">the limit of <m:math overflow="scroll"><m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:mfrac></m:math> as <m:math overflow="scroll"><m:mi>x</m:mi></m:math> tends to -6 is 8.</emphasis></para>
+<section id="secfhsst_id683"><title> Investigation : Limits </title>
+        <para id="id236040">If <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math>, determine:</para>
+        <table id="id236071" summary="">
+          <tgroup cols="2">
+            <tbody>
+              <row>
+                <entry>f(-0.1)</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>f(-0.05)</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>f(-0.04)</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>f(-0.03)</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>f(-0.02)</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>f(-0.01)</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>f(0.00)</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>f(0.01)</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>f(0.02)</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>f(0.03)</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>f(0.04)</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>f(0.05)</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>f(0.1)</entry>
+                <entry/>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        <para id="id236344">What do you notice about the value of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> as <m:math overflow="scroll"><m:mi>x</m:mi></m:math> gets close to 0.
+ </para>
+</section>
+<exercise id="secfhsst_id747"><title> Limits Notation </title>
+        <problem id="probfhsst_id748">
+        <para id="id236391">Summarise the following situation by using limit notation: As <m:math overflow="scroll"><m:mi>x</m:mi></m:math> gets close to 1, the value of the function
+<m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math>
+gets close to 3. </para>
+        </problem>
+        <solution id="solfhsst_id753"> <list id="listfhsst_id753" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Use what you know so far </label>
+        <para id="id236442">This is written as:
+<m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>
+in limit notation. </para>
+        </item> </list> </solution>
+</exercise>
+        <para id="id236494">We can also have the situation where a function has a different value depending on whether <m:math overflow="scroll"><m:mi>x</m:mi></m:math> approaches from the left or the right. An example of this is shown in <link target-id="uid8"/>.</para>
+        <figure id="uid8">
+          <media id="uid8_media" alt="">
+            <image mime-type="image/png" src="../../media/MG12C7_002.png" id="uid8_onlineimage" width="532"><!-- NOTE: attribute width changes image size online (pixels). original width is 532. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/MG12C7_002.eps" id="uid8_printimage"/>
+          </media>
+          <caption>Graph of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:mrow></m:math>.</caption>
+        </figure>
+        <para id="id236544">As <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>0</m:mn></m:mrow></m:math> from the left, <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:mrow></m:math> approaches <m:math overflow="scroll"><m:mrow><m:mo>-</m:mo><m:mi>∞</m:mi></m:mrow></m:math>. As <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>0</m:mn></m:mrow></m:math> from the right, <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:mrow></m:math> approaches <m:math overflow="scroll"><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:math>. This is written in limits notation as:
+<m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:msup><m:mn>0</m:mn><m:mo>-</m:mo></m:msup></m:mrow></m:msub><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi></m:mrow></m:math>
+for <m:math overflow="scroll"><m:mi>x</m:mi></m:math> approaching zero from the left and
+<m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:msup><m:mn>0</m:mn><m:mo>+</m:mo></m:msup></m:mrow></m:msub><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac><m:mo>=</m:mo><m:mi>∞</m:mi></m:mrow></m:math>
+for <m:math overflow="scroll"><m:mi>x</m:mi></m:math> approaching zero from the right.
+You can calculate the limit of many different functions using a set method.</para>
+        <para id="id236741">
+          <emphasis effect="bold">Method:</emphasis>
+        </para>
+        <para id="id236749">Limits:
+
+If you are required to calculate a limit like <m:math overflow="scroll"><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mi>a</m:mi></m:mrow></m:msub></m:math> then:</para>
+        <list id="id236779" display="block" list-type="enumerated">
+          <item id="uid9">Simplify the expression completely.
+</item>
+          <item id="uid10">If it is possible, cancel all common terms.
+</item>
+          <item id="uid11">Let <m:math overflow="scroll"><m:mi>x</m:mi></m:math> approach <m:math overflow="scroll"><m:mi>a</m:mi></m:math>.
+</item>
+        </list>
+<exercise id="secfhsst_id788"><title> Limits </title>
+        <problem id="probfhsst_id789">
+        <para id="id236851">Determine <m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mn>10</m:mn></m:mrow></m:math> </para>
+        </problem>
+        <solution id="solfhsst_id792"> <list id="listfhsst_id792" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Simplify the expression </label>
+        <para id="id236902">There is nothing to simplify.</para>
+        </item> <item> <label> Cancel all common terms </label>
+        <para id="id236909">There are no terms to cancel.</para>
+        </item> <item> <label> Let <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>1</m:mn></m:mrow></m:math> and write final answer </label>
+        <para id="id236932"><m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mn>10</m:mn><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow></m:math>
+ </para>
+        </item> </list> </solution>
+</exercise>
+<exercise id="secfhsst_id802"><title> Limits </title>
+        <problem id="probfhsst_id803">
+        <para id="id236989">Determine <m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mi>x</m:mi></m:mrow></m:math> </para>
+        </problem>
+        <solution id="solfhsst_id806"> <list id="listfhsst_id806" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Simplify the expression </label>
+        <para id="id237040">There is nothing to simplify.</para>
+        </item> <item> <label> Cancel all common terms </label>
+        <para id="id237048">There are no terms to cancel.</para>
+        </item> <item> <label> Let <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>2</m:mn></m:mrow></m:math> and write final answer </label>
+        <para id="id237070"><m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>2</m:mn></m:mrow></m:msub><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>
+ </para>
+        </item> </list> </solution>
+</exercise>
+<exercise id="secfhsst_id816"><title> Limits </title>
+        <problem id="probfhsst_id817">
+        <para id="id237128">Determine <m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>10</m:mn></m:mrow></m:msub><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>100</m:mn></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math> </para>
+        </problem>
+        <solution id="solfhsst_id820"> <list id="listfhsst_id820" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Simplify the expression </label>
+        <para id="id237199">The numerator can be factorised.
+<m:math overflow="scroll"><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>100</m:mn></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
+        </item> <item> <label> Cancel all common terms </label>
+        <para id="id237271"><m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn></m:mrow></m:math> can be cancelled from the numerator and denominator.</para>
+        <para id="id237286">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>10</m:mn>
+                  <m:mo>)</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>10</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>10</m:mn>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>10</m:mn>
+            </m:mrow>
+          </m:math>
+        </para>
+        </item> <item> <label> Let <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>1</m:mn></m:mrow></m:math> and write final answer </label>
+        <para id="id237353"><m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>10</m:mn></m:mrow></m:msub><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>100</m:mn></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow></m:math>
+ </para>
+        </item> </list> </solution>
+</exercise>
+      </section>
+      <section id="uid12">
+        <title>Average Gradient and Gradient at a Point</title>
+        <para id="id237429">In Grade 10 you learnt about average gradients on a curve. The average gradient between any two points on a curve is given by the gradient of the straight line that passes through both points. In Grade 11 you were introduced to the idea of a gradient at a single point on a curve. We saw that this was the gradient of the tangent to the curve at the given point, but we did not learn how to determine the gradient of the tangent.</para>
+        <para id="id237440">Now let us consider the problem of trying to find the gradient of a tangent <m:math overflow="scroll"><m:mi>t</m:mi></m:math> to a curve with equation <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> at a given point <m:math overflow="scroll"><m:mi>P</m:mi></m:math>.</para>
+        <para id="id237483">
+          <figure id="id237486">
+            <media id="id237486_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C7_003.png" id="id237486_onlineimage" width="264"><!-- NOTE: attribute width changes image size online (pixels). original width is 264. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C7_003.eps" id="id237486_printimage"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id237492">We know how to calculate the average gradient between two points on a curve, but we need two points. The problem now is that we only have one point, namely <m:math overflow="scroll"><m:mi>P</m:mi></m:math>. To get around the problem we first consider a secant to the curve that passes through point <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and another point on the curve <m:math overflow="scroll"><m:mi>Q</m:mi></m:math>. We can now find the average gradient of the curve between points <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math>.</para>
+        <para id="id237543">
+          <figure id="id237546">
+            <media id="id237546_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C7_004.png" id="id237546_onlineimage" width="196"><!-- NOTE: attribute width changes image size online (pixels). original width is 196. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C7_004.eps" id="id237546_printimage"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id237552">If the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-coordinate of <m:math overflow="scroll"><m:mi>P</m:mi></m:math> is <m:math overflow="scroll"><m:mi>a</m:mi></m:math>, then the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-coordinate is <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow></m:math>. Similarly, if the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-coordinate of <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> is <m:math overflow="scroll"><m:mrow><m:mi>a</m:mi><m:mo>-</m:mo><m:mi>h</m:mi></m:mrow></m:math>, then the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-coordinate is <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>-</m:mo><m:mi>h</m:mi><m:mo>)</m:mo></m:mrow></m:math>. If we choose <m:math overflow="scroll"><m:mi>a</m:mi></m:math> as <m:math overflow="scroll"><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>a</m:mi><m:mo>-</m:mo><m:mi>h</m:mi></m:mrow></m:math> as <m:math overflow="scroll"><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math>, then:
+<m:math overflow="scroll"><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>-</m:mo><m:mi>h</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math><m:math overflow="scroll"><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math>
+We can now calculate the average gradient as:</para>
+        <equation id="uid13">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>y</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                      <m:mo>-</m:mo>
+                      <m:msub>
+                        <m:mi>y</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                      <m:mo>-</m:mo>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>f</m:mi>
+                      <m:mo>(</m:mo>
+                      <m:mi>a</m:mi>
+                      <m:mo>)</m:mo>
+                      <m:mo>-</m:mo>
+                      <m:mi>f</m:mi>
+                      <m:mo>(</m:mo>
+                      <m:mi>a</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mi>h</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mi>a</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mi>a</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mi>h</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>f</m:mi>
+                      <m:mo>(</m:mo>
+                      <m:mi>a</m:mi>
+                      <m:mo>)</m:mo>
+                      <m:mo>-</m:mo>
+                      <m:mi>f</m:mi>
+                      <m:mo>(</m:mo>
+                      <m:mi>a</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mi>h</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mi>h</m:mi>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id237926">Now imagine that <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> moves along the curve toward <m:math overflow="scroll"><m:mi>P</m:mi></m:math>. The secant line approaches the tangent line as its limiting position. This means that the average gradient of the secant <emphasis effect="italics">approaches</emphasis> the gradient of the tangent to the curve at <m:math overflow="scroll"><m:mi>P</m:mi></m:math>. In <link target-id=""/> we see that as point <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> approaches point <m:math overflow="scroll"><m:mi>P</m:mi></m:math>, <m:math overflow="scroll"><m:mi>h</m:mi></m:math> gets closer to 0. When <m:math overflow="scroll"><m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, points <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> are equal. We can now use our knowledge of limits to write this as:</para>
+        <equation id="uid14"><m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mrow>
+                <m:mi> gradient at P</m:mi></m:mrow>
+              <m:mo>=</m:mo>
+              <m:munder>
+                <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                <m:mrow>
+                  <m:mi mathvariant="normal">h</m:mi>
+                  <m:mo>→</m:mo>
+                  <m:mn>0</m:mn>
+                </m:mrow>
+              </m:munder>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mi mathvariant="normal">f</m:mi>
+                  <m:mo>(</m:mo>
+                  <m:mi mathvariant="normal">a</m:mi>
+                  <m:mo>)</m:mo>
+                  <m:mo>-</m:mo>
+                  <m:mi mathvariant="normal">f</m:mi>
+                  <m:mo>(</m:mo>
+                  <m:mi mathvariant="normal">a</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mi mathvariant="normal">h</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mi mathvariant="normal">h</m:mi>
+              </m:mfrac>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id238114">and we say that the gradient at point <m:math overflow="scroll"><m:mi>P</m:mi></m:math> is the limit of the average gradient as <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> approaches <m:math overflow="scroll"><m:mi>P</m:mi></m:math> along the curve.</para>
+<para id="eip-647"><figure id="derivatives-1" class="khanacademy"><title>Khan academy video on calculus - 1</title><media id="yt-media1" display="block" alt="video on derivatives 1">
+	  <flash id="yt-video1" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/ANyVpMS3HL4&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><exercise id="secfhsst_id1011"><title> Limits </title>
+        <problem id="probfhsst_id1012">
+        <para id="id238160">For the function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:math>, determine the
+gradient of the tangent to the curve
+at the point <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>. </para>
+        </problem>
+        <solution id="solfhsst_id1017"> <list id="listfhsst_id1017" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Calculating the gradient at a point </label>
+        <para id="id238233">We know that the gradient at a point <m:math overflow="scroll"><m:mi>x</m:mi></m:math> is given by:
+<m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>h</m:mi><m:mo>→</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mfrac><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>h</m:mi></m:mfrac></m:mrow></m:math>
+In our case <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>. It is simpler to substitute <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> at the end of the calculation.</para>
+        </item> <item> <label> Write <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>)</m:mo></m:mrow></m:math> and simplify </label>
+        <equation id="id238354">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>f</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mi>h</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>x</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mi>h</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>h</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mi>h</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:msup>
+                      <m:mi>h</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                    <m:mo>-</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mi>h</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mi>h</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:msup>
+                      <m:mi>h</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mi>h</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        </item> <item> <label> Calculate limit </label>
+        <equation id="id238536">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:munder>
+                      <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                      <m:mrow>
+                        <m:mi>h</m:mi>
+                        <m:mo>→</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:munder>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>f</m:mi>
+                        <m:mo>(</m:mo>
+                        <m:mi>x</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mi>h</m:mi>
+                        <m:mo>)</m:mo>
+                        <m:mo>-</m:mo>
+                        <m:mi>f</m:mi>
+                        <m:mo>(</m:mo>
+                        <m:mi>x</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mi>h</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:msup>
+                          <m:mi>x</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>+</m:mo>
+                        <m:mn>4</m:mn>
+                        <m:mi>x</m:mi>
+                        <m:mi>h</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mn>2</m:mn>
+                        <m:msup>
+                          <m:mi>h</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>-</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:mi>x</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:mi>h</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:msup>
+                            <m:mi>x</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mo>-</m:mo>
+                          <m:mn>5</m:mn>
+                          <m:mi>x</m:mi>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mi>h</m:mi>
+                    </m:mfrac>
+                    <m:mo>;</m:mo>
+                    <m:mspace width="1.em"/>
+                    <m:mi>h</m:mi>
+                    <m:mo>≠</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munder>
+                      <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                      <m:mrow>
+                        <m:mi>h</m:mi>
+                        <m:mo>→</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:munder>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:msup>
+                          <m:mi>x</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>+</m:mo>
+                        <m:mn>4</m:mn>
+                        <m:mi>x</m:mi>
+                        <m:mi>h</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mn>2</m:mn>
+                        <m:msup>
+                          <m:mi>h</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>-</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:mi>x</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:mi>h</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>2</m:mn>
+                        <m:msup>
+                          <m:mi>x</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>+</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                      <m:mi>h</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munder>
+                      <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                      <m:mrow>
+                        <m:mi>h</m:mi>
+                        <m:mo>→</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:munder>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mn>4</m:mn>
+                        <m:mi>x</m:mi>
+                        <m:mi>h</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mn>2</m:mn>
+                        <m:msup>
+                          <m:mi>h</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>-</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:mi>h</m:mi>
+                      </m:mrow>
+                      <m:mi>h</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munder>
+                      <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                      <m:mrow>
+                        <m:mi>h</m:mi>
+                        <m:mo>→</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:munder>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>h</m:mi>
+                        <m:mo>(</m:mo>
+                        <m:mn>4</m:mn>
+                        <m:mi>x</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mn>2</m:mn>
+                        <m:mi>h</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mi>h</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munder>
+                      <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                      <m:mrow>
+                        <m:mi>h</m:mi>
+                        <m:mo>→</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:munder>
+                    <m:mn>4</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mi>h</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>5</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>4</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>5</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        </item> <item> <label> Calculate gradient at <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> </label>
+        <para id="id238975">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mi>x</m:mi>
+              <m:mo>-</m:mo>
+              <m:mn>5</m:mn>
+              <m:mo>=</m:mo>
+              <m:mn>4</m:mn>
+              <m:mo>(</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+              <m:mo>-</m:mo>
+              <m:mn>5</m:mn>
+              <m:mo>=</m:mo>
+              <m:mn>3</m:mn>
+            </m:mrow>
+          </m:math>
+        </para>
+        </item> <item> <label> Write the final answer </label>
+        <para id="id239016">The gradient of the tangent to the curve <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:math> at <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> is 3.
+ </para>
+        </item> </list> </solution>
+</exercise>
+<exercise id="secfhsst_id1404"><title> Limits </title>
+        <problem id="probfhsst_id1405">
+        <para id="id239093">For the function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math>, determine the gradient of the tangent to curve at the point <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math>. </para>
+        </problem>
+        <solution id="solfhsst_id1408"> <list id="listfhsst_id1408" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Calculating the gradient at a point </label>
+        <para id="id239170">We know that the gradient at a point <m:math overflow="scroll"><m:mi>x</m:mi></m:math> is given by:
+<m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>h</m:mi><m:mo>→</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mfrac><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>h</m:mi></m:mfrac></m:mrow></m:math>
+In our case <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math>. It is simpler to substitute <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math> at the end of the calculation.</para>
+        </item> <item> <label> Write <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>)</m:mo></m:mrow></m:math> and simplify </label>
+        <equation id="id239291">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>f</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mi>h</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>5</m:mn>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>x</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mi>h</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>h</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>5</m:mn>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mi>h</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:msup>
+                      <m:mi>h</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>)</m:mo>
+                    <m:mo>-</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mi>h</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>5</m:mn>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>10</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mi>h</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:msup>
+                      <m:mi>h</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mi>h</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        </item> <item> <label> Calculate limit </label>
+        <equation id="id239486">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:munder>
+                      <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                      <m:mrow>
+                        <m:mi>h</m:mi>
+                        <m:mo>→</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:munder>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>f</m:mi>
+                        <m:mo>(</m:mo>
+                        <m:mi>x</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mi>h</m:mi>
+                        <m:mo>)</m:mo>
+                        <m:mo>-</m:mo>
+                        <m:mi>f</m:mi>
+                        <m:mo>(</m:mo>
+                        <m:mi>x</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mi>h</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>5</m:mn>
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>+</m:mo>
+                      <m:mn>10</m:mn>
+                      <m:mi>x</m:mi>
+                      <m:mi>h</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>5</m:mn>
+                      <m:msup>
+                        <m:mi>h</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mn>4</m:mn>
+                      <m:mi>x</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>4</m:mn>
+                      <m:mi>h</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>-</m:mo>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:msup>
+                          <m:mi>x</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>-</m:mo>
+                        <m:mn>4</m:mn>
+                        <m:mi>x</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mi>h</m:mi>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munder>
+                      <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                      <m:mrow>
+                        <m:mi>h</m:mi>
+                        <m:mo>→</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:munder>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:msup>
+                          <m:mi>x</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>+</m:mo>
+                        <m:mn>10</m:mn>
+                        <m:mi>x</m:mi>
+                        <m:mi>h</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:msup>
+                          <m:mi>h</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>-</m:mo>
+                        <m:mn>4</m:mn>
+                        <m:mi>x</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>4</m:mn>
+                        <m:mi>h</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>-</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:msup>
+                          <m:mi>x</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>+</m:mo>
+                        <m:mn>4</m:mn>
+                        <m:mi>x</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mi>h</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munder>
+                      <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                      <m:mrow>
+                        <m:mi>h</m:mi>
+                        <m:mo>→</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:munder>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mn>10</m:mn>
+                        <m:mi>x</m:mi>
+                        <m:mi>h</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:msup>
+                          <m:mi>h</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>-</m:mo>
+                        <m:mn>4</m:mn>
+                        <m:mi>h</m:mi>
+                      </m:mrow>
+                      <m:mi>h</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munder>
+                      <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                      <m:mrow>
+                        <m:mi>h</m:mi>
+                        <m:mo>→</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:munder>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>h</m:mi>
+                        <m:mo>(</m:mo>
+                        <m:mn>10</m:mn>
+                        <m:mi>x</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:mi>h</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>4</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mi>h</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munder>
+                      <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                      <m:mrow>
+                        <m:mi>h</m:mi>
+                        <m:mo>→</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:munder>
+                    <m:mn>10</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mi>h</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>10</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        </item> <item> <label> Calculate gradient at <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math> </label>
+        <para id="id239929">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mn>10</m:mn>
+              <m:mi>x</m:mi>
+              <m:mo>-</m:mo>
+              <m:mn>4</m:mn>
+              <m:mo>=</m:mo>
+              <m:mn>10</m:mn>
+              <m:mi>a</m:mi>
+              <m:mo>-</m:mo>
+              <m:mn>5</m:mn>
+            </m:mrow>
+          </m:math>
+        </para>
+        </item> <item> <label> Write the final answer </label>
+        <para id="id239961">The gradient of the tangent to the curve <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math> at <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> is <m:math overflow="scroll"><m:mrow><m:mn>10</m:mn><m:mi>a</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow></m:math>.
+ </para>
+        </item> </list> </solution>
+</exercise>
+<section id="secfhsst_id1798"><title> Limits </title>
+        <para id="id240053">Determine the following</para>
+        <list id="id240059" display="block" list-type="enumerated">
+          <item id="uid15">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:msub>
+                  <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>→</m:mo>
+                    <m:mn>3</m:mn>
+                  </m:mrow>
+                </m:msub>
+                <m:mstyle scriptlevel="0" displaystyle="true">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mn>9</m:mn>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>3</m:mn>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mstyle>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid16">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:msub>
+                  <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>→</m:mo>
+                    <m:mn>3</m:mn>
+                  </m:mrow>
+                </m:msub>
+                <m:mstyle scriptlevel="0" displaystyle="true">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>3</m:mn>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>+</m:mo>
+                      <m:mn>3</m:mn>
+                      <m:mi>x</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mstyle>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid17">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:msub>
+                  <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>→</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:msub>
+                <m:mstyle scriptlevel="0" displaystyle="true">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>3</m:mn>
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mn>4</m:mn>
+                      <m:mi>x</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>3</m:mn>
+                      <m:mo>-</m:mo>
+                      <m:mi>x</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mstyle>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid18">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:msub>
+                  <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>→</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:msub>
+                <m:mstyle scriptlevel="0" displaystyle="true">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>12</m:mn>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>4</m:mn>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mstyle>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item id="uid19">
+            <m:math overflow="scroll">
+              <m:mrow>
+                <m:msub>
+                  <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>→</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:msub>
+                <m:mn>3</m:mn>
+                <m:mi>x</m:mi>
+                <m:mo>+</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mrow>
+                    <m:mn>3</m:mn>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mrow>
+            </m:math>
+          </item>
+        </list>
+        
+</section>
+      </section>
+    </section>
+    
+  </content>
+</document>

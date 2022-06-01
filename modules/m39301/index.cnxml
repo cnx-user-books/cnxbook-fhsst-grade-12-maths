@@ -1,0 +1,3534 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Sigma notation, Finite &amp; Infinite Series</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39301</md:content-id>
+  <md:title>Sigma notation, Finite &amp; Infinite Series</md:title>
+  <md:abstract/>
+  <md:uuid>28c25cda-119c-4ea3-8bbf-5408b266b73d</md:uuid>
+</metadata>
+
+<content>
+    
+   
+    <section id="cid6">
+      <title>Series</title>
+      <para id="id317367">In this section we simply work on the concept of <emphasis effect="italics">adding</emphasis> up the numbers belonging to arithmetic and geometric sequences. We call the sum of <emphasis effect="italics">any</emphasis> sequence of numbers a <emphasis effect="italics">series</emphasis>.</para>
+      <section id="uid46">
+        <title>Some Basics</title>
+        <para id="id317397">If we add up the terms of a sequence, we obtain what is called a <emphasis effect="italics">series</emphasis>. If we only sum a finite amount of terms, we get a <emphasis effect="italics">finite series</emphasis>. We use the symbol <m:math overflow="scroll"><m:msub><m:mi>S</m:mi><m:mi>n</m:mi></m:msub></m:math> to mean the sum of the first <m:math overflow="scroll"><m:mi>n</m:mi></m:math> terms of a sequence
+<m:math overflow="scroll"><m:mrow><m:mo>{</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>;</m:mo><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mo>;</m:mo><m:msub><m:mi>a</m:mi><m:mn>3</m:mn></m:msub><m:mo>;</m:mo><m:mo>...</m:mo><m:mo>;</m:mo><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>}</m:mo></m:mrow></m:math>:</para>
+        <equation id="uid47">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>S</m:mi>
+                      <m:mi>n</m:mi>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mo>...</m:mo>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mi>n</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id317561">For example, if we have the following sequence of numbers</para>
+        <equation id="id317565">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>1</m:mn>
+                    <m:mo>;</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mo>;</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:mo>;</m:mo>
+                    <m:mn>25</m:mn>
+                    <m:mo>;</m:mo>
+                    <m:mn>36</m:mn>
+                    <m:mo>;</m:mo>
+                    <m:mn>49</m:mn>
+                    <m:mo>;</m:mo>
+                    <m:mo>...</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id317610">and we wish to find the sum of the first 4 terms, then we write</para>
+        <equation id="id317616">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>S</m:mi>
+                      <m:mn>4</m:mn>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>25</m:mn>
+                    <m:mo>=</m:mo>
+                    <m:mn>39</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id317662">The above is an example of a finite series since we are only summing 4 terms.</para>
+        <para id="id317668">If we sum infinitely many terms of a sequence, we get an <emphasis effect="italics">infinite series</emphasis>:</para>
+        <equation id="uid48">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>S</m:mi>
+                      <m:mi>∞</m:mi>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mo>...</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+      </section>
+      <section id="uid49">
+        <title>Sigma Notation</title>
+        <para id="id317750">In this section we introduce a notation that will make our lives a little easier.</para>
+        <para id="id317754">A sum may be written out using the summation symbol <m:math overflow="scroll"><m:mo>∑</m:mo></m:math>. This symbol is <emphasis effect="italics">sigma</emphasis>, which is the capital letter “S” in the Greek alphabet. It indicates that you must sum the expression to the <emphasis effect="italics">right</emphasis> of it:</para>
+        <equation id="uid50">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:munderover>
+                <m:mo>∑</m:mo>
+                <m:mrow>
+                  <m:mi>i</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mi>m</m:mi>
+                </m:mrow>
+                <m:mi>n</m:mi>
+              </m:munderover>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mi>i</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mi>m</m:mi>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mrow>
+                  <m:mi>m</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:mo>...</m:mo>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mrow>
+                  <m:mi>n</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id317872">where</para>
+        <list id="id317878" display="block" list-type="bulleted">
+          <item id="uid51"><m:math overflow="scroll"><m:mi>i</m:mi></m:math> is the index of the sum;
+</item>
+          <item id="uid52"><m:math overflow="scroll"><m:mi>m</m:mi></m:math> is the lower bound (or start index), shown below the summation symbol;
+</item>
+          <item id="uid53"><m:math overflow="scroll"><m:mi>n</m:mi></m:math> is the upper bound (or end index), shown above the summation symbol;
+</item>
+          <item id="uid54"><m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mi>i</m:mi></m:msub></m:math> are the terms of a sequence.
+</item>
+        </list>
+        <para id="id317968">The index <m:math overflow="scroll"><m:mi>i</m:mi></m:math> is increased from <m:math overflow="scroll"><m:mi>m</m:mi></m:math> to <m:math overflow="scroll"><m:mi>n</m:mi></m:math> in steps of 1.</para>
+        <para id="id317997">If we are summing from <m:math overflow="scroll"><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> (which implies summing from the first term in a sequence), then we can use either <m:math overflow="scroll"><m:msub><m:mi>S</m:mi><m:mi>n</m:mi></m:msub></m:math>- or <m:math overflow="scroll"><m:mo>∑</m:mo></m:math>-notation since they mean the same thing:</para>
+        <equation id="uid55">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:msub>
+                <m:mi>S</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:munderover>
+                <m:mo>∑</m:mo>
+                <m:mrow>
+                  <m:mi>i</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+                <m:mi>n</m:mi>
+              </m:munderover>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mi>i</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:mo>...</m:mo>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id318119">For example, in the following sum,</para>
+        <equation id="id318123">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:munderover>
+                <m:mo>∑</m:mo>
+                <m:mrow>
+                  <m:mi>i</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+                <m:mn>5</m:mn>
+              </m:munderover>
+              <m:mi>i</m:mi>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id318151">we have to add together all the terms in the sequence <m:math overflow="scroll"><m:mrow><m:msub><m:mi>a</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mi>i</m:mi></m:mrow></m:math> from <m:math overflow="scroll"><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> up until <m:math overflow="scroll"><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math>:</para>
+        <equation id="id318205">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:munderover>
+                <m:mo>∑</m:mo>
+                <m:mrow>
+                  <m:mi>i</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+                <m:mn>5</m:mn>
+              </m:munderover>
+              <m:mi>i</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>+</m:mo>
+              <m:mn>3</m:mn>
+              <m:mo>+</m:mo>
+              <m:mn>4</m:mn>
+              <m:mo>+</m:mo>
+              <m:mn>5</m:mn>
+              <m:mo>=</m:mo>
+              <m:mn>15</m:mn>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <section id="uid56">
+          <title>Examples</title>
+          <list id="id318267" display="block" list-type="enumerated">
+            <item id="uid57">
+              <equation id="id318277">
+                <m:math overflow="scroll" mode="display">
+                  <m:mtable displaystyle="true">
+                    <m:mtr>
+                      <m:mtd columnalign="right">
+                        <m:mrow>
+                          <m:munderover>
+                            <m:mo>∑</m:mo>
+                            <m:mrow>
+                              <m:mi>i</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                            <m:mn>6</m:mn>
+                          </m:munderover>
+                          <m:msup>
+                            <m:mn>2</m:mn>
+                            <m:mi>i</m:mi>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mtd>
+                      <m:mtd>
+                        <m:mo>=</m:mo>
+                      </m:mtd>
+                      <m:mtd columnalign="left">
+                        <m:mrow>
+                          <m:msup>
+                            <m:mn>2</m:mn>
+                            <m:mn>1</m:mn>
+                          </m:msup>
+                          <m:mo>+</m:mo>
+                          <m:msup>
+                            <m:mn>2</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mo>+</m:mo>
+                          <m:msup>
+                            <m:mn>2</m:mn>
+                            <m:mn>3</m:mn>
+                          </m:msup>
+                          <m:mo>+</m:mo>
+                          <m:msup>
+                            <m:mn>2</m:mn>
+                            <m:mn>4</m:mn>
+                          </m:msup>
+                          <m:mo>+</m:mo>
+                          <m:msup>
+                            <m:mn>2</m:mn>
+                            <m:mn>5</m:mn>
+                          </m:msup>
+                          <m:mo>+</m:mo>
+                          <m:msup>
+                            <m:mn>2</m:mn>
+                            <m:mn>6</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mtd>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mtd/>
+                      <m:mtd>
+                        <m:mo>=</m:mo>
+                      </m:mtd>
+                      <m:mtd columnalign="left">
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mo>+</m:mo>
+                          <m:mn>4</m:mn>
+                          <m:mo>+</m:mo>
+                          <m:mn>8</m:mn>
+                          <m:mo>+</m:mo>
+                          <m:mn>16</m:mn>
+                          <m:mo>+</m:mo>
+                          <m:mn>32</m:mn>
+                          <m:mo>+</m:mo>
+                          <m:mn>64</m:mn>
+                        </m:mrow>
+                      </m:mtd>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mtd/>
+                      <m:mtd>
+                        <m:mo>=</m:mo>
+                      </m:mtd>
+                      <m:mtd columnalign="left">
+                        <m:mn>126</m:mn>
+                      </m:mtd>
+                    </m:mtr>
+                  </m:mtable>
+                </m:math>
+              </equation>
+            </item>
+            <item id="uid58"><equation id="id318433"><m:math overflow="scroll" mode="display"><m:mtable displaystyle="true"><m:mtr><m:mtd columnalign="right"><m:mrow><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow><m:mn>10</m:mn></m:munderover><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mi>i</m:mi></m:msup><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>4</m:mn></m:msup><m:mo>+</m:mo><m:mo>...</m:mo><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>9</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>10</m:mn></m:msup></m:mrow></m:mtd></m:mtr></m:mtable></m:math></equation>
+for any value <m:math overflow="scroll"><m:mi>x</m:mi></m:math>.
+</item>
+          </list>
+        </section>
+        <note id="eip-216" type="tip">Notice that in the second example we used three dots (...) to indicate that we had left out part of the sum. We do this to avoid writing out every term of a sum.</note><section id="uid59">
+          <title>Some Basic Rules for Sigma Notation</title>
+          <list id="id318559" display="block" list-type="enumerated">
+            <item id="uid60">Given two sequences, <m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mi>i</m:mi></m:msub></m:math> and <m:math overflow="scroll"><m:msub><m:mi>b</m:mi><m:mi>i</m:mi></m:msub></m:math>,
+<equation id="uid61"><m:math overflow="scroll" mode="display"><m:mtable displaystyle="true"><m:mtr><m:mtd columnalign="right"><m:mrow><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mrow><m:mo>(</m:mo><m:msub><m:mi>a</m:mi><m:mi>i</m:mi></m:msub><m:mo>+</m:mo><m:msub><m:mi>b</m:mi><m:mi>i</m:mi></m:msub><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mrow><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>i</m:mi></m:msub><m:mo>+</m:mo><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:msub><m:mi>b</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mtd></m:mtr></m:mtable></m:math></equation></item>
+            <item id="uid62">For any constant <m:math overflow="scroll"><m:mi>c</m:mi></m:math> that is not dependent on the index <m:math overflow="scroll"><m:mi>i</m:mi></m:math>,
+<equation id="uid63"><m:math overflow="scroll" mode="display"><m:mtable displaystyle="true"><m:mtr><m:mtd columnalign="right"><m:mrow><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mi>c</m:mi><m:mo>·</m:mo><m:msub><m:mi>a</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>c</m:mi><m:mo>·</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>·</m:mo><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>·</m:mo><m:msub><m:mi>a</m:mi><m:mn>3</m:mn></m:msub><m:mo>+</m:mo><m:mo>...</m:mo><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>·</m:mo><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>c</m:mi><m:mspace width="0.277778em"/><m:mo>(</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>3</m:mn></m:msub><m:mo>+</m:mo><m:mo>...</m:mo><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>c</m:mi><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:msub><m:mi>a</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mtd></m:mtr></m:mtable></m:math></equation></item>
+          </list>
+        </section>
+        <section id="uid64">
+          <title>Exercises</title>
+          <list id="id318972" display="block" list-type="enumerated">
+            <item id="uid65">What is <m:math overflow="scroll"><m:mrow><m:msubsup><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mn>4</m:mn></m:msubsup><m:mn>2</m:mn></m:mrow></m:math>?
+</item>
+            <item id="uid66">Determine <m:math overflow="scroll"><m:mrow><m:msubsup><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow><m:mn>3</m:mn></m:msubsup><m:mi>i</m:mi></m:mrow></m:math>.
+</item>
+            <item id="uid67">Expand <m:math overflow="scroll"><m:mrow><m:msubsup><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mn>5</m:mn></m:msubsup><m:mi>i</m:mi></m:mrow></m:math>.
+</item>
+            <item id="uid68">Calculate the value of <m:math overflow="scroll"><m:mi>a</m:mi></m:math> if:
+<equation id="id319114"><m:math overflow="scroll" mode="display"><m:mrow><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mn>3</m:mn></m:munderover><m:mi>a</m:mi><m:mo>·</m:mo><m:msup><m:mn>2</m:mn><m:mrow><m:mi>k</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mn>28</m:mn></m:mrow></m:math></equation></item>
+          </list>
+        </section>
+      </section>
+    </section>
+    <section id="cid7">
+      <title>Finite Arithmetic Series</title>
+      <para id="id319172">Remember that an arithmetic sequence is a set of numbers, such that the difference between any term and the previous term is a constant number, <m:math overflow="scroll"><m:mi>d</m:mi></m:math>, called the <emphasis effect="bold">constant difference</emphasis>:</para>
+      <equation id="uid69">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:mi>d</m:mi>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>n</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id319246">where</para>
+      <list id="id319251" display="block" list-type="bulleted">
+        <item id="uid70"><m:math overflow="scroll"><m:mi>n</m:mi></m:math> is the index of the sequence;
+</item>
+        <item id="uid71"><m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:math> is the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:msup></m:math>-term of the sequence;
+</item>
+        <item id="uid72"><m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:math> is the first term;
+</item>
+        <item id="uid73"><m:math overflow="scroll"><m:mi>d</m:mi></m:math> is the common difference.
+</item>
+      </list>
+      <para id="id319363">When we sum a finite number of terms in an arithmetic sequence, we get a <emphasis effect="italics">finite arithmetic series</emphasis>.</para>
+      <para id="id319373">The simplest arithmetic sequence is when <m:math overflow="scroll"><m:mrow><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> in the general form <link target-id="uid69"/>; in other words all the terms in the sequence are 1:</para>
+      <equation id="id319415">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mi>i</m:mi>
+                </m:msub>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:mi>d</m:mi>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>i</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo>+</m:mo>
+                  <m:mn>0</m:mn>
+                  <m:mo>·</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mi>i</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>1</m:mn>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo>{</m:mo>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mi>i</m:mi>
+                  </m:msub>
+                  <m:mo>}</m:mo>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo>{</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mo>...</m:mo>
+                  <m:mo>}</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id319563">If we wish to sum this sequence from <m:math overflow="scroll"><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> to any positive integer <m:math overflow="scroll"><m:mi>n</m:mi></m:math>, we would write</para>
+      <equation id="id319592">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:munderover>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mi>i</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mi>n</m:mi>
+            </m:munderover>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mi>i</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mi>i</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mi>n</m:mi>
+            </m:munderover>
+            <m:mn>1</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>1</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>1</m:mn>
+            <m:mo>+</m:mo>
+            <m:mo>...</m:mo>
+            <m:mo>+</m:mo>
+            <m:mn>1</m:mn>
+            <m:mspace width="2.em"/>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mi> times </m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id319680">Since all the terms are equal to 1, it means that if we sum to <m:math overflow="scroll"><m:mi>n</m:mi></m:math> we will be adding <m:math overflow="scroll"><m:mi>n</m:mi></m:math>-number of 1's together, which is simply equal to <m:math overflow="scroll"><m:mi>n</m:mi></m:math>:</para>
+      <equation id="uid74">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable frame="solid">
+            <m:mtr>
+              <m:mtd>
+                <m:munderover>
+                  <m:mo>∑</m:mo>
+                  <m:mrow>
+                    <m:mi>i</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                  <m:mi>n</m:mi>
+                </m:munderover>
+                <m:mn>1</m:mn>
+                <m:mo>=</m:mo>
+                <m:mi>n</m:mi>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id319752">Another simple arithmetic sequence is when <m:math overflow="scroll"><m:mrow><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>, which is the sequence of positive integers:</para>
+      <equation id="id319790">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mi>i</m:mi>
+                </m:msub>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:mi>d</m:mi>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>i</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>·</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mi>i</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mi>i</m:mi>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo>{</m:mo>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mi>i</m:mi>
+                  </m:msub>
+                  <m:mo>}</m:mo>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mo>{</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>4</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mn>5</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mo>...</m:mo>
+                  <m:mo>}</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id319938">If we wish to sum this sequence from <m:math overflow="scroll"><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> to any positive integer <m:math overflow="scroll"><m:mi>n</m:mi></m:math>, we would write</para>
+      <equation id="uid75">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:munderover>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mi>i</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mi>n</m:mi>
+            </m:munderover>
+            <m:mi>i</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>2</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>3</m:mn>
+            <m:mo>+</m:mo>
+            <m:mo>...</m:mo>
+            <m:mo>+</m:mo>
+            <m:mi>n</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id320021">This is an equation with a very important solution as it gives the answer to the sum of positive integers.</para>
+<note id="notfhsst_id2385"><title> Interesting Fact </title>
+      <para id="id320033">Mathematician, Karl Friedrich Gauss, discovered this proof when he was only 8 years old. His teacher had decided to give his class a problem which would distract them for the entire day by asking them to add all the numbers from 1 to 100. Young Karl realised how to do this almost instantaneously and shocked the teacher with the correct answer, 5050.</para>
+</note>
+      <para id="id320048">We first write <m:math overflow="scroll"><m:msub><m:mi>S</m:mi><m:mi>n</m:mi></m:msub></m:math> as a sum of terms in ascending order:</para>
+      <equation id="uid76">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mi>S</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>2</m:mn>
+            <m:mo>+</m:mo>
+            <m:mo>...</m:mo>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>-</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mi>n</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id320119">We then write the same sum but with the terms in descending order:</para>
+      <equation id="uid77">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mi>S</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>n</m:mi>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>-</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mo>...</m:mo>
+            <m:mo>+</m:mo>
+            <m:mn>2</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id320177">We then add corresponding pairs of terms from equations <link target-id="uid76"/> and <link target-id="uid77"/>, and we find that the sum for each pair is the same, <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math>:</para>
+      <equation id="uid78">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:msub>
+              <m:mi>S</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mo>...</m:mo>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id320294">We then have <m:math overflow="scroll"><m:mi>n</m:mi></m:math>-number of <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math>-terms, and by simplifying we arrive at the final result:</para>
+      <equation id="id320328">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:msub>
+                    <m:mi>S</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mi>n</m:mi>
+                  <m:mspace width="0.277778em"/>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msub>
+                  <m:mi>S</m:mi>
+                  <m:mi>n</m:mi>
+                </m:msub>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mi>n</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>n</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <equation id="uid79">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mi>S</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mi>i</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mi>n</m:mi>
+            </m:munderover>
+            <m:mi>i</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>n</m:mi>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id320478">Note that this is an example of a quadratic sequence.</para>
+      <section id="uid80">
+        <title>General Formula for a Finite Arithmetic Series</title>
+        <para id="id320493">If we wish to sum any arithmetic sequence, there is no need to work it out term-for-term. We will now determine the general formula to evaluate a finite arithmetic series. We start with the general formula for an arithmetic sequence and sum it from <m:math overflow="scroll"><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> to any positive integer <m:math overflow="scroll"><m:mi>n</m:mi></m:math>:</para>
+        <equation id="id320521">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mi>n</m:mi>
+                    </m:munderover>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mi>i</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mi>n</m:mi>
+                    </m:munderover>
+                    <m:mrow>
+                      <m:mo>[</m:mo>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>+</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>i</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mo>]</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mi>n</m:mi>
+                    </m:munderover>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>+</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mi>i</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mi>n</m:mi>
+                    </m:munderover>
+                    <m:mrow>
+                      <m:mo>[</m:mo>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>-</m:mo>
+                        <m:mi>d</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mo>+</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mi>i</m:mi>
+                      <m:mo>]</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mi>n</m:mi>
+                    </m:munderover>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>-</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mi>n</m:mi>
+                    </m:munderover>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mi>i</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mi>n</m:mi>
+                    </m:munderover>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>-</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mi>d</m:mi>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mi>n</m:mi>
+                    </m:munderover>
+                    <m:mi>i</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>-</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mi>n</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>d</m:mi>
+                        <m:mi>n</m:mi>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>n</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mi>n</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>-</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mi>d</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mi>n</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mi>n</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>+</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mi>n</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mi>n</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mrow>
+                      <m:mo>[</m:mo>
+                      <m:mspace width="0.166667em"/>
+                      <m:mn>2</m:mn>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>+</m:mo>
+                      <m:mi>d</m:mi>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>n</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mo>]</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id321049">So, the general formula for determining an arithmetic series is given by</para>
+        <equation id="uid81">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:msub>
+                <m:mi>S</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:munderover>
+                <m:mo>∑</m:mo>
+                <m:mrow>
+                  <m:mi>i</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+                <m:mi>n</m:mi>
+              </m:munderover>
+              <m:mrow>
+                <m:mo>[</m:mo>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:mi>d</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>i</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>]</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mi>n</m:mi>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mrow>
+                <m:mo>[</m:mo>
+                <m:mn>2</m:mn>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:mi>d</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>]</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id321164">For example, if we wish to know the series <m:math overflow="scroll"><m:msub><m:mi>S</m:mi><m:mn>20</m:mn></m:msub></m:math> for the arithmetic sequence <m:math overflow="scroll"><m:mrow><m:msub><m:mi>a</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mrow><m:mo>(</m:mo><m:mi>i</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, we could either calculate each term individually and sum them:</para>
+        <equation id="id321220">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>S</m:mi>
+                    <m:mn>20</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mn>20</m:mn>
+                    </m:munderover>
+                    <m:mrow>
+                      <m:mo>[</m:mo>
+                      <m:mn>3</m:mn>
+                      <m:mo>+</m:mo>
+                      <m:mn>7</m:mn>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>i</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mo>]</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>3</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>10</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>17</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>24</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>31</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>38</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>45</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>52</m:mn>
+                    <m:mo>+</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd/>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>59</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>66</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>73</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>80</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>87</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>94</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>101</m:mn>
+                    <m:mo>+</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd/>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>108</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>115</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>122</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>129</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>136</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>1390</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id321411">or, more sensibly, we could use equation <link target-id="uid81"/> noting that <m:math overflow="scroll"><m:mrow><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>, <m:math overflow="scroll"><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow></m:math> so that</para>
+        <equation id="uid82">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>S</m:mi>
+                    <m:mn>20</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mn>20</m:mn>
+                    </m:munderover>
+                    <m:mrow>
+                      <m:mo>[</m:mo>
+                      <m:mn>3</m:mn>
+                      <m:mo>+</m:mo>
+                      <m:mn>7</m:mn>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>i</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mo>]</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>20</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mrow>
+                      <m:mo>[</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>·</m:mo>
+                      <m:mn>3</m:mn>
+                      <m:mo>+</m:mo>
+                      <m:mn>7</m:mn>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>20</m:mn>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mo>]</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>1390</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id321600">This example demonstrates how useful equation <link target-id="uid81"/> is.</para>
+      </section>
+      <section id="uid83">
+        <title>Exercises</title>
+        <list id="id321620" display="block" list-type="enumerated">
+          <item id="uid84">The sum to <m:math overflow="scroll"><m:mi>n</m:mi></m:math> terms of an arithmetic series is <m:math overflow="scroll"><m:mrow><m:msub><m:mi>S</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mi>n</m:mi><m:mn>2</m:mn></m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>7</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>15</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.
+<list id="id321682" display="block" list-type="enumerated"><item id="uid85">How many terms of the series must be added to give a sum of 425?
+</item><item id="uid86">Determine the 6<sup>th</sup> term of the series.
+</item></list></item>
+          <item id="uid87">The sum of an arithmetic series is 100 times its first term, while the last term is 9 times the first term. Calculate the number of terms in the series if the first term is not equal to zero.
+</item>
+          <item id="uid88">The common difference of an arithmetic series is 3. Calculate the values of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> for which the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:msup></m:math> term of the series is 93, and the sum of the first <m:math overflow="scroll"><m:mi>n</m:mi></m:math> terms is 975.
+</item>
+          <item id="uid89">The sum of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> terms of an arithmetic series is <m:math overflow="scroll"><m:mrow><m:mn>5</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>11</m:mn><m:mi>n</m:mi></m:mrow></m:math> for all values of <m:math overflow="scroll"><m:mi>n</m:mi></m:math>. Determine the common difference.
+</item>
+          <item id="uid90">The sum of an arithmetic series is 100 times the value of its first term, while the last term is 9 times the first term. Calculate the number of terms in the series if the first term is not equal to zero.
+</item>
+          <item id="uid91">The third term of an arithmetic sequence is -7 and the 7<sup>th</sup> term is 9. Determine the sum of the first 51 terms of the sequence.
+</item>
+          <item id="uid92">Calculate the sum of the arithmetic series <m:math overflow="scroll"><m:mrow><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mo>+</m:mo><m:mo>⋯</m:mo><m:mo>+</m:mo><m:mn>901</m:mn></m:mrow></m:math>.
+</item>
+          <item id="uid93"> The common difference of an arithmetic series is 3. Calculate the values of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> for which the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mi> th </m:mi></m:msup></m:math> term of the series is 93 and the sum of the first <m:math overflow="scroll"><m:mi>n</m:mi></m:math> terms is 975.
+</item>
+        </list>
+      </section>
+    </section>
+    <section id="cid8">
+      <title>Finite Squared Series</title>
+      <para id="id321960">When we sum a finite number of terms in a quadratic sequence, we get a <emphasis effect="italics">finite
+quadratic series</emphasis>. The general form of a quadratic series is quite complicated,
+so we will only look at the simple case when <m:math overflow="scroll"><m:mrow><m:mi>D</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mo>(</m:mo><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>, where <m:math overflow="scroll"><m:mi>D</m:mi></m:math> is the common second difference and <m:math overflow="scroll"><m:mi>d</m:mi></m:math> is the finite difference. This is the sequence of squares of the integers:</para>
+      <equation id="uid94">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mi>i</m:mi>
+                </m:msub>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:msup>
+                  <m:mi>i</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mi>i</m:mi>
+                </m:msub>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msup>
+                    <m:mn>1</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>;</m:mo>
+                  <m:mspace width="3.33333pt"/>
+                  <m:msup>
+                    <m:mn>2</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>;</m:mo>
+                  <m:mspace width="3.33333pt"/>
+                  <m:msup>
+                    <m:mn>3</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>;</m:mo>
+                  <m:mspace width="3.33333pt"/>
+                  <m:msup>
+                    <m:mn>4</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>;</m:mo>
+                  <m:mspace width="3.33333pt"/>
+                  <m:msup>
+                    <m:mn>5</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>;</m:mo>
+                  <m:mspace width="3.33333pt"/>
+                  <m:msup>
+                    <m:mn>6</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>;</m:mo>
+                  <m:mspace width="3.33333pt"/>
+                  <m:mo>...</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mspace width="3.33333pt"/>
+                  <m:mn>4</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mspace width="3.33333pt"/>
+                  <m:mn>9</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mspace width="3.33333pt"/>
+                  <m:mn>16</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mspace width="3.33333pt"/>
+                  <m:mn>25</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mspace width="3.33333pt"/>
+                  <m:mn>36</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mspace width="3.33333pt"/>
+                  <m:mo>...</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id322238">If we wish to sum this sequence and create a series, then we write</para>
+      <equation id="uid95">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mi>S</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mi>i</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mi>n</m:mi>
+            </m:munderover>
+            <m:msup>
+              <m:mi>i</m:mi>
+              <m:mrow>
+                <m:mspace width="0.166667em"/>
+                <m:mn>2</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>4</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>9</m:mn>
+            <m:mo>+</m:mo>
+            <m:mo>...</m:mo>
+            <m:mo>+</m:mo>
+            <m:msup>
+              <m:mi>n</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id322323">which can be written, in general, as</para>
+      <equation id="uid96">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable frame="solid">
+            <m:mtr>
+              <m:mtd>
+                <m:msub>
+                  <m:mi>S</m:mi>
+                  <m:mi>n</m:mi>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:munderover>
+                  <m:mo>∑</m:mo>
+                  <m:mrow>
+                    <m:mi>i</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                  <m:mi>n</m:mi>
+                </m:munderover>
+                <m:msup>
+                  <m:mi>i</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mi>n</m:mi>
+                  <m:mn>6</m:mn>
+                </m:mfrac>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>n</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id322415">The proof for equation <link target-id="uid96"/> can be found under the Advanced block that follows:</para>
+<section id="secfhsst_id3413"><title> Derivation of the Finite Squared Series </title>
+      <para id="id322430">We will now prove the formula for the finite squared series:</para>
+      <equation id="id322436">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mi>S</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mi>i</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mi>n</m:mi>
+            </m:munderover>
+            <m:msup>
+              <m:mi>i</m:mi>
+              <m:mrow>
+                <m:mspace width="0.166667em"/>
+                <m:mn>2</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>4</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>9</m:mn>
+            <m:mo>+</m:mo>
+            <m:mo>...</m:mo>
+            <m:mo>+</m:mo>
+            <m:msup>
+              <m:mi>n</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id322510">We start off with the expansion of <m:math overflow="scroll"><m:msup><m:mrow><m:mo>(</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mn>3</m:mn></m:msup></m:math>.</para>
+      <equation id="id322540">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>k</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>3</m:mn>
+                </m:msup>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>k</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:msup>
+                    <m:mi>k</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mi>k</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>k</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>-</m:mo>
+                  <m:msup>
+                    <m:mi>k</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:msup>
+                    <m:mi>k</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mi>k</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <equation id="id322670">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>:</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:msup>
+                    <m:mn>2</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>-</m:mo>
+                  <m:msup>
+                    <m:mn>1</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>=</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow/>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>:</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:msup>
+                    <m:mn>3</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>-</m:mo>
+                  <m:msup>
+                    <m:mn>2</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>=</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow/>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>3</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>:</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:msup>
+                    <m:mn>4</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>-</m:mo>
+                  <m:msup>
+                    <m:mn>3</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>=</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>3</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>⋮</m:mo>
+              </m:mtd>
+              <m:mtd/>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mi>n</m:mi>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>:</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>n</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>-</m:mo>
+                  <m:msup>
+                    <m:mi>n</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>=</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:msup>
+                    <m:mi>n</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mi>n</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id322990">If we add all the terms on the right and left, we arrive at</para>
+      <equation id="id322997">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>n</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:munderover>
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:mi>i</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>n</m:mi>
+                  </m:munderover>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:msup>
+                      <m:mi>i</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:mi>i</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow/>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>n</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:msup>
+                    <m:mi>n</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mi>n</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:munderover>
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:mi>i</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>n</m:mi>
+                  </m:munderover>
+                  <m:msup>
+                    <m:mi>i</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:munderover>
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:mi>i</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>n</m:mi>
+                  </m:munderover>
+                  <m:mi>i</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:munderover>
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:mi>i</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>n</m:mi>
+                  </m:munderover>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow/>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>n</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:msup>
+                    <m:mi>n</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mi>n</m:mi>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:munderover>
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:mi>i</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>n</m:mi>
+                  </m:munderover>
+                  <m:msup>
+                    <m:mi>i</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>3</m:mn>
+                      <m:mi>n</m:mi>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mspace width="0.166667em"/>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>n</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mi>n</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow/>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:munderover>
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:mi>i</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>n</m:mi>
+                  </m:munderover>
+                  <m:msup>
+                    <m:mi>i</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:mfrac>
+                  <m:mrow>
+                    <m:mo>[</m:mo>
+                    <m:msup>
+                      <m:mi>n</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:msup>
+                      <m:mi>n</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:mi>n</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mn>3</m:mn>
+                        <m:mi>n</m:mi>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>n</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mi>n</m:mi>
+                    <m:mo>]</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow/>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:mfrac>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>n</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:msup>
+                      <m:mi>n</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:mi>n</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mfrac>
+                      <m:mn>3</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:msup>
+                      <m:mi>n</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mfrac>
+                      <m:mn>3</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mi>n</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mi>n</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow/>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:mfrac>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>n</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mfrac>
+                      <m:mn>3</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:msup>
+                      <m:mi>n</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mi>n</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow/>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mi>n</m:mi>
+                    <m:mn>6</m:mn>
+                  </m:mfrac>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:msup>
+                      <m:mi>n</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:mi>n</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id323607">Therefore,</para>
+      <equation id="id323612">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable frame="solid">
+            <m:mtr>
+              <m:mtd>
+                <m:munderover>
+                  <m:mo>∑</m:mo>
+                  <m:mrow>
+                    <m:mi>i</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                  <m:mi>n</m:mi>
+                </m:munderover>
+                <m:msup>
+                  <m:mi>i</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mi>n</m:mi>
+                  <m:mn>6</m:mn>
+                </m:mfrac>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>n</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>n</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      
+</section>
+    </section>
+    <section id="cid9">
+      <title>Finite Geometric Series</title>
+      <para id="id323706">When we sum a known number of terms in a geometric sequence, we get a <emphasis effect="italics">finite geometric series</emphasis>. We can write out each term of a geometric sequence in the general form:</para>
+      <equation id="uid97">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>·</m:mo>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id323763">where</para>
+      <list id="id323768" display="block" list-type="bulleted">
+        <item id="uid98"><m:math overflow="scroll"><m:mi>n</m:mi></m:math> is the index of the sequence;
+</item>
+        <item id="uid99"><m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub></m:math> is the <m:math overflow="scroll"><m:msup><m:mi>n</m:mi><m:mrow><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:msup></m:math>-term of the sequence;
+</item>
+        <item id="uid100"><m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:math> is the first term;
+</item>
+        <item id="uid101"><m:math overflow="scroll"><m:mi>r</m:mi></m:math> is the common ratio (the ratio of any term to the previous term).
+</item>
+      </list>
+      <para id="id323880">
+By simply adding together the first <m:math overflow="scroll"><m:mi>n</m:mi></m:math> terms, we are actually writing out the series</para>
+      <equation id="uid102">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mi>S</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mi>r</m:mi>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mo>...</m:mo>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id324004">We may multiply the above equation by <m:math overflow="scroll"><m:mi>r</m:mi></m:math> on both sides, giving us</para>
+      <equation id="uid103">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>r</m:mi>
+            <m:msub>
+              <m:mi>S</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mi>r</m:mi>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mo>...</m:mo>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mi>n</m:mi>
+            </m:msup>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id324132">You may notice that all the terms on the right side of <link target-id="uid102"/> and <link target-id="uid103"/> are the same, except the first and last terms. If we subtract <link target-id="uid102"/> from <link target-id="uid103"/>, we are left with just</para>
+      <equation id="uid104">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi>r</m:mi>
+                  <m:msub>
+                    <m:mi>S</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                  <m:mo>-</m:mo>
+                  <m:msub>
+                    <m:mi>S</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:msup>
+                    <m:mi>r</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msup>
+                  <m:mo>-</m:mo>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>S</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>r</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mi>n</m:mi>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id324275">Dividing by <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> on both sides, we arrive at the general form of a geometric series:</para>
+      <equation id="uid105">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mi>S</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mi>i</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mi>n</m:mi>
+            </m:munderover>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>·</m:mo>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi>i</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:msup>
+                    <m:mi>r</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msup>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>r</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="eip-150">The following video summarises what you have learnt so far about sequences and series:
+<figure id="series-1" class="khanacademy">
+	  <title>Khan academy video on series - 1</title>
+	  <media id="yt-media1" display="block" alt="video on series 1">
+	  <flash id="yt-video1" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/VgVJrSJxkDk&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><section id="uid106">
+        <title>Exercises</title>
+        <list id="id324409" display="block" list-type="enumerated">
+          <item id="uid107">Prove that
+<equation id="id324424"><m:math overflow="scroll" mode="display"><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>r</m:mi><m:mo>+</m:mo><m:mi>a</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>+</m:mo><m:mi>a</m:mi><m:msup><m:mi>r</m:mi><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup><m:mi>r</m:mi><m:mi>n</m:mi></m:msup><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow></m:mfrac></m:mrow></m:math></equation></item>
+          <item id="uid108">Find the sum of the first 11 terms of the geometric series <m:math overflow="scroll"><m:mrow><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>+</m:mo><m:mo>...</m:mo></m:mrow></m:math></item>
+          <item id="uid109">Show that the sum of the first <m:math overflow="scroll"><m:mi>n</m:mi></m:math> terms of the geometric series
+<equation id="id324584"><m:math overflow="scroll" mode="display"><m:mrow><m:mn>54</m:mn><m:mo>+</m:mo><m:mn>18</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:math></equation>
+is given by <m:math overflow="scroll"><m:mrow><m:mn>81</m:mn><m:mo>-</m:mo><m:msup><m:mn>3</m:mn><m:mrow><m:mn>4</m:mn><m:mo>-</m:mo><m:mi>n</m:mi></m:mrow></m:msup></m:mrow></m:math>.
+</item>
+          <item id="uid110">The eighth term of a geometric sequence is 640. The third term is 20. Find the sum of the first 7 terms.
+</item>
+          <item id="uid111">Solve for <m:math overflow="scroll"><m:mi>n</m:mi></m:math>: <m:math overflow="scroll"><m:mrow><m:msubsup><m:mo>∑</m:mo><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:msubsup><m:mn>8</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow><m:mi>t</m:mi></m:msup><m:mo>=</m:mo><m:mn>15</m:mn><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math>.
+</item>
+          <item id="uid112">The ratio between the sum of the first three terms of a geometric series and the sum of the 4<sup>th</sup>-, 5<sup>th</sup>- and 6<sup>th</sup>-terms of the same series is <m:math overflow="scroll"><m:mrow><m:mn>8</m:mn><m:mo>:</m:mo><m:mn>27</m:mn></m:mrow></m:math>. Determine the common ratio and the first 2 terms if the third term is 8.
+</item>
+          <item id="uid113">Given the geometric sequence <m:math overflow="scroll"><m:mrow><m:mn>1</m:mn><m:mo>;</m:mo><m:mspace width="0.277778em"/><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>;</m:mo><m:mspace width="0.277778em"/><m:mn>9</m:mn><m:mo>;</m:mo><m:mspace width="0.277778em"/><m:mo>⋯</m:mo></m:mrow></m:math> determine:
+<list id="id324847" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid114">The 8<m:math overflow="scroll"><m:msup><m:mrow/><m:mi> th </m:mi></m:msup></m:math> term of the sequence
+</item><item id="uid115">The sum of the first 8 terms of the sequence.
+</item></list></item>
+          <item id="uid116">Determine:
+<equation id="id324902"><m:math overflow="scroll" mode="display"><m:mrow><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mn>4</m:mn></m:munderover><m:mn>3</m:mn><m:mo>·</m:mo><m:msup><m:mn>2</m:mn><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:math></equation></item>
+        </list>
+      </section>
+    </section>
+    <section id="cid10">
+      <title>Infinite Series</title>
+      <para id="id324956">Thus far we have been working only with finite sums, meaning that whenever we determined the sum of a series, we only considered the sum of the first <m:math overflow="scroll"><m:mi>n</m:mi></m:math> terms. In this section, we consider what happens when we add infinitely many terms together. You might think that this is a silly question - surely the answer will be <m:math overflow="scroll"><m:mi>∞</m:mi></m:math> when one sums infinitely many numbers, no matter how small they are? The surprising answer is that while in some cases one will reach <m:math overflow="scroll"><m:mi>∞</m:mi></m:math> (like when you try to add all the positive integers together), there are some cases one will get a finite answer. If you don't believe this, try doing the following sum, a geometric series, on your calculator or computer:</para>
+      <equation id="id324992">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>4</m:mn>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>8</m:mn>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>16</m:mn>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>32</m:mn>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mo>...</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id325047">You might think that if you keep adding more and more terms you will eventually get larger and larger numbers, but in fact you won't even get past 1 - try it and see for yourself!</para>
+      <para id="id325054">We denote the sum of an infinite number of terms of a sequence by</para>
+      <equation id="id325058">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>S</m:mi>
+                    <m:mi>∞</m:mi>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:munderover>
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:mi>i</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>∞</m:mi>
+                  </m:munderover>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mi>i</m:mi>
+                  </m:msub>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id325108">When we sum the terms of a series, and the answer we get after each summation gets closer and closer to some number, we say that the series <emphasis effect="italics">converges</emphasis>. If a series does not converge, then we say that it <emphasis effect="italics">diverges</emphasis>.</para>
+      <section id="uid117">
+        <title>Infinite Geometric Series</title>
+        <para id="id325133">There is a simple test for knowing instantly which geometric series converges and which diverges. When <m:math overflow="scroll"><m:mi>r</m:mi></m:math>, the common ratio, is strictly between -1 and 1, i.e. <m:math overflow="scroll"><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>r</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow></m:math>, the infinite series will converge, otherwise it will diverge. There is also a formula for working out the value to which the series converges.</para>
+        <para id="id325169">Let's start off with formula <link target-id="uid105"/> for the finite geometric series:</para>
+        <equation id="id325177">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:msub>
+                <m:mi>S</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:munderover>
+                <m:mo>∑</m:mo>
+                <m:mrow>
+                  <m:mi>i</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+                <m:mi>n</m:mi>
+              </m:munderover>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>·</m:mo>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mrow>
+                  <m:mi>i</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mspace width="0.166667em"/>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mi>n</m:mi>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mi>r</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id325276">Now we will investigate the behaviour of <m:math overflow="scroll"><m:msup><m:mi>r</m:mi><m:mi>n</m:mi></m:msup></m:math> for <m:math overflow="scroll"><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>r</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow></m:math> as n becomes larger.</para>
+        <para id="id325315">Take <m:math overflow="scroll"><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>:</para>
+        <equation id="id325338">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>n</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>:</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mi>n</m:mi>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mstyle scriptlevel="0" displaystyle="false">
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                        </m:mstyle>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>1</m:mn>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:mstyle scriptlevel="0" displaystyle="false">
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                    </m:mstyle>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>n</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>:</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mi>n</m:mi>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mstyle scriptlevel="0" displaystyle="false">
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                        </m:mstyle>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:mstyle scriptlevel="0" displaystyle="false">
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                    </m:mstyle>
+                    <m:mo>·</m:mo>
+                    <m:mstyle scriptlevel="0" displaystyle="false">
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                    </m:mstyle>
+                    <m:mo>=</m:mo>
+                    <m:mstyle scriptlevel="0" displaystyle="false">
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>4</m:mn>
+                      </m:mfrac>
+                    </m:mstyle>
+                    <m:mo>&lt;</m:mo>
+                    <m:mstyle scriptlevel="0" displaystyle="false">
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                    </m:mstyle>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>n</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>3</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>:</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mi>n</m:mi>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mstyle scriptlevel="0" displaystyle="false">
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                        </m:mstyle>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:mstyle scriptlevel="0" displaystyle="false">
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                    </m:mstyle>
+                    <m:mo>·</m:mo>
+                    <m:mstyle scriptlevel="0" displaystyle="false">
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                    </m:mstyle>
+                    <m:mo>·</m:mo>
+                    <m:mstyle scriptlevel="0" displaystyle="false">
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                    </m:mstyle>
+                    <m:mo>=</m:mo>
+                    <m:mstyle scriptlevel="0" displaystyle="false">
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>8</m:mn>
+                      </m:mfrac>
+                    </m:mstyle>
+                    <m:mo>&lt;</m:mo>
+                    <m:mstyle scriptlevel="0" displaystyle="false">
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>4</m:mn>
+                      </m:mfrac>
+                    </m:mstyle>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id325672">Since <m:math overflow="scroll"><m:mi>r</m:mi></m:math> is in the range <m:math overflow="scroll"><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>r</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow></m:math>, we see that <m:math overflow="scroll"><m:msup><m:mi>r</m:mi><m:mi>n</m:mi></m:msup></m:math> gets closer to 0 as n gets larger.</para>
+        <para id="id325720">Therefore,</para>
+        <equation id="id325724">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>S</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mspace width="0.166667em"/>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:msup>
+                          <m:mi>r</m:mi>
+                          <m:mi>n</m:mi>
+                        </m:msup>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mi>r</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow/>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>S</m:mi>
+                    <m:mi>∞</m:mi>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mspace width="0.166667em"/>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mn>0</m:mn>
+                          <m:mo>-</m:mo>
+                          <m:mn>1</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi>r</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mspace width="2.em"/>
+                    <m:mi> for </m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>&lt;</m:mo>
+                    <m:mi>r</m:mi>
+                    <m:mo>&lt;</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow/>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mo>-</m:mo>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mi>r</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow/>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo>-</m:mo>
+                      <m:mi>r</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id325935">The sum of an infinite geometric series is given by the formula</para>
+        <equation id="uid118">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mtable frame="solid">
+                    <m:mtr>
+                      <m:mtd>
+                        <m:msub>
+                          <m:mi>S</m:mi>
+                          <m:mi>∞</m:mi>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:munderover>
+                          <m:mo>∑</m:mo>
+                          <m:mrow>
+                            <m:mi>i</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                          <m:mi>∞</m:mi>
+                        </m:munderover>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:msup>
+                          <m:mi>r</m:mi>
+                          <m:mrow>
+                            <m:mi>i</m:mi>
+                            <m:mo>-</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:msup>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:msub>
+                            <m:mi>a</m:mi>
+                            <m:mn>1</m:mn>
+                          </m:msub>
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                            <m:mo>-</m:mo>
+                            <m:mi>r</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mspace width="2.em"/>
+                        <m:mi> for </m:mi>
+                        <m:mspace width="2.em"/>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>&lt;</m:mo>
+                        <m:mi>r</m:mi>
+                        <m:mo>&lt;</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mtd>
+                    </m:mtr>
+                  </m:mtable>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id326053">where <m:math overflow="scroll"><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:math> is the first term of the series and <m:math overflow="scroll"><m:mi>r</m:mi></m:math> is the common ratio.</para>
+      </section>
+      <para id="eip-1"><figure id="series-2" class="khanacademy">
+	  <title>Khan academy video on series - 2</title>
+	  <media id="yt-media2" display="block" alt="video on series 2">
+	  <flash id="yt-video2" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/U_8GRLJplZg&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><section id="uid119">
+        <title>Exercises</title>
+        <list id="id326092" display="block" list-type="enumerated">
+          <item id="uid120">What does <m:math overflow="scroll"><m:msup><m:mrow><m:mo>(</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac></m:mstyle><m:mo>)</m:mo></m:mrow><m:mi>n</m:mi></m:msup></m:math> approach as <m:math overflow="scroll"><m:mi>n</m:mi></m:math> tends towards <m:math overflow="scroll"><m:mi>∞</m:mi></m:math>?
+</item>
+          <item id="uid121">Given the geometric series:
+<equation id="id326166"><m:math overflow="scroll" mode="display"><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow><m:mn>5</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow><m:mn>4</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mo>...</m:mo></m:mrow></m:math></equation><list id="id326236" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid122">Show that the series converges
+</item><item id="uid123">Calculate the sum to infinity of the series
+</item><item id="uid124">Calculate the sum of the first 8 terms of the series, correct to two decimal places.
+</item><item id="uid125">Determine
+<m:math overflow="scroll"><m:mrow><m:msubsup><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow><m:mi>∞</m:mi></m:msubsup><m:mn>2</m:mn><m:mo>·</m:mo><m:msup><m:mrow><m:mn>5</m:mn></m:mrow><m:mrow><m:mn>6</m:mn><m:mo>-</m:mo><m:mi>n</m:mi></m:mrow></m:msup></m:mrow></m:math>
+correct to two decimal places using previously calculated results.
+</item></list></item>
+          <item id="uid126">Find the sum to infinity of the geometric series <m:math overflow="scroll"><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>1</m:mn><m:mn>9</m:mn></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mo>...</m:mo></m:mrow></m:math></item>
+          <item id="uid127">Determine for which values of <m:math overflow="scroll"><m:mi>x</m:mi></m:math>, the geometric series
+<equation id="id326412"><m:math overflow="scroll" mode="display"><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mstyle><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>2</m:mn><m:mn>9</m:mn></m:mfrac></m:mstyle><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mo>...</m:mo></m:mrow></m:math></equation>
+will converge.
+</item>
+          <item id="uid128">The sum to infinity of a geometric series with positive terms is <m:math overflow="scroll"><m:mrow><m:mn>4</m:mn><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mstyle></m:mrow></m:math> and the sum of the first two terms is <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mstyle></m:mrow></m:math>. Find <m:math overflow="scroll"><m:mi>a</m:mi></m:math>, the first term, and <m:math overflow="scroll"><m:mi>r</m:mi></m:math>, the common ratio between consecutive terms.
+</item>
+        </list>
+      </section>
+    </section>
+    <section id="cid11">
+      <title>End of Chapter Exercises</title>
+      <list id="id326576" display="block" list-type="enumerated" number-style="arabic"><item id="uid129">Is <m:math overflow="scroll"><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo></m:mrow></m:math> an example of a <emphasis effect="italics">finite series</emphasis> or an <emphasis effect="italics">infinite series</emphasis>?
+</item>
+        <item id="uid130">Calculate
+<equation id="id326644"><m:math overflow="scroll" mode="display"><m:mrow><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow><m:mn>6</m:mn></m:munderover><m:mn>3</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mstyle><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:math></equation></item>
+        <item id="uid131">If <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math>; <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math>; <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow></m:math> are the first 3 terms of a convergent geometric series, calculate the:
+<list id="id326758" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid132">Value of <m:math overflow="scroll"><m:mi>x</m:mi></m:math>.
+</item><item id="uid133">Sum to infinity of the series.
+</item></list></item>
+        <item id="uid134">Write the sum of the first 20 terms of the series <m:math overflow="scroll"><m:mrow><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>3</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo></m:mrow></m:math> in <m:math overflow="scroll"><m:mo>∑</m:mo></m:math>,-notation.
+</item>
+        <item id="uid135">Given the geometric series: <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:msup><m:mn>5</m:mn><m:mn>5</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:msup><m:mn>5</m:mn><m:mn>4</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:msup><m:mn>5</m:mn><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mo>...</m:mo></m:mrow></m:math><list id="id326930" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid136">Show that the series converges.
+</item><item id="uid137">Calculate the sum of the first 8 terms of the series, correct to TWO decimal places.
+</item><item id="uid138"> Calculate the sum to infinity of the series.
+</item><item id="uid139">Use your answer to <link target-id="uid138"/> above to determine
+<equation id="id326987"><m:math overflow="scroll" mode="display"><m:mrow><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow><m:mi>∞</m:mi></m:munderover><m:mn>2</m:mn><m:mo>·</m:mo><m:msup><m:mn>5</m:mn><m:mrow><m:mo>(</m:mo><m:mn>6</m:mn><m:mo>-</m:mo><m:mi>n</m:mi><m:mo>)</m:mo></m:mrow></m:msup></m:mrow></m:math></equation>
+correct to TWO decimal places.
+</item></list></item>
+        <item id="uid140">For the geometric series,
+<equation id="id327054"><m:math overflow="scroll" mode="display"><m:mrow><m:mn>54</m:mn><m:mo>+</m:mo><m:mn>18</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>+</m:mo><m:mn>5</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mstyle><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:math></equation>
+calculate the smallest value of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> for which the sum of the first <m:math overflow="scroll"><m:mi>n</m:mi></m:math> terms is greater than <m:math overflow="scroll"><m:mrow><m:mn>80</m:mn><m:mo>.</m:mo><m:mn>99</m:mn></m:mrow></m:math>.
+</item>
+        <item id="uid141">Determine the value of <m:math overflow="scroll"><m:mrow><m:msubsup><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:msubsup><m:mn>12</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>1</m:mn><m:mn>5</m:mn></m:mfrac></m:mstyle><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>k</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:math>.
+</item>
+        <item id="uid142">A new soccer competition requires each of 8 teams to play every other team once.
+<list id="id327231" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid143">Calculate the total number of matches to be played in the competition.
+</item><item id="uid144">If each of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> teams played each other once, determine a formula for the total number of matches in terms of <m:math overflow="scroll"><m:mi>n</m:mi></m:math>.
+</item></list></item>
+        <item id="uid145">The midpoints of the opposite sides of square of length 4 units are joined to form 4 new smaller squares. This midpoints of the new smaller squares are then joined in the same way to make even smaller squares. This process is repeated indefinitely. Calculate the sum of the areas of all the squares so formed.
+</item>
+        <item id="uid146">Thembi worked part-time to buy a Mathematics book which cost R29,50. On 1 February she saved R1,60, and saves everyday 30 cents more than she saved the previous day. (So, on the second day, she saved R1,90, and so on.) After how many days did she have enough money to buy the book?
+</item>
+        <item id="uid147">Consider the geometric series:
+<equation id="id327319"><m:math overflow="scroll" mode="display"><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mn>1</m:mn><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mo>...</m:mo></m:mrow></m:math></equation><list id="id327368" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid148">If <m:math overflow="scroll"><m:mi>A</m:mi></m:math> is the sum to infinity and <m:math overflow="scroll"><m:mi>B</m:mi></m:math> is the sum of the first <m:math overflow="scroll"><m:mi>n</m:mi></m:math> terms, write down the value of:
+<list id="id327411" display="block" list-type="enumerated" number-style="lower-roman"><item id="uid149"><m:math overflow="scroll"><m:mi>A</m:mi></m:math></item><item id="uid150"><m:math overflow="scroll"><m:mi>B</m:mi></m:math> in terms of <m:math overflow="scroll"><m:mi>n</m:mi></m:math>.
+</item></list></item><item id="uid151">For which values of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> is <m:math overflow="scroll"><m:mrow><m:mrow><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>-</m:mo><m:mi>B</m:mi><m:mo>)</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>1</m:mn><m:mn>24</m:mn></m:mfrac></m:mstyle></m:mrow></m:math>?
+</item></list></item>
+        <item id="uid152">A certain plant reaches a height of 118 mm after one year under ideal conditions in a greenhouse. During the next year, the height increases by 12 mm. In each successive year, the height increases by <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>5</m:mn><m:mn>8</m:mn></m:mfrac></m:mstyle></m:math> of the previous year's growth. Show that the plant will never reach a height of more than 150 mm.
+</item>
+        <item id="uid153">Calculate the value of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> if <m:math overflow="scroll"><m:mrow><m:msubsup><m:mo>∑</m:mo><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>n</m:mi></m:msubsup><m:mrow><m:mo>(</m:mo><m:mn>20</m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>20</m:mn></m:mrow></m:math>.
+</item>
+        <item id="uid154">Michael saved R400 during the first month of his working life. In each subsequent month, he saved 10% more than what he had saved in the previous month.
+<list id="id327628" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid155">How much did he save in the 7<sup>th</sup> working month?
+</item><item id="uid156">How much did he save all together in his first 12 working months?
+</item><item id="uid157">In which month of his working life did he save more than R1,500 for the first time?
+</item></list></item>
+        <item id="uid158">A man was injured in an accident at work. He receives a disability grant of R4,800 in the first year. This grant increases with a fixed amount each year.
+<list id="id327688" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid159">What is the annual increase if, over 20 years, he would have received a total of R143,500?
+</item><item id="uid160">His initial annual expenditure is R2,600 and increases at a rate of R400 per year. After how many years does his expenses exceed his income?
+</item></list></item>
+        <item id="uid161">The Cape Town High School wants to build a school hall and is busy with fundraising. Mr. Manuel, an ex-learner of the school and a successful politician, offers to donate money to the school. Having enjoyed mathematics at school, he decides to donate an amount of money on the following basis.
+He sets a mathematical quiz with 20 questions. For the correct answer to the first question (any learner may answer), the school will receive 1 cent, for a correct answer to the second question, the school will receive 2 cents, and so on. The donations 1, 2, 4, ... form a geometric sequence. Calculate (Give your answer to the nearest Rand)
+<list id="id327737" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid162">The amount of money that the school will receive for the correct answer to the 20<m:math overflow="scroll"><m:msup><m:mrow/><m:mi> th </m:mi></m:msup></m:math> question.
+</item><item id="uid163">The total amount of money that the school will receive if all 20 questions are answered correctly.
+</item></list></item>
+        <item id="uid164">The first term of a geometric sequence is 9, and the ratio of the sum of the first eight terms to the sum of the first four terms is <m:math overflow="scroll"><m:mrow><m:mn>97</m:mn><m:mo>:</m:mo><m:mn>81</m:mn></m:mrow></m:math>. Find the first three terms of the sequence, if it is given that all the terms are positive.
+</item>
+        <item id="uid165"><m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>k</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo>;</m:mo><m:mo>(</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>;</m:mo><m:mi>m</m:mi><m:mo>;</m:mo><m:mn>5</m:mn><m:mi>k</m:mi></m:mrow></m:math> is a set of numbers, the first three of which form an arithmetic sequence, and the last three a geometric sequence. Find <m:math overflow="scroll"><m:mi>k</m:mi></m:math> and <m:math overflow="scroll"><m:mi>m</m:mi></m:math> if both are positive.
+</item>
+        <item id="uid166">Given: The sequence <m:math overflow="scroll"><m:mrow><m:mn>6</m:mn><m:mo>+</m:mo><m:mi>p</m:mi><m:mspace width="-0.166667em"/><m:mo>;</m:mo><m:mn>10</m:mn><m:mo>+</m:mo><m:mi>p</m:mi><m:mspace width="-0.166667em"/><m:mo>;</m:mo><m:mn>15</m:mn><m:mo>+</m:mo><m:mi>p</m:mi></m:mrow></m:math> is geometric.
+<list id="id327930" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid167">Determine <m:math overflow="scroll"><m:mi>p</m:mi></m:math>.
+</item><item id="uid168">Show that the common ratio is <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>5</m:mn><m:mn>4</m:mn></m:mfrac></m:mstyle></m:math>.
+</item><item id="uid169">Determine the 10<sup>th</sup> term of this sequence correct to one decimal place.
+</item></list></item>
+        <item id="uid170">The second and fourth terms of a convergent geometric series are 36 and 16, respectively. Find the sum to infinity of this series, if all its terms are positive.
+</item>
+        <item id="uid171">Evaluate: <m:math overflow="scroll"><m:mrow><m:msubsup><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow><m:mn>5</m:mn></m:msubsup><m:mfrac><m:mrow><m:mi>k</m:mi><m:mo>(</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></item>
+        <item id="uid172"><m:math overflow="scroll"><m:mrow><m:msub><m:mi>S</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math> represents the sum of the first <m:math overflow="scroll"><m:mi>n</m:mi></m:math> terms of a particular series. Find the second term.
+</item>
+        <item id="uid173">Find <m:math overflow="scroll"><m:mi>p</m:mi></m:math> if:       <m:math overflow="scroll"><m:mrow><m:msubsup><m:mo>∑</m:mo><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:msubsup><m:mn>27</m:mn><m:msup><m:mi>p</m:mi><m:mi>k</m:mi></m:msup><m:mo>=</m:mo><m:msubsup><m:mo>∑</m:mo><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mn>12</m:mn></m:msubsup><m:mrow><m:mo>(</m:mo><m:mn>24</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item>
+        <item id="uid174">Find the integer that is the closest approximation to:
+<equation id="id328219"><m:math overflow="scroll" mode="display"><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:msup><m:mn>10</m:mn><m:mn>2001</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mn>10</m:mn><m:mn>2003</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>10</m:mn><m:mn>2002</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mn>10</m:mn><m:mn>2002</m:mn></m:msup></m:mrow></m:mfrac></m:mstyle></m:math></equation></item>
+        <item id="uid175">Find the pattern and hence calculate:
+<equation id="id328284"><m:math overflow="scroll" mode="display"><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>...</m:mo><m:mo>+</m:mo><m:mn>677</m:mn><m:mo>-</m:mo><m:mn>678</m:mn><m:mo>+</m:mo><m:mo>...</m:mo><m:mo>-</m:mo><m:mn>1000</m:mn></m:mrow></m:math></equation></item>
+        <item id="uid176">Determine if <m:math overflow="scroll"><m:mrow><m:msubsup><m:mo>∑</m:mo><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:msubsup><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mi>p</m:mi></m:msup></m:mrow></m:math> converges. If it does, then work out what it converges to if:
+<list id="id328391" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid177"><m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mn>5</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle></m:mrow></m:math></item><item id="uid178"><m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow></m:math></item></list></item>
+        <item id="uid179">Calculate:       <m:math overflow="scroll"><m:mrow><m:msubsup><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mi>∞</m:mi></m:msubsup><m:mn>5</m:mn><m:mo>·</m:mo><m:msup><m:mn>4</m:mn><m:mrow><m:mo>-</m:mo><m:mi>i</m:mi></m:mrow></m:msup></m:mrow></m:math></item>
+        <item id="uid180">The sum of the first <m:math overflow="scroll"><m:mi>p</m:mi></m:math> terms of a sequence is <m:math overflow="scroll"><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>p</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math>. Find the 10<sup>th</sup> term.
+</item>
+        <item id="uid181">The powers of 2 are removed from the set of positive integers
+<equation id="id328566"><m:math overflow="scroll" mode="display"><m:mrow><m:mn>1</m:mn><m:mo>;</m:mo><m:mn>2</m:mn><m:mo>;</m:mo><m:mn>3</m:mn><m:mo>;</m:mo><m:mn>4</m:mn><m:mo>;</m:mo><m:mn>5</m:mn><m:mo>;</m:mo><m:mn>6</m:mn><m:mo>;</m:mo><m:mo>...</m:mo><m:mo>;</m:mo><m:mn>1998</m:mn><m:mo>;</m:mo><m:mn>1999</m:mn><m:mo>;</m:mo><m:mn>2000</m:mn></m:mrow></m:math></equation>
+Find the sum of remaining integers.
+</item>
+        <item id="uid182">Observe the pattern below:
+<figure id="id328637"><media id="id328637_media" alt=""><image mime-type="image/png" src="../../media/MG12C3_004.png" id="id328637_onlineimage" width="210"><!-- NOTE: attribute width changes image size online (pixels). original width is 210. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C3_004.eps" id="id328637_printimage"/></media></figure><list id="id328643" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid183">If the pattern continues, find the number of letters in the column containing M's.
+</item><item id="uid184">If the total number of letters in the pattern is 361, which letter will be in the last column.
+</item></list></item>
+        <item id="uid185">The following question was asked in a test:
+Find the value of <m:math overflow="scroll"><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2005</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mn>2</m:mn><m:mn>2005</m:mn></m:msup></m:mrow></m:math>.
+Here are some of the students' answers:
+<list id="id328721" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid186">Megan said the answer is <m:math overflow="scroll"><m:msup><m:mn>4</m:mn><m:mn>2005</m:mn></m:msup></m:math>.
+</item><item id="uid187">Stefan wrote down <m:math overflow="scroll"><m:msup><m:mn>2</m:mn><m:mn>4010</m:mn></m:msup></m:math>.
+</item><item id="uid188">Nina thinks it is <m:math overflow="scroll"><m:msup><m:mn>2</m:mn><m:mn>2006</m:mn></m:msup></m:math>.
+</item><item id="uid189">Annatte gave the answer <m:math overflow="scroll"><m:msup><m:mn>2</m:mn><m:mrow><m:mn>2005</m:mn><m:mo>×</m:mo><m:mn>2005</m:mn></m:mrow></m:msup></m:math>.
+</item></list>
+Who is correct? (“None of them" is also a possibility.)
+</item>
+        <item id="uid190">A shrub of height 110 cm is planted. At the end of the first year, the shrub is 120 cm tall. Thereafter, the growth of the shrub each year is half of its growth in the previous year. Show that the height of the shrub will never exceed 130 cm.
+</item>
+      </list>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,150 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Introduction, Definition, Notation</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39286</md:content-id>
+  <md:title>Introduction, Definition, Notation</md:title>
+  <md:abstract/>
+  <md:uuid>5ea6a558-3713-4db3-8871-38ea6e7307c5</md:uuid>
+</metadata>
+
+<content>
+    
+    <section id="cid2">
+      <title>Introduction</title>
+      <para id="id121713">In grades 10 and 11 you have learnt about linear functions and quadratic functions as well as the hyperbolic functions and exponential functions and many more. In grade 12 you are expected to demonstrate the ability to work with
+various types of functions and relations including the inverses of some functions and generate graphs of the
+inverse relations of functions, in particular the inverses of:</para>
+      <equation id="id121720">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>a</m:mi>
+            <m:mi>x</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>q</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <equation id="id122080">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>a</m:mi>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <equation id="id122102">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>a</m:mi>
+            <m:mi>x</m:mi>
+            <m:mo>;</m:mo>
+            <m:mi>a</m:mi>
+            <m:mo>&gt;</m:mo>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id122128">.</para>
+    </section>
+    <section id="cid3">
+      <title>Definition of a Function</title>
+      <para id="id122143">A <emphasis effect="italics">function</emphasis> is a relation for which there is only one value of <m:math overflow="scroll"><m:mi>y</m:mi></m:math> corresponding to any value of <m:math overflow="scroll"><m:mi>x</m:mi></m:math>. We sometimes write <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math>, which is notation meaning '<m:math overflow="scroll"><m:mi>y</m:mi></m:math> is a function of <m:math overflow="scroll"><m:mi>x</m:mi></m:math>'. This definition makes complete sense when compared to our real world examples — each person has only one height, so height is a function of people; on each day, in a specific town, there is only one average temperature.</para>
+      <para id="id122206">However, some very common mathematical constructions are not functions. For example, consider the relation <m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math>. This relation describes a circle of radius 2 centred at the origin, as in <link target-id="uid1"/>. If we let <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, we see that <m:math overflow="scroll"><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math> and thus either <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> or <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:math>. Since there are two <m:math overflow="scroll"><m:mi>y</m:mi></m:math> values which are possible for the same <m:math overflow="scroll"><m:mi>x</m:mi></m:math> value, the relation <m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math> is <emphasis effect="bold">not</emphasis> the graph a function.</para>
+      <para id="id122533">There is a simple test to check if a relation is a function, by looking at its graph. This test is called the <emphasis effect="italics">vertical line test</emphasis>. If it is possible to draw any vertical line (a line of constant <m:math overflow="scroll"><m:mi>x</m:mi></m:math>) which crosses the graph of the relation more than once, then the relation is <emphasis effect="bold">not</emphasis> a function. If more than one intersection point exists, then the intersections correspond to multiple values of <m:math overflow="scroll"><m:mi>y</m:mi></m:math> for a single value of <m:math overflow="scroll"><m:mi>x</m:mi></m:math>.</para>
+      <para id="id122574">We can see this with our previous example of the circle by looking at its graph again in <link target-id="uid1"/>.</para>
+      <figure id="uid1">
+        <media id="uid1_media" alt="">
+          <image mime-type="image/png" src="../../media/MG12C6_001.png" id="uid1_onlineimage" width="146"><!-- NOTE: attribute width changes image size online (pixels). original width is 146. --></image>
+          <image mime-type="application/postscript" for="pdf" src="../../media/MG12C6_001.eps" id="uid1_printimage"/>
+        </media>
+        <caption>Graph of <m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math></caption>
+      </figure>
+      <para id="id122620">We see that we can draw a vertical line, for example the dotted line in the drawing, which cuts the circle more than once. Therefore this is <emphasis effect="bold">not</emphasis> a function.</para>
+      <section id="uid2">
+        <title>Exercises</title>
+        <list id="id122638" display="block" list-type="enumerated">
+          <item id="uid3">State whether each of the following equations are functions or not:
+<list id="id122653" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid4"><m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math></item><item id="uid5"><m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></item><item id="uid6"><m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mn>2</m:mn><m:mi>x</m:mi></m:msup></m:mrow></m:math></item><item id="uid7"><m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math></item></list></item>
+          <item id="uid8">The table gives the average per capita income, <m:math overflow="scroll"><m:mi>d</m:mi></m:math>, in a region of the country as a function of <m:math overflow="scroll"><m:mi>u</m:mi></m:math>, the percentage
+unemployed. Write down the equation to show that income is a function of the persent unemployed.
+<table id="uid9" summary=""><tgroup cols="5"><tbody><row><entry><m:math overflow="scroll"><m:mi>u</m:mi></m:math></entry><entry>1</entry><entry>2</entry><entry>3</entry><entry>4</entry></row><row><entry><m:math overflow="scroll"><m:mi>d</m:mi></m:math></entry><entry>22500</entry><entry>22000</entry><entry>21500</entry><entry>21000</entry></row></tbody></tgroup></table></item>
+        </list>
+      </section>
+    </section>
+    <section id="cid4">
+      <title>Notation used for Functions</title>
+      <para id="id122921">In grade 10 you were introduced to the notation used to "name" a function. In a function <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math>, <m:math overflow="scroll"><m:mi>y</m:mi></m:math> is called the <emphasis effect="italics">dependent variable</emphasis>, because the value of <m:math overflow="scroll"><m:mi>y</m:mi></m:math> depends on what you choose as <m:math overflow="scroll"><m:mi>x</m:mi></m:math>. We say <m:math overflow="scroll"><m:mi>x</m:mi></m:math> is the <emphasis effect="italics">independent variable</emphasis>, since we can choose <m:math overflow="scroll"><m:mi>x</m:mi></m:math> to be any number. Similarly if <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math>, then <m:math overflow="scroll"><m:mi>t</m:mi></m:math> is the independent variable and <m:math overflow="scroll"><m:mi>g</m:mi></m:math> is the function name.
+If <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow></m:math> and you are ask to determine <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:math>, then you have to work out the value for <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> when <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>.
+For example,</para>
+      <equation id="id123107">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi>f</m:mi>
+                  <m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mi>x</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>5</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi>f</m:mi>
+                  <m:mo>(</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mo>(</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>)</m:mo>
+                  <m:mo>-</m:mo>
+                  <m:mn>5</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>4</m:mn>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+    </section>
+   
+  </content>
+</document>

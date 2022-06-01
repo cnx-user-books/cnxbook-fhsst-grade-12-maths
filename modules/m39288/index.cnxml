@@ -1,0 +1,2244 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Coordinate Geometry, Equation of Tangent, Transformations</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39288</md:content-id>
+  <md:title>Coordinate Geometry, Equation of Tangent, Transformations</md:title>
+  <md:abstract/>
+  <md:uuid>9c7c7d28-29b9-4003-b79b-5d6288685f6c</md:uuid>
+</metadata>
+
+<content>
+    
+
+    <section id="cid4">
+      <title>Co-ordinate Geometry</title>
+      <section id="uid61">
+        <title>Equation of a Circle</title>
+        <para id="id153616">We know that every point on the circumference of a circle is the same distance away from the centre of the circle. Consider a point <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo></m:mrow></m:math> on the circumference of a circle of radius <m:math overflow="scroll"><m:mi>r</m:mi></m:math> with centre at <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>)</m:mo></m:mrow></m:math>.</para>
+        <para id="id153689">
+          <figure id="id153692">
+            <media id="id153692_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C9_028.png" id="id153692_onlineimage" width="233"><!-- NOTE: attribute width changes image size online (pixels). original width is 233. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_028.eps" id="id153692_printimage"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id153698">In <link target-id="id153692"/>, <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mi>O</m:mi><m:mi>P</m:mi><m:mi>Q</m:mi></m:mrow></m:math> is a right-angled triangle. Therefore, from the Theorem of Pythagoras, we know that:</para>
+        <equation id="id153721">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mi>O</m:mi>
+              <m:msup>
+                <m:mi>P</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:mi>P</m:mi>
+              <m:msup>
+                <m:mi>Q</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:mi>O</m:mi>
+              <m:msup>
+                <m:mi>Q</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id153764">But,</para>
+        <equation id="id153769">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>P</m:mi>
+                    <m:mi>Q</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>-</m:mo>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>O</m:mi>
+                    <m:mi>Q</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>-</m:mo>
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>O</m:mi>
+                    <m:mi>P</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mi>r</m:mi>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo>∴</m:mo>
+                    <m:mspace width="1.em"/>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>-</m:mo>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:msub>
+                          <m:mi>x</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>-</m:mo>
+                        <m:msub>
+                          <m:mi>x</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id153952">But, this same relation holds for any point <m:math overflow="scroll"><m:mi>P</m:mi></m:math> on the circumference. In fact, the relation holds for all points <m:math overflow="scroll"><m:mi>P</m:mi></m:math> on the circumference. Therefore, we can write:</para>
+        <equation id="uid62">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:msup>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:msup>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>y</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id154045">for a circle with centre at <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>)</m:mo></m:mrow></m:math> and radius <m:math overflow="scroll"><m:mi>r</m:mi></m:math>.</para>
+        <para id="id154089">For example, the equation of a circle with centre <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:math> and radius 4 is:</para>
+        <equation id="id154111">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>y</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>x</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:msub>
+                          <m:mi>x</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:msup>
+                    <m:mi>r</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>y</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>0</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>x</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mn>0</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:msup>
+                    <m:mn>4</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>y</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>16</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+<para id="eip-518"><figure id="circles-1" class="khanacademy">
+	  <title>Khan academy video on circles - 1</title>
+	  <media id="yt-media1" display="block" alt="video on circles 1">
+	  <flash id="yt-video1" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/6r1GQCxyMKI&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><exercise id="secfhsst_id3988"><title> Equation of a Circle I </title>
+        <problem id="probfhsst_id3989">
+        <para id="id154288">Find the equation of a circle (centre <m:math overflow="scroll"><m:mi>O</m:mi></m:math>) with a diameter between two points, <m:math overflow="scroll"><m:mi>P</m:mi></m:math> at <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> at <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:math>. </para>
+        </problem>
+        <solution id="solfhsst_id3992"> <list id="listfhsst_id3992" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Draw a picture </label>
+        <para id="id154380">Draw a picture of the situation to help you figure out what needs to be done.</para>
+        <para id="id154384">
+          <figure id="id154387"><media id="id154387_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C9_030.png" id="id154387_onlineimage" width="107"><!-- NOTE: attribute width changes image size online (pixels). original width is 157. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_030.eps" id="id154387_printimage"/>
+            </media>
+          </figure>
+        </para>
+        </item> <item> <label> Find the centre of the circle </label>
+        <para id="id154398">We know that the centre of a circle lies on the midpoint of a diameter. Therefore the co-ordinates of the centre of the circle is found by finding the midpoint of the line between <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math>. Let the co-ordinates of the centre of the circle be <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>)</m:mo></m:mrow></m:math>, let the co-ordinates of <m:math overflow="scroll"><m:mi>P</m:mi></m:math> be <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo></m:mrow></m:math> and let the co-ordinates of <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> be <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo>)</m:mo></m:mrow></m:math>. Then, the co-ordinates of the midpoint are:</para>
+        <equation id="id154527">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>+</m:mo>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mo>-</m:mo>
+                      <m:mn>5</m:mn>
+                      <m:mo>+</m:mo>
+                      <m:mn>5</m:mn>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>y</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>+</m:mo>
+                      <m:msub>
+                        <m:mi>y</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>5</m:mn>
+                      <m:mo>+</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mo>-</m:mo>
+                      <m:mn>5</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id154690">The centre point of line <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mi>Q</m:mi></m:mrow></m:math> and therefore the centre of the circle is at <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:math>.</para>
+        </item> <item> <label> Find the radius of the circle </label>
+        <para id="id154731">If <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> are two points on a diameter, then the radius is half the distance between them.</para>
+        <para id="id154753">The distance between the two points is:</para>
+        <equation id="id154756">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>r</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mi>P</m:mi>
+                    <m:mi>Q</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:msqrt>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:msub>
+                              <m:mi>x</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msub>
+                            <m:mo>-</m:mo>
+                            <m:msub>
+                              <m:mi>x</m:mi>
+                              <m:mn>1</m:mn>
+                            </m:msub>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>+</m:mo>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:msub>
+                              <m:mi>y</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msub>
+                            <m:mo>-</m:mo>
+                            <m:msub>
+                              <m:mi>y</m:mi>
+                              <m:mn>1</m:mn>
+                            </m:msub>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:msqrt>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:msqrt>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mn>5</m:mn>
+                            <m:mo>-</m:mo>
+                            <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mo>-</m:mo>
+                              <m:mn>5</m:mn>
+                              <m:mo>)</m:mo>
+                            </m:mrow>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>+</m:mo>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mo>-</m:mo>
+                            <m:mn>5</m:mn>
+                            <m:mo>-</m:mo>
+                            <m:mn>5</m:mn>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:msqrt>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:msqrt>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mn>10</m:mn>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>+</m:mo>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mo>-</m:mo>
+                            <m:mn>10</m:mn>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:msqrt>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:msqrt>
+                      <m:mrow>
+                        <m:mn>100</m:mn>
+                        <m:mo>+</m:mo>
+                        <m:mn>100</m:mn>
+                      </m:mrow>
+                    </m:msqrt>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:msqrt>
+                    <m:mfrac>
+                      <m:mn>200</m:mn>
+                      <m:mn>4</m:mn>
+                    </m:mfrac>
+                  </m:msqrt>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:msqrt>
+                    <m:mn>50</m:mn>
+                  </m:msqrt>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        </item> <item> <label> Write the equation of the circle </label>
+        <equation id="id155031">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:msup>
+                <m:mi>x</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:msup>
+                <m:mi>y</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:mn>50</m:mn>
+            </m:mrow>
+          </m:math>
+        </equation>
+        
+        </item> </list> </solution>
+</exercise>
+<exercise id="secfhsst_id4339"><title>Equation of a Circle II </title><problem id="probfhsst_id4340">
+        <para id="id155093">Find the center and radius of the circle</para>
+        <para id="id155099"><m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>14</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>28</m:mn></m:mrow></m:math>. </para>
+        </problem>
+        <solution id="solfhsst_id4344"> <list id="listfhsst_id4344" list-type="enumerated" number-style="arabic" class="stepwise"><item> <label> Change to standard form </label>
+        <para id="id155165">We need to rewrite the equation in the form <m:math overflow="scroll"><m:mrow><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+        <para id="id155222">To do this we need to complete the square</para>
+        <para id="id155228">i.e. add and subtract <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> cooefficient of <m:math overflow="scroll"><m:msup><m:mrow><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:math> and <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math> cooefficient of <m:math overflow="scroll"><m:msup><m:mrow><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:math></para>
+        </item> <item> <label> Adding cooefficients </label><equation id="id6342">
+<m:math overflow="scroll"><m:mtable><m:mtr><m:mtd columnalign="right">
+                  
+                    
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mn>14</m:mn>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:msup>
+                        <m:mi>y</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>+</m:mo>
+                      <m:mn>4</m:mn>
+                      <m:mi>y</m:mi></m:mtd>
+                      <m:mtd><m:mo>=</m:mo></m:mtd>
+                      <m:mtd columnalign="left"><m:mo>-</m:mo>
+                      <m:mn>28</m:mn>
+                    </m:mtd></m:mtr>
+                    <m:mtr><m:mtd><m:mo>∴</m:mo><m:mspace width="2pt"/>
+                    
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mn>14</m:mn>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mn>7</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mn>7</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>+</m:mo>
+                      <m:msup>
+                        <m:mi>y</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>+</m:mo>
+                      <m:mn>4</m:mn>
+                      <m:mi>y</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup></m:mtd>
+                      <m:mtd><m:mo>=</m:mo></m:mtd>
+                      <m:mtd columnalign="right"><m:mo>-</m:mo>
+                      <m:mn>28</m:mn>
+                    </m:mtd></m:mtr></m:mtable></m:math></equation>
+        </item> <item> <label> Complete the squares </label>
+        <equation id="id6343">
+                  <m:math overflow="scroll">
+                    <m:mo>∴</m:mo><m:mspace width="3pt"/>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mi>x</m:mi>
+                          <m:mo>-</m:mo>
+                          <m:mn>7</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mn>7</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>+</m:mo>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mi>y</m:mi>
+                          <m:mo>+</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>=</m:mo>
+                      <m:mo>-</m:mo>
+                      <m:mn>28</m:mn>
+                    </m:mrow>
+                  </m:math></equation>
+        </item> <item> <label> Take the constants to the other side </label>
+        <equation id="id155592"><m:math overflow="scroll"><m:mtable><m:mtr><m:mtd columnalign="right">
+                    <m:mo>∴</m:mo><m:mspace width="3pt"/>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mi>x</m:mi>
+                          <m:mo>-</m:mo>
+                          <m:mn>7</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mn>49</m:mn>
+                      <m:mo>+</m:mo>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mi>y</m:mi>
+                          <m:mo>+</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mn>4</m:mn></m:mtd>
+                      <m:mtd><m:mo>=</m:mo></m:mtd>
+                      <m:mtd columnalign="left"><m:mo>-</m:mo>
+                      <m:mn>28</m:mn></m:mtd></m:mtr>
+                    <m:mtr><m:mtd columnalign="right"><m:mo>∴</m:mo><m:mspace width="2pt"/>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mi>x</m:mi>
+                          <m:mo>-</m:mo>
+                          <m:mn>7</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>+</m:mo>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mi>y</m:mi>
+                          <m:mo>+</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup></m:mtd><m:mtd>
+                      <m:mo>=</m:mo></m:mtd><m:mtd columnalign="left">
+                      <m:mo>-</m:mo>
+                      <m:mn>28</m:mn>
+                      <m:mo>+</m:mo>
+                      <m:mn>49</m:mn>
+                      <m:mo>+</m:mo>
+                      <m:mn>4</m:mn>
+                    </m:mtd></m:mtr>
+                    <m:mtr><m:mtd columnalign="right"><m:mo>∴</m:mo><m:mspace width="3pt"/>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mi>x</m:mi>
+                          <m:mo>-</m:mo>
+                          <m:mn>7</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>+</m:mo>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mi>y</m:mi>
+                          <m:mo>+</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup></m:mtd><m:mtd>
+                      <m:mo>=</m:mo></m:mtd><m:mtd columnalign="left">
+                      <m:mn>25</m:mn></m:mtd>
+                    </m:mtr></m:mtable>
+                  </m:math></equation>
+               
+        </item> <item> <label> Read the values from the equation </label><equation id="id632">
+                  <m:math overflow="scroll">
+                    <m:mo>∴</m:mo>
+                  <m:mspace width="3pt"/><m:mi>center is</m:mi><m:mspace width="2pt"/><m:mrow><m:mo>(</m:mo><m:mn>7</m:mn><m:mo>;</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mspace width="3pt"/><m:mi>and the radius is 5 units</m:mi></m:math></equation>
+      
+        
+        </item> </list> </solution>
+</exercise>
+      </section>
+      <section id="uid63">
+        <title>Equation of a Tangent to a Circle at a Point on the Circle</title>
+        <para id="id155883">We are given that a tangent to a circle is drawn through a point <m:math overflow="scroll"><m:mi>P</m:mi></m:math> with co-ordinates <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo></m:mrow></m:math>. In this section, we find out how to determine the equation of that tangent.</para>
+        <para id="id155926">
+          <figure id="id155929">
+            <media id="id155929_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C9_028.png" id="id155929_onlineimage" width="233"><!-- NOTE: attribute width changes image size online (pixels). original width is 233. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_028.eps" id="id155929_printimage"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id155935">We start by making a list of what we know:</para>
+        <list id="id155939" display="block" list-type="enumerated">
+          <item id="uid64">We know that the equation of the circle with centre <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>)</m:mo></m:mrow></m:math> and radius <m:math overflow="scroll"><m:mi>r</m:mi></m:math> is <m:math overflow="scroll"><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>.
+</item>
+          <item id="uid65">We know that a tangent is perpendicular to the radius, drawn at the point of contact with the circle.
+</item>
+        </list>
+        <para id="id156071">As we have seen in earlier grades, there are two steps to determining the equation of a straight line:</para>
+        <list id="id156075" display="block" list-type="enumerated" class="stepwise"><item id="uid66">Calculate the gradient of the line, <m:math overflow="scroll"><m:mi>m</m:mi></m:math>.
+</item>
+          <item id="uid67">Calculate the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-intercept of the line, <m:math overflow="scroll"><m:mi>c</m:mi></m:math>.
+</item>
+        </list>
+        <para id="id156135">The same method is used to determine the equation of the tangent. First we need to find the gradient of the tangent. We do this by finding the gradient of the line that passes through the centre of the circle and point <m:math overflow="scroll"><m:mi>P</m:mi></m:math> (line <m:math overflow="scroll"><m:mi>f</m:mi></m:math> in <link target-id=""/>), because this line is a radius line and the tangent is perpendicular to it.</para>
+        <equation id="uid68">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>f</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>-</m:mo>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>-</m:mo>
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id156223">The tangent (line <m:math overflow="scroll"><m:mi>g</m:mi></m:math>) is perpendicular to this line. Therefore,</para>
+        <equation id="id156236">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>f</m:mi>
+              </m:msub>
+              <m:mo>×</m:mo>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>g</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mo>-</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id156269">So,</para>
+        <equation id="id156274">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>g</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mo>-</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mi>f</m:mi>
+                </m:msub>
+              </m:mfrac>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id156308">Now, we know that the tangent passes through <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo></m:mrow></m:math> so the equation is given by:</para>
+        <equation id="id156341">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>y</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>m</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>y</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:mi>f</m:mi>
+                      </m:msub>
+                    </m:mfrac>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>y</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mn>1</m:mn>
+                          </m:msub>
+                          <m:mo>-</m:mo>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mn>0</m:mn>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mn>1</m:mn>
+                          </m:msub>
+                          <m:mo>-</m:mo>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mn>0</m:mn>
+                          </m:msub>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mfrac>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>y</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>x</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>-</m:mo>
+                        <m:msub>
+                          <m:mi>x</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>-</m:mo>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id156620">For example, find the equation of the tangent to the circle at point <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math>. The centre of the circle is at <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:math>. The equation of the circle is <m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>.</para>
+        <para id="id156691">Use</para>
+        <equation id="id156694">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mi>y</m:mi>
+              <m:mo>-</m:mo>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mo>-</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>-</m:mo>
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>-</m:mo>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:mfrac>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>-</m:mo>
+                <m:msub>
+                  <m:mi>x</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id156774">with <m:math overflow="scroll"><m:mrow><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</para>
+        <equation id="id156868">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>y</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>x</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>-</m:mo>
+                        <m:msub>
+                          <m:mi>x</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>-</m:mo>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>y</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mo>-</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mo>-</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>y</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>1</m:mn>
+                    </m:mfrac>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>y</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>y</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>y</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+<section id="secfhsst_id5169"><title> Co-ordinate Geometry </title>
+        <list id="id157140" display="block" list-type="enumerated">
+          <item id="uid69">Find the equation of the cicle:
+<list id="id157156" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid70">with centre <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>;</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:math> and radius 5
+</item><item id="uid71">with centre <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>;</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:math> and radius 4
+</item><item id="uid72">with centre <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>;</m:mo><m:mn>7</m:mn><m:mo>)</m:mo></m:mrow></m:math> and radius 18
+</item><item id="uid73">with centre <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>;</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:math> and radius 6
+</item><item id="uid74">with centre <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>;</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:math> and radius <m:math overflow="scroll"><m:msqrt><m:mn>3</m:mn></m:msqrt></m:math></item></list></item>
+          <item id="uid75">
+            <list id="id157336" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid76">Find the equation of the circle with centre <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>;</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> which passes through <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>;</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math>.
+</item>
+              <item id="uid77">Where does it cut the line <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math>?
+</item>
+              <item id="uid78">Draw a sketch to illustrate your answers.
+</item>
+            </list>
+          </item>
+          <item id="uid79">
+            <list id="id157439" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid80">Find the equation of the circle with center <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>;</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:math> which passes through <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>;</m:mo><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow></m:math>.
+</item>
+              <item id="uid81">Find the equation of the circle with center <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>;</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> which passes through <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>;</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:math>.
+</item>
+              <item id="uid82">Find the point where these two circles cut each other.
+</item>
+            </list>
+          </item>
+          <item id="uid83">Find the center and radius of the following circles:
+<list id="id157572" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid84"><m:math overflow="scroll"><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>9</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>36</m:mn></m:mrow></m:math></item><item id="uid85"><m:math overflow="scroll"><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>9</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></item><item id="uid86"><m:math overflow="scroll"><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>12</m:mn></m:mrow></m:math></item><item id="uid87"><m:math overflow="scroll"><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>23</m:mn></m:mrow></m:math></item><item id="uid88"><m:math overflow="scroll"><m:mrow><m:mn>3</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>12</m:mn></m:mrow></m:math></item><item id="uid89"><m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>25</m:mn><m:mo>=</m:mo><m:mn>17</m:mn></m:mrow></m:math></item></list></item>
+          <item id="uid90">Find the <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>-</m:mo></m:mrow></m:math> intercepts of the following graphs and draw a sketch to illustrate your answer:
+<list id="id157967" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid91"><m:math overflow="scroll"><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow></m:math></item><item id="uid92"><m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>100</m:mn></m:mrow></m:math></item><item id="uid93"><m:math overflow="scroll"><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>16</m:mn></m:mrow></m:math></item><item id="uid94"><m:math overflow="scroll"><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>25</m:mn></m:mrow></m:math></item></list></item>
+          <item id="uid95">Find the center and radius of the following circles:
+<list id="id158195" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid96"><m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>12</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>20</m:mn></m:mrow></m:math></item><item id="uid97"><m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>8</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item><item id="uid98"><m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>8</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math></item><item id="uid99"><m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>16</m:mn></m:mrow></m:math></item><item id="uid100"><m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></item><item id="uid101"><m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>n</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>10</m:mn><m:mi>n</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></item></list></item>
+          <item id="uid102">Find the equations to the tangent to the circle:
+<list id="id158527" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid103"><m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>17</m:mn></m:mrow></m:math> at the point <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>;</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow></m:math></item><item id="uid104"><m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>25</m:mn></m:mrow></m:math> at the point <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>;</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow></m:math></item><item id="uid105"><m:math overflow="scroll"><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>25</m:mn></m:mrow></m:math> at the point <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>;</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:math></item><item id="uid106"><m:math overflow="scroll"><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>13</m:mn></m:mrow></m:math> at the point <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>;</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:math></item></list></item>
+        </list>
+        
+</section>
+      </section>
+    </section>
+    <section id="cid5">
+      <title>Transformations</title>
+      <section id="uid107">
+        <title>Rotation of a Point about an angle <m:math overflow="scroll"><m:mi>θ</m:mi></m:math></title>
+        <para id="id158835">First we will find a formula for the co-ordinates of <m:math overflow="scroll"><m:mi>P</m:mi></m:math> after a rotation of <m:math overflow="scroll"><m:mi>θ</m:mi></m:math>.</para>
+        <para id="id158857">We need to know something about polar co-ordinates and compound angles before we start.</para>
+        <section id="uid108">
+          <title>Polar co-ordinates</title>
+          <para id="id158871"><figure id="id158880"><media id="id158880_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_024.png" id="id158880_onlineimage" width="228"><!-- NOTE: attribute width changes image size online (pixels). original width is 228. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_024.eps" id="id158880_printimage"/></media></figure><table id="id158891" summary=""><tgroup cols="3"><tbody><row><entry>Notice that</entry><entry>:</entry><entry><m:math overflow="scroll"><m:mrow><m:mo form="prefix">sin</m:mo><m:mi>α</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>y</m:mi><m:mi>r</m:mi></m:mfrac></m:mrow></m:math><m:math overflow="scroll"><m:mrow><m:mo>∴</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mo form="prefix">sin</m:mo><m:mi>α</m:mi></m:mrow></m:math></entry></row><row><entry>and</entry><entry/><entry><m:math overflow="scroll"><m:mrow><m:mo form="prefix">cos</m:mo><m:mi>α</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mi>r</m:mi></m:mfrac></m:mrow></m:math><m:math overflow="scroll"><m:mrow><m:mo>∴</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mo form="prefix">cos</m:mo><m:mi>α</m:mi></m:mrow></m:math></entry></row></tbody></tgroup></table>
+so <m:math overflow="scroll"><m:mi>P</m:mi></m:math> can be expressed in two ways:
+<list id="id159030" display="block" list-type="enumerated"><item id="uid109"><label/><m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>;</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> rectangular co-ordinates
+</item><item id="uid110"><label>or</label><m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>r</m:mi><m:mo form="prefix">cos</m:mo><m:mi>α</m:mi><m:mo>;</m:mo><m:mi>r</m:mi><m:mo form="prefix">sin</m:mo><m:mi>α</m:mi><m:mo>)</m:mo></m:mrow></m:math> polar co-ordinates.
+</item></list></para>
+        </section>
+        <section id="uid111">
+          <title>Compound angles</title>
+          <para id="id159126">(See derivation of formulae in Ch. 12)</para>
+          <equation id="id159130">
+            <m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mo form="prefix">sin</m:mo>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>α</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mi>β</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mo form="prefix">sin</m:mo>
+                      <m:mi>α</m:mi>
+                      <m:mo form="prefix">cos</m:mo>
+                      <m:mi>β</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mo form="prefix">sin</m:mo>
+                      <m:mi>β</m:mi>
+                      <m:mo form="prefix">cos</m:mo>
+                      <m:mi>α</m:mi>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mo form="prefix">cos</m:mo>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>α</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mi>β</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mo form="prefix">cos</m:mo>
+                      <m:mi>α</m:mi>
+                      <m:mo form="prefix">cos</m:mo>
+                      <m:mi>β</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mo form="prefix">sin</m:mo>
+                      <m:mi>α</m:mi>
+                      <m:mo form="prefix">sin</m:mo>
+                      <m:mi>β</m:mi>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+        </section>
+        <section id="uid112">
+          <title>Now consider <m:math overflow="scroll"><m:msup><m:mi>P</m:mi><m:mo>'</m:mo></m:msup></m:math> after a rotation of <m:math overflow="scroll"><m:mi>θ</m:mi></m:math></title>
+          <para id="id159293"><equation id="id159297"><m:math overflow="scroll" mode="display"><m:mtable displaystyle="true"><m:mtr><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mrow><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>;</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>r</m:mi><m:mo form="prefix">cos</m:mo><m:mi>α</m:mi><m:mo>;</m:mo><m:mi>r</m:mi><m:mo form="prefix">sin</m:mo><m:mi>α</m:mi><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mrow><m:msup><m:mi>P</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>r</m:mi><m:mo form="prefix">cos</m:mo><m:mrow><m:mo>(</m:mo><m:mi>α</m:mi><m:mo>+</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mi>r</m:mi><m:mo form="prefix">sin</m:mo><m:mrow><m:mo>(</m:mo><m:mi>α</m:mi><m:mo>+</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:math></equation>
+Expand the co-ordinates of <m:math overflow="scroll"><m:msup><m:mi>P</m:mi><m:mo>'</m:mo></m:msup></m:math><equation id="id159435"><m:math overflow="scroll" mode="display"><m:mtable displaystyle="true"><m:mtr><m:mtd columnalign="right"><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>co-ordinate of</m:mi><m:msup><m:mi>P</m:mi><m:mo>'</m:mo></m:msup></m:mrow></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>r</m:mi><m:mo form="prefix">cos</m:mo><m:mrow><m:mo>(</m:mo><m:mi>α</m:mi><m:mo>+</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>r</m:mi><m:mfenced separators="" open="[" close="]"><m:mo form="prefix">cos</m:mo><m:mi>α</m:mi><m:mo form="prefix">cos</m:mo><m:mi>θ</m:mi><m:mo>-</m:mo><m:mo form="prefix">sin</m:mo><m:mi>α</m:mi><m:mo form="prefix">sin</m:mo><m:mi>θ</m:mi></m:mfenced></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>r</m:mi><m:mo form="prefix">cos</m:mo><m:mi>α</m:mi><m:mo form="prefix">cos</m:mo><m:mi>θ</m:mi><m:mo>-</m:mo><m:mi>r</m:mi><m:mo form="prefix">sin</m:mo><m:mi>α</m:mi><m:mo form="prefix">sin</m:mo><m:mi>θ</m:mi></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>x</m:mi><m:mo form="prefix">cos</m:mo><m:mi>θ</m:mi><m:mo>-</m:mo><m:mi>y</m:mi><m:mo form="prefix">sin</m:mo><m:mi>θ</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:math></equation><equation id="id159640"><m:math overflow="scroll" mode="display"><m:mtable displaystyle="true"><m:mtr><m:mtd columnalign="right"><m:mrow><m:mi>y</m:mi><m:mo>-</m:mo><m:mi>co-ordinate of P'</m:mi></m:mrow></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>r</m:mi><m:mo form="prefix">sin</m:mo><m:mrow><m:mo>(</m:mo><m:mi>α</m:mi><m:mo>+</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>r</m:mi><m:mfenced separators="" open="[" close="]"><m:mo form="prefix">sin</m:mo><m:mi>α</m:mi><m:mo form="prefix">cos</m:mo><m:mi>θ</m:mi><m:mo>+</m:mo><m:mo form="prefix">sin</m:mo><m:mi>θ</m:mi><m:mo form="prefix">cos</m:mo><m:mi>α</m:mi></m:mfenced></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>r</m:mi><m:mo form="prefix">sin</m:mo><m:mi>α</m:mi><m:mo form="prefix">cos</m:mo><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>r</m:mi><m:mo form="prefix">cos</m:mo><m:mi>α</m:mi><m:mo form="prefix">sin</m:mo><m:mi>θ</m:mi></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd/><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd columnalign="left"><m:mrow><m:mi>y</m:mi><m:mo form="prefix">cos</m:mo><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:mo form="prefix">sin</m:mo><m:mi>θ</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:math></equation><!--empty paragraphs get left behind.--><figure id="id159857"><media id="id159857_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_025.png" id="id159857_onlineimage" width="259"><!-- NOTE: attribute width changes image size online (pixels). original width is 259. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_025.eps" id="id159857_printimage"/></media></figure></para>
+          <para id="id159865">which gives the formula <m:math overflow="scroll"><m:mrow><m:msup><m:mi>P</m:mi><m:mo>'</m:mo></m:msup><m:mo>=</m:mo><m:mfenced separators="" open="[" close="]"><m:mo>(</m:mo><m:mi>x</m:mi><m:mo form="prefix">cos</m:mo><m:mi>θ</m:mi><m:mo>-</m:mo><m:mi>y</m:mi><m:mo form="prefix">sin</m:mo><m:mi>θ</m:mi><m:mo>;</m:mo><m:mi>y</m:mi><m:mo form="prefix">cos</m:mo><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:mo form="prefix">sin</m:mo><m:mi>θ</m:mi><m:mo>)</m:mo></m:mfenced></m:mrow></m:math>.
+</para>
+          <para id="id159945">So to find the co-ordinates of <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>;</m:mo><m:msqrt><m:mn>3</m:mn></m:msqrt><m:mo>)</m:mo></m:mrow></m:math> after a rotation of 45<m:math overflow="scroll"><m:msup><m:mrow/><m:mo>∘</m:mo></m:msup></m:math>, we arrive at:</para>
+          <equation id="id159984">
+            <m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:msup>
+                      <m:mi>P</m:mi>
+                      <m:mo>'</m:mo>
+                    </m:msup>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mfenced separators="" open="[" close="]">
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo form="prefix">cos</m:mo>
+                      <m:mi>θ</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo form="prefix">sin</m:mo>
+                      <m:mi>θ</m:mi>
+                      <m:mo>)</m:mo>
+                      <m:mo>;</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo form="prefix">cos</m:mo>
+                      <m:mi>θ</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo form="prefix">sin</m:mo>
+                      <m:mi>θ</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mfenced>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mfenced separators="" open="[" close="]">
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo form="prefix">cos</m:mo>
+                        <m:msup>
+                          <m:mn>45</m:mn>
+                          <m:mo>∘</m:mo>
+                        </m:msup>
+                        <m:mo>-</m:mo>
+                        <m:msqrt>
+                          <m:mn>3</m:mn>
+                        </m:msqrt>
+                        <m:mo form="prefix">sin</m:mo>
+                        <m:msup>
+                          <m:mn>45</m:mn>
+                          <m:mo>∘</m:mo>
+                        </m:msup>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mo>;</m:mo>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:msqrt>
+                          <m:mn>3</m:mn>
+                        </m:msqrt>
+                        <m:mo form="prefix">cos</m:mo>
+                        <m:msup>
+                          <m:mn>45</m:mn>
+                          <m:mo>∘</m:mo>
+                        </m:msup>
+                        <m:mo>+</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo form="prefix">sin</m:mo>
+                        <m:msup>
+                          <m:mn>45</m:mn>
+                          <m:mo>∘</m:mo>
+                        </m:msup>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mfenced>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mfenced separators="" open="[" close="]">
+                      <m:mfenced separators="" open="(" close=")">
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:msqrt>
+                            <m:mn>2</m:mn>
+                          </m:msqrt>
+                        </m:mfrac>
+                        <m:mo>-</m:mo>
+                        <m:mfrac>
+                          <m:msqrt>
+                            <m:mn>3</m:mn>
+                          </m:msqrt>
+                          <m:msqrt>
+                            <m:mn>2</m:mn>
+                          </m:msqrt>
+                        </m:mfrac>
+                      </m:mfenced>
+                      <m:mo>;</m:mo>
+                      <m:mfenced separators="" open="(" close=")">
+                        <m:mfrac>
+                          <m:msqrt>
+                            <m:mn>3</m:mn>
+                          </m:msqrt>
+                          <m:msqrt>
+                            <m:mn>2</m:mn>
+                          </m:msqrt>
+                        </m:mfrac>
+                        <m:mo>+</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:msqrt>
+                            <m:mn>2</m:mn>
+                          </m:msqrt>
+                        </m:mfrac>
+                      </m:mfenced>
+                    </m:mfenced>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mfenced separators="" open="(" close=")">
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mo>-</m:mo>
+                          <m:msqrt>
+                            <m:mn>3</m:mn>
+                          </m:msqrt>
+                        </m:mrow>
+                        <m:msqrt>
+                          <m:mn>2</m:mn>
+                        </m:msqrt>
+                      </m:mfrac>
+                      <m:mo>;</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:msqrt>
+                            <m:mn>3</m:mn>
+                          </m:msqrt>
+                          <m:mo>+</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                        <m:msqrt>
+                          <m:mn>2</m:mn>
+                        </m:msqrt>
+                      </m:mfrac>
+                    </m:mfenced>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+<section id="secfhsst_id5470"><title> Rotations </title>
+          <para id="id160285">Any line <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>P</m:mi></m:mrow></m:math> is drawn (not necessarily in the first quadrant), making an angle of <m:math overflow="scroll"><m:mi>θ</m:mi></m:math> degrees with the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-axis. Using the co-ordinates of <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and the angle <m:math overflow="scroll"><m:mi>α</m:mi></m:math>, calculate the co-ordinates of <m:math overflow="scroll"><m:msup><m:mi>P</m:mi><m:mo>'</m:mo></m:msup></m:math>, if the line <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>P</m:mi></m:mrow></m:math> is rotated about the origin through <m:math overflow="scroll"><m:mi>α</m:mi></m:math> degrees.
+<table id="id160380" summary=""><tgroup cols="3"><tbody><row><entry/><entry><m:math overflow="scroll"><m:mi>P</m:mi></m:math></entry><entry><m:math overflow="scroll"><m:mi>α</m:mi></m:math></entry></row><row><entry>1.</entry><entry>(2, 6)</entry><entry>60<m:math overflow="scroll"><m:msup><m:mrow/><m:mo>∘</m:mo></m:msup></m:math></entry></row><row><entry>2.</entry><entry>(4, 2)</entry><entry>30<m:math overflow="scroll"><m:msup><m:mrow/><m:mo>∘</m:mo></m:msup></m:math></entry></row><row><entry>3.</entry><entry>(5, -1)</entry><entry>45<m:math overflow="scroll"><m:msup><m:mrow/><m:mo>∘</m:mo></m:msup></m:math></entry></row><row><entry>4.</entry><entry>(-3, 2)</entry><entry>120<m:math overflow="scroll"><m:msup><m:mrow/><m:mo>∘</m:mo></m:msup></m:math></entry></row><row><entry>5.</entry><entry>(-4, -1)</entry><entry>225<m:math overflow="scroll"><m:msup><m:mrow/><m:mo>∘</m:mo></m:msup></m:math></entry></row><row><entry>6.</entry><entry>(2, 5)</entry><entry>-150<m:math overflow="scroll"><m:msup><m:mrow/><m:mo>∘</m:mo></m:msup></m:math></entry></row></tbody></tgroup></table><!--empty paragraphs get left behind.--><figure id="id160686"><media id="id160686_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_026.png" id="id160686_onlineimage" width="160"><!-- NOTE: attribute width changes image size online (pixels). original width is 160. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_026.eps" id="id160686_printimage"/></media></figure>
+
+
+ </para>
+</section>
+        </section>
+      </section>
+      <section id="uid113">
+        <title>Characteristics of Transformations</title>
+        <para id="id160711">Rigid transformations like translations, reflections, rotations and glide reflections preserve shape and size, and that enlargement preserves shape but not size.</para>
+<section id="secfhsst_id5482"><title>Geometric Transformations: </title>
+        <para id="id160723">Draw a large 15<m:math overflow="scroll"><m:mo>×</m:mo></m:math>15 grid and plot <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi></m:mrow></m:mrow></m:math> with <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>;</m:mo><m:mn>6</m:mn><m:mo>)</m:mo></m:mrow></m:math>, <m:math overflow="scroll"><m:mrow><m:mi>B</m:mi><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>;</m:mo><m:mn>6</m:mn><m:mo>)</m:mo></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>C</m:mi><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>;</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math>. Fill in the lines <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow></m:math>.
+Complete the table below , by drawing the images of <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi></m:mrow></m:math> under the given transformations. The first one has been done for you.
+
+
+
+<figure id="id160882"><media id="id160882_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_027.png" id="id160882_onlineimage" width="284"><!-- NOTE: attribute width changes image size online (pixels). original width is 284. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_027.eps" id="id160882_printimage"/></media></figure></para>
+        <table id="id160890" summary="">
+          <tgroup cols="5">
+            <tbody>
+              <row>
+                <entry/>
+                <entry>Description</entry>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>Transformation</entry>
+                <entry>(translation, reflection,</entry>
+                <entry>Co-ordinates</entry>
+                <entry>Lengths</entry>
+                <entry>Angles</entry>
+              </row>
+              <row>
+                <entry/>
+                <entry>rotation, enlargement)</entry>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>A</m:mi>
+                        <m:mo>'</m:mo>
+                      </m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>2</m:mn>
+                        <m:mo>;</m:mo>
+                        <m:mo>-</m:mo>
+                        <m:mn>6</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>A</m:mi>
+                        <m:mo>'</m:mo>
+                      </m:msup>
+                      <m:msup>
+                        <m:mi>B</m:mi>
+                        <m:mo>'</m:mo>
+                      </m:msup>
+                      <m:mo>=</m:mo>
+                      <m:mn>3</m:mn>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mover accent="true">
+                          <m:mi>B</m:mi>
+                          <m:mo>^</m:mo>
+                        </m:mover>
+                        <m:mo>'</m:mo>
+                      </m:msup>
+                      <m:mo>=</m:mo>
+                      <m:msup>
+                        <m:mn>90</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                      <m:mo>→</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mo>-</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>reflection about the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-axis</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>B</m:mi>
+                        <m:mo>'</m:mo>
+                      </m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:mo>;</m:mo>
+                        <m:mo>-</m:mo>
+                        <m:mn>6</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>B</m:mi>
+                        <m:mo>'</m:mo>
+                      </m:msup>
+                      <m:msup>
+                        <m:mi>C</m:mi>
+                        <m:mo>'</m:mo>
+                      </m:msup>
+                      <m:mo>=</m:mo>
+                      <m:mn>4</m:mn>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo form="prefix">tan</m:mo>
+                      <m:mover accent="true">
+                        <m:mi>A</m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>=</m:mo>
+                      <m:mn>4</m:mn>
+                      <m:mo>/</m:mo>
+                      <m:mn>3</m:mn>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>C</m:mi>
+                        <m:mo>'</m:mo>
+                      </m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:mo>;</m:mo>
+                        <m:mo>-</m:mo>
+                        <m:mn>2</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>A</m:mi>
+                        <m:mo>'</m:mo>
+                      </m:msup>
+                      <m:msup>
+                        <m:mi>C</m:mi>
+                        <m:mo>'</m:mo>
+                      </m:msup>
+                      <m:mo>=</m:mo>
+                      <m:mn>5</m:mn>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>∴</m:mo>
+                      <m:mover accent="true">
+                        <m:mi>A</m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>=</m:mo>
+                      <m:msup>
+                        <m:mn>53</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>,</m:mo>
+                      <m:mover accent="true">
+                        <m:mi>C</m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>=</m:mo>
+                      <m:msup>
+                        <m:mn>37</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                      <m:mo>→</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>;</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                      <m:mo>→</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mo>-</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                      <m:mo>→</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mo>-</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                      <m:mo>→</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mo>-</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mo>-</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                      <m:mo>→</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mi>x</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                      <m:mo>→</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                      <m:mo>→</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>;</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        <para id="id162468">A transformation that leaves lengths and angles unchanged is called a rigid transformation. Which of the above transformations are rigid?
+ </para>
+</section>
+      </section>
+    </section>
+    <section id="cid6">
+      <title>Exercises</title>
+      <list id="id162488" display="block" list-type="enumerated">
+        <item id="uid114"><m:math overflow="scroll"><m:mrow><m:mi>Δ</m:mi><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi></m:mrow></m:math> undergoes several transformations forming <m:math overflow="scroll"><m:mrow><m:mi>Δ</m:mi><m:msup><m:mi>A</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>B</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>C</m:mi><m:mo>'</m:mo></m:msup></m:mrow></m:math>. Describe the relationship between the angles and sides of <m:math overflow="scroll"><m:mrow><m:mi>Δ</m:mi><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>Δ</m:mi><m:msup><m:mi>A</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>B</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>C</m:mi><m:mo>'</m:mo></m:msup></m:mrow></m:math> (e.g., they are twice as large, the same, etc.)
+<table id="id162603" summary=""><tgroup cols="4"><tbody><row><entry>Transformation</entry><entry>Sides</entry><entry>Angles</entry><entry>Area</entry></row><row><entry>Reflect</entry><entry/><entry/><entry/></row><row><entry>Reduce by a scale factor of 3</entry><entry/><entry/><entry/></row><row><entry>Rotate by 90<m:math overflow="scroll"><m:msup><m:mrow/><m:mo>∘</m:mo></m:msup></m:math></entry><entry/><entry/><entry/></row><row><entry>Translate 4 units right</entry><entry/><entry/><entry/></row><row><entry>Enlarge by a scale factor of 2</entry><entry/><entry/><entry/></row></tbody></tgroup></table></item>
+        <item id="uid115"><m:math overflow="scroll"><m:mrow><m:mi>Δ</m:mi><m:mi>D</m:mi><m:mi>E</m:mi><m:mi>F</m:mi></m:mrow></m:math> has <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mi>E</m:mi><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:msup><m:mn>30</m:mn><m:mo>∘</m:mo></m:msup></m:mrow></m:math>, <m:math overflow="scroll"><m:mrow><m:mi>D</m:mi><m:mi>E</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.166667em"/><m:mi> cm </m:mi></m:mrow></m:math>, <m:math overflow="scroll"><m:mrow><m:mi>E</m:mi><m:mi>F</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.166667em"/><m:mi> cm </m:mi></m:mrow></m:math>. <m:math overflow="scroll"><m:mrow><m:mi>Δ</m:mi><m:mi>D</m:mi><m:mi>E</m:mi><m:mi>F</m:mi></m:mrow></m:math> is enlarged by a scale factor of 6 to form <m:math overflow="scroll"><m:mrow><m:mi>Δ</m:mi><m:msup><m:mi>D</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>E</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>F</m:mi><m:mo>'</m:mo></m:msup></m:mrow></m:math>.
+<list id="id162975" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid116">Solve <m:math overflow="scroll"><m:mrow><m:mi>Δ</m:mi><m:mi>D</m:mi><m:mi>E</m:mi><m:mi>F</m:mi></m:mrow></m:math></item><item id="uid117">Hence, solve <m:math overflow="scroll"><m:mrow><m:mi>Δ</m:mi><m:msup><m:mi>D</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>E</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>F</m:mi><m:mo>'</m:mo></m:msup></m:mrow></m:math></item></list></item>
+        <item id="uid118"><m:math overflow="scroll"><m:mrow><m:mi>Δ</m:mi><m:mi>X</m:mi><m:mi>Y</m:mi><m:mi>Z</m:mi></m:mrow></m:math> has an area of <m:math overflow="scroll"><m:mrow><m:mn>6</m:mn><m:mspace width="0.166667em"/><m:msup><m:mrow><m:mi> cm </m:mi></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math>. Find the area of <m:math overflow="scroll"><m:mrow><m:mi>Δ</m:mi><m:msup><m:mi>X</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>Y</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>Z</m:mi><m:mo>'</m:mo></m:msup></m:mrow></m:math> if the points have been transformed as follows:
+<list id="id163134" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid119"><m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>→</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>;</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:math></item><item id="uid120"><m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>→</m:mo><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>;</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math></item><item id="uid121"><m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>→</m:mo><m:mo>(</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>;</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math></item><item id="uid122"><m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>→</m:mo><m:mo>(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>;</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:math></item><item id="uid123"><m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>→</m:mo><m:mo>(</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>;</m:mo><m:mo>-</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math></item><item id="uid124"><m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>→</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>;</m:mo><m:mo>-</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:math></item><item id="uid125"><m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>→</m:mo><m:mo>(</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>;</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math></item><item id="uid126"><m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>→</m:mo><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>;</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math></item></list></item>
+      </list>
+    </section>
+  </content>
+</document>

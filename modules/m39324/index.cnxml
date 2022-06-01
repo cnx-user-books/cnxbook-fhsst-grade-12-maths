@@ -1,0 +1,1372 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Least Squares, Calculator Work, Correlation Coefficients</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39324</md:content-id>
+  <md:title>Least Squares, Calculator Work, Correlation Coefficients</md:title>
+  <md:abstract/>
+  <md:uuid>36c6cb22-4de3-478b-a9f8-21a440ab5199</md:uuid>
+</metadata>
+
+<content>
+
+      <section id="uid37">
+        <title>The Method of Least Squares</title>
+        <para id="id111752">We now come to a more accurate method of finding the line of best-fit. The method is very simple.
+Suppose we guess a line of best-fit. Then at at every data point, we find the distance between the data point and the line. If the line fitted the data perfectly, this distance should be zero for all the data points. The worse the fit, the larger the differences. We then square each of these distances, and add them all together.</para>
+        <para id="id111759">
+          <figure id="id111762">
+            <media id="id111762_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C11_006.png" id="id111762_onlineimage" width="242"><!-- NOTE: attribute width changes image size online (pixels). original width is 242. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C11_006.eps" id="id111762_printimage"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id111769">The best-fit line is then the line that minimises the sum of the squared distances.</para>
+        <para id="id111773">Suppose we have a data set of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> points <m:math overflow="scroll"><m:mrow><m:mo>{</m:mo><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>;</m:mo><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>;</m:mo><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mo>...</m:mo><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mi>n</m:mi></m:msub><m:mo>,</m:mo><m:msub><m:mi>y</m:mi><m:mi>n</m:mi></m:msub><m:mo>)</m:mo></m:mrow><m:mo>}</m:mo></m:mrow></m:math>. We also have a line <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi></m:mrow></m:math> that we are trying to fit to the data. The distance between the first data point and the line, for example, is</para>
+        <equation id="id111905">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mtext>distance</m:mtext>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>-</m:mo>
+              <m:mi>f</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>-</m:mo>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>m</m:mi>
+                <m:mi>x</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>c</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id111963">We now square each of these distances and add them together. Lets call this sum <m:math overflow="scroll"><m:mrow><m:mi>S</m:mi><m:mo>(</m:mo><m:mi>m</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>)</m:mo></m:mrow></m:math>. Then we have that</para>
+        <equation id="id111990">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>S</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>m</m:mi>
+                    <m:mo>,</m:mo>
+                    <m:mi>c</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>-</m:mo>
+                        <m:mi>f</m:mi>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mn>1</m:mn>
+                          </m:msub>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                        <m:mo>-</m:mo>
+                        <m:mi>f</m:mi>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msub>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mo>...</m:mo>
+                    <m:mo>+</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mi>n</m:mi>
+                        </m:msub>
+                        <m:mo>-</m:mo>
+                        <m:mi>f</m:mi>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mi>n</m:mi>
+                          </m:msub>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mi>n</m:mi>
+                    </m:munderover>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mi>i</m:mi>
+                        </m:msub>
+                        <m:mo>-</m:mo>
+                        <m:mi>f</m:mi>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mi>i</m:mi>
+                          </m:msub>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id112203">Thus our problem is to find the value of <m:math overflow="scroll"><m:mi>m</m:mi></m:math> and <m:math overflow="scroll"><m:mi>c</m:mi></m:math> such that <m:math overflow="scroll"><m:mrow><m:mi>S</m:mi><m:mo>(</m:mo><m:mi>m</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>)</m:mo></m:mrow></m:math> is minimised. Let us call these minimising values <m:math overflow="scroll"><m:msub><m:mi>m</m:mi><m:mn>0</m:mn></m:msub></m:math> and <m:math overflow="scroll"><m:msub><m:mi>c</m:mi><m:mn>0</m:mn></m:msub></m:math>. Then the line of best-fit is <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>m</m:mi><m:mn>0</m:mn></m:msub><m:mi>x</m:mi><m:mo>+</m:mo><m:msub><m:mi>c</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math>. We can find <m:math overflow="scroll"><m:msub><m:mi>m</m:mi><m:mn>0</m:mn></m:msub></m:math> and <m:math overflow="scroll"><m:msub><m:mi>c</m:mi><m:mn>0</m:mn></m:msub></m:math> using calculus, but it is tricky, and we will just give you the result, which is that</para>
+        <equation id="id112345">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>n</m:mi>
+                      <m:msubsup>
+                        <m:mo>∑</m:mo>
+                        <m:mrow>
+                          <m:mi>i</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                        <m:mi>n</m:mi>
+                      </m:msubsup>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mi>i</m:mi>
+                      </m:msub>
+                      <m:msub>
+                        <m:mi>y</m:mi>
+                        <m:mi>i</m:mi>
+                      </m:msub>
+                      <m:mo>-</m:mo>
+                      <m:msubsup>
+                        <m:mo>∑</m:mo>
+                        <m:mrow>
+                          <m:mi>i</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                        <m:mi>n</m:mi>
+                      </m:msubsup>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mi>i</m:mi>
+                      </m:msub>
+                      <m:msubsup>
+                        <m:mo>∑</m:mo>
+                        <m:mrow>
+                          <m:mi>i</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                        <m:mi>n</m:mi>
+                      </m:msubsup>
+                      <m:msub>
+                        <m:mi>y</m:mi>
+                        <m:mi>i</m:mi>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mi>n</m:mi>
+                      <m:msubsup>
+                        <m:mo>∑</m:mo>
+                        <m:mrow>
+                          <m:mi>i</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                        <m:mi>n</m:mi>
+                      </m:msubsup>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mi>i</m:mi>
+                          </m:msub>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:msup>
+                        <m:mfenced separators="" open="(" close=")">
+                          <m:msubsup>
+                            <m:mo>∑</m:mo>
+                            <m:mrow>
+                              <m:mi>i</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                            <m:mi>n</m:mi>
+                          </m:msubsup>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mi>i</m:mi>
+                          </m:msub>
+                        </m:mfenced>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>c</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mi>n</m:mi>
+                    </m:mfrac>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                      <m:mi>n</m:mi>
+                    </m:munderover>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mi>i</m:mi>
+                    </m:msub>
+                    <m:mo>-</m:mo>
+                    <m:mfrac>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:mn>0</m:mn>
+                      </m:msub>
+                      <m:mi>n</m:mi>
+                    </m:mfrac>
+                    <m:munderover>
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:mi>n</m:mi>
+                    </m:munderover>
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mi>i</m:mi>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mover accent="true">
+                      <m:mi>y</m:mi>
+                      <m:mo>¯</m:mo>
+                    </m:mover>
+                    <m:mo>-</m:mo>
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mover accent="true">
+                      <m:mi>x</m:mi>
+                      <m:mo>¯</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+<para id="eip-863"><figure id="regression-1" class="khanacademy">
+	  <title>Khan academy video on regression - 1</title>
+	  <media id="yt-media1" display="block" alt="video on regression 1">
+	  <flash id="yt-video1" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/GAmzwIkGFgE&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><exercise id="secfhsst_id716"><title> Method of Least Squares </title>
+        <problem id="probfhsst_id717">
+        <para id="id112666">In the table below, we have the records of the maintenance costs in Rands, compared with the age of the appliance in months. We have data for 5 appliances.</para>
+        <table id="id112673" summary="">
+          <tgroup cols="6">
+            <tbody>
+              <row>
+                <entry>
+                  <emphasis effect="bold">appliance</emphasis>
+                </entry>
+                <entry>1</entry>
+                <entry>2</entry>
+                <entry>3</entry>
+                <entry>4</entry>
+                <entry>5</entry>
+              </row>
+              <row>
+                <entry><emphasis effect="bold">age</emphasis> (<m:math overflow="scroll"><m:mi>x</m:mi></m:math>)</entry>
+                <entry>5</entry>
+                <entry>10</entry>
+                <entry>15</entry>
+                <entry>20</entry>
+                <entry>30</entry>
+              </row>
+              <row>
+                <entry><emphasis effect="bold">cost</emphasis> (<m:math overflow="scroll"><m:mi>y</m:mi></m:math>)</entry>
+                <entry>90</entry>
+                <entry>140</entry>
+                <entry>250</entry>
+                <entry>300</entry>
+                <entry>380</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        <para id="id112869">Find the line of best fit using the method of least squares.
+ </para>
+        </problem>
+        <solution id="solfhsst_id755"> <list id="listfhsst_id755" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Draw up a table of <m:math overflow="scroll"><m:mi>x</m:mi></m:math>, <m:math overflow="scroll"><m:mi>y</m:mi></m:math>, <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:math> values </label>
+        <table id="id112934" summary="">
+          <tgroup cols="5">
+            <tbody>
+              <row>
+                <entry>
+                  <emphasis effect="bold">appliance</emphasis>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mi>x</m:mi>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mi>y</m:mi>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mi>y</m:mi>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry>1</entry>
+                <entry>5</entry>
+                <entry>90</entry>
+                <entry>450</entry>
+                <entry>25</entry>
+              </row>
+              <row>
+                <entry>2</entry>
+                <entry>10</entry>
+                <entry>140</entry>
+                <entry>1400</entry>
+                <entry>100</entry>
+              </row>
+              <row>
+                <entry>3</entry>
+                <entry>15</entry>
+                <entry>250</entry>
+                <entry>3750</entry>
+                <entry>225</entry>
+              </row>
+              <row>
+                <entry>4</entry>
+                <entry>20</entry>
+                <entry>300</entry>
+                <entry>6000</entry>
+                <entry>400</entry>
+              </row>
+              <row>
+                <entry>5</entry>
+                <entry>30</entry>
+                <entry>380</entry>
+                <entry>11400</entry>
+                <entry>900</entry>
+              </row>
+              <row>
+                <entry>
+                  <emphasis effect="bold">Total</emphasis>
+                </entry>
+                <entry>80</entry>
+                <entry>1160</entry>
+                <entry>23000</entry>
+                <entry>1650</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        </item> <item> <label> Work out <m:math overflow="scroll"><m:msub><m:mi>m</m:mi><m:mn>0</m:mn></m:msub></m:math> and <m:math overflow="scroll"><m:msub><m:mi>c</m:mi><m:mn>0</m:mn></m:msub></m:math> and write the equation </label>
+        <equation id="id113330">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>n</m:mi>
+                        <m:mo>∑</m:mo>
+                        <m:mrow>
+                          <m:mi>x</m:mi>
+                          <m:mi>y</m:mi>
+                        </m:mrow>
+                        <m:mo>-</m:mo>
+                        <m:mo>∑</m:mo>
+                        <m:mi>x</m:mi>
+                        <m:mo>∑</m:mo>
+                        <m:mi>y</m:mi>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi>n</m:mi>
+                        <m:mo>∑</m:mo>
+                        <m:msup>
+                          <m:mi>x</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>-</m:mo>
+                        <m:msup>
+                          <m:mfenced separators="" open="(" close=")">
+                            <m:mo>∑</m:mo>
+                            <m:mi>x</m:mi>
+                          </m:mfenced>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>=</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mo>×</m:mo>
+                        <m:mn>23000</m:mn>
+                        <m:mo>-</m:mo>
+                        <m:mn>80</m:mn>
+                        <m:mo>×</m:mo>
+                        <m:mn>1160</m:mn>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mo>×</m:mo>
+                        <m:mn>1650</m:mn>
+                        <m:mo>-</m:mo>
+                        <m:msup>
+                          <m:mn>80</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>=</m:mo>
+                    <m:mn>12</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>c</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mover accent="true">
+                      <m:mi>y</m:mi>
+                      <m:mo>¯</m:mo>
+                    </m:mover>
+                    <m:mo>-</m:mo>
+                    <m:mi>b</m:mi>
+                    <m:mover accent="true">
+                      <m:mi>x</m:mi>
+                      <m:mo>¯</m:mo>
+                    </m:mover>
+                    <m:mo>=</m:mo>
+                    <m:mfrac>
+                      <m:mn>1160</m:mn>
+                      <m:mn>5</m:mn>
+                    </m:mfrac>
+                    <m:mo>-</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mn>12</m:mn>
+                        <m:mo>×</m:mo>
+                        <m:mn>80</m:mn>
+                      </m:mrow>
+                      <m:mn>5</m:mn>
+                    </m:mfrac>
+                    <m:mo>=</m:mo>
+                    <m:mn>40</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>∴</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:munder>
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mi>y</m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>=</m:mo>
+                      <m:mn>40</m:mn>
+                      <m:mo>+</m:mo>
+                      <m:mn>12</m:mn>
+                      <m:mi>x</m:mi>
+                    </m:mrow>
+                    <m:mo>̲</m:mo>
+                  </m:munder>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        
+        </item> </list> </solution>
+</exercise>
+      </section>
+      <section id="uid38">
+        <title>Using a calculator</title>
+<exercise id="secfhsst_id985"><title> Using the Sharp EL-531VH calculator
+ </title>
+        <problem id="probfhsst_id987">
+        <para id="id113604">Find a regression equation for the following data:</para>
+        <table id="id113610" summary="">
+          <tgroup cols="6">
+            <tbody>
+              <row>
+                <entry>Days (<m:math overflow="scroll"><m:mi>x</m:mi></m:math>)</entry>
+                <entry>1</entry>
+                <entry>2</entry>
+                <entry>3</entry>
+                <entry>4</entry>
+                <entry>5</entry>
+              </row>
+              <row>
+                <entry>Growth in m (<m:math overflow="scroll"><m:mi>y</m:mi></m:math>)</entry>
+                <entry>1,00</entry>
+                <entry>2,50</entry>
+                <entry>2,75</entry>
+                <entry>3,00</entry>
+                <entry>3,50</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        
+        </problem>
+        <solution id="solfhsst_id1014"> <list id="listfhsst_id1014" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Getting your calculator ready </label>
+        <para id="id113764">Using your calculator, change the mode from normal to “Stat <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math>”. This mode enables you to type in bivariate data.</para>
+        </item> <item> <label> Entering the data </label>
+        <para id="id113786">Key in the data as follows:</para>
+        <table id="id113789" summary="">
+          <tgroup cols="5">
+            <tbody>
+              <row>
+                <entry>1</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>1</entry>
+                <entry>DATA
+</entry>
+                <entry><m:math overflow="scroll"><m:mi>n</m:mi></m:math> = 1</entry>
+              </row>
+              <row>
+                <entry>2</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>2,5</entry>
+                <entry>DATA
+</entry>
+                <entry><m:math overflow="scroll"><m:mi>n</m:mi></m:math> = 2</entry>
+              </row>
+              <row>
+                <entry>3</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>2,75</entry>
+                <entry>DATA
+</entry>
+                <entry><m:math overflow="scroll"><m:mi>n</m:mi></m:math> = 3</entry>
+              </row>
+              <row>
+                <entry>4</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>3,0</entry>
+                <entry>DATA
+</entry>
+                <entry><m:math overflow="scroll"><m:mi>n</m:mi></m:math> = 4</entry>
+              </row>
+              <row>
+                <entry>5</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>3,5</entry>
+                <entry>DATA
+</entry>
+                <entry><m:math overflow="scroll"><m:mi>n</m:mi></m:math> = 5</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        </item> <item> <label> Getting regression results from the calculator </label>
+        <para id="id114097">Ask for the values of the regression coefficients <m:math overflow="scroll"><m:mi>a</m:mi></m:math> and <m:math overflow="scroll"><m:mi>b</m:mi></m:math>.</para>
+        <table id="id114118" summary="">
+          <tgroup cols="4">
+            <tbody>
+              <row>
+                <entry>RCL
+</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mi>a</m:mi>
+                  </m:math>
+                </entry>
+                <entry>gives</entry>
+                <entry><m:math overflow="scroll"><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo></m:mrow></m:math> 0,9</entry>
+              </row>
+              <row>
+                <entry>RCL
+</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mi>b</m:mi>
+                  </m:math>
+                </entry>
+                <entry>gives</entry>
+                <entry><m:math overflow="scroll"><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo></m:mrow></m:math> 0,55</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        <equation id="id114213">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mo>∴</m:mo>
+              <m:mover accent="true">
+                <m:mi>y</m:mi>
+                <m:mo>^</m:mo>
+              </m:mover>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>9</m:mn>
+              <m:mo>+</m:mo>
+              <m:mn>0</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>55</m:mn>
+              <m:mi>x</m:mi>
+            </m:mrow>
+          </m:math>
+        </equation>
+        
+        </item> </list> </solution>
+</exercise>
+<exercise id="secfhsst_id1170"><title> Using the CASIO fx-82ES Natural Display calculator
+ </title>
+        <problem id="probfhsst_id1172">
+        <para id="id114284">Using a calculator determine the least squares line of best fit for the following data set of marks.</para>
+        <table id="id114290" summary="">
+          <tgroup cols="6">
+            <tbody>
+              <row>
+                <entry>Learner</entry>
+                <entry>1</entry>
+                <entry>2</entry>
+                <entry>3</entry>
+                <entry>4</entry>
+                <entry>5</entry>
+              </row>
+              <row>
+                <entry>Chemistry (%)</entry>
+                <entry>52</entry>
+                <entry>55</entry>
+                <entry>86</entry>
+                <entry>71</entry>
+                <entry>45</entry>
+              </row>
+              <row>
+                <entry>Accounting (%)</entry>
+                <entry>48</entry>
+                <entry>64</entry>
+                <entry>95</entry>
+                <entry>79</entry>
+                <entry>50</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <para id="id114453">For a Chemistry mark of 65%, what mark does the least squares line predict for Accounting?
+ </para>
+        </problem>
+        <solution id="solfhsst_id1207"> <list id="listfhsst_id1207" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Getting your calculator ready </label>
+        <para id="id114475">Switch on the calculator. Press [MODE] and then select STAT by pressing [2]. The following screen will appear:</para>
+        <table id="id114480" summary="">
+          <tgroup cols="4">
+            <tbody>
+              <row>
+                <entry>1</entry>
+                <entry>1-VAR</entry>
+                <entry>2</entry>
+                <entry>A + BX</entry>
+              </row>
+              <row>
+                <entry>3</entry>
+                <entry><m:math overflow="scroll"><m:mo>_</m:mo></m:math> + CX<m:math overflow="scroll"><m:msup><m:mrow/><m:mn>2</m:mn></m:msup></m:math></entry>
+                <entry>4</entry>
+                <entry>ln X</entry>
+              </row>
+              <row>
+                <entry>5</entry>
+                <entry>e <m:math overflow="scroll"><m:mover accent="true"><m:mrow/><m:mo>^</m:mo></m:mover></m:math> X</entry>
+                <entry>6</entry>
+                <entry>A . B <m:math overflow="scroll"><m:mover accent="true"><m:mrow/><m:mo>^</m:mo></m:mover></m:math> X</entry>
+              </row>
+              <row>
+                <entry>7</entry>
+                <entry>A . X <m:math overflow="scroll"><m:mover accent="true"><m:mrow/><m:mo>^</m:mo></m:mover></m:math> B</entry>
+                <entry>8</entry>
+                <entry>1/X</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        <para id="id114666">Now press [2] for linear regression. Your screen should look something like this:</para>
+        <table id="id114670" summary="">
+          <tgroup cols="7">
+            <tbody>
+              <row>
+                <entry/>
+                <entry/>
+                <entry>x</entry>
+                <entry/>
+                <entry/>
+                <entry>y</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>1</entry>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>2</entry>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>3</entry>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        </item> <item> <label> Entering the data </label>
+        <para id="id114824">Press [52] and then [=] to enter the first mark under <m:math overflow="scroll"><m:mi>x</m:mi></m:math>. Then enter the other values, in the same way, for the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-variable (the Chemistry marks) in the order in which they are given in the data set. Then move the cursor across and up and enter 48 under <m:math overflow="scroll"><m:mi>y</m:mi></m:math> opposite 52 in the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-column. Continue to enter the other <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-values (the Accounting marks) in order so that they pair off correctly with the corresponding <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-values.</para>
+        <table id="id114883" summary="">
+          <tgroup cols="7">
+            <tbody>
+              <row>
+                <entry/>
+                <entry/>
+                <entry>x</entry>
+                <entry/>
+                <entry/>
+                <entry>y</entry>
+                <entry/>
+              </row>
+              <row>
+                <entry>1</entry>
+                <entry/>
+                <entry>52</entry>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>2</entry>
+                <entry/>
+                <entry>55</entry>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>3</entry>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+                <entry/>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        <para id="id115034">Then press [AC]. The screen clears but the data remains stored.</para>
+        <table id="id115038" summary="">
+          <tgroup cols="4">
+            <tbody>
+              <row>
+                <entry>1:</entry>
+                <entry>Type</entry>
+                <entry>2:</entry>
+                <entry>Data</entry>
+              </row>
+              <row>
+                <entry>3:</entry>
+                <entry>Edit</entry>
+                <entry>4:</entry>
+                <entry>Sum</entry>
+              </row>
+              <row>
+                <entry>5:</entry>
+                <entry>Var</entry>
+                <entry>6:</entry>
+                <entry>MinMax</entry>
+              </row>
+              <row>
+                <entry>7:</entry>
+                <entry>Reg</entry>
+                <entry/>
+                <entry/>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        <para id="id115159">Now press [SHIFT][1] to get the stats computations screen shown below. Choose Regression by pressing [7].</para>
+        <table id="id115163" summary="">
+          <tgroup cols="4">
+            <tbody>
+              <row>
+                <entry>1:</entry>
+                <entry>A</entry>
+                <entry>2:</entry>
+                <entry>B</entry>
+              </row>
+              <row>
+                <entry>3:</entry>
+                <entry>r</entry>
+                <entry>4:</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mover accent="true">
+                      <m:mi>x</m:mi>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry>5:</entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mover accent="true">
+                      <m:mi>y</m:mi>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:math>
+                </entry>
+                <entry/>
+                <entry/>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        </item> <item> <label> Getting regression results from the calculator </label>
+        <list id="id115287" display="block" list-type="enumerated">
+          <item id="uid39"><label>a)</label>Press [1] and [=] to get the value of the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-intercept, <m:math overflow="scroll"><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>065</m:mn><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>07</m:mn></m:mrow></m:math>(to 2 d.p.)
+Finally, to get the slope, use the following key sequence: [SHIFT][1][7][2][=]. The calculator gives <m:math overflow="scroll"><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>169</m:mn><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>17</m:mn></m:mrow></m:math>(to 2 d.p.)
+The equation of the line of regression is thus:
+<m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mi>y</m:mi><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>07</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>17</m:mn><m:mi>x</m:mi></m:mrow></m:math></item>
+          <item id="uid40"><label>b)</label>Press [AC][65][SHIFT][1][7][5][=]
+This gives a (predicted) Accounting mark of <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow/><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mn>70</m:mn><m:mo>,</m:mo><m:mn>94</m:mn><m:mo>=</m:mo><m:mn>71</m:mn></m:mrow></m:math>%
+</item>
+        </list>
+        
+        </item> </list> </solution>
+</exercise>
+<section id="secfhsst_id1415"><title>  </title>
+        <list id="id115505" display="block" list-type="enumerated">
+          <item id="uid41">The table below lists the exam results for 5 students in the subjects of Science and Biology.
+<table id="id115522" summary=""><tgroup cols="6"><tbody><row><entry>Learner</entry><entry>1</entry><entry>2</entry><entry>3</entry><entry>4</entry><entry>5</entry></row><row><entry>Science %</entry><entry>55</entry><entry>66</entry><entry>74</entry><entry>92</entry><entry>47</entry></row><row><entry>Biology %</entry><entry>48</entry><entry>59</entry><entry>68</entry><entry>84</entry><entry>53</entry></row></tbody></tgroup></table><list id="id115688" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid42">Use the formulae to find the regression equation coefficients <m:math overflow="scroll"><m:mi>a</m:mi></m:math> and <m:math overflow="scroll"><m:mi>b</m:mi></m:math>.
+</item><item id="uid43">Draw a scatter plot of the data on graph paper.
+</item><item id="uid44">Now use algebra to find a more accurate equation.
+</item></list></item>
+          <item id="uid45">Footlengths and heights of 7 students are given in the table below.
+<table id="id115760" summary=""><tgroup cols="8"><tbody><row><entry>Height (cm)</entry><entry>170</entry><entry>163</entry><entry>131</entry><entry>181</entry><entry>146</entry><entry>134</entry><entry>166</entry></row><row><entry>Footlength (cm)</entry><entry>27</entry><entry>23</entry><entry>20</entry><entry>28</entry><entry>22</entry><entry>20</entry><entry>24</entry></row></tbody></tgroup></table><list id="id115906" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid46">Draw a scatter plot of the data on graph paper.
+</item><item id="uid47">Indentify and describe any trends shown in the scatter plot.
+</item><item id="uid48">Find the equation of the least squares line by using algebraic methods and draw the line on your graph.
+</item><item id="uid49">Use your equation to predict the height of a student with footlength 21,6 cm.
+</item><item id="uid50">Use your equation to predict the footlength of a student 176 cm tall.
+</item></list></item>
+          <item id="uid51">Repeat the data in question 2 and find the regression line using a calculator
+</item>
+        </list>
+        
+</section>
+      </section>
+      <section id="uid52">
+        <title>Correlation coefficients</title>
+        <para id="id116006">Once we have applied regression analysis to a set of data, we would like to have a number that tells us exactly how well the data fits the function. A correlation coefficient, <m:math overflow="scroll"><m:mi>r</m:mi></m:math>, is a tool that tells us to what degree there is a relationship between two sets of data. The correlation coefficient <m:math overflow="scroll"><m:mrow><m:mi>r</m:mi><m:mo>∈</m:mo><m:mfenced separators="" open="[" close="]"><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>;</m:mo><m:mn>1</m:mn></m:mfenced></m:mrow></m:math> when <m:math overflow="scroll"><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math>, there is a perfect negative relationship, when <m:math overflow="scroll"><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, there is no relationship and <m:math overflow="scroll"><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> is a perfect positive correlation.</para>
+        <table id="id116095" summary="">
+          <tgroup cols="5">
+            <tbody>
+              <row>
+                <entry>
+                  <figure id="id116104">
+                    <media id="id116104_media" alt="">
+                      <image mime-type="image/png" src="../../media/MG12C11_007.png" id="id116104_onlineimage" width="155"><!-- NOTE: attribute width changes image size online (pixels). original width is 155. --></image>
+                      <image mime-type="application/postscript" for="pdf" src="../../media/MG12C11_007.eps" id="id116104_printimage"/>
+                    </media>
+                  </figure>
+                </entry>
+                <entry>
+                  <figure id="id116114">
+                    <media id="id116114_media" alt="">
+                      <image mime-type="image/png" src="../../media/MG12C11_008.png" id="id116114_onlineimage" width="156"><!-- NOTE: attribute width changes image size online (pixels). original width is 156. --></image>
+                      <image mime-type="application/postscript" for="pdf" src="../../media/MG12C11_008.eps" id="id116114_printimage"/>
+                    </media>
+                  </figure>
+                </entry>
+                <entry>
+                  <figure id="id116125">
+                    <media id="id116125_media" alt="">
+                      <image mime-type="image/png" src="../../media/MG12C11_009.png" id="id116125_onlineimage" width="156"><!-- NOTE: attribute width changes image size online (pixels). original width is 156. --></image>
+                      <image mime-type="application/postscript" for="pdf" src="../../media/MG12C11_009.eps" id="id116125_printimage"/>
+                    </media>
+                  </figure>
+                </entry>
+                <entry>
+                  <figure id="id116136">
+                    <media id="id116136_media" alt="">
+                      <image mime-type="image/png" src="../../media/MG12C11_010.png" id="id116136_onlineimage" width="155"><!-- NOTE: attribute width changes image size online (pixels). original width is 155. --></image>
+                      <image mime-type="application/postscript" for="pdf" src="../../media/MG12C11_010.eps" id="id116136_printimage"/>
+                    </media>
+                  </figure>
+                </entry>
+                <entry>
+                  <figure id="id116147">
+                    <media id="id116147_media" alt="">
+                      <image mime-type="image/png" src="../../media/MG12C11_011.png" id="id116147_onlineimage" width="155"><!-- NOTE: attribute width changes image size online (pixels). original width is 155. --></image>
+                      <image mime-type="application/postscript" for="pdf" src="../../media/MG12C11_011.eps" id="id116147_printimage"/>
+                    </media>
+                  </figure>
+                </entry>
+              </row>
+              <row>
+                <entry>Positive, strong</entry>
+                <entry>Positive, fairly strong</entry>
+                <entry>Positive, weak</entry>
+                <entry>No association</entry>
+                <entry>Negative, fairly strong</entry>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mi>r</m:mi>
+                      <m:mo>≈</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mo>,</m:mo>
+                      <m:mn>9</m:mn>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mi>r</m:mi>
+                      <m:mo>≈</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mo>,</m:mo>
+                      <m:mn>7</m:mn>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mi>r</m:mi>
+                      <m:mo>≈</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mo>,</m:mo>
+                      <m:mn>4</m:mn>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mi>r</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mi>r</m:mi>
+                      <m:mo>≈</m:mo>
+                      <m:mo>-</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mo>,</m:mo>
+                      <m:mn>7</m:mn>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        <para id="id116296">We often use the correlation coefficient <m:math overflow="scroll"><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:math> in order to examine the strength of the correlation only.</para>
+        <para id="id116315">In this case:</para>
+        <table id="id116318" summary="">
+          <tgroup cols="2">
+            <tbody>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>r</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>=</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>no correlation</entry>
+              </row>
+              <row>
+                <entry>0 <m:math overflow="scroll"><m:mrow><m:mo>&lt;</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>&lt;</m:mo></m:mrow></m:math> 0,25</entry>
+                <entry>very weak</entry>
+              </row>
+              <row>
+                <entry>0,25 <m:math overflow="scroll"><m:mrow><m:mo>&lt;</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>&lt;</m:mo></m:mrow></m:math> 0,5</entry>
+                <entry>weak</entry>
+              </row>
+              <row>
+                <entry>0,5 <m:math overflow="scroll"><m:mrow><m:mo>&lt;</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>&lt;</m:mo></m:mrow></m:math> 0,75</entry>
+                <entry>moderate</entry>
+              </row>
+              <row>
+                <entry>0,75 <m:math overflow="scroll"><m:mrow><m:mo>&lt;</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>&lt;</m:mo></m:mrow></m:math> 0,9</entry>
+                <entry>strong</entry>
+              </row>
+              <row>
+                <entry>0,9 <m:math overflow="scroll"><m:mrow><m:mo>&lt;</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>&lt;</m:mo></m:mrow></m:math> 1</entry>
+                <entry>very strong</entry>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>r</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>perfect correlation</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+        <para id="id116600">The correlation coefficient <m:math overflow="scroll"><m:mi>r</m:mi></m:math> can be calculated using the formula</para>
+        <equation id="id116614">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mi>r</m:mi>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mi>n</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mfenced separators="" open="(" close=")">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mover accent="true">
+                        <m:mi>x</m:mi>
+                        <m:mo>¯</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                    <m:msub>
+                      <m:mi>s</m:mi>
+                      <m:mi>x</m:mi>
+                    </m:msub>
+                  </m:mfrac>
+                </m:mfenced>
+                <m:mfenced separators="" open="(" close=")">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>y</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mover accent="true">
+                        <m:mi>y</m:mi>
+                        <m:mo>¯</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                    <m:msub>
+                      <m:mi>s</m:mi>
+                      <m:mi>y</m:mi>
+                    </m:msub>
+                  </m:mfrac>
+                </m:mfenced>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <list id="id116704" display="block" list-type="bulleted">
+          <item id="uid53">where <m:math overflow="scroll"><m:mi>n</m:mi></m:math> is the number of data points,
+</item>
+          <item id="uid54"><m:math overflow="scroll"><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:math> is the standard deviation of the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-values and
+</item>
+          <item id="uid55"><m:math overflow="scroll"><m:msub><m:mi>s</m:mi><m:mi>y</m:mi></m:msub></m:math> is the standard deviation of the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-values.
+</item>
+        </list>
+        <para id="id116798">This is known as the Pearson's product moment correlation coefficient. It is a long calculation and much easier to do on the calculator where you simply follow the procedure for the regression equation, and go on to find <m:math overflow="scroll"><m:mi>r</m:mi></m:math>.</para>
+      </section>
+    
+    <section id="cid6">
+      <title>Exercises</title>
+      <list id="id116822" display="block" list-type="enumerated">
+        <item id="uid56">Below is a list of data concerning 12 countries and their respective carbon dioxide (CO<m:math overflow="scroll"><m:msub><m:mrow/><m:mn>2</m:mn></m:msub></m:math>) emmission levels per person and the gross domestic product (GDP - a measure of products produced and services delivered within a country in a year) per person.
+<table id="id116852" summary=""><tgroup cols="3"><tbody><row><entry/><entry>CO<m:math overflow="scroll"><m:msub><m:mrow/><m:mn>2</m:mn></m:msub></m:math> emmissions per capita (<m:math overflow="scroll"><m:mi>x</m:mi></m:math>)</entry><entry>GDP per capita (<m:math overflow="scroll"><m:mi>y</m:mi></m:math>)</entry></row><row><entry>South Africa</entry><entry>8,1</entry><entry>3 938</entry></row><row><entry>Thailand</entry><entry>2,5</entry><entry>2 712</entry></row><row><entry>Italy</entry><entry>7,3</entry><entry>20 943</entry></row><row><entry>Australia</entry><entry>17,0</entry><entry>23 893</entry></row><row><entry>China</entry><entry>2,5</entry><entry>816</entry></row><row><entry>India</entry><entry>0,9</entry><entry>463</entry></row><row><entry>Canada</entry><entry>16,0</entry><entry>22 537</entry></row><row><entry>United Kingdom</entry><entry>9,0</entry><entry>21 785</entry></row><row><entry>United States</entry><entry>19,9</entry><entry>31 806</entry></row><row><entry>Saudi Arabia</entry><entry>11,0</entry><entry>6 853</entry></row><row><entry>Iran</entry><entry>3,8</entry><entry>1 493</entry></row><row><entry>Indonesia</entry><entry>1,2</entry><entry>986</entry></row></tbody></tgroup></table><list id="id117272" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid57">Draw a scatter plot of the data set and your estimate of a line of best fit.
+</item><item id="uid58">Calculate equation of the line of regression using the method of least squares.
+</item><item id="uid59">Draw the regression line equation onto the graph.
+</item><item id="uid60">Calculate the correlation coefficient <m:math overflow="scroll"><m:mi>r</m:mi></m:math>.
+</item><item id="uid61">What conclusion can you reach, regarding the relationship between CO<m:math overflow="scroll"><m:msub><m:mrow/><m:mn>2</m:mn></m:msub></m:math> emission and GDP per capita for the countries in the data set?
+</item></list></item>
+        <item id="uid62">A collection of data on the peculiar investigation into a foot size and height of students was recorded in the table below. Answer the questions to follow.
+<table id="id117375" summary=""><tgroup cols="2"><tbody><row><entry>Length of right foot (cm)</entry><entry>Height (cm)</entry></row><row><entry>25,5</entry><entry>163,3</entry></row><row><entry>26,1</entry><entry>164,9</entry></row><row><entry>23,7</entry><entry>165,5</entry></row><row><entry>26,4</entry><entry>173,7</entry></row><row><entry>27,5</entry><entry>174,4</entry></row><row><entry>24</entry><entry>156</entry></row><row><entry>22,6</entry><entry>155,3</entry></row><row><entry>27,1</entry><entry>169,3</entry></row></tbody></tgroup></table><list id="id117578" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid63">Draw a scatter plot of the data set and your estimate of a line of best fit.
+</item><item id="uid64">Calculate equation of the line of regression using the method of least squares or your calculator.
+</item><item id="uid65">Draw the regression line equation onto the graph.
+</item><item id="uid66">Calculate the correlation coefficient <m:math overflow="scroll"><m:mi>r</m:mi></m:math>.
+</item><item id="uid67">What conclusion can you reach, regarding the relationship between the length of the right foot and height of the students in the data set?
+</item></list></item>
+        <item id="uid68">A class wrote two tests, and the marks for each were recorded in the table below. Full marks in the first test was 50, and the second test was out of 30.
+<list id="id117668" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid69">Is there a strong association between the marks for the first and second test? Show why or why not.
+</item><item id="uid70">One of the learners (in row 18) did not write the second test. Given their mark for the first test, calculate an expected mark for the second test.
+</item></list><table id="id117698" summary=""><tgroup cols="3"><tbody><row><entry>Learner</entry><entry>Test 1</entry><entry>Test 2</entry></row><row><entry/><entry>(Full marks: 50)</entry><entry>(Full marks: 30)</entry></row><row><entry>1</entry><entry>42</entry><entry>25</entry></row><row><entry>2</entry><entry>32</entry><entry>19</entry></row><row><entry>3</entry><entry>31</entry><entry>20</entry></row><row><entry>4</entry><entry>42</entry><entry>26</entry></row><row><entry>5</entry><entry>35</entry><entry>23</entry></row><row><entry>6</entry><entry>23</entry><entry>14</entry></row><row><entry>7</entry><entry>43</entry><entry>24</entry></row><row><entry>8</entry><entry>23</entry><entry>12</entry></row><row><entry>9</entry><entry>24</entry><entry>14</entry></row><row><entry>10</entry><entry>15</entry><entry>10</entry></row><row><entry>11</entry><entry>19</entry><entry>11</entry></row><row><entry>12</entry><entry>13</entry><entry>10</entry></row><row><entry>13</entry><entry>36</entry><entry>22</entry></row><row><entry>14</entry><entry>29</entry><entry>17</entry></row><row><entry>15</entry><entry>29</entry><entry>17</entry></row><row><entry>16</entry><entry>25</entry><entry>16</entry></row><row><entry>17</entry><entry>29</entry><entry>18</entry></row><row><entry>18</entry><entry>17</entry><entry/></row><row><entry>19</entry><entry>30</entry><entry>19</entry></row><row><entry>20</entry><entry>28</entry><entry>17</entry></row></tbody></tgroup></table></item>
+        <item id="uid71">A fast food company produces hamburgers. The number of hamburgers made, and the costs are recorded over a week.
+<table id="id118349" summary=""><tgroup cols="2"><tbody><row><entry>Hamburgers made</entry><entry>Costs</entry></row><row><entry>495</entry><entry>R2382</entry></row><row><entry>550</entry><entry>R2442</entry></row><row><entry>515</entry><entry>R2484</entry></row><row><entry>500</entry><entry>R2400</entry></row><row><entry>480</entry><entry>R2370</entry></row><row><entry>530</entry><entry>R2448</entry></row><row><entry>585</entry><entry>R2805</entry></row></tbody></tgroup></table><list id="id118560" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid72">Find the linear regression function that best fits the data.
+</item><item id="uid73">If the total cost in a day is R2500, estimate the number of hamburgers produced.
+</item><item id="uid74">What is the cost of 490 hamburgers?
+</item></list></item>
+        <item id="uid75">The profits of a new shop are recorded over the first 6 months. The owner wants to predict his future sales. The profits so far have been R90 000 , R93 000, R99 500, R102 000, R101 300, R109 000.
+<list id="id118616" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid76">For the profit data, calculate the linear regression function.
+</item><item id="uid77">Give an estimate of the profits for the next two months.
+</item><item id="uid78">The owner wants a profit of R130 000. Estimate how many months this will take.
+</item></list></item>
+        <item id="uid79">A company produces sweets using a machine which runs for a few hours per day. The number of hours running the machine and the number of sweets produced are recorded.
+<table id="id118671" summary=""><tgroup cols="2"><tbody><row><entry>Machine hours</entry><entry>Sweets produced</entry></row><row><entry>3,80</entry><entry>275</entry></row><row><entry>4,23</entry><entry>287</entry></row><row><entry>4,37</entry><entry>291</entry></row><row><entry>4,10</entry><entry>281</entry></row><row><entry>4,17</entry><entry>286</entry></row></tbody></tgroup></table>
+Find the linear regression equation for the data, and estimate the machine hours needed to make 300 sweets.
+</item>
+      </list>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,395 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Introduction, Terminology, The Feasible Region</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39293</md:content-id>
+  <md:title>Introduction, Terminology, The Feasible Region</md:title>
+  <md:abstract/>
+  <md:uuid>43235757-4ff0-423d-92fc-17f1bc4e63ca</md:uuid>
+</metadata>
+
+<content>
+    
+    <section id="cid2">
+      <title>Introduction</title>
+      <para id="id330268">In Grade 11 you were introduced to linear programming and solved problems by looking at points on the edges of the feasible region. In Grade 12 you will look at how to solve linear programming problems in a more general manner.</para>
+    </section>
+    <section id="cid3">
+      <title>Terminology</title>
+      <para id="id330282">Here is a recap of some of the important concepts in linear programming.</para>
+      <section id="uid1">
+        <title>Feasible Region and Points</title>
+        <para id="id330632">Constraints mean that we cannot just take any <m:math overflow="scroll"><m:mi>x</m:mi></m:math> and <m:math overflow="scroll"><m:mi>y</m:mi></m:math> when looking for the <m:math overflow="scroll"><m:mi>x</m:mi></m:math> and <m:math overflow="scroll"><m:mi>y</m:mi></m:math> that optimise our objective function. If we think of the variables <m:math overflow="scroll"><m:mi>x</m:mi></m:math> and <m:math overflow="scroll"><m:mi>y</m:mi></m:math> as a point <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> in the <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math>-plane then we call the set of all points in the <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math>-plane that satisfy our constraints the <emphasis effect="bold">feasible region</emphasis>. Any point in the feasible region is called a <emphasis effect="bold">feasible point</emphasis>.</para>
+        <para id="id330735">For example, the constraints</para>
+        <equation id="id330738">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>≥</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>y</m:mi>
+                    <m:mo>≥</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id330773">mean that every <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> we can consider must lie in the first quadrant of the <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math> plane. The constraint</para>
+        <equation id="id330808">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>≥</m:mo>
+              <m:mi>y</m:mi>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id330823">means that every <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> must lie on or below the line <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> and the constraint</para>
+        <equation id="id330859">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>≤</m:mo>
+              <m:mn>20</m:mn>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id330874">means that <m:math overflow="scroll"><m:mi>x</m:mi></m:math> must lie on or to the left of the line <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow></m:math>.</para>
+        <para id="id330901">We can use these constraints to draw the feasible region as shown by the shaded region in <link target-id="uid2"/>.</para>
+<note id="notfhsst_id121" type="tip">The constraints are used to create bounds of the solution.</note>
+        <figure id="uid2">
+          <media id="uid2_media" alt="">
+            <image mime-type="image/png" src="../../media/MG12C8_001.png" id="uid2_onlineimage" width="246"><!-- NOTE: attribute width changes image size online (pixels). original width is 246. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/MG12C8_001.eps" id="uid2_printimage"/>
+          </media>
+          <caption>The feasible region corresponding to the constraints <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow></m:math>,
+<m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow></m:math>, <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>≥</m:mo><m:mi>y</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>20</m:mn></m:mrow></m:math>.</caption>
+        </figure>
+<note id="notfhsst_id130" type="tip">
+        <table id="id330986" summary="">
+          <tgroup cols="2">
+            <tbody>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mi>a</m:mi>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>b</m:mi>
+                      <m:mi>y</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mi>c</m:mi>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>If <m:math overflow="scroll"><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math>, feasible points must lie <emphasis effect="italics">on</emphasis> the line <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mi>c</m:mi><m:mi>b</m:mi></m:mfrac></m:mrow></m:math></entry>
+              </row>
+              <row>
+                <entry/>
+                <entry>If <m:math overflow="scroll"><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, feasible points must lie <emphasis effect="italics">on</emphasis> the line <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>/</m:mo><m:mi>a</m:mi></m:mrow></m:math></entry>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mi>a</m:mi>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>b</m:mi>
+                      <m:mi>y</m:mi>
+                      <m:mo>≤</m:mo>
+                      <m:mi>c</m:mi>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+                <entry>If <m:math overflow="scroll"><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn></m:mrow></m:math>, feasible points must lie <emphasis effect="italics">on</emphasis> or <emphasis effect="italics">below</emphasis> the line <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mi>c</m:mi><m:mi>b</m:mi></m:mfrac></m:mrow></m:math>.</entry>
+              </row>
+              <row>
+                <entry/>
+                <entry>If <m:math overflow="scroll"><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, feasible points must lie <emphasis effect="italics">on</emphasis> or <emphasis effect="italics">to the left of</emphasis> the line <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>/</m:mo><m:mi>a</m:mi></m:mrow></m:math>.</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+</note>
+        <para id="id331437">When a constraint is linear, it means that it requires that any feasible point <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> lies on one side of or on a line. Interpreting constraints as graphs in the <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi></m:mrow></m:math> plane is very important since it allows us to construct the feasible region such as in <link target-id="uid2"/>.</para>
+      </section>
+    </section>
+    <section id="cid4">
+      <title>Linear Programming and the Feasible Region</title>
+      <para id="id331486">If the objective function and all of the constraints are linear then we call the problem of optimising the objective function subject to these constraints a <emphasis effect="bold">linear program</emphasis>. All optimisation problems we will look at will be linear programs.</para>
+      <para id="id331496">The major consequence of the constraints being linear is that <emphasis effect="italics">the feasible region is always a polygon.</emphasis> This is evident since the constraints that define the feasible region all contribute a line segment to its boundary (see <link target-id="uid2"/>). It is also always true that the feasible region is a convex polygon.</para>
+      <para id="id331513">The objective function being linear means that <emphasis effect="italics">the feasible point(s) that gives the solution of a linear program always lies on one of the vertices of the feasible region</emphasis>. This is very important since, as we will soon see, it gives us a way of solving linear programs.</para>
+      <para id="id331524">We will now see why the solutions of a linear program always lie on the vertices of the feasible region. Firstly, note that if we think of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> as lying on the <m:math overflow="scroll"><m:mi>z</m:mi></m:math> axis, then the function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>y</m:mi></m:mrow></m:math> (where <m:math overflow="scroll"><m:mi>a</m:mi></m:math> and <m:math overflow="scroll"><m:mi>b</m:mi></m:math> are real numbers) is the definition of a plane. If we solve for <m:math overflow="scroll"><m:mi>y</m:mi></m:math> in the equation defining the objective function then</para>
+      <equation id="uid3">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow/>
+              </m:mtd>
+              <m:mtd>
+                <m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:mi>f</m:mi>
+                  <m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>,</m:mo>
+                  <m:mi>y</m:mi>
+                  <m:mo>)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mi>a</m:mi>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mi>b</m:mi>
+                  <m:mi>y</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mo>∴</m:mo>
+              </m:mtd>
+              <m:mtd>
+                <m:mrow>
+                  <m:mspace width="1.em"/>
+                  <m:mi>y</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mo>-</m:mo>
+                      <m:mi>a</m:mi>
+                    </m:mrow>
+                    <m:mi>b</m:mi>
+                  </m:mfrac>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>f</m:mi>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mi>b</m:mi>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id331712">What this means is that if we find all the points where <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>c</m:mi></m:mrow></m:math> for any real number <m:math overflow="scroll"><m:mi>c</m:mi></m:math> (i.e. <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> is constant with a value of <m:math overflow="scroll"><m:mi>c</m:mi></m:math>), then we have the equation of a line. This line we call a <emphasis effect="bold">level line</emphasis> of the objective function.</para>
+      <para id="id331783">Consider again the feasible region described in <link target-id="uid2"/>. Let's say that we have the objective function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>y</m:mi></m:mrow></m:math> with this feasible region. If we consider Equation <link target-id="uid3"/> corresponding to</para>
+      <equation id="id331827">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>f</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>y</m:mi>
+            <m:mo>)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mo>-</m:mo>
+            <m:mn>20</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id331855">then we get the level line</para>
+      <equation id="id331860">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mi>x</m:mi>
+            <m:mo>+</m:mo>
+            <m:mn>10</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id331886">which has been drawn in <link target-id=""/>. Level lines corresponding to</para>
+      <equation id="id331894">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi>f</m:mi>
+                  <m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>,</m:mo>
+                  <m:mi>y</m:mi>
+                  <m:mo>)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mo>-</m:mo>
+                  <m:mn>10</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mtext>or</m:mtext>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mi>y</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>+</m:mo>
+                  <m:mn>5</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi>f</m:mi>
+                  <m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>,</m:mo>
+                  <m:mi>y</m:mi>
+                  <m:mo>)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mtext>or</m:mtext>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mi>y</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi>f</m:mi>
+                  <m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>,</m:mo>
+                  <m:mi>y</m:mi>
+                  <m:mo>)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mn>10</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mtext>or</m:mtext>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mi>y</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>-</m:mo>
+                  <m:mn>5</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mi>f</m:mi>
+                  <m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>,</m:mo>
+                  <m:mi>y</m:mi>
+                  <m:mo>)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mn>20</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mtext>or</m:mtext>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mi>y</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>-</m:mo>
+                  <m:mn>10</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id332081">have also been drawn in. It is very important to realise that these are not the only level lines; in fact, there are infinitely many of them and they are <emphasis effect="italics">all parallel to each other</emphasis>. Remember that if we look at any one level line <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> has the <emphasis effect="italics">same</emphasis> value for every point <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> that lies on that line. Also, <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> will always have different values on different level lines.</para>
+      <figure id="uid4">
+        <media id="uid4_media" alt="">
+          <image mime-type="image/png" src="../../media/MG12C8_002.png" id="uid4_onlineimage" width="352"><!-- NOTE: attribute width changes image size online (pixels). original width is 352. --></image>
+          <image mime-type="application/postscript" for="pdf" src="../../media/MG12C8_002.eps" id="uid4_printimage"/>
+        </media>
+        <caption>The feasible region corresponding to the constraints <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow></m:math>, <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow></m:math>, <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>≥</m:mo><m:mi>y</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>20</m:mn></m:mrow></m:math> with objective function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>y</m:mi></m:mrow></m:math>. The dashed lines represent various level lines of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math>.</caption>
+      </figure>
+      <para id="id332271">If a ruler is placed on the level line corresponding to <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>20</m:mn></m:mrow></m:math> in <link target-id="uid4"/> and moved down the page parallel to this line then it is clear that the ruler will be moving over level lines which correspond to <emphasis effect="italics">larger</emphasis> values of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math>. So if we wanted to maximise <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> then we simply move the ruler down the page until we reach the “lowest” point in the feasible region. This point will then be the feasible point that maximises <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math>. Similarly, if we wanted to minimise <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> then the “highest” feasible point will give the minimum value of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math>.</para>
+      <para id="id332414">Since our feasible region is a polygon, these points <emphasis effect="italics">will always lie on vertices in the feasible region</emphasis>. The fact that the value of our objective function along the line of the ruler increases as we move it down and decreases as we move it up depends on this particular example. Some other examples might have that the function increases as we move the ruler up and decreases as we move it down.</para>
+      <para id="id332426">It is a general property, though, of linear objective functions that they will consistently increase or decrease as we move the ruler up or down. Knowing which direction to move the ruler in order to maximise/minimise <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>y</m:mi></m:mrow></m:math> is as simple as looking at the sign of <m:math overflow="scroll"><m:mi>b</m:mi></m:math> (i.e. “is <m:math overflow="scroll"><m:mi>b</m:mi></m:math> negative, positive or zero?"). If <m:math overflow="scroll"><m:mi>b</m:mi></m:math> is <emphasis effect="italics">positive</emphasis>, then <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math><emphasis effect="italics">increases</emphasis> as we move the ruler up and <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math><emphasis effect="italics">decreases</emphasis> as we move the ruler down. The opposite happens for the case when <m:math overflow="scroll"><m:mi>b</m:mi></m:math> is negative: <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math><emphasis effect="italics">decreases</emphasis> as we move the ruler up and <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math><emphasis effect="italics">increases</emphasis> as we move the ruler down. If <m:math overflow="scroll"><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> then we need to look at the sign of <m:math overflow="scroll"><m:mi>a</m:mi></m:math>.</para>
+      <para id="id332627">If <m:math overflow="scroll"><m:mi>a</m:mi></m:math> is positive then <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> increases as we move the ruler to the right and decreases if we move the ruler to the left. Once again, the opposite happens for <m:math overflow="scroll"><m:mi>a</m:mi></m:math> negative. If we look again at the objective function mentioned earlier,</para>
+      <equation id="id332670">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>f</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>y</m:mi>
+            <m:mo>)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>-</m:mo>
+            <m:mn>2</m:mn>
+            <m:mi>y</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id332703">with <m:math overflow="scroll"><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:math>, then we should find that <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:math> increases as we move the ruler down the page since <m:math overflow="scroll"><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow></m:math>. This is exactly what we found happening in <link target-id="uid4"/>.</para>
+      <para id="id332786">The main points about linear programming we have encountered so far are</para>
+      <list id="id332790" display="block" list-type="bulleted">
+        <item id="uid5">The feasible region is always a polygon.
+</item>
+        <item id="uid6">Solutions occur at vertices of the feasible region.
+</item>
+        <item id="uid7">Moving a ruler parallel to the level lines of the objective function up/down to the top/bottom of the feasible region shows us which of the vertices is the solution.
+</item>
+        <item id="uid8">The direction in which to move the ruler is determined by the sign of <m:math overflow="scroll"><m:mi>b</m:mi></m:math> and also possibly by the sign of <m:math overflow="scroll"><m:mi>a</m:mi></m:math>.
+</item>
+      </list>
+      <para id="id332862">These points are sufficient to determine a method for solving any linear program.</para>
+  </section>    
+  </content>
+</document>

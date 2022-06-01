@@ -1,0 +1,487 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Permutations and Applications</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39103</md:content-id>
+  <md:title>Permutations and Applications</md:title>
+  <md:abstract/>
+  <md:uuid>92fa27f3-bc67-4cf6-8036-a4838a64aeba</md:uuid>
+</metadata>
+
+<content>
+    
+ 
+    <section id="cid7">
+      <title>Permutations</title>
+      <para id="id125468">The concept of a combination did not consider the order of the elements of the subset to be important. A permutation is a combination with the order of a selection from a group being important. For example, for the set <m:math overflow="scroll"><m:mrow><m:mo>{</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo>}</m:mo></m:mrow></m:math>, the combination <m:math overflow="scroll"><m:mrow><m:mo>{</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>}</m:mo></m:mrow></m:math> would be identical to the combination <m:math overflow="scroll"><m:mrow><m:mo>{</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>}</m:mo></m:mrow></m:math>, but these two combinations are different permutations, because the elements in the set are ordered differently.</para>
+      <para id="id125557">More formally, a permutation is an ordered list without repetitions, perhaps missing some elements.</para>
+      <para id="id125561">This means that <m:math overflow="scroll"><m:mrow><m:mo>{</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo>}</m:mo></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mo>{</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo>}</m:mo></m:mrow></m:math> are not permutations of the set <m:math overflow="scroll"><m:mrow><m:mo>{</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo>}</m:mo></m:mrow></m:math>.</para>
+      <para id="id125676">Now suppose you have these objects:</para>
+      <para id="id125680">1, 2, 3</para>
+      <para id="id125683">Here is a list of all permutations of all three objects:</para>
+      <para id="id125687">1 2 3; <m:math overflow="scroll"><m:mspace width="0.277778em"/></m:math>
+1 3 2; <m:math overflow="scroll"><m:mspace width="0.277778em"/></m:math>
+2 1 3; <m:math overflow="scroll"><m:mspace width="0.277778em"/></m:math>
+2 3 1; <m:math overflow="scroll"><m:mspace width="0.277778em"/></m:math>
+3 1 2; <m:math overflow="scroll"><m:mspace width="0.277778em"/></m:math>
+3 2 1. <m:math overflow="scroll"><m:mspace width="0.277778em"/></m:math></para>
+      <section id="uid9">
+        <title>Counting Permutations</title>
+        <para id="id125758">Let <m:math overflow="scroll"><m:mi>S</m:mi></m:math> be a set with <m:math overflow="scroll"><m:mi>n</m:mi></m:math> objects. Permutations of <m:math overflow="scroll"><m:mi>r</m:mi></m:math> objects from this set <m:math overflow="scroll"><m:mi>S</m:mi></m:math> refer to sequences of <m:math overflow="scroll"><m:mi>r</m:mi></m:math> different elements of <m:math overflow="scroll"><m:mi>S</m:mi></m:math> (where two sequences are considered different if they contain the same elements but in a different order). Formulas for the number of permutations and combinations are readily available and important throughout combinatorics.</para>
+        <para id="id125817">It is easy to count the number of permutations of size <m:math overflow="scroll"><m:mi>r</m:mi></m:math> when chosen from a set of size <m:math overflow="scroll"><m:mi>n</m:mi></m:math> (with <m:math overflow="scroll"><m:mrow><m:mi>r</m:mi><m:mo>≤</m:mo><m:mi>n</m:mi></m:mrow></m:math>).</para>
+        <list id="id125852" display="block" list-type="enumerated">
+          <item id="uid10">Select the first member of the permutation out of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> choices, because there are <m:math overflow="scroll"><m:mi>n</m:mi></m:math> distinct elements in the set.
+</item>
+          <item id="uid11">Next, since one of the <m:math overflow="scroll"><m:mi>n</m:mi></m:math> elements has already been used, the second member of the permutation has <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> elements to choose from the remaining set.
+</item>
+          <item id="uid12">The third member of the permutation can be filled in <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:math> ways since 2 have been used already.
+</item>
+          <item id="uid13">This pattern continues until there are <m:math overflow="scroll"><m:mi>r</m:mi></m:math> members on the permutation. This means that the last member can be filled in <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mi>r</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> ways.
+</item>
+          <item id="uid14">Summarizing, we find that there is a total of
+<equation id="id126034"><m:math overflow="scroll" mode="display"><m:mrow><m:mi>n</m:mi><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mi>r</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math></equation>
+different permutations of <m:math overflow="scroll"><m:mi>r</m:mi></m:math> objects, taken from a pool of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> objects. This number is denoted by <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow></m:math> and can be written in factorial notation as:
+<equation id="id126135"><m:math overflow="scroll" mode="display"><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>!</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mi>r</m:mi><m:mo>)</m:mo><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation></item>
+        </list>
+        <para id="id126185">For example, if we have a total of 5 elements, the integers <m:math overflow="scroll"><m:mrow><m:mo>{</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>}</m:mo></m:mrow></m:math>, how many ways are there for a permutation of three elements to be selected from this set? In this case, <m:math overflow="scroll"><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>. Then, <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>!</m:mo><m:mo>/</m:mo><m:mn>7</m:mn><m:mo>!</m:mo><m:mo>=</m:mo><m:mn>60</m:mn><m:mo>!</m:mo></m:mrow></m:math>.</para>
+<para id="eip-927"><figure id="probability-2" class="khanacademy">
+	  <title>Khan academy video on probability - 2</title>
+	  <media id="yt-media2" display="block" alt="video on probability 2">
+	  <flash id="yt-video2" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/XqQTXW7XfYA&amp;rel=0&amp;hl=en_US&amp;feature=player_embedded&amp;version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><exercise id="secfhsst_id459"><title> Permutations </title>
+        <problem id="probfhsst_id460">
+        <para id="id126301">Show that a collection of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> objects has <m:math overflow="scroll"><m:mrow><m:mi>n</m:mi><m:mo>!</m:mo></m:mrow></m:math> permutations. </para>
+        </problem>
+        <solution id="solfhsst_id463"> <list id="listfhsst_id463" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Decide how to choose the objects positions </label>
+        <para id="id126346">Proof: Constructing an ordered sequence of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> objects is equivalent to choosing the position occupied by the first object, then choosing the position of the second object, and so on, until we have chosen the position of each of our <m:math overflow="scroll"><m:mi>n</m:mi></m:math> objects.</para>
+        </item> <item> <label> Decide how many ways there are to choose an objects position </label>
+        <para id="id126373">There are n ways to choose a position for the first object. Once its position is fixed, we can choose from <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> possible positions for the second object. With the first two placed, there are <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:math> remaining possible positions for the third object; and so on. There are only two positions to choose from for the penultimate object, and the <m:math overflow="scroll"><m:mrow><m:mi>n</m:mi><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:math> object will occupy the last remaining position.</para>
+        </item> <item> <label> Use the fundamental counting principle </label>
+        <para id="id126435">Therefore, according to the fundamental counting principle, there are</para>
+        <equation id="id126439">
+          <m:math overflow="scroll" mode="display">
+            <m:mrow>
+              <m:mi>n</m:mi>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>-</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+              <m:mo>(</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>-</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+              <m:mo>.</m:mo>
+              <m:mo>.</m:mo>
+              <m:mo>.</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>×</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>=</m:mo>
+              <m:mi>n</m:mi>
+              <m:mo>!</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="id126492">ways of constructing an ordered sequence of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> objects.
+ </para>
+        </item> </list> </solution>
+</exercise>
+        <section id="uid15">
+          <title>Permutation with Repetition</title>
+          <para id="id126527">When order matters and an object can be chosen more than once then the number of</para>
+          <para id="id126531">permutations is:</para>
+          <equation id="id126536">
+            <m:math overflow="scroll" mode="display">
+              <m:msup>
+                <m:mi>n</m:mi>
+                <m:mi>r</m:mi>
+              </m:msup>
+            </m:math>
+          </equation>
+          <para id="id126553">where <m:math overflow="scroll"><m:mi>n</m:mi></m:math> is the number of objects from which you can choose and <m:math overflow="scroll"><m:mi>r</m:mi></m:math> is the number to be chosen.</para>
+          <para id="id126577">For example, if you have the letters A, B, C, and D and you wish to discover the number of ways of arranging them in three letter patterns (trigrams) you find that there are <m:math overflow="scroll"><m:msup><m:mn>4</m:mn><m:mn>3</m:mn></m:msup></m:math> or 64 ways. This is because for the first slot you can choose any of the four values, for the second slot you can choose any of the four, and for the final slot you can choose any of the four letters. Multiplying them together gives the total.</para>
+        </section>
+      </section>
+    </section>
+    <section id="cid8">
+      <title>Applications</title>
+<section id="secfhsst_id519"><title>
+      The Binomial Theorem </title>
+      <para id="id126619">In mathematics, the binomial theorem is an important formula giving the expansion of powers of sums. Its simplest version reads</para>
+      <equation id="id126626">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>y</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mi>n</m:mi>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mi>k</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+              <m:mi>n</m:mi>
+            </m:munderover>
+            <m:mfenced separators="" open="(" close=")">
+              <m:mfrac linethickness="0pt">
+                <m:mi>n</m:mi>
+                <m:mi>k</m:mi>
+              </m:mfrac>
+            </m:mfenced>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mi>k</m:mi>
+            </m:msup>
+            <m:msup>
+              <m:mi>y</m:mi>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mi>k</m:mi>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      <para id="id126713">Whenever <m:math overflow="scroll"><m:mi>n</m:mi></m:math> is a positive integer, the numbers</para>
+      <equation id="id126726">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mfenced separators="" open="(" close=")">
+              <m:mfrac linethickness="0pt">
+                <m:mi>n</m:mi>
+                <m:mi>k</m:mi>
+              </m:mfrac>
+            </m:mfenced>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>!</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>k</m:mi>
+                <m:mo>!</m:mo>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mi>k</m:mi>
+                <m:mo>)</m:mo>
+                <m:mo>!</m:mo>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id126779">are the binomial coefficients (the coefficients in front of the powers).</para>
+      <para id="id126783">For example, here are the cases n = 2, n = 3 and n = 4:</para>
+      <equation id="id126786">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>=</m:mo>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn mathvariant="bold">2</m:mn>
+                  <m:mi>x</m:mi>
+                  <m:mi>y</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:msup>
+                    <m:mi>y</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>=</m:mo>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn mathvariant="bold">3</m:mn>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mi>y</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn mathvariant="bold">3</m:mn>
+                  <m:mi>x</m:mi>
+                  <m:msup>
+                    <m:mi>y</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:msup>
+                    <m:mi>y</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>4</m:mn>
+                  </m:msup>
+                  <m:mo>=</m:mo>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>4</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn mathvariant="bold">4</m:mn>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mi>y</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn mathvariant="bold">6</m:mn>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:msup>
+                    <m:mi>y</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn mathvariant="bold">4</m:mn>
+                  <m:mi>x</m:mi>
+                  <m:msup>
+                    <m:mi>y</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:msup>
+                    <m:mi>y</m:mi>
+                    <m:mn>4</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id127020">The coefficients form a triangle, where each number is the sum of the two numbers above it:
+
+
+<figure id="id127033"><media id="id127033_media" alt=""><image mime-type="image/png" src="../../media/MG12C12_002.png" id="id127033_onlineimage" width="83"><!-- NOTE: attribute width changes image size online (pixels). original width is 83. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C12_002.eps" id="id127033_printimage"/></media></figure></para>
+      <!--empty paragraphs get left behind.-->
+      <para id="id127047">This formula, and the triangular arrangement of the binomial coefficients, are often attributed to Blaise Pascal who described them in the 17th century. It was, however, known to the Chinese mathematician Yang Hui in the 13th century, the earlier Persian mathematician Omar KhayyÃ¡m in the 11th century, and the even earlier Indian mathematician Pingala in the 3rd century BC.</para>
+      
+</section>
+<exercise id="secfhsst_id733"><title> Number Plates </title>
+      <problem id="probfhsst_id734">
+      <para id="id127079">The number plate on a car consists of any 3 letters of the alphabet (excluding the vowels and 'Q'), followed by any 3 digits (0 to 9). For a car chosen at random, what is the probability that the number plate starts with a 'Y' and ends with an odd digit? </para>
+      </problem>
+      <solution id="solfhsst_id737"> <list id="listfhsst_id737" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Identify what events are counted </label>
+      <para id="id127104">The number plate starts with a 'Y', so there is only 1 choice for the first letter, and ends with an even digit, so there are 5 choices for the last digit (1, 3, 5, 7, 9).</para>
+      </item> <item> <label> Find the number of events </label>
+      <para id="id127113">Use the counting principle. For each of the other letters, there are 20 possible choices (26 in the alphabet, minus 5 vowels and 'Q') and 10 possible choices for each of the other digits.</para>
+      <para id="id127118">Number of events = <m:math overflow="scroll"><m:mrow><m:mn>1</m:mn><m:mo>×</m:mo><m:mn>20</m:mn><m:mo>×</m:mo><m:mn>20</m:mn><m:mo>×</m:mo><m:mn>10</m:mn><m:mo>×</m:mo><m:mn>10</m:mn><m:mo>×</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>200</m:mn><m:mspace width="0.277778em"/><m:mn>000</m:mn></m:mrow></m:math></para>
+      </item> <item> <label> Find the number of total number of possible number plates </label>
+      <para id="id127170">Use the counting principle. This time, the first letter and last digit can be anything.</para>
+      <para id="id127174">Total number of choices = <m:math overflow="scroll"><m:mrow><m:mn>20</m:mn><m:mo>×</m:mo><m:mn>20</m:mn><m:mo>×</m:mo><m:mn>20</m:mn><m:mo>×</m:mo><m:mn>10</m:mn><m:mo>×</m:mo><m:mn>10</m:mn><m:mo>×</m:mo><m:mn>10</m:mn><m:mo>=</m:mo><m:mn>8</m:mn><m:mspace width="0.277778em"/><m:mn>000</m:mn><m:mspace width="0.277778em"/><m:mn>000</m:mn></m:mrow></m:math></para>
+      </item> <item> <label> Calculate the probability </label>
+      <para id="id127230">The probability is the number of events we are counting, divided by the total number of choices.</para>
+      <para id="id127234">Probability = <m:math overflow="scroll"><m:mrow><m:mfrac><m:mrow><m:mn>200</m:mn><m:mspace width="0.277778em"/><m:mn>000</m:mn></m:mrow><m:mrow><m:mn>8</m:mn><m:mspace width="0.277778em"/><m:mn>000</m:mn><m:mspace width="0.277778em"/><m:mn>000</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>40</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>025</m:mn></m:mrow></m:math>
+ </para>
+      </item> </list> </solution>
+</exercise>
+<exercise id="secfhsst_id752"><title> Factorial </title>
+      <problem id="probfhsst_id753">
+      <para id="id127314">Show that</para>
+      <equation id="id127320">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>!</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+                <m:mo>!</m:mo>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mi>n</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      </problem>
+      <solution id="solfhsst_id779"> <list id="listfhsst_id779" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item><para id="id127373"><emphasis effect="bold">Method 1:</emphasis> Expand the factorial notation.</para>
+      <equation id="id127383">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>!</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+                <m:mo>!</m:mo>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>×</m:mo>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+                <m:mo>×</m:mo>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+                <m:mo>×</m:mo>
+                <m:mo>.</m:mo>
+                <m:mo>.</m:mo>
+                <m:mo>.</m:mo>
+                <m:mo>×</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>×</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+                <m:mo>×</m:mo>
+                <m:mo>(</m:mo>
+                <m:mi>n</m:mi>
+                <m:mo>-</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+                <m:mo>×</m:mo>
+                <m:mo>.</m:mo>
+                <m:mo>.</m:mo>
+                <m:mo>.</m:mo>
+                <m:mo>×</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>×</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id127509">Cancelling the common factor of <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>×</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>×</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>×</m:mo><m:mn>2</m:mn><m:mo>×</m:mo><m:mn>1</m:mn></m:mrow></m:math> on the top and bottom leaves <m:math overflow="scroll"><m:mi>n</m:mi></m:math>.</para>
+      <para id="id127574">So <m:math overflow="scroll"><m:mrow><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>!</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>n</m:mi></m:mrow></m:math></para> </item>
+     <item> <para id="id127611"><emphasis effect="bold">Method 2:</emphasis>
+We know that <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>!</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mi>r</m:mi><m:mo>)</m:mo><m:mo>!</m:mo></m:mrow></m:mfrac></m:mrow></m:math> is the number of permutations of <m:math overflow="scroll"><m:mi>r</m:mi></m:math> objects, taken from a pool of <m:math overflow="scroll"><m:mi>n</m:mi></m:math> objects. In this case, <m:math overflow="scroll"><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>. To choose 1 object from <m:math overflow="scroll"><m:mi>n</m:mi></m:math> objects, there are <m:math overflow="scroll"><m:mi>n</m:mi></m:math> choices.</para>
+      <para id="id127716">So <m:math overflow="scroll"><m:mrow><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>!</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mi>n</m:mi></m:mrow></m:math></para>
+      
+      </item> </list> </solution>
+</exercise>
+    </section>
+    <section id="cid9">
+      <title>Exercises</title>
+      <list id="id127780" display="block" list-type="enumerated">
+        <item id="uid16">Tshepo and Sally go to a restaurant, where the menu is:
+<table id="id127796" summary=""><tgroup cols="3"><tbody><row><entry>Starter</entry><entry>Main Course</entry><entry>Dessert</entry></row><row><entry>Chicken wings</entry><entry>Beef burger</entry><entry>Chocolate ice cream</entry></row><row><entry>Mushroom soup</entry><entry>Chicken burger</entry><entry>Strawberry ice cream</entry></row><row><entry>Greek salad</entry><entry>Chicken curry</entry><entry>Apple crumble</entry></row><row><entry/><entry>Lamb curry</entry><entry>Chocolate mousse</entry></row><row><entry/><entry>Vegetable lasagne</entry><entry/></row></tbody></tgroup></table><list id="id127967" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid17">How many different combinations (of starter, main course, and dessert) can Tshepo have?
+</item><item id="uid18">Sally doesn't like chicken. How many different combinations can she have?
+</item></list></item>
+        <item id="uid19">Four coins are thrown, and the outcomes recorded. How many different ways are there of getting three heads? First write out the possibilities, and then use the formula for combinations.
+</item>
+        <item id="uid20">The answers in a multiple choice test can be A, B, C, D, or E. In a test of 12 questions, how many different ways are there of answering the test?
+</item>
+        <item id="uid21">A girl has 4 dresses, 2 necklaces, and 3 handbags.
+<list id="id128036" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid22">How many different choices of outfit (dress, necklace and handbag) does she have?
+</item><item id="uid23">She now buys two pairs of shoes. How many choices of outfit (dress, necklace, handbag and shoes) does she now have?
+</item></list></item>
+        <item id="uid24">In a soccer tournament of 9 teams, every team plays every other team.
+<list id="id128078" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid25">How many matches are there in the tournament?
+</item><item id="uid26">If there are 5 boys' teams and 4 girls' teams, what is the probability that the first match will be played between 2 girls' teams?
+</item></list></item>
+        <item id="uid27">The letters of the word 'BLUE' are rearranged randomly. How many new words (a word is any combination of letters) can be made?
+</item>
+        <item id="uid28">The letters of the word 'CHEMISTRY' are arranged randomly to form a new word. What is the probability that the word will start and end with a vowel?
+</item>
+        <item id="uid29">There are 2 History classes, 5 Accounting classes, and 4 Mathematics classes at school. Luke wants to do all three subjects. How many possible combinations of classes are there?
+</item>
+        <item id="uid30">A school netball team has 8 members. How many ways are there to choose a captain, vice-captain, and reserve?
+</item>
+        <item id="uid31">A class has 15 boys and 10 girls. A debating team of 4 boys and 6 girls must be chosen. How many ways can this be done?
+</item>
+        <item id="uid32">A secret pin number is 3 characters long, and can use any digit (0 to 9) or any letter of the alphabet. Repeated characters are allowed. How many possible combinations are there?
+</item>
+      </list>
+    </section>
+    
+  </content>
+</document>

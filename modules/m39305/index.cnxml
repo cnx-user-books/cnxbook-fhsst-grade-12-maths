@@ -1,0 +1,330 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Normal Distribution, Sampling, Function Fitting &amp; Regression Analysis</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39305</md:content-id>
+  <md:title>Normal Distribution, Sampling, Function Fitting &amp; Regression Analysis</md:title>
+  <md:abstract/>
+  <md:uuid>12b05d48-fb4c-48f9-ab9c-b32c8174bc1f</md:uuid>
+</metadata>
+
+<content>
+    
+    <section id="cid2">
+      <title>Introduction</title>
+      <para id="id109049">In this chapter, you will use the mean, median, mode and standard deviation of a set of data to identify whether the data is normally distributed or whether it is skewed. You will learn more about populations and selecting different kinds of samples in order to avoid bias. You will work with lines of best fit, and learn how to find a regression equation and a correlation coefficient. You will analyse these measures in order to draw conclusions and make predictions.</para>
+    </section>
+    <section id="cid3">
+      <title>A Normal Distribution</title>
+<section id="secfhsst_id51"><title> Investigation :  </title>
+      <para id="id109410">You are given a table of data below.</para>
+      <table id="id109416" summary="">
+        <tgroup cols="8">
+          <tbody>
+            <row>
+              <entry>75</entry>
+              <entry>67</entry>
+              <entry>70</entry>
+              <entry>71</entry>
+              <entry>71</entry>
+              <entry>73</entry>
+              <entry>74</entry>
+              <entry>75</entry>
+            </row>
+            <row>
+              <entry>80</entry>
+              <entry>75</entry>
+              <entry>77</entry>
+              <entry>78</entry>
+              <entry>78</entry>
+              <entry>78</entry>
+              <entry>78</entry>
+              <entry>79</entry>
+            </row>
+            <row>
+              <entry>91</entry>
+              <entry>81</entry>
+              <entry>82</entry>
+              <entry>82</entry>
+              <entry>83</entry>
+              <entry>86</entry>
+              <entry>86</entry>
+              <entry>87</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <!--empty paragraphs get left behind.-->
+      <list id="id109567" display="block" list-type="enumerated">
+        <item id="uid1">Calculate the mean, median, mode and standard deviation of the data.
+</item>
+        <item id="uid2">What percentage of the data is within one standard deviation of the mean?
+</item>
+        <item id="uid3">Draw a histogram of the data using intervals <m:math overflow="scroll"><m:mrow><m:mn>60</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>64</m:mn></m:mrow></m:math>, <m:math overflow="scroll"><m:mrow><m:mn>64</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>68</m:mn></m:mrow></m:math>, etc.
+</item>
+        <item id="uid4">Join the midpoints of the bars to form a frequency polygon.
+</item>
+      </list>
+      
+</section>
+      <para id="id109662">If large numbers of data are collected from a population, the graph will often have a bell shape. If the data was, say, examination results, a few learners usually get very high marks, a few very low marks and most get a mark in the middle range. We say a distribution is <emphasis effect="italics">normal</emphasis> if</para>
+      <list id="id109673" display="block" list-type="bulleted">
+        <item id="uid5">the mean, median and mode are equal.
+</item>
+        <item id="uid6">it is symmetric around the mean.
+</item>
+        <item id="uid7"><m:math overflow="scroll"><m:mrow><m:mo>±</m:mo><m:mn>68</m:mn><m:mo>%</m:mo></m:mrow></m:math> of the sample lies within one standard deviation of the mean, <m:math overflow="scroll"><m:mrow><m:mn>95</m:mn><m:mo>%</m:mo></m:mrow></m:math> within two standard deviations and <m:math overflow="scroll"><m:mrow><m:mn>99</m:mn><m:mo>%</m:mo></m:mrow></m:math> within three standard deviations of the mean.
+</item>
+      </list>
+      <para id="id109747">
+        <figure id="id109750"><media id="id109750_media" alt="">
+            <image mime-type="image/png" src="../../media/MG12C11_001.png" id="id109750_onlineimage" width="320"><!-- NOTE: attribute width changes image size online (pixels). original width is 420. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/MG12C11_001.eps" id="id109750_printimage"/>
+          </media>
+        </figure>
+      </para>
+      <para id="id109756">What happens if the test was very easy or very difficult? Then the distribution may not be symmetrical. If extremely high or extremely low scores are added to a distribution, then the mean tends to shift towards these scores and the curve becomes skewed.</para>
+      <para id="id109762">If the test was very difficult, the mean score is shifted to the left. In this case, we say the distribution is <emphasis effect="italics">positively skewed</emphasis>, or <emphasis effect="italics">skewed right</emphasis>.
+If it was very easy, then many learners would get high scores, and the mean of the distribution would be shifted to the right. We say the distribution is <emphasis effect="italics">negatively skewed</emphasis>, or <emphasis effect="italics">skewed left</emphasis>.
+
+
+
+<figure id="id109805"><media id="id109805_media" alt=""><image mime-type="image/png" src="../../media/MG12C11_002.png" id="id109805_onlineimage" width="190"><!-- NOTE: attribute width changes image size online (pixels). original width is 190. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C11_002.eps" id="id109805_printimage"/></media></figure><figure id="id109814"><media id="id109814_media" alt=""><image mime-type="image/png" src="../../media/MG12C11_003.png" id="id109814_onlineimage" width="196"><!-- NOTE: attribute width changes image size online (pixels). original width is 196. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C11_003.eps" id="id109814_printimage"/></media></figure></para>
+<section id="secfhsst_id126"><title> Normal Distribution </title>
+      <list id="id109828" display="block" list-type="enumerated">
+        <item id="uid8">Given the pairs of normal curves below, sketch the graphs on the same set of axes and show any relation between them. An important point to remember is that the area beneath the curve corresponds to 100%.
+<list id="id109844" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid9">Mean = 8, standard deviation = 4 and Mean = 4, standard deviation = 8
+</item><item id="uid10">Mean = 8, standard deviation = 4 and Mean = 16, standard deviation = 4
+</item><item id="uid11">Mean = 8, standard deviation = 4 and Mean = 8, standard deviation = 8
+</item></list></item>
+        <item id="uid12">After a class test, the following scores were recorded:
+<table id="id109896" summary=""><tgroup cols="2"><tbody><row><entry><emphasis effect="bold">Test Score</emphasis></entry><entry><emphasis effect="bold">Frequency</emphasis></entry></row><row><entry>3</entry><entry>1</entry></row><row><entry>4</entry><entry>7</entry></row><row><entry>5</entry><entry>14</entry></row><row><entry>6</entry><entry>21</entry></row><row><entry>7</entry><entry>14</entry></row><row><entry>8</entry><entry>6</entry></row><row><entry>9</entry><entry>1</entry></row><row><entry>Total</entry><entry>64</entry></row><row><entry>Mean</entry><entry>6</entry></row><row><entry>Standard Deviation</entry><entry>1,2</entry></row></tbody></tgroup></table><list id="id110126" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid13">Draw the histogram of the results.
+</item><item id="uid14">Join the midpoints of each bar and draw a frequency polygon.
+</item><item id="uid15">What mark must one obtain in order to be in the top 2% of the class?
+</item><item id="uid16">Approximately 84% of the pupils passed the test. What was the pass mark?
+</item><item id="uid17">Is the distribution normal or skewed?
+</item></list></item>
+        <item id="uid18">In a road safety study, the speed of 175 cars was monitored along a specific stretch of highway in order to find out whether there existed any link between high speed and the large number of accidents along the route. A frequency table of the results is drawn up below.
+<table id="id110202" summary=""><tgroup cols="2"><tbody><row><entry><emphasis effect="bold">Speed (km.h<m:math overflow="scroll"><m:msup><m:mrow/><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math>)</emphasis></entry><entry><emphasis effect="bold">Number of cars (Frequency)</emphasis></entry></row><row><entry>50</entry><entry>19</entry></row><row><entry>60</entry><entry>28</entry></row><row><entry>70</entry><entry>23</entry></row><row><entry>80</entry><entry>56</entry></row><row><entry>90</entry><entry>20</entry></row><row><entry>100</entry><entry>16</entry></row><row><entry>110</entry><entry>8</entry></row><row><entry>120</entry><entry>5</entry></row></tbody></tgroup></table>
+The mean speed was determined to be around 82 km.h<m:math overflow="scroll"><m:msup><m:mrow/><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math> while the median speed was worked out to be around 84,5 km.h<m:math overflow="scroll"><m:msup><m:mrow/><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math>.
+<list id="id110625" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid19">Draw a frequency polygon to visualise the data in the table above.
+</item><item id="uid20">Is this distribution symmetrical or skewed left or right? Give a reason fro your answer.
+</item></list></item>
+      </list>
+      
+</section>
+    </section>
+    <section id="cid4">
+      <title>Extracting a Sample Population</title>
+      <para id="id110673">Suppose you are trying to find out what percentage of South Africa's population owns a car. One way of doing this might be to send questionnaires to peoples homes, asking them whether they own a car. However, you quickly run into a problem: you cannot hope to send every person in the country a questionnaire, it would be far to expensive. Also, not everyone would reply. The best you can do is send it to a few people, see what percentage of these own a car, and then use this to estimate what percentage of the entire country own cars. This smaller group of people is called the <emphasis effect="italics">sample population</emphasis>.</para>
+      <para id="id109344">The sample population must be carefully chosen, in order to avoid biased results. How do we do this?</para>
+      <para id="id109351">First, it must be <emphasis effect="italics">representative</emphasis>. If all of our sample population comes from a very rich area, then almost all will have cars. But we obviously cannot conclude from this that almost everyone in the country has a car! We need to send the questionnaire to rich as well as poor people.</para>
+      <para id="id109364">Secondly, the <emphasis effect="italics">size</emphasis> of the sample population must be large enough. It is no good having a sample population consisting of only two people, for example. Both may very well not have cars. But we obviously cannot conclude that no one in the country has a car! The larger the sample population size, the more likely it is that the statistics of our sample population corresponds to the statistics of the entire population.</para>
+      <para id="id109379">So how does one ensure that ones sample is representative? There are a variety of methods available, which we will look at now.</para>
+      <list id="id109385" display="block" list-type="enumerated">
+        <item id="uid21"><label/><emphasis effect="bold">Random Sampling.</emphasis> Every person in the country has an equal chance of being selected. It is unbiased and also independant, which means that the selection of one person has no effect on the selection on another. One way of doing this would be to give each person in the country a number, and then ask a computer to give us a list of random numbers. We could then send the questionnaire to the people corresponding to the random numbers.
+</item>
+        <item id="uid22"><label/><emphasis effect="bold">Systematic Sampling.</emphasis> Again give every person in the country a number, and then, for example, select every hundredth person on the list. So person with number 1 would be selected, person with number 100 would be selected, person with number 200 would be selected, etc.
+</item>
+        <item id="uid23"><label/><emphasis effect="bold">Stratified Sampling.</emphasis> We consider different subgroups of the population, and take random samples from these. For example, we can divide the population into male and female, different ages, or into different income ranges.
+</item>
+        <item id="uid24"><label/><emphasis effect="bold">Cluster Sampling.</emphasis> Here the sample is concentrated in one area. For example, we consider all the people living in one urban area.
+</item>
+      </list>
+<section id="secfhsst_id167"><title> Sampling </title>
+      <list id="id110885" display="block" list-type="enumerated">
+        <item id="uid25">Discuss the advantages, disadvantages and possible bias when using
+<list id="id110901" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid26">systematic sampling
+</item><item id="uid27">random sampling
+</item><item id="uid28">cluster sampling
+</item></list></item>
+        <item id="uid29">Suggest a suitable sampling method that could be used to obtain information on:
+<list id="id110955" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid30">passengers views on availability of a local taxi service.
+</item><item id="uid31">views of learners on school meals.
+</item><item id="uid32">defects in an item made in a factory.
+</item><item id="uid33">medical costs of employees in a large company.
+</item></list></item>
+        <item id="uid34"><m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mo>%</m:mo></m:mrow></m:math> of a certain magazines' subscribers is randomly selected. The random number 16 out of 50, is selected. Then subscribers with numbers 16, 66, 116, 166, <m:math overflow="scroll"><m:mo>...</m:mo></m:math> are chosen as a sample. What kind of sampling is this?
+</item>
+      </list>
+      
+</section>
+    </section>
+    <section id="cid5">
+      <title>Function Fitting and Regression Analysis</title>
+      <para id="id111062">In Grade 11 we recorded two sets of data (bivariate data) on a scatter plot and then we drew a line of best fit as close to as many of the data items as possible. Regression analysis is a method of finding out exactly which function best fits a given set of data. We can find out the equation of the regression line by drawing and estimating, or by using an algebraic method called “the least squares method”, available on most scientific calculators. The linear regression equation is written <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mi>y</m:mi><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi></m:mrow></m:math> (we say y-hat) or <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mo>+</m:mo><m:mi>B</m:mi><m:mi>x</m:mi></m:mrow></m:math>. Of course these are both variations of a more familiar equation <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi></m:mrow></m:math>.</para>
+      <para id="id111144">Suppose you are doing an experiment with washing dishes. You count how many dishes you begin with, and then find out how long it takes to finish washing them. So you plot the data on a graph of time taken versus number of dishes. This is plotted below.</para>
+      <para id="id111149">
+        <figure id="id111152">
+          <media id="id111152_media" alt="">
+            <image mime-type="image/png" src="../../media/MG12C11_004.png" id="id111152_onlineimage" width="321"><!-- NOTE: attribute width changes image size online (pixels). original width is 321. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/MG12C11_004.eps" id="id111152_printimage"/>
+          </media>
+        </figure>
+      </para>
+      <para id="id111159">If <m:math overflow="scroll"><m:mi>t</m:mi></m:math> is the time taken, and <m:math overflow="scroll"><m:mi>d</m:mi></m:math> the number of dishes, then it looks as though <m:math overflow="scroll"><m:mi>t</m:mi></m:math> is proportional to <m:math overflow="scroll"><m:mi>d</m:mi></m:math>, ie. <m:math overflow="scroll"><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mo>·</m:mo><m:mi>d</m:mi></m:mrow></m:math>, where <m:math overflow="scroll"><m:mi>m</m:mi></m:math> is the constant of proportionality. There are two questions that interest us now.</para>
+      <list id="id111227" display="block" list-type="enumerated">
+        <item id="uid35">How do we find <m:math overflow="scroll"><m:mi>m</m:mi></m:math>? One way you have already learnt, is to draw a line of best-fit through the data points, and then measure the gradient of the line. But this is not terribly precise. Is there a better way of doing it?
+</item>
+        <item id="uid36">How well does our line of best fit really fit our data? If the points on our plot don't all lie close to the line of best fit, but are scattered everywhere, then the fit is not 'good', and our assumption that <m:math overflow="scroll"><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mo>·</m:mo><m:mi>d</m:mi></m:mrow></m:math> might be incorrect. Can we find a quantitative measure of how well our line really fits the data?
+</item>
+      </list>
+      <para id="id111286">In this chapter, we answer both of these questions, using the techniques of <emphasis effect="italics">regression analysis</emphasis>.</para>
+<para id="eip-778"><figure id="curve-fitting" class="phetsim"><title>Phet simulation for curve fitting</title><media id="phet_sim" display="block" alt="curve fitting phet simulation">
+	  <flash id="phet-simulation" mime-type="application/x-shockwave-flash" src="curve-fitting.swf" width="425" height="344">
+	  </flash>
+	  </media>
+	  </figure></para><exercise id="secfhsst_id206"><title> Fitting by hand </title>
+      <problem id="probfhsst_id207">
+      <para id="id111308">Use the data given to draw a scatter plot and line of best fit. Now write down the equation of the line that best seems to fit the data.</para>
+      <table id="id111315" summary="">
+        <tgroup cols="7">
+          <tbody>
+            <row>
+              <entry>x</entry>
+              <entry>1,0</entry>
+              <entry>2,4</entry>
+              <entry>3,1</entry>
+              <entry>4,9</entry>
+              <entry>5,6</entry>
+              <entry>6,2</entry>
+            </row>
+            <row>
+              <entry>y</entry>
+              <entry>2,5</entry>
+              <entry>2,8</entry>
+              <entry>3,0</entry>
+              <entry>4,8</entry>
+              <entry>5,1</entry>
+              <entry>5,3</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      
+      </problem>
+      <solution id="solfhsst_id235"> <list id="listfhsst_id235" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Drawing the graph </label>
+      <para id="id111442">The first step is to draw the graph. This is shown below.</para>
+      <para id="id111446">
+        <figure id="id111447">
+          <media id="id111447_media" alt="">
+            <image mime-type="image/png" src="../../media/MG12C11_005.png" id="id111447_onlineimage" width="293"><!-- NOTE: attribute width changes image size online (pixels). original width is 293. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/MG12C11_005.eps" id="id111447_printimage"/>
+          </media>
+        </figure>
+      </para>
+      </item> <item> <label> Calculating the equation of the line </label>
+      <para id="id111458">The equation of the line is</para>
+      <equation id="id111461">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>m</m:mi>
+            <m:mi>x</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>c</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id111485">From the graph we have drawn, we estimate the y-intercept to be 1,5. We estimate that <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>5</m:mn></m:mrow></m:math> when <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>. So we have that points <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>;</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:math> lie on the line. The gradient of the line, <m:math overflow="scroll"><m:mi>m</m:mi></m:math>, is given by</para>
+      <equation id="id111578">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>m</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mfrac>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>-</m:mo>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>-</m:mo>
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>3</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>5</m:mn>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>3</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mfrac>
+                  <m:mn>2</m:mn>
+                  <m:mn>3</m:mn>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id111691">So we finally have that the equation of the line of best fit is</para>
+      <equation id="id111697">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>2</m:mn>
+              <m:mn>3</m:mn>
+            </m:mfrac>
+            <m:mi>x</m:mi>
+            <m:mo>+</m:mo>
+            <m:mn>1</m:mn>
+            <m:mo>,</m:mo>
+            <m:mn>5</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      </item> </list> </solution>
+</exercise>
+      </section>
+  </content>
+</document>

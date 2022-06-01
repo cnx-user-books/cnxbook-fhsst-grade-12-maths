@@ -1,0 +1,3394 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Introduction, Circle Geometry</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39327</md:content-id>
+  <md:title>Introduction, Circle Geometry</md:title>
+  <md:abstract/>
+  <md:uuid>eda37deb-d0ab-4953-a603-d0f5a85bd3b2</md:uuid>
+</metadata>
+
+<content>
+    
+    <section id="cid2">
+      <title>Introduction</title>
+<section id="secfhsst_id47"><title> Discussion : Discuss these Research Topics </title>
+      <para id="id142951">Research one of the following geometrical ideas and describe it to your group:</para>
+      <list id="id142957" display="block" list-type="enumerated">
+        <item id="uid1">taxicab geometry,
+</item>
+        <item id="uid2">spherical geometry,
+</item>
+        <item id="uid3">fractals,
+</item>
+        <item id="uid4">the Koch snowflake.
+</item>
+      </list>
+      
+</section>
+    </section>
+    <section id="cid3">
+      <title>Circle Geometry</title>
+      <section id="uid5">
+        <title>Terminology</title>
+        <para id="id143371">The following is a recap of terms that are regularly used when referring to circles.</para>
+        <list id="id143375" display="block" list-type="labeled-item">
+          <item id="uid6"><label>arc</label>An arc is a part of the circumference of a circle.
+</item>
+          <item id="uid7"><label>chord</label>A chord is defined as a straight line joining the ends of an arc.
+</item>
+          <item id="uid8"><label>radius</label>The radius, <m:math overflow="scroll"><m:mi>r</m:mi></m:math>, is the distance from the centre of the circle to any point on the circumference.
+</item>
+          <item id="uid9"><label>diameter</label>The diameter is a special chord that passes through the centre of the circle. The diameter is the straight line from a point on the circumference to another point on the circumference, that passes through the centre of the circle.
+</item>
+          <item id="uid10"><label>segment</label>A segment is the part of the circle that is cut off by a chord. A chord divides a circle into two segments.
+</item>
+          <item id="uid11"><label>tangent</label>A tangent is a line that makes contact with a circle at one point on the circumference. (<m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math> is a tangent to the circle at point <m:math overflow="scroll"><m:mi>P</m:mi></m:math>).
+</item>
+        </list>
+        <figure id="uid12">
+          <media id="uid12_media" alt="">
+            <image mime-type="image/png" src="../../media/MG12C9_001.png" id="uid12_onlineimage" width="268"><!-- NOTE: attribute width changes image size online (pixels). original width is 268. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_001.eps" id="uid12_printimage"/>
+          </media>
+          <caption>Parts of a Circle</caption>
+        </figure>
+      </section>
+      <section id="uid13">
+        <title>Axioms</title>
+        <para id="id143514">An axiom is an established or accepted principle. For this section, the following are accepted as axioms.</para>
+        <list id="id143518" display="block" list-type="enumerated">
+          <item id="uid14">The Theorem of Pythagoras, which states that the square on the hypotenuse of a right-angled triangle is equal to the sum of the squares on the other two sides. In <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi></m:mrow></m:math>, this means that <m:math overflow="scroll"><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:mi>A</m:mi><m:mi>B</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>B</m:mi><m:mi>C</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>A</m:mi><m:mi>C</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math><figure id="uid15"><media id="uid15_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_002.png" id="uid15_onlineimage" width="196"><!-- NOTE: attribute width changes image size online (pixels). original width is 196. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_002.eps" id="uid15_printimage"/></media><caption>A right-angled triangle</caption></figure></item>
+          <item id="uid16">A tangent is perpendicular to the radius, drawn at the point of contact with the circle.
+</item>
+        </list>
+      </section>
+      <section id="uid17">
+        <title>Theorems of the Geometry of Circles</title>
+        <para id="id143640">A theorem is a general proposition that is not self-evident but is proved by reasoning (these proofs need not be learned for examination purposes).</para>
+        <para id="id143644"><emphasis effect="bold">Theorem 1</emphasis> The line drawn from the centre of a circle, perpendicular to a chord, bisects the chord.</para>
+        <para id="id143656"><emphasis effect="bold">Proof</emphasis>:</para>
+        <para id="id142863">
+          <figure id="id142866">
+            <media id="id142866_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C9_003.png" id="id142866_onlineimage" width="159"><!-- NOTE: attribute width changes image size online (pixels). original width is 159. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_003.eps" id="id142866_printimage"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id142872">Consider a circle, with centre <m:math overflow="scroll"><m:mi>O</m:mi></m:math>. Draw a chord <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math> and draw a perpendicular line from the centre of the circle to intersect the chord at point <m:math overflow="scroll"><m:mi>P</m:mi></m:math>.
+<emphasis effect="bold">The aim is to prove that <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi></m:mrow></m:math> = <m:math overflow="scroll"><m:mrow><m:mi>B</m:mi><m:mi>P</m:mi></m:mrow></m:math></emphasis></para>
+        <list id="id143908" display="block" list-type="enumerated">
+          <item id="uid19"><m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mi>O</m:mi><m:mi>A</m:mi><m:mi>P</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mi>O</m:mi><m:mi>B</m:mi><m:mi>P</m:mi></m:mrow></m:math> are right-angled triangles.
+</item>
+          <item id="uid20"><m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>A</m:mi><m:mo>=</m:mo><m:mi>O</m:mi><m:mi>B</m:mi></m:mrow></m:math> as both of these are radii and <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>P</m:mi></m:mrow></m:math> is common to both triangles.
+</item>
+        </list>
+        <para id="id143992">Apply the Theorem of Pythagoras to each triangle, to get:</para>
+        <equation id="id143996">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>O</m:mi>
+                    <m:msup>
+                      <m:mi>A</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>O</m:mi>
+                    <m:msup>
+                      <m:mi>P</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mi>A</m:mi>
+                    <m:msup>
+                      <m:mi>P</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>O</m:mi>
+                    <m:msup>
+                      <m:mi>B</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>O</m:mi>
+                    <m:msup>
+                      <m:mi>P</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mi>B</m:mi>
+                    <m:msup>
+                      <m:mi>P</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id144094">However, <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>A</m:mi><m:mo>=</m:mo><m:mi>O</m:mi><m:mi>B</m:mi></m:mrow></m:math>. So,</para>
+        <equation id="id144116"><m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>O</m:mi>
+                    <m:msup>
+                      <m:mi>P</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mi>A</m:mi>
+                    <m:msup>
+                      <m:mi>P</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>O</m:mi>
+                    <m:msup>
+                      <m:mi>P</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mi>B</m:mi>
+                    <m:msup>
+                      <m:mi>P</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo>∴</m:mo>
+                    <m:mi>A</m:mi>
+                    <m:msup>
+                      <m:mi>P</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>B</m:mi>
+                    <m:msup>
+                      <m:mi>P</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi> and AP</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>B</m:mi>
+                    <m:mi>P</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id144237">This means that <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>P</m:mi></m:mrow></m:math> bisects <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math>.</para>
+        <para id="id144264"><emphasis effect="bold">Theorem 2</emphasis> The line drawn from the centre of a circle, that bisects a chord, is perpendicular to the chord.</para>
+        <para id="id144277"><emphasis effect="bold">Proof</emphasis>:</para>
+        <para id="id144284">
+          <figure id="id144287">
+            <media id="id144287_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C9_004.png" id="id144287_onlineimage" width="159"><!-- NOTE: attribute width changes image size online (pixels). original width is 159. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_004.eps" id="id144287_printimage"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id144293">Consider a circle, with centre <m:math overflow="scroll"><m:mi>O</m:mi></m:math>. Draw a chord <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math> and draw a line from the centre of the circle to bisect the chord at point <m:math overflow="scroll"><m:mi>P</m:mi></m:math>.
+<emphasis effect="bold">The aim is to prove that <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>P</m:mi><m:mo>⊥</m:mo><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math></emphasis>
+In <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mi>O</m:mi><m:mi>A</m:mi><m:mi>P</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mi>O</m:mi><m:mi>B</m:mi><m:mi>P</m:mi></m:mrow></m:math>,</para>
+        <list id="id144376" display="block" list-type="enumerated">
+          <item id="uid22"><m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mi>P</m:mi><m:mi>B</m:mi></m:mrow></m:math> (given)
+</item>
+          <item id="uid23"><m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>A</m:mi><m:mo>=</m:mo><m:mi>O</m:mi><m:mi>B</m:mi></m:mrow></m:math> (radii)
+</item>
+          <item id="uid24"><m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>P</m:mi></m:mrow></m:math> is common to both triangles.
+</item>
+        </list>
+        <para id="id144457"><m:math overflow="scroll"><m:mrow><m:mo>∴</m:mo><m:mi>▵</m:mi><m:mi>O</m:mi><m:mi>A</m:mi><m:mi>P</m:mi><m:mo>≡</m:mo><m:mi>▵</m:mi><m:mi>O</m:mi><m:mi>B</m:mi><m:mi>P</m:mi></m:mrow></m:math> (SSS).</para>
+        <equation id="id144488"><m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mover accent="true">
+                    <m:mrow>
+                      <m:mi>O</m:mi>
+                      <m:mi>P</m:mi>
+                      <m:mi>A</m:mi>
+                    </m:mrow>
+                    <m:mo>^</m:mo>
+                  </m:mover>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mover accent="true">
+                    <m:mrow>
+                      <m:mi>O</m:mi>
+                      <m:mi>P</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:mrow>
+                    <m:mo>^</m:mo>
+                  </m:mover>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>O</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>A</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                    <m:mo>+</m:mo>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>O</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mn>180</m:mn>
+                      <m:mo>∘</m:mo>
+                    </m:msup>
+                    <m:mspace width="1.em"/>
+                    <m:mo>(</m:mo>
+                    <m:mi> APB </m:mi><m:mspace width="2pt"/>
+                    <m:mrow>
+                      <m:mi> is a str. line</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo>∴</m:mo>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>O</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>A</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>O</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                    <m:mo>=</m:mo>
+                    <m:msup>
+                      <m:mn>90</m:mn>
+                      <m:mo>∘</m:mo>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo>∴</m:mo>
+                    <m:mi>O</m:mi>
+                    <m:mi>P</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>⊥</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>A</m:mi>
+                    <m:mi>B</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id144684"><emphasis effect="bold">Theorem 3</emphasis> The perpendicular bisector of a chord passes through the centre of the circle.</para>
+        <para id="id144696"><emphasis effect="bold">Proof</emphasis>:</para>
+        <para id="id144703">
+          <figure id="id144706">
+            <media id="id144706_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C9_005.png" id="id144706_onlineimage" width="159"><!-- NOTE: attribute width changes image size online (pixels). original width is 159. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_005.eps" id="id144706_printimage"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id144713">Consider a circle. Draw a chord <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math>. Draw a line <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mi>Q</m:mi></m:mrow></m:math> perpendicular to <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math> such that <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mi>Q</m:mi></m:mrow></m:math> bisects <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math> at point <m:math overflow="scroll"><m:mi>P</m:mi></m:math>. Draw lines <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>Q</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>B</m:mi><m:mi>Q</m:mi></m:mrow></m:math>.
+<emphasis effect="bold">The aim is to prove that <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> is the centre of the circle, by showing that <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>Q</m:mi><m:mo>=</m:mo><m:mi>B</m:mi><m:mi>Q</m:mi></m:mrow></m:math>.</emphasis>
+In <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mi>O</m:mi><m:mi>A</m:mi><m:mi>P</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mi>O</m:mi><m:mi>B</m:mi><m:mi>P</m:mi></m:mrow></m:math>,</para>
+        <list id="id144863" display="block" list-type="enumerated">
+          <item id="uid26"><m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mi>P</m:mi><m:mi>B</m:mi></m:mrow></m:math> (given)
+</item>
+          <item id="uid27"><m:math overflow="scroll"><m:mrow><m:mi>∠</m:mi><m:mi>Q</m:mi><m:mi>P</m:mi><m:mi>A</m:mi><m:mo>=</m:mo><m:mi>∠</m:mi><m:mi>Q</m:mi><m:mi>P</m:mi><m:mi>B</m:mi></m:mrow></m:math> (<m:math overflow="scroll"><m:mrow><m:mi>Q</m:mi><m:mi>P</m:mi><m:mo>⊥</m:mo><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math>)
+</item>
+          <item id="uid28"><m:math overflow="scroll"><m:mrow><m:mi>Q</m:mi><m:mi>P</m:mi></m:mrow></m:math> is common to both triangles.
+</item>
+        </list>
+        <para id="id144976"><m:math overflow="scroll"><m:mrow><m:mo>∴</m:mo><m:mi>▵</m:mi><m:mi>Q</m:mi><m:mi>A</m:mi><m:mi>P</m:mi><m:mo>≡</m:mo><m:mi>▵</m:mi><m:mi>Q</m:mi><m:mi>B</m:mi><m:mi>P</m:mi></m:mrow></m:math> (SAS).
+From this, <m:math overflow="scroll"><m:mrow><m:mi>Q</m:mi><m:mi>A</m:mi><m:mo>=</m:mo><m:mi>Q</m:mi><m:mi>B</m:mi></m:mrow></m:math>. Since the centre of a circle is the only point inside a circle that has points on the circumference at an equal distance from it, <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> must be the centre of the circle.</para>
+<section id="secfhsst_id442"><title> Circles I </title>
+        <list id="id145042" display="block" list-type="enumerated">
+          <item id="uid29">Find the value of <m:math overflow="scroll"><m:mi>x</m:mi></m:math>:
+<figure id="id145071"><media id="id145071_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_006.png" id="id145071_onlineimage" width="270"><!-- NOTE: attribute width changes image size online (pixels). original width is 270. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_006.eps" id="id145071_printimage"/></media></figure><figure id="id145080"><media id="id145080_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_007.png" id="id145080_onlineimage" width="300"><!-- NOTE: attribute width changes image size online (pixels). original width is 300. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_007.eps" id="id145080_printimage"/></media></figure></item>
+        </list>
+        
+</section>
+        <para id="id145097"><emphasis effect="bold">Theorem 4</emphasis> The angle subtended by an arc at the centre of a circle is double the size of the angle subtended by the same arc at the circumference of the circle.</para>
+        <para id="id145110"><emphasis effect="bold">Proof</emphasis>:</para>
+        <para id="id145118">
+          <figure id="id145121">
+            <media id="id145121_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C9_008.png" id="id145121_onlineimage" width="269"><!-- NOTE: attribute width changes image size online (pixels). original width is 269. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_008.eps" id="id145121_printimage"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id145128">Consider a circle, with centre <m:math overflow="scroll"><m:mi>O</m:mi></m:math> and with <m:math overflow="scroll"><m:mi>A</m:mi></m:math> and <m:math overflow="scroll"><m:mi>B</m:mi></m:math> on the circumference. Draw a chord <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math>. Draw radii <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>A</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>B</m:mi></m:mrow></m:math>. Select any point <m:math overflow="scroll"><m:mi>P</m:mi></m:math> on the circumference of the circle. Draw lines <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mi>A</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mi>B</m:mi></m:mrow></m:math>. Draw <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mi>O</m:mi></m:mrow></m:math> and extend to <m:math overflow="scroll"><m:mi>R</m:mi></m:math>.
+<emphasis effect="bold">The aim is to prove that <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>O</m:mi><m:mi>B</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi><m:mi>B</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:mrow></m:math>.</emphasis><m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>O</m:mi><m:mi>R</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mrow><m:mi>P</m:mi><m:mi>A</m:mi><m:mi>O</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>+</m:mo><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi><m:mi>O</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:mrow></m:math> (exterior angle = sum of interior opp. angles)
+But, <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>P</m:mi><m:mi>A</m:mi><m:mi>O</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi><m:mi>O</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:mrow></m:math> (<m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mi>A</m:mi><m:mi>O</m:mi><m:mi>P</m:mi></m:mrow></m:math> is an isosceles <m:math overflow="scroll"><m:mi>▵</m:mi></m:math>)
+<m:math overflow="scroll"><m:mo>∴</m:mo></m:math><m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>O</m:mi><m:mi>R</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mn>2</m:mn><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi><m:mi>O</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:mrow></m:math>
+Similarly, <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>B</m:mi><m:mi>O</m:mi><m:mi>R</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mn>2</m:mn><m:mover accent="true"><m:mrow><m:mi>B</m:mi><m:mi>P</m:mi><m:mi>O</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:mrow></m:math>.
+So,</para>
+        <equation id="id145505">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mover accent="true">
+                    <m:mrow>
+                      <m:mi>A</m:mi>
+                      <m:mi>O</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:mrow>
+                    <m:mo>^</m:mo>
+                  </m:mover>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>O</m:mi>
+                        <m:mi>R</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                    <m:mo>+</m:mo>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>B</m:mi>
+                        <m:mi>O</m:mi>
+                        <m:mi>R</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>O</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>B</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>O</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>(</m:mo>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>O</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                    <m:mo>+</m:mo>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>B</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>O</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>(</m:mo>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+<section id="secfhsst_id587"><title> Circles II </title>
+        <list id="id145703" display="block" list-type="enumerated">
+          <item id="uid31">Find the angles (<m:math overflow="scroll"><m:mi>a</m:mi></m:math> to <m:math overflow="scroll"><m:mi>f</m:mi></m:math>) indicated in each diagram:
+<figure id="id145740"><media id="id145740_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_009.png" id="id145740_onlineimage" width="471"><!-- NOTE: attribute width changes image size online (pixels). original width is 471. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_009.eps" id="id145740_printimage"/></media></figure></item>
+        </list>
+        
+</section>
+        <para id="id145756"><emphasis effect="bold">Theorem 5</emphasis> The angles subtended by a chord at the circumference of a circle on the same side of the chord are equal.</para>
+        <para id="id145770"><emphasis effect="bold">Proof</emphasis>:</para>
+        <para id="id145778">
+          <figure id="id145781">
+            <media id="id145781_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C9_010.png" id="id145781_onlineimage" width="152"><!-- NOTE: attribute width changes image size online (pixels). original width is 152. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_010.eps" id="id145781_printimage"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id145788">Consider a circle, with centre <m:math overflow="scroll"><m:mi>O</m:mi></m:math>. Draw a chord <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math>. Select any points <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> on the circumference of the circle, such that both <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> are on the same side of the chord. Draw lines <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mi>A</m:mi></m:mrow></m:math>, <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mi>B</m:mi></m:mrow></m:math>, <m:math overflow="scroll"><m:mrow><m:mi>Q</m:mi><m:mi>A</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>Q</m:mi><m:mi>B</m:mi></m:mrow></m:math>.
+<emphasis effect="bold">The aim is to prove that <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>Q</m:mi><m:mi>B</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi><m:mi>B</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:mrow></m:math>.</emphasis></para>
+        <equation id="id145938"><m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mover accent="true">
+                    <m:mrow>
+                      <m:mi>A</m:mi>
+                      <m:mi>O</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:mrow>
+                    <m:mo>^</m:mo>
+                  </m:mover>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>Q</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                    <m:mspace width="0.277778em"/>
+                    <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                    <m:mrow>
+                      <m:mi> at centre</m:mi><m:mspace width="2pt"/>
+                      <m:mo>=</m:mo>
+                      <m:mi> twice </m:mi><m:mspace width="2pt"/>
+                    </m:mrow>
+                    <m:mi>∠</m:mi>
+                    <m:mrow>
+                      <m:mi> at circumference</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi> and </m:mi>
+                    <m:mover accent="true">
+                      <m:mi> AOB </m:mi>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                    <m:mspace width="0.277778em"/>
+                    <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                    <m:mrow>
+                      <m:mi> at centre</m:mi><m:mspace width="2pt"/>
+                      <m:mo>=</m:mo>
+                      <m:mi> twice </m:mi><m:mspace width="2pt"/>
+                    </m:mrow>
+                    <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                    <m:mrow>
+                      <m:mi> at circumference</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo>∴</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>Q</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo>∴</m:mo>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>Q</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mover accent="true">
+                    <m:mrow>
+                      <m:mi>A</m:mi>
+                      <m:mi>P</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:mrow>
+                    <m:mo>^</m:mo>
+                  </m:mover>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id146174"><emphasis effect="bold">Theorem 6</emphasis> (Converse of Theorem <link target-id="uid32"/>) If a line segment subtends equal angles at two other points on the same side of the line, then these four points lie on a circle.</para>
+        <para id="id146192"><emphasis effect="bold">Proof</emphasis>:</para>
+        <para id="id146199">
+          <figure id="id146203">
+            <media id="id146203_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C9_011.png" id="id146203_onlineimage" width="152"><!-- NOTE: attribute width changes image size online (pixels). original width is 152. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_011.eps" id="id146203_printimage"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id146209">Consider a line segment <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math>, that subtends equal angles at points <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> on the same side of <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math>.
+<emphasis effect="bold">The aim is to prove that points <m:math overflow="scroll"><m:mi>A</m:mi></m:math>, <m:math overflow="scroll"><m:mi>B</m:mi></m:math>, <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> lie on the circumference of a circle.</emphasis>
+By contradiction. Assume that point <m:math overflow="scroll"><m:mi>P</m:mi></m:math> does not lie on a circle drawn through points <m:math overflow="scroll"><m:mi>A</m:mi></m:math>, <m:math overflow="scroll"><m:mi>B</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math>. Let the circle cut <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi></m:mrow></m:math> (or <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi></m:mrow></m:math> extended) at point <m:math overflow="scroll"><m:mi>R</m:mi></m:math>.</para>
+        <equation id="id146364"><m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mover accent="true">
+                    <m:mrow>
+                      <m:mi>A</m:mi>
+                      <m:mi>Q</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:mrow>
+                    <m:mo>^</m:mo>
+                  </m:mover>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>R</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                    <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">'s on same side of chord</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi> but </m:mi><m:mspace width="2pt"/>
+                    <m:mover accent="true">
+                      <m:mi> AQB </m:mi>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                    <m:mrow><m:mspace width="2pt"/>
+                      <m:mo>(</m:mo>
+                      <m:mi> given </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo>∴</m:mo>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>R</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mover accent="true">
+                    <m:mrow>
+                      <m:mi>A</m:mi>
+                      <m:mi>P</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:mrow>
+                    <m:mo>^</m:mo>
+                  </m:mover>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi> but this cannot be true since</m:mi><m:mspace width="2pt"/>
+                    </m:mrow>
+                    <m:mover accent="true">
+                      <m:mi> ARB </m:mi>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                    <m:mo>+</m:mo>
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>R</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>P</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                    <m:mrow><m:mspace width="3pt"/>
+                      <m:mo>(</m:mo>
+                      <m:mi> ext. </m:mi><m:mspace width="2pt"/>
+                    </m:mrow>
+                    <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                    <m:mi> of </m:mi><m:mspace width="2pt"/>
+                    <m:mi>▵</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id146611"><m:math overflow="scroll"><m:mo>∴</m:mo></m:math> the assumption that the circle does not pass through <m:math overflow="scroll"><m:mi>P</m:mi></m:math>, must be false, and <m:math overflow="scroll"><m:mi>A</m:mi></m:math>, <m:math overflow="scroll"><m:mi>B</m:mi></m:math>, <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> lie on the circumference of a circle.</para>
+<section id="secfhsst_id919"><title> Circles III </title>
+        <list id="id146676" display="block" list-type="enumerated">
+          <item id="uid34">Find the values of the unknown letters.
+<figure id="id146694"><media id="id146694_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_012.png" id="id146694_onlineimage" width="305"><!-- NOTE: attribute width changes image size online (pixels). original width is 305. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_012.eps" id="id146694_printimage"/></media></figure></item>
+        </list>
+        
+</section>
+        <section id="uid35">
+          <title>Cyclic Quadrilaterals</title>
+          <para id="id146720">Cyclic quadrilaterals are quadrilaterals with all four vertices lying on the circumference of a circle. The vertices of a cyclic quadrilateral are said to be <emphasis effect="italics">concyclic</emphasis>.</para>
+          <para id="id146731"><emphasis effect="bold">Theorem 7</emphasis> The opposite angles of a cyclic quadrilateral are supplementary.</para>
+          <para id="id146743"><emphasis effect="bold">Proof</emphasis>:</para>
+          <para id="id146751">
+            <figure id="id146755">
+              <media id="id146755_media" alt="">
+                <image mime-type="image/png" src="../../media/MG12C9_013.png" id="id146755_onlineimage" width="152"><!-- NOTE: attribute width changes image size online (pixels). original width is 152. --></image>
+                <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_013.eps" id="id146755_printimage"/>
+              </media>
+            </figure>
+          </para>
+          <para id="id146761">Consider a circle, with centre <m:math overflow="scroll"><m:mi>O</m:mi></m:math>. Draw a cyclic quadrilateral <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mi>Q</m:mi></m:mrow></m:math>. Draw <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>O</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mi>O</m:mi></m:mrow></m:math>.
+<emphasis effect="bold">The aim is to prove that <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>P</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>+</m:mo><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>Q</m:mi><m:mi>P</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:msup><m:mn>180</m:mn><m:mo>∘</m:mo></m:msup></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>Q</m:mi><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>+</m:mo><m:mover accent="true"><m:mrow><m:mi>Q</m:mi><m:mi>P</m:mi><m:mi>B</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:msup><m:mn>180</m:mn><m:mo>∘</m:mo></m:msup></m:mrow></m:math>.</emphasis></para>
+          <equation id="id146915"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:msub>
+                        <m:mi>O</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>P</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover><m:mspace width="2pt"/>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s at centre</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:msub>
+                        <m:mi>O</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>Q</m:mi>
+                          <m:mi>P</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover><m:mspace width="3pt"/>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s at centre</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi> But, </m:mi><m:mspace width="3pt"/>
+                      </m:mrow>
+                      <m:mover accent="true">
+                        <m:msub>
+                          <m:mi mathvariant="normal">O</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mover accent="true">
+                        <m:msub>
+                          <m:mi mathvariant="normal">O</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:msup>
+                      <m:mn>360</m:mn>
+                      <m:mo>∘</m:mo>
+                    </m:msup>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mo>∴</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>P</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>Q</m:mi>
+                          <m:mi>P</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:msup>
+                      <m:mn>360</m:mn>
+                      <m:mo>∘</m:mo>
+                    </m:msup>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mo>∴</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>P</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>Q</m:mi>
+                          <m:mi>P</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:msup>
+                      <m:mn>180</m:mn>
+                      <m:mo>∘</m:mo>
+                    </m:msup>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi> Similarly </m:mi>
+                        <m:mo>,</m:mo>
+                      </m:mrow>
+                      <m:mover accent="true">
+                        <m:mi> QAB </m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mover accent="true">
+                        <m:mi> QPB </m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:msup>
+                      <m:mn>180</m:mn>
+                      <m:mo>∘</m:mo>
+                    </m:msup>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          <para id="id147254"><emphasis effect="bold">Theorem 8</emphasis> (Converse of Theorem <link target-id="uid36"/>) If the opposite angles of a quadrilateral are supplementary, then the quadrilateral is cyclic.</para>
+          <para id="id147272"><emphasis effect="bold">Proof</emphasis>:</para>
+          <para id="id147280">
+            <figure id="id147283">
+              <media id="id147283_media" alt="">
+                <image mime-type="image/png" src="../../media/MG12C9_014.png" id="id147283_onlineimage" width="172"><!-- NOTE: attribute width changes image size online (pixels). original width is 172. --></image>
+                <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_014.eps" id="id147283_printimage"/>
+              </media>
+            </figure>
+          </para>
+          <para id="id147290">Consider a quadrilateral <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mi>Q</m:mi></m:mrow></m:math>, such that <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>P</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>+</m:mo><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>Q</m:mi><m:mi>P</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:msup><m:mn>180</m:mn><m:mo>∘</m:mo></m:msup></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>Q</m:mi><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>+</m:mo><m:mover accent="true"><m:mrow><m:mi>Q</m:mi><m:mi>P</m:mi><m:mi>B</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:msup><m:mn>180</m:mn><m:mo>∘</m:mo></m:msup></m:mrow></m:math>.
+<emphasis effect="bold">The aim is to prove that points <m:math overflow="scroll"><m:mi>A</m:mi></m:math>, <m:math overflow="scroll"><m:mi>B</m:mi></m:math>, <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> lie on the circumference of a circle.</emphasis>
+By contradiction. Assume that point <m:math overflow="scroll"><m:mi>P</m:mi></m:math> does not lie on a circle drawn through points <m:math overflow="scroll"><m:mi>A</m:mi></m:math>, <m:math overflow="scroll"><m:mi>B</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math>. Let the circle cut <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi></m:mrow></m:math> (or <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi></m:mrow></m:math> extended) at point <m:math overflow="scroll"><m:mi>R</m:mi></m:math>. Draw <m:math overflow="scroll"><m:mrow><m:mi>B</m:mi><m:mi>R</m:mi></m:mrow></m:math>.</para>
+          <equation id="id147528"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>Q</m:mi>
+                          <m:mi>A</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>Q</m:mi>
+                          <m:mi>R</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>180</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mrow><m:mspace width="3pt"/>
+                        <m:mi> opp. </m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s of cyclic quad</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mi> but </m:mi><m:mspace width="3pt"/>
+                      <m:mover accent="true">
+                        <m:mi> QAB </m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mover accent="true">
+                        <m:mi> QPB </m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>180</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mrow><m:mspace width="3pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> given </m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mo>∴</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>Q</m:mi>
+                          <m:mi>R</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>Q</m:mi>
+                        <m:mi>P</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi> but this cannot be true since</m:mi><m:mspace width="3pt"/>
+                      </m:mrow>
+                      <m:mover accent="true">
+                        <m:mi> QRB </m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>Q</m:mi>
+                          <m:mi>P</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>R</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>P</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi> ext </m:mi>
+                        <m:mo>.</m:mo>
+                      </m:mrow>
+                      <m:mi>∠</m:mi>
+                      <m:mi> of </m:mi>
+                      <m:mi>▵</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          <para id="id147793"><m:math overflow="scroll"><m:mo>∴</m:mo></m:math> the assumption that the circle does not pass through <m:math overflow="scroll"><m:mi>P</m:mi></m:math>, must be false, and <m:math overflow="scroll"><m:mi>A</m:mi></m:math>, <m:math overflow="scroll"><m:mi>B</m:mi></m:math>, <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> lie on the circumference of a circle and <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mi>Q</m:mi></m:mrow></m:math> is a cyclic quadrilateral.</para>
+<section id="secfhsst_id1320"><title> Circles IV </title>
+          <list id="id147874" display="block" list-type="enumerated">
+            <item id="uid38">Find the values of the unknown letters.
+<figure id="id147893"><media id="id147893_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_015.png" id="id147893_onlineimage" width="334"><!-- NOTE: attribute width changes image size online (pixels). original width is 334. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_015.eps" id="id147893_printimage"/></media></figure></item>
+          </list>
+          
+</section>
+          <para id="id147910"><emphasis effect="bold">Theorem 9</emphasis> Two tangents drawn to a circle from the same point outside the circle are equal in length.</para>
+          <para id="id147923"><emphasis effect="bold">Proof</emphasis>:</para>
+          <para id="id147931">
+            <figure id="id147934">
+              <media id="id147934_media" alt="">
+                <image mime-type="image/png" src="../../media/MG12C9_016.png" id="id147934_onlineimage" width="220"><!-- NOTE: attribute width changes image size online (pixels). original width is 220. --></image>
+                <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_016.eps" id="id147934_printimage"/>
+              </media>
+            </figure>
+          </para>
+          <para id="id147941">Consider a circle, with centre <m:math overflow="scroll"><m:mi>O</m:mi></m:math>. Choose a point <m:math overflow="scroll"><m:mi>P</m:mi></m:math> outside the circle. Draw two tangents to the circle from point <m:math overflow="scroll"><m:mi>P</m:mi></m:math>, that meet the circle at <m:math overflow="scroll"><m:mi>A</m:mi></m:math> and <m:math overflow="scroll"><m:mi>B</m:mi></m:math>. Draw lines <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>A</m:mi></m:mrow></m:math>, <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>B</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>P</m:mi></m:mrow></m:math>.
+<emphasis effect="bold">The aim is to prove that <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mi>B</m:mi><m:mi>P</m:mi></m:mrow></m:math>.</emphasis>
+In <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mi>O</m:mi><m:mi>A</m:mi><m:mi>P</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mi>O</m:mi><m:mi>B</m:mi><m:mi>P</m:mi></m:mrow></m:math>,</para>
+          <list id="id148082" display="block" list-type="enumerated">
+            <item id="uid40"><m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>A</m:mi><m:mo>=</m:mo><m:mi>O</m:mi><m:mi>B</m:mi></m:mrow></m:math> (radii)
+</item>
+            <item id="uid41"><m:math overflow="scroll"><m:mrow><m:mi>∠</m:mi><m:mi>O</m:mi><m:mi>A</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mi>∠</m:mi><m:mi>O</m:mi><m:mi>P</m:mi><m:mi>B</m:mi><m:mo>=</m:mo><m:msup><m:mn>90</m:mn><m:mo>∘</m:mo></m:msup></m:mrow></m:math> (<m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>A</m:mi><m:mo>⊥</m:mo><m:mi>A</m:mi><m:mi>P</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>B</m:mi><m:mo>⊥</m:mo><m:mi>B</m:mi><m:mi>P</m:mi></m:mrow></m:math>)
+</item>
+            <item id="uid42"><m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>P</m:mi></m:mrow></m:math> is common to both triangles.
+</item>
+          </list>
+          <para id="id148224"><m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mi>O</m:mi><m:mi>A</m:mi><m:mi>P</m:mi><m:mo>≡</m:mo><m:mi>▵</m:mi><m:mi>O</m:mi><m:mi>B</m:mi><m:mi>P</m:mi></m:mrow></m:math> (right angle, hypotenuse, side)
+<m:math overflow="scroll"><m:mrow><m:mo>∴</m:mo><m:mi>A</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mi>B</m:mi><m:mi>P</m:mi></m:mrow></m:math></para>
+<section id="secfhsst_id1350"><title> Circles V </title>
+          <list id="id148280" display="block" list-type="enumerated">
+            <item id="uid43">Find the value of the unknown lengths.
+<figure id="id148298"><media id="id148298_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_017.png" id="id148298_onlineimage" width="388"><!-- NOTE: attribute width changes image size online (pixels). original width is 388. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_017.eps" id="id148298_printimage"/></media></figure></item>
+          </list>
+          
+</section>
+          <para id="id148315"><emphasis effect="bold">Theorem 10</emphasis> The angle between a tangent and a chord, drawn at the point of contact of the chord, is equal to the angle which the chord subtends in the alternate segment.</para>
+          <para id="id148329"><emphasis effect="bold">Proof</emphasis>:</para>
+          <para id="id148337">
+            <figure id="id148340">
+              <media id="id148340_media" alt="">
+                <image mime-type="image/png" src="../../media/MG12C9_018.png" id="id148340_onlineimage" width="155"><!-- NOTE: attribute width changes image size online (pixels). original width is 155. --></image>
+                <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_018.eps" id="id148340_printimage"/>
+              </media>
+            </figure>
+          </para>
+          <para id="id148347">Consider a circle, with centre <m:math overflow="scroll"><m:mi>O</m:mi></m:math>. Draw a chord <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math> and a tangent <m:math overflow="scroll"><m:mrow><m:mi>S</m:mi><m:mi>R</m:mi></m:mrow></m:math> to the circle at point <m:math overflow="scroll"><m:mi>B</m:mi></m:math>. Chord <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math> subtends angles at points <m:math overflow="scroll"><m:mi>P</m:mi></m:math> and <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> on the minor and major arcs, respectively.
+Draw a diameter <m:math overflow="scroll"><m:mrow><m:mi>B</m:mi><m:mi>T</m:mi></m:mrow></m:math> and join <m:math overflow="scroll"><m:mi>A</m:mi></m:math> to <m:math overflow="scroll"><m:mi>T</m:mi></m:math>.
+<emphasis effect="bold">The aim is to prove that <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi><m:mi>B</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>R</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>Q</m:mi><m:mi>B</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>S</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:mrow></m:math>.</emphasis>
+First prove that <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>Q</m:mi><m:mi>B</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>S</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:mrow></m:math> as this result is needed to prove that <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>P</m:mi><m:mi>B</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>R</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:mrow></m:math>.</para>
+          <equation id="uid45"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>S</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>T</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>90</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>(</m:mo>
+                      <m:mi> TB </m:mi>
+                      <m:mo>⊥</m:mo>
+                      <m:mi> SR </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>B</m:mi>
+                        <m:mi>A</m:mi>
+                        <m:mi>T</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>90</m:mn>
+                        <m:mo>∘</m:mo><m:mspace width="3pt"/>
+                      </m:msup>
+                      <m:mo>(</m:mo>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s at centre</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mo>∴</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>T</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>T</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>90</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mrow><m:mspace width="3pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> sum of angles in</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>▵</m:mi>
+                      <m:mi> BAT </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mo>∴</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>S</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>T</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi> However, </m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mover accent="true">
+                        <m:mi> AQB </m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>T</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mrow><m:mspace width="3pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> angles subtended by same chord</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi> AB </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mo>∴</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>Q</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>S</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow/>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>S</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>Q</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>Q</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>R</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>180</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mspace width="1.em"/>
+                      <m:mo>(</m:mo>
+                      <m:mi> SBT </m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi> is a str. line</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>P</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>Q</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>180</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mspace width="1.em"/>
+                      <m:mo>(</m:mo>
+                      <m:mi> ABPQ </m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi> is a cyclic quad</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mo>∴</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>S</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>Q</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>Q</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>R</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>P</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>Q</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mi> AQB </m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>S</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mo>∴</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>P</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>R</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+<section id="secfhsst_id1788"><title> Circles VI </title>
+<list id="id149305" display="block" list-type="enumerated"><item id="uid46">Find the values of the unknown letters.
+<figure id="id149324"><media id="id149324_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_019.png" id="id149324_onlineimage" width="340"><!-- NOTE: attribute width changes image size online (pixels). original width is 340. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_019.eps" id="id149324_printimage"/></media></figure></item></list>
+
+</section>
+          <para id="id149342"><emphasis effect="bold">Theorem 11</emphasis> (Converse of <link target-id="uid44"/>) If the angle formed between a line, that is drawn through the end point of a chord, and the chord, is equal to the angle subtended by the chord in the alternate segment, then the line is a tangent to the circle.</para>
+          <para id="id149360"><emphasis effect="bold">Proof</emphasis>:</para>
+          <para id="id149368">
+            <figure id="id149372">
+              <media id="id149372_media" alt="">
+                <image mime-type="image/png" src="../../media/MG12C9_020.png" id="id149372_onlineimage" width="149"><!-- NOTE: attribute width changes image size online (pixels). original width is 149. --></image>
+                <image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_020.eps" id="id149372_printimage"/>
+              </media>
+            </figure>
+          </para>
+          <para id="id149378">Consider a circle, with centre <m:math overflow="scroll"><m:mi>O</m:mi></m:math> and chord <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math>. Let line <m:math overflow="scroll"><m:mrow><m:mi>S</m:mi><m:mi>R</m:mi></m:mrow></m:math> pass through point <m:math overflow="scroll"><m:mi>B</m:mi></m:math>. Chord <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:math> subtends an angle at point <m:math overflow="scroll"><m:mi>Q</m:mi></m:math> such that <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>S</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>Q</m:mi><m:mi>B</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:mrow></m:math>.
+<emphasis effect="bold">The aim is to prove that <m:math overflow="scroll"><m:mrow><m:mi>S</m:mi><m:mi>B</m:mi><m:mi>R</m:mi></m:mrow></m:math> is a tangent to the circle.</emphasis>
+By contradiction. Assume that <m:math overflow="scroll"><m:mrow><m:mi>S</m:mi><m:mi>B</m:mi><m:mi>R</m:mi></m:mrow></m:math> is not a tangent to the circle and draw <m:math overflow="scroll"><m:mrow><m:mi>X</m:mi><m:mi>B</m:mi><m:mi>Y</m:mi></m:mrow></m:math> such that <m:math overflow="scroll"><m:mrow><m:mi>X</m:mi><m:mi>B</m:mi><m:mi>Y</m:mi></m:mrow></m:math> is a tangent to the circle.</para>
+          <equation id="uid48"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>X</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>Q</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mspace width="1.em"/>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi> tan </m:mi>
+                        <m:mo>-</m:mo>
+                        <m:mi> chord theorem</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi> However </m:mi>
+                        <m:mo>,</m:mo>
+                      </m:mrow>
+                      <m:mspace width="1.em"/>
+                      <m:mover accent="true">
+                        <m:mi> ABS </m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>Q</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mspace width="1.em"/>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi> given </m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mo>∴</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>X</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>S</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi> But </m:mi>
+                        <m:mo>,</m:mo>
+                      </m:mrow>
+                      <m:mspace width="1.em"/>
+                      <m:mover accent="true">
+                        <m:mi> ABX </m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>S</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>+</m:mo>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>X</m:mi>
+                          <m:mi>B</m:mi>
+                          <m:mi>S</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi> can only be true if</m:mi>
+                        <m:mo>,</m:mo>
+                      </m:mrow>
+                      <m:mspace width="1.em"/>
+                      <m:mover accent="true">
+                        <m:mi> XBS </m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mn>0</m:mn>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          <para id="id149835">If <m:math overflow="scroll"><m:mover accent="true"><m:mrow><m:mi>X</m:mi><m:mi>B</m:mi><m:mi>S</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:math> is zero, then both <m:math overflow="scroll"><m:mrow><m:mi>X</m:mi><m:mi>B</m:mi><m:mi>Y</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>S</m:mi><m:mi>B</m:mi><m:mi>R</m:mi></m:mrow></m:math> coincide and <m:math overflow="scroll"><m:mrow><m:mi>S</m:mi><m:mi>B</m:mi><m:mi>R</m:mi></m:mrow></m:math> is a tangent to the circle.</para>
+<section id="secfhsst_id1982"><title> Applying Theorem <link target-id="uid30"/> </title>
+          <list id="id149916" display="block" list-type="enumerated">
+            <item id="uid49"><emphasis effect="italics">Show that Theorem</emphasis><link target-id="uid30"/> also applies to the following two cases:
+<figure id="id149944"><media id="id149944_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_021.png" id="id149944_onlineimage" width="522"><!-- NOTE: attribute width changes image size online (pixels). original width is 522. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_021.eps" id="id149944_printimage"/></media></figure></item>
+          </list>
+          
+</section>
+<exercise id="secfhsst_id1989"><title> Circle Geometry I </title>
+          <problem id="probfhsst_id1990">
+          <para id="id149974"><figure id="id149985"><media id="id149985_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_022.png" id="id149985_onlineimage" width="240"><!-- NOTE: attribute width changes image size online (pixels). original width is 240. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_022.eps" id="id149985_printimage"/></media></figure><m:math overflow="scroll"><m:mrow><m:mi>B</m:mi><m:mi>D</m:mi></m:mrow></m:math> is a tangent to the circle with centre <m:math overflow="scroll"><m:mi>O</m:mi></m:math>.
+<m:math overflow="scroll"><m:mrow><m:mi>B</m:mi><m:mi>O</m:mi><m:mo>⊥</m:mo><m:mi>A</m:mi><m:mi>D</m:mi></m:mrow></m:math>.
+Prove that:
+<list id="id150048" display="block" list-type="enumerated"><item id="uid50"><m:math overflow="scroll"><m:mrow><m:mi>C</m:mi><m:mi>F</m:mi><m:mi>O</m:mi><m:mi>E</m:mi></m:mrow></m:math> is a cyclic quadrilateral
+</item><item id="uid51"><m:math overflow="scroll"><m:mrow><m:mi>F</m:mi><m:mi>B</m:mi><m:mo>=</m:mo><m:mi>B</m:mi><m:mi>C</m:mi></m:mrow></m:math></item><item id="uid52"><m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mrow><m:mi>C</m:mi><m:mi>O</m:mi><m:mi>E</m:mi></m:mrow><m:mo>/</m:mo><m:mo>/</m:mo><m:mo>/</m:mo><m:mi>▵</m:mi><m:mrow><m:mi>C</m:mi><m:mi>B</m:mi><m:mi>F</m:mi></m:mrow></m:mrow></m:math></item><item id="uid53"><m:math overflow="scroll"><m:mrow><m:mi>C</m:mi><m:msup><m:mi>D</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mi>E</m:mi><m:mi>D</m:mi><m:mo>.</m:mo><m:mi>A</m:mi><m:mi>D</m:mi></m:mrow></m:math></item><item id="uid54"><m:math overflow="scroll"><m:mrow><m:mfrac><m:mrow><m:mi>O</m:mi><m:mi>E</m:mi></m:mrow><m:mrow><m:mi>B</m:mi><m:mi>C</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>C</m:mi><m:mi>D</m:mi></m:mrow><m:mrow><m:mi>C</m:mi><m:mi>O</m:mi></m:mrow></m:mfrac></m:mrow></m:math></item></list>
+
+
+ </para>
+          </problem>
+          <solution id="solfhsst_id2000"> <list id="listfhsst_id2000" list-type="enumerated" number-style="arabic" class="stepwise">
+          <item> <label> To show a quadrilateral is cyclic, we need a pair of opposite angles to be supplementary, so let's look for that. </label>
+          <equation id="id150256"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mi>O</m:mi>
+                        <m:mi>E</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>90</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>(</m:mo>
+                      <m:mi> BO </m:mi>
+                      <m:mo>⊥</m:mo>
+                      <m:mi> OD </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mi>C</m:mi>
+                        <m:mi>E</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>90</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>(</m:mo>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi> subtended by diameter</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi> AE </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>C</m:mi>
+                      <m:mi>F</m:mi>
+                      <m:mi>O</m:mi>
+                      <m:mi>E</m:mi>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mi> is a cyclic quad</m:mi><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> opposite </m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                          <m:mi mathvariant="normal">'s supplementary</m:mi>
+                          <m:mo>)</m:mo>
+                       
+                      
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> <item> <label> Since these two sides are part of a triangle, we are proving that triangle to be isosceles. The easiest way is to show the angles opposite to those sides to be equal. </label>
+          <para id="id150426">Let <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>O</m:mi><m:mi>E</m:mi><m:mi>C</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math>.</para>
+          <equation id="id150456"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>F</m:mi>
+                          <m:mi>C</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>=</m:mo>
+                      <m:mi>x</m:mi><m:mspace width="3pt"/>
+                      <m:mo>(</m:mo>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi> between tangent</m:mi>
+                      </m:mrow>
+                      <m:mi> BD </m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi> and chord</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi> CE </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>B</m:mi>
+                          <m:mi>F</m:mi>
+                          <m:mi>C</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>=</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> exterior </m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi> to cyclic quad</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi> CFOE </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>B</m:mi>
+                      <m:mi>F</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mi>B</m:mi>
+                      <m:mi>C</m:mi>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> sides opposite equal</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s in isosceles</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>▵</m:mi>
+                      <m:mi> BFC </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> <item> <label> To show these two triangles similar, we will need 3 equal angles. We already have 3 of the 6 needed angles from the previous question. We need only find the missing 3 angles. </label>
+          <equation id="id150631"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>F</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>180</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mi>x</m:mi>
+                      <m:mrow><m:mspace width="3pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> sum of</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s in</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>▵</m:mi>
+                      <m:mi> BFC </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mi>O</m:mi>
+                      <m:mi>C</m:mi>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>O</m:mi>
+                      <m:mi>E</m:mi>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> radii of circle</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi mathvariant="normal">O</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>E</m:mi>
+                          <m:mi>C</m:mi>
+                          <m:mi>O</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>=</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mrow><m:mspace width="3pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> isosceles </m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>▵</m:mi>
+                      <m:mi> COE </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mrow>
+                          <m:mi>C</m:mi>
+                          <m:mi>O</m:mi>
+                          <m:mi>E</m:mi>
+                        </m:mrow>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>=</m:mo>
+                      <m:msup>
+                        <m:mn>180</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mi>x</m:mi>
+                      <m:mrow><m:mspace width="3pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> sum of</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s in </m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>▵</m:mi>
+                      <m:mi> COE </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          <list id="id150868" display="block" list-type="bulleted">
+            <item id="uid55">
+              <m:math overflow="scroll">
+                <m:mrow>
+                  <m:mover accent="true">
+                    <m:mrow>
+                      <m:mi>C</m:mi>
+                      <m:mi>O</m:mi>
+                      <m:mi>E</m:mi>
+                    </m:mrow>
+                    <m:mo>^</m:mo>
+                  </m:mover>
+                  <m:mo>=</m:mo>
+                  <m:mover accent="true">
+                    <m:mrow>
+                      <m:mi>C</m:mi>
+                      <m:mi>B</m:mi>
+                      <m:mi>F</m:mi>
+                    </m:mrow>
+                    <m:mo>^</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:math>
+            </item>
+            <item id="uid56">
+              <m:math overflow="scroll">
+                <m:mrow>
+                  <m:mover accent="true">
+                    <m:mrow>
+                      <m:mi>E</m:mi>
+                      <m:mi>C</m:mi>
+                      <m:mi>O</m:mi>
+                    </m:mrow>
+                    <m:mo>^</m:mo>
+                  </m:mover>
+                  <m:mo>=</m:mo>
+                  <m:mover accent="true">
+                    <m:mrow>
+                      <m:mi>F</m:mi>
+                      <m:mi>C</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:mrow>
+                    <m:mo>^</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:math>
+            </item>
+            <item id="uid57">
+              <m:math overflow="scroll">
+                <m:mrow>
+                  <m:mover accent="true">
+                    <m:mrow>
+                      <m:mi>O</m:mi>
+                      <m:mi>E</m:mi>
+                      <m:mi>C</m:mi>
+                    </m:mrow>
+                    <m:mo>^</m:mo>
+                  </m:mover>
+                  <m:mo>=</m:mo>
+                  <m:mover accent="true">
+                    <m:mrow>
+                      <m:mi>C</m:mi>
+                      <m:mi>F</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:mrow>
+                    <m:mo>^</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:math>
+            </item>
+          </list>
+          <equation id="id151016"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>▵</m:mi>
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mi>O</m:mi>
+                        <m:mi>E</m:mi>
+                      </m:mrow>
+                      <m:mo>|||</m:mo>
+                      <m:mi>▵</m:mi>
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>F</m:mi>
+                      </m:mrow>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mn>3</m:mn><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">'s equal</m:mi>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> <item>
+<list id="listfhsst_id22334" list-type="enumerated" number-style="arabic" class="stepwise"> <item><label> This relation reminds us of a proportionality relation between similar triangles. So investigate which triangles contain these sides and prove them similar. In this case 3 equal angles works well. Start with one triangle. </label>
+          <para id="id151095">In <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mrow><m:mi>E</m:mi><m:mi>D</m:mi><m:mi>C</m:mi></m:mrow></m:mrow></m:math></para>
+          <equation id="id151115"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mi>E</m:mi>
+                        <m:mi>D</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>180</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mi>x</m:mi><m:mspace width="2pt"/>
+                      <m:mo>(</m:mo>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s on a str. line</m:mi>
+                      </m:mrow>
+                      <m:mi> AD </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>E</m:mi>
+                        <m:mi>C</m:mi>
+                        <m:mi>D</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>90</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> complementary </m:mi>
+                      </m:mrow>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">'s</m:mi>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> <item> <label> Now look at the angles in the other triangle. </label>
+          <para id="id151263">In <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mrow><m:mi>A</m:mi><m:mi>D</m:mi><m:mi>C</m:mi></m:mrow></m:mrow></m:math></para>
+          <equation id="id151283"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>C</m:mi>
+                        <m:mi>E</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>180</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi> sum of</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mover accent="true">
+                        <m:mi> ACE </m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover><m:mspace width="2pt"/>
+                      <m:mi> and </m:mi><m:mspace width="2pt"/>
+                      <m:mover accent="true">
+                        <m:mi> ECO </m:mi>
+                        <m:mo>^</m:mo>
+                      </m:mover>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mi>A</m:mi>
+                        <m:mi>D</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>90</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> sum of</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s in</m:mi>
+                      </m:mrow><m:mspace width="2pt"/>
+                      <m:mi>▵</m:mi>
+                      <m:mi> CAE </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> <item> <label> The third equal angle is an angle both triangles have in common. </label>
+          <para id="id151453">Lastly, <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mi>D</m:mi><m:mi>C</m:mi></m:mrow><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mrow><m:mi>E</m:mi><m:mi>D</m:mi><m:mi>C</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:mrow></m:math> since they are the same <m:math overflow="scroll"><m:mi>∠</m:mi></m:math>.</para>
+          </item> <item> <label> Step 4d: Now we know that the triangles are similar and can use the proportionality relation accordingly. </label>
+          <equation id="id151509"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>▵</m:mi>
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>D</m:mi>
+                        <m:mi>C</m:mi>
+                      </m:mrow>
+                      <m:mo>|||</m:mo>
+                      <m:mi>▵</m:mi>
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mi>D</m:mi>
+                        <m:mi>E</m:mi>
+                      </m:mrow>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mn>3</m:mn><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">'s equal</m:mi>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>E</m:mi>
+                          <m:mi>D</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>C</m:mi>
+                          <m:mi>D</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>C</m:mi>
+                          <m:mi>D</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mi>D</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>C</m:mi>
+                      <m:msup>
+                        <m:mi>D</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>=</m:mo>
+                      <m:mi>E</m:mi>
+                      <m:mi>D</m:mi>
+                      <m:mo>.</m:mo>
+                      <m:mi>A</m:mi>
+                      <m:mi>D</m:mi>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> 
+</list>
+</item>
+
+<item> 
+<list id="listfhsst_id23590" list-type="enumerated" number-style="arabic" class="stepwise"> <item>
+<label> This looks like another proportionality relation with a little twist, since not all sides are contained in 2 triangles. There is a quick observation we can make about the odd side out, <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>E</m:mi></m:mrow></m:math>. </label>
+          <equation id="id151670"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mi>O</m:mi>
+                      <m:mi>E</m:mi>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>C</m:mi>
+                      <m:mi>D</m:mi><m:mspace width="2pt"/>
+                      <m:mo>(</m:mo>
+                      <m:mi>▵</m:mi>
+                      <m:mi> OEC </m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi> is isosceles</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> <item> <label> With this observation we can limit ourselves to proving triangles <m:math overflow="scroll"><m:mrow><m:mi>B</m:mi><m:mi>O</m:mi><m:mi>C</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>D</m:mi><m:mi>C</m:mi></m:mrow></m:math> similar. Start in one of the triangles. </label>
+          <para id="id151752">In <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mrow><m:mi>B</m:mi><m:mi>C</m:mi><m:mi>O</m:mi></m:mrow></m:mrow></m:math></para>
+          <equation id="id151770"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>O</m:mi>
+                        <m:mi>C</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>90</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> radius </m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi> OC </m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi> on tangent</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi> BD </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>O</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>180</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mi>x</m:mi>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> sum of</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s in</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>▵</m:mi>
+                      <m:mi> BFC </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> <item> <label> Then we move on to the other one. </label>
+          <para id="id151911">In <m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mrow><m:mi>O</m:mi><m:mi>C</m:mi><m:mi>D</m:mi></m:mrow></m:mrow></m:math></para>
+          <equation id="id151931"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>O</m:mi>
+                        <m:mi>C</m:mi>
+                        <m:mi>D</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>90</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mrow><m:mspace width="3pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> radius </m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi> OC </m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi> on tangent</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi> BD </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mover accent="true">
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mi>O</m:mi>
+                        <m:mi>D</m:mi>
+                      </m:mrow>
+                      <m:mo>^</m:mo>
+                    </m:mover>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>180</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mi>x</m:mi>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> sum of</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s in</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>▵</m:mi>
+                      <m:mi> OCE </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> <item> <label> Again we have a common element. </label>
+          <para id="id152071">Lastly, <m:math overflow="scroll"><m:mrow><m:mi>O</m:mi><m:mi>C</m:mi></m:mrow></m:math> is a common side to both <m:math overflow="scroll"><m:mi>▵</m:mi></m:math>'s.</para>
+          </item> <item> <label> Step 5e: Then, once we've shown similarity, we use the proportionality relation , as well as our first observation, appropriately. </label>
+          <equation id="id152101"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>▵</m:mi>
+                      <m:mrow>
+                        <m:mi>B</m:mi>
+                        <m:mi>O</m:mi>
+                        <m:mi>C</m:mi>
+                      </m:mrow>
+                      <m:mo>|||</m:mo>
+                      <m:mi>▵</m:mi>
+                      <m:mrow>
+                        <m:mi>O</m:mi>
+                        <m:mi>D</m:mi>
+                        <m:mi>C</m:mi>
+                      </m:mrow>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> common side and 2 equal angles</m:mi>
+                      </m:mrow>
+ <m:mo>)</m:mo>
+                     
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>C</m:mi>
+                          <m:mi>O</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>B</m:mi>
+                          <m:mi>C</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>C</m:mi>
+                          <m:mi>D</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>C</m:mi>
+                          <m:mi>O</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>O</m:mi>
+                          <m:mi>E</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>B</m:mi>
+                          <m:mi>C</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>C</m:mi>
+                          <m:mi>D</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>C</m:mi>
+                          <m:mi>O</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>(</m:mo>
+                      <m:mi> OE </m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mi> CD </m:mi> <m:mspace width="2pt"/>
+                      <m:mi> isosceles </m:mi> <m:mspace width="2pt"/>
+                      <m:mi>▵</m:mi>
+                      <m:mi> OEC </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          
+          </item> 
+</list>
+</item>
+</list> </solution>
+</exercise>
+<exercise id="secfhsst_id3088"><title> Circle Geometry II </title>
+          <problem id="probfhsst_id3089">
+          <para id="id152305"><figure id="id152316"><media id="id152316_media" alt=""><image mime-type="image/png" src="../../media/MG12C9_023.png" id="id152316_onlineimage" width="192"><!-- NOTE: attribute width changes image size online (pixels). original width is 192. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C9_023.eps" id="id152316_printimage"/></media></figure><m:math overflow="scroll"><m:mrow><m:mi>F</m:mi><m:mi>D</m:mi></m:mrow></m:math> is drawn parallel to the tangent <m:math overflow="scroll"><m:mrow><m:mi>C</m:mi><m:mi>B</m:mi></m:mrow></m:math>
+Prove that:
+<list id="id152358" display="block" list-type="enumerated"><item id="uid58"><m:math overflow="scroll"><m:mrow><m:mi>F</m:mi><m:mi>A</m:mi><m:mi>D</m:mi><m:mi>E</m:mi></m:mrow></m:math> is cyclic
+</item><item id="uid59"><m:math overflow="scroll"><m:mrow><m:mi>▵</m:mi><m:mrow><m:mi>A</m:mi><m:mi>F</m:mi><m:mi>E</m:mi></m:mrow><m:mo>|||</m:mo><m:mi>▵</m:mi><m:mrow><m:mi>C</m:mi><m:mi>B</m:mi><m:mi>D</m:mi></m:mrow></m:mrow></m:math></item><item id="uid60"><m:math overflow="scroll"><m:mrow><m:mfrac><m:mrow><m:mi>F</m:mi><m:mi>C</m:mi><m:mo>.</m:mo><m:mi>A</m:mi><m:mi>G</m:mi></m:mrow><m:mrow><m:mi>G</m:mi><m:mi>H</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>D</m:mi><m:mi>C</m:mi><m:mo>.</m:mo><m:mi>F</m:mi><m:mi>E</m:mi></m:mrow><m:mrow><m:mi>B</m:mi><m:mi>D</m:mi></m:mrow></m:mfrac></m:mrow></m:math></item></list>
+
+
+ </para>
+          </problem>
+          <solution id="solfhsst_id3098"> <list id="listfhsst_id3098" list-type="enumerated" number-style="arabic" class="stepwise">
+          <item> <label> In this case, the best way to show <m:math overflow="scroll"><m:mrow><m:mi>F</m:mi><m:mi>A</m:mi><m:mi>D</m:mi><m:mi>E</m:mi></m:mrow></m:math> is a cyclic quadrilateral is to look for equal angles, subtended by the same chord. </label>
+          <para id="id152529">Let <m:math overflow="scroll"><m:mrow><m:mi>∠</m:mi><m:mrow><m:mi>B</m:mi><m:mi>C</m:mi><m:mi>D</m:mi></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math></para>
+          <equation id="id152553"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>∠</m:mi>
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mi>A</m:mi>
+                        <m:mi>H</m:mi>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mi>x</m:mi><m:mspace width="2pt"/>
+                      <m:mo>(</m:mo>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi> between tangent BC and chord CE</m:mi></m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>∠</m:mi>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mi>D</m:mi>
+                        <m:mi>C</m:mi>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> alternate </m:mi>
+                      </m:mrow>
+                      <m:mi>∠</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi> FD </m:mi>
+                      <m:mo>∥</m:mo>
+                      <m:mi> CB </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>FADE</m:mi><m:mspace width="2pt"/>
+                      <m:mi>is a cyclic quad</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi> chord FE subtends equal</m:mi><m:mspace width="2pt"/>
+                      <m:mi>∠</m:mi>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">'s</m:mi>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> <item> <list id="listfhsst_id2359240" list-type="enumerated" number-style="arabic" class="stepwise"> <item> 
+<label>  To show these 2 triangles similar we will need 3 equal angles. We can use the result from the previous question. </label>
+          <para id="id152759">Let <m:math overflow="scroll"><m:mrow><m:mi>∠</m:mi><m:mrow><m:mi>F</m:mi><m:mi>E</m:mi><m:mi>A</m:mi></m:mrow><m:mo>=</m:mo><m:mi>y</m:mi></m:mrow></m:math></para>
+          <equation id="id152784"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>∠</m:mi>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mi>D</m:mi>
+                        <m:mi>A</m:mi>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mi>y</m:mi><m:mspace width="3pt"/>
+                      <m:mo>(</m:mo>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s subtended by same chord</m:mi>
+                      </m:mrow>
+                      <m:mi> AF </m:mi>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mi> in cyclic quad</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi> FADE </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>∠</m:mi>
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>D</m:mi>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mi>y</m:mi>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> corresponding </m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow> 
+                        <m:mi mathvariant="normal">'s, </m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi> FD </m:mi>
+                      <m:mo>∥</m:mo>
+                      <m:mi> CB </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>∠</m:mi>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mi>E</m:mi>
+                        <m:mi>A</m:mi>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mi>∠</m:mi>
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>D</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> <item> <label> We have already proved 1 pair of angles equal in the previous question. </label>
+          <equation id="id152952"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mi>∠</m:mi>
+                      <m:mrow>
+                        <m:mi>B</m:mi>
+                        <m:mi>C</m:mi>
+                        <m:mi>D</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>∠</m:mi>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mi>A</m:mi>
+                        <m:mi>E</m:mi>
+                      </m:mrow>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mi> above </m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> <item> <label> Proving the last set of angles equal is simply a matter of adding up the angles in the triangles. Then we have proved similarity. </label>
+          <equation id="id153010"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mi>∠</m:mi>
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>F</m:mi>
+                        <m:mi>E</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>180</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mi>y</m:mi><m:mspace width="2pt"/>
+                      <m:mo>(</m:mo>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s in</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>▵</m:mi>
+                      <m:mi> AFE </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mrow>
+                      <m:mi>∠</m:mi>
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>D</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>180</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      <m:mo>-</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mi>y</m:mi><m:mspace width="2pt"/>
+                      <m:mo>(</m:mo>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">'s in</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>▵</m:mi>
+                      <m:mi> CBD </m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>▵</m:mi>
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>F</m:mi>
+                        <m:mi>E</m:mi>
+                      </m:mrow>
+                      <m:mo>|||</m:mo><m:mspace width="2pt"/>
+                      <m:mi>▵</m:mi>
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mi>B</m:mi>
+                        <m:mi>D</m:mi>
+                      </m:mrow>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mo>(</m:mo>
+                        <m:mn>3</m:mn><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi>∠</m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">'s equal</m:mi>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> 
+</list>
+</item>
+<item> <list id="listfhsst_id23523490" list-type="enumerated" number-style="arabic" class="stepwise"> <item> <label> This equation looks like it has to do with proportionality relation of similar triangles. We already showed triangles <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>F</m:mi><m:mi>E</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>C</m:mi><m:mi>B</m:mi><m:mi>D</m:mi></m:mrow></m:math> similar in the previous question. So lets start there. </label>
+          <equation id="id153248">
+            <m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>D</m:mi>
+                        <m:mi>C</m:mi>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi>B</m:mi>
+                        <m:mi>D</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mi>A</m:mi>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mi>E</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>D</m:mi>
+                          <m:mi>C</m:mi>
+                          <m:mo>.</m:mo>
+                          <m:mi>F</m:mi>
+                          <m:mi>E</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>B</m:mi>
+                          <m:mi>D</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mi>F</m:mi>
+                      <m:mi>A</m:mi>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> <item> <label> Now we need to look for a hint about side <m:math overflow="scroll"><m:mrow><m:mi>F</m:mi><m:mi>A</m:mi></m:mrow></m:math>. Looking at triangle <m:math overflow="scroll"><m:mrow><m:mi>C</m:mi><m:mi>A</m:mi><m:mi>H</m:mi></m:mrow></m:math> we see that there is a line <m:math overflow="scroll"><m:mrow><m:mi>F</m:mi><m:mi>G</m:mi></m:mrow></m:math> intersecting it parallel to base <m:math overflow="scroll"><m:mrow><m:mi>C</m:mi><m:mi>H</m:mi></m:mrow></m:math>. This gives us another proportionality relation. </label>
+          <equation id="id153387"><m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>G</m:mi>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi>G</m:mi>
+                        <m:mi>H</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>F</m:mi>
+                          <m:mi>A</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>F</m:mi>
+                          <m:mi>C</m:mi>
+                        </m:mrow>
+                      </m:mfrac><m:mspace width="2pt"/>
+                      <m:mo>(</m:mo>
+                      <m:mi> FG </m:mi>
+                      <m:mo>∥</m:mo>
+                      <m:mi> CH </m:mi>
+                      <m:mrow><m:mspace width="2pt"/>
+                        <m:mi> splits up lines</m:mi><m:mspace width="2pt"/>
+                      </m:mrow>
+                      <m:mi> AH </m:mi><m:mspace width="2pt"/>
+                      <m:mi> and </m:mi><m:mspace width="2pt"/>
+                      <m:mi> AC </m:mi><m:mspace width="2pt"/>
+                      <m:mrow>
+                        <m:mi> proportionally </m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mi>F</m:mi>
+                      <m:mi>A</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>F</m:mi>
+                          <m:mi>C</m:mi>
+                          <m:mo>.</m:mo>
+                          <m:mi>A</m:mi>
+                          <m:mi>G</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>G</m:mi>
+                          <m:mi>H</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          </item> <item> <label>  We have 2 expressions for the side <m:math overflow="scroll"><m:mrow><m:mi>F</m:mi><m:mi>A</m:mi></m:mrow></m:math>. </label>
+          <equation id="id153518">
+            <m:math overflow="scroll" mode="display">
+              <m:mtable displaystyle="true">
+                <m:mtr>
+                  <m:mtd/>
+                  <m:mtd>
+                    <m:mo>∴</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>F</m:mi>
+                          <m:mi>C</m:mi>
+                          <m:mo>.</m:mo>
+                          <m:mi>A</m:mi>
+                          <m:mi>G</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>G</m:mi>
+                          <m:mi>H</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>D</m:mi>
+                          <m:mi>C</m:mi>
+                          <m:mo>.</m:mo>
+                          <m:mi>F</m:mi>
+                          <m:mi>E</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>B</m:mi>
+                          <m:mi>D</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          
+          </item>
+</list>
+</item>
+ </list> </solution>
+</exercise>
+        </section>
+      </section>
+    </section>
+    
+  </content>
+</document>

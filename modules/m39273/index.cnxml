@@ -1,0 +1,1112 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Solving Problems</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39273</md:content-id>
+  <md:title>Solving Problems</md:title>
+  <md:abstract/>
+  <md:uuid>b55c5f6b-a82d-41f7-b85d-70b379df82aa</md:uuid>
+</metadata>
+
+<content>
+
+    
+    <section id="cid7"><title>Using Differential Calculus to Solve Problems</title><para id="id248229">We have seen that differential calculus can be used to determine the stationary points of functions, in order to sketch their graphs. However, determining stationary points also lends itself to the solution of
+problems that require some variable to be <emphasis effect="italics">optimised</emphasis>.</para>
+      <para id="id248240">For example, if fuel used by a car is defined by:
+<equation id="id6342"><m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>v</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>80</m:mn></m:mfrac><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>v</m:mi><m:mo>+</m:mo><m:mn>245</m:mn></m:mrow></m:math></equation></para>
+      <para id="id248287">where <m:math overflow="scroll"><m:mi>v</m:mi></m:math> is the travelling speed, what is the most economical speed (that means the speed that uses the least fuel)?</para>
+      <para id="id248300">If we draw the graph of this function we find that the graph has a minimum. The speed at the minimum would then give the most economical speed.</para>
+      <para id="id248305">
+        <figure id="id248308">
+          <media id="id248308_media" alt="">
+            <image mime-type="image/png" src="../../media/MG12C7_010.png" id="id248308_onlineimage" width="592"><!-- NOTE: attribute width changes image size online (pixels). original width is 592. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/MG12C7_010.eps" id="id248308_printimage"/>
+          </media>
+        </figure>
+      </para>
+      <para id="id248314">We have seen that the coordinates of the turning point can be calculated by differentiating the function and finding the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-coordinate (speed in the case of the example) for which the derivative is 0.</para>
+      <para id="id248329">Differentiating <link target-id="id6342"/>, we get:
+<m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>v</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>40</m:mn></m:mfrac><m:mi>v</m:mi><m:mo>-</m:mo><m:mn>6</m:mn></m:mrow></m:math>
+If we set <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>v</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> we can calculate the speed that corresponds to the turning point.</para>
+      <equation id="id248400">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>f</m:mi>
+                    <m:mo>'</m:mo>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>v</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mn>3</m:mn>
+                    <m:mn>40</m:mn>
+                  </m:mfrac>
+                  <m:mi>v</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>6</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mn>0</m:mn>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mn>3</m:mn>
+                    <m:mn>40</m:mn>
+                  </m:mfrac>
+                  <m:mi>v</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>6</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>v</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>6</m:mn>
+                    <m:mo>×</m:mo>
+                    <m:mn>40</m:mn>
+                  </m:mrow>
+                  <m:mn>3</m:mn>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>80</m:mn>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id248515">This means that the most economical speed is 80 km<m:math overflow="scroll"><m:mo>·</m:mo></m:math>hr<m:math overflow="scroll"><m:msup><m:mrow/><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math>.</para>
+<para id="eip-951"><figure id="calculus-4" class="khanacademy">
+	  <title>Video on calculus - 4</title>
+	  <media id="yt-media4" display="block" alt="video on calculus 4">
+	  <flash id="yt-video4" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/1TK69SVQNPk?version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><exercise id="secfhsst_id4040"><title> Optimisation Problems </title>
+      <problem id="probfhsst_id4041">
+      <para id="id248557">The sum of two positive numbers is 10. One of the numbers is multiplied by the square of the other. If each number is greater than 0, find the numbers that make this product a maximum. </para>
+      </problem>
+      <solution id="solfhsst_id4044"> <list id="listfhsst_id4044" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Examine the problem and formulate the equations that are required </label>
+      <para id="id248582">Let the two numbers be <m:math overflow="scroll"><m:mi>a</m:mi></m:math> and <m:math overflow="scroll"><m:mi>b</m:mi></m:math>. Then we have:</para>
+      <para id="id248604">
+        <m:math overflow="scroll">
+          <m:mrow>
+            <m:mi>a</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>b</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>10</m:mn>
+          </m:mrow>
+        </m:math>
+      </para>
+      <para id="id248623">We are required to minimise the product of <m:math overflow="scroll"><m:mi>a</m:mi></m:math> and <m:math overflow="scroll"><m:mi>b</m:mi></m:math>. Call the product <m:math overflow="scroll"><m:mi>P</m:mi></m:math>. Then:</para>
+      <para id="id248653">
+        <m:math overflow="scroll">
+          <m:mrow>
+            <m:mi>P</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>a</m:mi>
+            <m:mo>·</m:mo>
+            <m:mi>b</m:mi>
+          </m:mrow>
+        </m:math>
+      </para>
+      <para id="id248673">We can solve for <m:math overflow="scroll"><m:mi>b</m:mi></m:math> from <link target-id=""/> to get:</para>
+      <para id="id248687">
+        <m:math overflow="scroll">
+          <m:mrow>
+            <m:mi>b</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>10</m:mn>
+            <m:mo>-</m:mo>
+            <m:mi>a</m:mi>
+          </m:mrow>
+        </m:math>
+      </para>
+      <para id="id248707">Substitute this into <link target-id=""/> to write <m:math overflow="scroll"><m:mi>P</m:mi></m:math> in terms of <m:math overflow="scroll"><m:mi>a</m:mi></m:math> only.</para>
+      <para id="id248730">
+        <m:math overflow="scroll">
+          <m:mrow>
+            <m:mi>P</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>a</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>10</m:mn>
+              <m:mo>-</m:mo>
+              <m:mi>a</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>10</m:mn>
+            <m:mi>a</m:mi>
+            <m:mo>-</m:mo>
+            <m:msup>
+              <m:mi>a</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:math>
+      </para>
+      </item> <item> <label> Differentiate </label>
+      <para id="id248777">The derivative of <link target-id=""/> is:
+<m:math overflow="scroll"><m:mrow><m:msup><m:mi>P</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>a</m:mi></m:mrow></m:math></para>
+      </item> <item> <label> Find the stationary point </label>
+      <para id="id248819">Set <m:math overflow="scroll"><m:mrow><m:msup><m:mi>P</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> to find the value of <m:math overflow="scroll"><m:mi>a</m:mi></m:math> which makes <m:math overflow="scroll"><m:mi>P</m:mi></m:math> a maximum.</para>
+      <equation id="id248867">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>P</m:mi>
+                    <m:mo>'</m:mo>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>a</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>10</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>a</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mn>0</m:mn>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>10</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>a</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mi>a</m:mi>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>10</m:mn>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>a</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mfrac>
+                  <m:mn>10</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>a</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>5</m:mn>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id248991">Substitute into <link target-id=""/> to solve for the width.</para>
+      <equation id="id248997">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>b</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>10</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mi>a</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>10</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mn>5</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>5</m:mn>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      </item> <item> <label> Write the final answer </label>
+      <para id="id249060">The product is maximised if <m:math overflow="scroll"><m:mi>a</m:mi></m:math> and <m:math overflow="scroll"><m:mi>b</m:mi></m:math> are both equal to 5. </para>
+      </item> </list> </solution>
+</exercise>
+<exercise id="secfhsst_id4247"><title> Optimisation Problems </title>
+      <problem id="probfhsst_id4248">
+      <para id="id249106">Michael wants to start a vegetable garden, which he decides to fence off in the shape of a rectangle from the rest of the garden. Michael only has 160 m of fencing, so he decides to use a wall as one border of the vegetable garden. Calculate the width and length of the garden that corresponds to largest possible area that Michael can fence off.</para>
+      <para id="id249117">
+        <figure id="id249121">
+          <media id="id249121_media" alt="">
+            <image mime-type="image/png" src="../../media/MG12C7_011.png" id="id249121_onlineimage" width="144"><!-- NOTE: attribute width changes image size online (pixels). original width is 144. --></image>
+            <image mime-type="application/postscript" for="pdf" src="../../media/MG12C7_011.eps" id="id249121_printimage"/>
+          </media>
+        </figure>
+      </para>
+      
+      </problem>
+      <solution id="solfhsst_id4260"> <list id="listfhsst_id4260" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Examine the problem and formulate the equations that are required </label>
+      <para id="id249149">The important pieces of information given are related to the area and modified perimeter of the garden. We know that the area of the garden is:
+<m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mi>w</m:mi><m:mo>·</m:mo><m:mi>l</m:mi></m:mrow></m:math>
+We are also told that the fence covers only 3 sides and the three sides should add up to 160 m. This can be written as:
+<m:math overflow="scroll"><m:mrow><m:mn>160</m:mn><m:mo>=</m:mo><m:mi>w</m:mi><m:mo>+</m:mo><m:mi>l</m:mi><m:mo>+</m:mo><m:mi>l</m:mi></m:mrow></m:math></para>
+      <para id="id249197">However, we can use <link target-id=""/> to write <m:math overflow="scroll"><m:mi>w</m:mi></m:math> in terms of <m:math overflow="scroll"><m:mi>l</m:mi></m:math>:
+<m:math overflow="scroll"><m:mrow><m:mi>w</m:mi><m:mo>=</m:mo><m:mn>160</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>l</m:mi></m:mrow></m:math>
+Substitute <link target-id=""/> into <link target-id=""/> to get:
+<m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mn>160</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>l</m:mi><m:mo>)</m:mo></m:mrow><m:mi>l</m:mi><m:mo>=</m:mo><m:mn>160</m:mn><m:mi>l</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:msup><m:mi>l</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+      </item> <item> <label> Differentiate </label>
+      <para id="id249294">Since we are interested in maximising the area, we differentiate <link target-id=""/> to get:
+<m:math overflow="scroll"><m:mrow><m:msup><m:mi>A</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>l</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>160</m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>l</m:mi></m:mrow></m:math></para>
+      </item> <item> <label> Find the stationary point </label>
+      <para id="id249336">To find the stationary point, we set <m:math overflow="scroll"><m:mrow><m:msup><m:mi>A</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>l</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and solve for the value of <m:math overflow="scroll"><m:mi>l</m:mi></m:math> that maximises the area.</para>
+      <equation id="id249377">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>A</m:mi>
+                    <m:mo>'</m:mo>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>l</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>160</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mn>4</m:mn>
+                  <m:mi>l</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mn>0</m:mn>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>160</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mn>4</m:mn>
+                  <m:mi>l</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo>∴</m:mo>
+                  <m:mn>4</m:mn>
+                  <m:mi>l</m:mi>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>160</m:mn>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>l</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mfrac>
+                  <m:mn>160</m:mn>
+                  <m:mn>4</m:mn>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>l</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>40</m:mn>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="id249508">Substitute into <link target-id=""/> to solve for the width.</para>
+      <equation id="id249514">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>w</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>160</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>l</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>160</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mo>(</m:mo>
+                  <m:mn>40</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>160</m:mn>
+                  <m:mo>-</m:mo>
+                  <m:mn>80</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>80</m:mn>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      </item> <item> <label> Write the final answer </label>
+      <para id="id249607">A width of 80 m and a length of 40 m will yield the maximal area fenced off.
+ </para>
+      </item> </list> </solution>
+</exercise>
+<section id="secfhsst_id4435"><title> Solving Optimisation Problems using Differential Calculus </title>
+      <list id="id249632" display="block" list-type="enumerated">
+        <item id="uid56">The sum of two positive numbers is 20. One of the numbers is multiplied by the square of the other. Find the numbers that make this product a maximum.
+</item>
+        <item id="uid57">A wooden block is made as shown in the diagram. The ends are right-angled triangles having sides <m:math overflow="scroll"><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:math>, <m:math overflow="scroll"><m:mrow><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mn>5</m:mn><m:mi>x</m:mi></m:mrow></m:math>. The length of the block is <m:math overflow="scroll"><m:mi>y</m:mi></m:math>. The total surface area of the block is <m:math overflow="scroll"><m:mrow><m:mn>3600</m:mn><m:msup><m:mrow><m:mi> cm </m:mi></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math>.
+<figure id="id249728"><media id="id249728_media" alt=""><image mime-type="image/png" src="../../media/MG12C7_012.png" id="id249728_onlineimage" width="118"><!-- NOTE: attribute width changes image size online (pixels). original width is 118. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C7_012.eps" id="id249728_printimage"/></media></figure><list id="id249734" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid58">Show that <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:mn>300</m:mn><m:mo>-</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mi>x</m:mi></m:mfrac></m:mstyle></m:mrow></m:math>.
+</item><item id="uid59">Find the value of <m:math overflow="scroll"><m:mi>x</m:mi></m:math> for which the block will have a maximum volume. (Volume = area of base <m:math overflow="scroll"><m:mo>×</m:mo></m:math> height.)
+</item></list></item>
+        <item id="uid60">The diagram shows the plan for a verandah which is to be built on the corner of a cottage. A railing <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi><m:mi>D</m:mi><m:mi>E</m:mi></m:mrow></m:math> is to be constructed around the four edges of the verandah.
+<figure id="id249852"><media id="id249852_media" alt=""><image mime-type="image/png" src="../../media/MG12C7_013.png" id="id249852_onlineimage" width="154"><!-- NOTE: attribute width changes image size online (pixels). original width is 154. --></image><image mime-type="application/postscript" for="pdf" src="../../media/MG12C7_013.eps" id="id249852_printimage"/></media></figure>
+If <m:math overflow="scroll"><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi><m:mo>=</m:mo><m:mi>D</m:mi><m:mi>E</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>B</m:mi><m:mi>C</m:mi><m:mo>=</m:mo><m:mi>C</m:mi><m:mi>D</m:mi><m:mo>=</m:mo><m:mi>y</m:mi></m:mrow></m:math>, and the length of the railing must be 30 metres, find the values of <m:math overflow="scroll"><m:mi>x</m:mi></m:math> and <m:math overflow="scroll"><m:mi>y</m:mi></m:math> for which the verandah will have a maximum area.
+</item>
+      </list>
+      
+</section>
+      <section id="uid61">
+        <title>Rate of Change problems</title>
+        <para id="id249944">Two concepts were discussed in this chapter: <emphasis effect="bold">Average</emphasis> rate of change = <m:math overflow="scroll"><m:mfrac><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>b</m:mi><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>-</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:math> and <emphasis effect="bold">Instantaneous</emphasis> rate of change = <m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>h</m:mi><m:mo>→</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mfrac><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>h</m:mi></m:mfrac></m:mrow></m:math>. When we mention <emphasis effect="italics">rate of change</emphasis>, the latter is implied. Instantaneous rate of change is the <emphasis effect="bold">derivative</emphasis>. When <emphasis effect="italics">Average rate of change</emphasis> is required, it will be specifically refer to as <emphasis effect="bold">average</emphasis> rate of change.</para>
+        <para id="id250074">Velocity is one of the most common forms of rate of change. Again, <emphasis effect="bold">average</emphasis> velocity = <emphasis effect="bold">average</emphasis> rate of change and <emphasis effect="bold">instantaneous</emphasis> velocity = <emphasis effect="bold">instantaneous</emphasis> rate of change = <emphasis effect="bold">derivative</emphasis>. Velocity refers to the increase of distance(s) for a corresponding increade in time (t).
+The notation commonly used for this is: <m:math overflow="scroll"><m:mrow><m:mi>v</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>s</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>t</m:mi></m:mrow></m:mfrac></m:mstyle><m:mo>=</m:mo><m:msup><m:mi>s</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+        <para id="id250163">where <m:math overflow="scroll"><m:mrow><m:msup><m:mi>s</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is the position function. Acceleration is the change in velocity for a corersponding increase in time. Therefore, acceleration is the derivative of velocity <m:math overflow="scroll"><m:mrow><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>v</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> This implies that acceleration is the second derivative of the distance(s).</para>
+<exercise id="secfhsst_id4456"><title> Rate of Change </title>
+        <problem id="probfhsst_id4457">
+        <para id="id250239">The height (in metres) of a golf ball that is hit into the air after <m:math overflow="scroll"><m:mi>t</m:mi></m:math> seconds, is given by <m:math overflow="scroll"><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>20</m:mn><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>. Determine</para>
+        <list id="id250290" display="block" list-type="enumerated">
+          <item id="uid62">the average velocity of the ball during the first two seconds
+</item>
+          <item id="uid63">the velocity of the ball after 1,5 seconds
+</item>
+          <item id="uid64">when the velocity is zero
+</item>
+          <item id="uid65">the velocity at which the ball hits the ground
+</item>
+          <item id="uid66">the acceleration of the ball
+</item>
+        </list>
+        
+        </problem>
+        <solution id="solfhsst_id4473"> <list id="listfhsst_id4473" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Average velocity </label>
+        <equation id="id250376">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mrow>
+                      <m:mi>a</m:mi>
+                      <m:mi>v</m:mi>
+                      <m:mi>e</m:mi>
+                    </m:mrow>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>h</m:mi>
+                      <m:mo>(</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>)</m:mo>
+                      <m:mo>-</m:mo>
+                      <m:mi>h</m:mi>
+                      <m:mo>(</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mo>-</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mo>[</m:mo>
+                        <m:mn>20</m:mn>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mo>-</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mn>2</m:mn>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>]</m:mo>
+                      </m:mrow>
+                      <m:mo>-</m:mo>
+                      <m:mrow>
+                        <m:mo>[</m:mo>
+                        <m:mn>20</m:mn>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mn>0</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mo>-</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>]</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>40</m:mn>
+                      <m:mo>-</m:mo>
+                      <m:mn>20</m:mn>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>10</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mi>m</m:mi>
+                    <m:msup>
+                      <m:mi>s</m:mi>
+                      <m:mrow>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        </item> <item> <label> Instantaneous Velocity </label>
+        <equation id="id250575">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>v</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>t</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>d</m:mi>
+                      <m:mi>h</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mi>d</m:mi>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>20</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>10</m:mn>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id250638">Velocity after 1,5 seconds:</para>
+        <equation id="id250644">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>v</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>20</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>10</m:mn>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>5</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mi>m</m:mi>
+                    <m:msup>
+                      <m:mi>s</m:mi>
+                      <m:mrow>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        </item> <item> <label> Zero velocity </label>
+        <equation id="id250731">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>v</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>t</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>20</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>10</m:mn>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>10</m:mn>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>20</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>t</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>2</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id250822">Therefore the velocity is zero after 2 seconds</para>
+        </item> <item> <label> Ground velocity </label>
+        <para id="id250832">The ball hits the ground when <m:math overflow="scroll"><m:mrow><m:mi>h</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+        <equation id="id250856">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>20</m:mn>
+                    <m:mi>t</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:msup>
+                      <m:mi>t</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>5</m:mn>
+                    <m:mi>t</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mi>t</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>t</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mrow>
+                    <m:mi>o</m:mi>
+                    <m:mi>r</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mi>t</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id250962">The ball hits the ground after 4 seconds. The velocity after 4 seconds will be:</para>
+        <equation id="id250968">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>v</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>h</m:mi>
+                      <m:mo>'</m:mo>
+                    </m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>4</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>20</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>10</m:mn>
+                    <m:mo>(</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mn>20</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mi>m</m:mi>
+                    <m:msup>
+                      <m:mi>s</m:mi>
+                      <m:mrow>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id251070">The ball hits the gound at a speed of <m:math overflow="scroll"><m:mrow><m:mn>20</m:mn><m:mi>m</m:mi><m:msup><m:mi>s</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:math>. Notice that the sign of the velocity is negative which means that the ball is moving downward (the reverse of upward, which is when the velocity is positive).</para>
+        </item> <item> <label> Acceleration </label>
+        <equation id="id251104">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>a</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>v</m:mi>
+                      <m:mo>'</m:mo>
+                    </m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>t</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mn>10</m:mn>
+                    <m:mspace width="3.33333pt"/>
+                    <m:mi>m</m:mi>
+                    <m:msup>
+                      <m:mi>s</m:mi>
+                      <m:mrow>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id251175">Just because gravity is constant does not mean we should think of acceleration as a constant. We should still consider it a function.
+ </para>
+        </item> </list> </solution>
+</exercise>
+      </section>
+    </section>
+    <section id="cid8">
+      <title>End of Chapter Exercises</title>
+      <list id="id251203" display="block" list-type="enumerated"><item id="uid67">Determine <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> from <emphasis effect="bold">first principles</emphasis> if:
+<list id="id251248" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid68"><m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi></m:mrow></m:math></item><item id="uid69"><m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></item></list></item>
+        <item id="uid70">Given: <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:math>, find <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> using <emphasis effect="italics">first principles</emphasis>.
+</item>
+        <item id="uid71">Determine <m:math overflow="scroll"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow></m:mfrac></m:math> if:
+<list id="id251446" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid72"><m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow></m:math></item><item id="uid73"><m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:msqrt><m:mi>x</m:mi></m:msqrt><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow><m:msqrt><m:mi>x</m:mi></m:msqrt></m:mfrac></m:mrow></m:math></item></list></item>
+        <item id="uid74">Given: <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math><list id="id251590" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid75">Calculate <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math>, and hence solve the equation<m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item><item id="uid76">Determine <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item><item id="uid77">Sketch the graph of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> neatly and clearly, showing the co-ordinates of the turning points as well as the intercepts on both axes.
+</item><item id="uid78">Determine the co-ordinates of the points on the graph of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> where the gradient is 9.
+</item></list></item>
+        <item id="uid79">Given: <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math>.
+The <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-intercepts of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> are: (-1;0) (<m:math overflow="scroll"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:math>;0) and (3;0).
+<list id="id251815" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid80">Determine the co-ordinates of the turning points of <m:math overflow="scroll"><m:mi>f</m:mi></m:math>.
+</item><item id="uid81">Draw a neat sketch graph of <m:math overflow="scroll"><m:mi>f</m:mi></m:math>. Clearly indicate the co-ordinates of the intercepts with the axes, as well as the co-ordinates of the turning points.
+</item><item id="uid82">For which values of <m:math overflow="scroll"><m:mi>k</m:mi></m:math> will the equation <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>k</m:mi></m:mrow></m:math> , have exactly two real roots?
+</item><item id="uid83">Determine the equation of the tangent to the graph of
+<m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> at the point where <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>.
+</item></list></item>
+        <item id="uid84">Answer the following questions:
+          <list id="id251989" display="block" list-type="enumerated" number-style="lower-alpha">
+            <item id="uid85">Sketch the graph of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>24</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>20</m:mn></m:mrow></m:math>, showing all intercepts with the axes and turning points.
+</item>
+            <item id="uid86">Find the equation of the tangent to <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> at <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math>.
+</item>
+          </list>
+        </item>
+        <item id="uid87">Calculate:
+<m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>1</m:mn></m:mrow></m:msub><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow></m:math></item>
+        <item id="uid88">Given:
+<m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow></m:math><list id="id252201" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid89">Use the definition of the derivative to calculate <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.
+</item><item id="uid90">Hence, calculate the co-ordinates of the point at which the gradient of the tangent to the graph of <m:math overflow="scroll"><m:mi>f</m:mi></m:math> is 7.
+</item></list></item>
+        <item id="uid91">If <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:msqrt><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:msqrt></m:mrow></m:math>, determine <m:math overflow="scroll"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow></m:mfrac></m:math></item>
+        <item id="uid92">Given: <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mrow><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math>.
+Calculate <m:math overflow="scroll"><m:mrow><m:msup><m:mi>g</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.
+</item>
+        <item id="uid93">Given:       <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow></m:math><list id="id252442" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid94">Find:       <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item><item id="uid95">Solve:       <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item></list></item>
+        <item id="uid96">Find <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> for each of the following:
+<list id="id252574" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid97"><m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mroot><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mn>5</m:mn></m:mroot><m:mn>3</m:mn></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mn>10</m:mn></m:mrow></m:math></item><item id="uid98"><m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mfrac></m:mstyle></m:mrow></m:math></item></list></item>
+        <item id="uid99">Determine the minimum value of the sum of a <emphasis effect="italics">positive</emphasis> number and its reciprocal.
+</item>
+        <item id="uid100">If the displacement <m:math overflow="scroll"><m:mi>s</m:mi></m:math> (in metres) of a particle at time <m:math overflow="scroll"><m:mi>t</m:mi></m:math> (in seconds) is governed by the equation <m:math overflow="scroll"><m:mrow><m:mi>s</m:mi><m:mo>=</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle><m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>t</m:mi></m:mrow></m:math>, find its acceleration after 2 seconds. (Acceleration is the rate of change of velocity, and velocity is the rate of change of displacement.)
+</item>
+        <item id="uid101">After doing some research, a transport company has determined that the rate at which petrol is consumed by one of its large carriers, travelling at an average speed of <m:math overflow="scroll"><m:mi>x</m:mi></m:math> km per hour, is given by:
+<m:math overflow="scroll"><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>55</m:mn><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mi>x</m:mi><m:mn>200</m:mn></m:mfrac><m:mspace width="1.em"/><m:mrow><m:mi> litres </m:mi><m:mi> per </m:mi><m:mi> kilometre </m:mi></m:mrow></m:mrow></m:math><list id="id252880" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid103">Assume that the petrol costs R4,00 per litre and the driver earns R18,00 per hour (travelling time). Now deduce that the total cost, <m:math overflow="scroll"><m:mi>C</m:mi></m:math>, in Rands, for a 2 000 km trip is given by:
+<m:math overflow="scroll"><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>256000</m:mn><m:mi>x</m:mi></m:mfrac><m:mo>+</m:mo><m:mn>40</m:mn><m:mi>x</m:mi></m:mrow></m:math></item><item id="uid104">Hence determine the average speed to be maintained to effect a minimum
+cost for a 2 000 km trip.
+</item></list></item>
+            <item id="uid105">During an experiment the temperature <m:math overflow="scroll"><m:mi>T</m:mi></m:math> (in degrees Celsius), varies with time <m:math overflow="scroll"><m:mi>t</m:mi></m:math> (in hours), according to the formula:
+<m:math overflow="scroll"><m:mrow><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>t</m:mi><m:mo>-</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mspace width="1.em"/><m:mi>t</m:mi><m:mo>∈</m:mo><m:mrow><m:mo>[</m:mo><m:mn>1</m:mn><m:mo>;</m:mo><m:mn>10</m:mn><m:mo>]</m:mo></m:mrow></m:mrow></m:math><list id="id253045" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid106">Determine an expression for the rate of change of temperature with time.
+</item><item id="uid107">During which time interval was the temperature dropping?
+</item></list></item>
+        <item id="uid108">The depth, <m:math overflow="scroll"><m:mi>d</m:mi></m:math>, of water in a kettle <m:math overflow="scroll"><m:mi>t</m:mi></m:math> minutes after it starts to boil, is given by <m:math overflow="scroll"><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>86</m:mn><m:mo>-</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mstyle><m:mi>t</m:mi><m:mo>-</m:mo><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mstyle><m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math>, where <m:math overflow="scroll"><m:mi>d</m:mi></m:math> is measured in millimetres.
+<list id="id253168" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid109">How many millimetres of water are there in the kettle just before it starts to boil?
+</item><item id="uid110">As the water boils, the level in the kettle drops.
+Find the <emphasis effect="italics">rate</emphasis> at which the water level is decreasing when <m:math overflow="scroll"><m:mi>t</m:mi></m:math> = 2 minutes.
+</item><item id="uid111">How many minutes after the kettle starts boiling will the water level be dropping at a rate of <m:math overflow="scroll"><m:mrow><m:mn>12</m:mn><m:mstyle scriptlevel="0" displaystyle="false"><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mstyle></m:mrow></m:math>
+mm/minute?
+</item></list></item>
+      </list>
+    </section>
+  </content>
+</document>

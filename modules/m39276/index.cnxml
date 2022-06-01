@@ -1,0 +1,886 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Factor Theorem Exercises, Solving Cubic Equations</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39276</md:content-id>
+  <md:title>Factor Theorem Exercises, Solving Cubic Equations</md:title>
+  <md:abstract/>
+  <md:uuid>8a2a07b9-cd88-4f35-8cfd-943ad80e1d43</md:uuid>
+</metadata>
+
+<content>
+ 
+    <section id="cid5">
+      <title>Exercises - Using Factor Theorem</title>
+      <list id="id66864" display="block" list-type="enumerated">
+        <item id="uid3">Find the remainder when <m:math overflow="scroll"><m:mrow><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow></m:math> is divided by <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math>.
+</item>
+        <item id="uid4">Use the factor theorem to factorise <m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math> completely.
+</item>
+        <item id="uid5">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mi>f</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>2</m:mn>
+              <m:msup>
+                <m:mi>x</m:mi>
+                <m:mn>3</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:msup>
+                <m:mi>x</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>-</m:mo>
+              <m:mn>5</m:mn>
+              <m:mi>x</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+            </m:mrow>
+          </m:math>
+          <list id="id67038" display="block" list-type="enumerated">
+            <item id="uid6">Find <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math>.
+</item>
+            <item id="uid7">Factorise <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> completely
+</item>
+          </list>
+        </item>
+        <item id="uid8">Use the Factor Theorem to determine all the factors of the following expression:
+<equation id="id67111"><m:math overflow="scroll" mode="display"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>17</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>15</m:mn></m:mrow></m:math></equation></item>
+        <item id="uid9">Complete: If <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> is a polynomial and <m:math overflow="scroll"><m:mi>p</m:mi></m:math> is a number such that <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>p</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, then <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow></m:math> is .....
+</item>
+      </list>
+    </section>
+    <section id="cid6">
+      <title>Solving Cubic Equations</title>
+      <para id="id67236">Once you know how to factorise cubic polynomials, it is also easy to solve cubic equations of the kind</para>
+      <equation id="id67240">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>a</m:mi>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mi>b</m:mi>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mi>c</m:mi>
+            <m:mi>x</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>d</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+<exercise id="secfhsst_id1285"><title> Solution of Cubic Equations </title>
+      <problem id="probfhsst_id1286">
+      <para id="id67299">Solve</para>
+      <equation id="id67304">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mn>6</m:mn>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>5</m:mn>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>17</m:mn>
+            <m:mi>x</m:mi>
+            <m:mo>+</m:mo>
+            <m:mn>6</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      </problem>
+      <solution id="solfhsst_id1315"> <list id="listfhsst_id1315" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Find one factor using the Factor Theorem </label>
+      <para id="id67376">Try</para>
+      <equation id="id67380">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>f</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>6</m:mn>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>5</m:mn>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>17</m:mn>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>6</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>6</m:mn>
+            <m:mo>-</m:mo>
+            <m:mn>5</m:mn>
+            <m:mo>-</m:mo>
+            <m:mn>17</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>6</m:mn>
+            <m:mo>=</m:mo>
+            <m:mo>-</m:mo>
+            <m:mn>10</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id67473">Therefore <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> is NOT a factor.</para>
+      <para id="id67497">Try</para>
+      <equation id="id67503">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>f</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>6</m:mn>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>5</m:mn>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>17</m:mn>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>6</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>48</m:mn>
+            <m:mo>-</m:mo>
+            <m:mn>20</m:mn>
+            <m:mo>-</m:mo>
+            <m:mn>34</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>6</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id67594">Therefore <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:math> IS a factor.</para>
+      </item> <item> <label> Division by inspection </label>
+      <para id="id67622">
+        <m:math overflow="scroll">
+          <m:mrow>
+            <m:mn>6</m:mn>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>5</m:mn>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>17</m:mn>
+            <m:mi>x</m:mi>
+            <m:mo>+</m:mo>
+            <m:mn>6</m:mn>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>-</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mspace width="1.em"/>
+              <m:mspace width="1.em"/>
+              <m:mspace width="1.em"/>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </para>
+      <para id="id67691">The first term in the second bracket must be <m:math overflow="scroll"><m:mrow><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> to give <m:math overflow="scroll"><m:mrow><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:math> if one works backwards.</para>
+      <para id="id67732">The last term in the second bracket must be <m:math overflow="scroll"><m:mrow><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow></m:math> because <m:math overflow="scroll"><m:mrow><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>×</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math>.</para>
+      <para id="id67775">So we have <m:math overflow="scroll"><m:mrow><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>17</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mo>?</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</para>
+      <para id="id67860">Now, we must find the coefficient of the middle term (<m:math overflow="scroll"><m:mi>x</m:mi></m:math>).</para>
+      <para id="id67874"><m:math overflow="scroll"><m:mrow><m:mrow><m:mo>(</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>)</m:mo></m:mrow></m:mrow></m:math> gives <m:math overflow="scroll"><m:mrow><m:mo>-</m:mo><m:mn>12</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>. So, the coefficient of the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-term must be 7.</para>
+      <para id="id67939">So, <m:math overflow="scroll"><m:mrow><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>17</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</para>
+      </item> <item> <label> Factorise fully </label>
+      <para id="id68030"><m:math overflow="scroll"><m:mrow><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow></m:math> can be further factorised to <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math>,</para>
+      <para id="id68093">and we are now left with <m:math overflow="scroll"><m:mrow><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>17</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+      </item> <item> <label> Solve the equation </label>
+      <equation id="id68183">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mn>6</m:mn>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>-</m:mo>
+                  <m:mn>5</m:mn>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>-</m:mo>
+                  <m:mn>17</m:mn>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>6</m:mn>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>0</m:mn>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mo>)</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mo>)</m:mo>
+                  <m:mo>(</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mi>x</m:mi>
+                  <m:mo>-</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>0</m:mn>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>x</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>;</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:mfrac>
+                  <m:mo>;</m:mo>
+                  <m:mo>-</m:mo>
+                  <m:mfrac>
+                    <m:mn>3</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      
+      </item> </list> </solution>
+</exercise>
+      <para id="id68344">Sometimes it is not possible to factorise the trinomial ("second bracket"). This is when the quadratic formula</para>
+      <equation id="id68348">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mi>b</m:mi>
+                <m:mo>±</m:mo>
+                <m:msqrt>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>b</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mi>a</m:mi>
+                    <m:mi>c</m:mi>
+                  </m:mrow>
+                </m:msqrt>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mi>a</m:mi>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id68396">can be used to solve the cubic equation fully.</para>
+      <para id="id68402">For example:</para>
+<exercise id="secfhsst_id1596"><title> Solution of Cubic Equations </title>
+      <problem id="probfhsst_id1597">
+      <para id="id68420">Solve for <m:math overflow="scroll"><m:mi>x</m:mi></m:math>: <m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:mrow></m:math> </para>
+      </problem>
+      <solution id="solfhsst_id1600"> <list id="listfhsst_id1600" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Find one factor using the Factor Theorem </label>
+      <para id="id68497">Try</para>
+      <equation id="id68500">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>f</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>2</m:mn>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>6</m:mn>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>4</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+            <m:mo>-</m:mo>
+            <m:mn>2</m:mn>
+            <m:mo>-</m:mo>
+            <m:mn>6</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>4</m:mn>
+            <m:mo>=</m:mo>
+            <m:mo>-</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id68592">Therefore <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> is NOT a factor.</para>
+      <para id="id68616">Try</para>
+      <equation id="id68621">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>f</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>2</m:mn>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>6</m:mn>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>4</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>8</m:mn>
+            <m:mo>-</m:mo>
+            <m:mn>8</m:mn>
+            <m:mo>-</m:mo>
+            <m:mn>12</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>4</m:mn>
+            <m:mo>=</m:mo>
+            <m:mo>-</m:mo>
+            <m:mn>8</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id68712">Therefore <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:math> is NOT a factor.</para>
+      <equation id="id68736">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:mi>f</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mo>-</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mo>-</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>2</m:mn>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mo>-</m:mo>
+                <m:mn>2</m:mn>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>6</m:mn>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mo>-</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>4</m:mn>
+            <m:mo>=</m:mo>
+            <m:mo>-</m:mo>
+            <m:mn>8</m:mn>
+            <m:mo>-</m:mo>
+            <m:mn>8</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>12</m:mn>
+            <m:mo>+</m:mo>
+            <m:mn>4</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id68835">Therefore <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:math> IS a factor.</para>
+      </item> <item> <label> Division by inspection </label>
+      <para id="id68863">
+        <m:math overflow="scroll">
+          <m:mrow>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>2</m:mn>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>-</m:mo>
+            <m:mn>6</m:mn>
+            <m:mi>x</m:mi>
+            <m:mo>+</m:mo>
+            <m:mn>4</m:mn>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mspace width="1.em"/>
+              <m:mspace width="1.em"/>
+              <m:mspace width="1.em"/>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </para>
+      <para id="id68930">The first term in the second bracket must be <m:math overflow="scroll"><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:math> to give <m:math overflow="scroll"><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:math>.</para>
+      <para id="id68965">The last term in the second bracket must be 2 because <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:mo>×</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math>.</para>
+      <para id="id68992">So we have <m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mo>?</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</para>
+      <para id="id69072">Now, we must find the coefficient of the middle term (<m:math overflow="scroll"><m:mi>x</m:mi></m:math>).</para>
+      <para id="id69087"><m:math overflow="scroll"><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>)</m:mo></m:mrow></m:mrow></m:math> gives <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>. So, the coefficient of the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-term must be <m:math overflow="scroll"><m:mrow><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow></m:math>. (<m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>)</para>
+      <para id="id69200">So <m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</para>
+      <para id="id69280"><m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math> cannot be factorised any futher and we are now left with</para>
+      <para id="id69311">
+        <m:math overflow="scroll">
+          <m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:msup>
+                <m:mi>x</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>-</m:mo>
+              <m:mn>4</m:mn>
+              <m:mi>x</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </para>
+      </item> <item> <label> Solve the equation </label>
+      <equation id="id69365">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>0</m:mn>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mo>)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                  <m:mspace width="3.33333pt"/>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mrow>
+                  <m:mi>o</m:mi>
+                  <m:mi>r</m:mi>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mspace width="3.33333pt"/>
+                  <m:mo>(</m:mo>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>-</m:mo>
+                  <m:mn>4</m:mn>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mo>)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      </item> <item> <label> Apply the quadratic formula for the second bracket </label>
+      <para id="id69494">Always write down the formula first and then substitute the values of <m:math overflow="scroll"><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mi>c</m:mi></m:math>.</para>
+      <equation id="id69522">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>x</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mi>b</m:mi>
+                    <m:mo>±</m:mo>
+                    <m:msqrt>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mi>b</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>-</m:mo>
+                        <m:mn>4</m:mn>
+                        <m:mi>a</m:mi>
+                        <m:mi>c</m:mi>
+                      </m:mrow>
+                    </m:msqrt>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>a</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mo>-</m:mo>
+                      <m:mn>4</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>±</m:mo>
+                    <m:msqrt>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mo>-</m:mo>
+                            <m:mn>4</m:mn>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>-</m:mo>
+                        <m:mn>4</m:mn>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mn>1</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mn>2</m:mn>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:msqrt>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>4</m:mn>
+                    <m:mo>±</m:mo>
+                    <m:msqrt>
+                      <m:mn>8</m:mn>
+                    </m:msqrt>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>±</m:mo>
+                  <m:msqrt>
+                    <m:mn>2</m:mn>
+                  </m:msqrt>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      </item> <item> <label> Final solutions </label>
+      <para id="id69694"><m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mspace width="3.33333pt"/><m:mi>o</m:mi><m:mi>r</m:mi><m:mspace width="3.33333pt"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>±</m:mo><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow></m:math>
+ </para>
+      </item> </list> </solution>
+</exercise>
+      <section id="uid10">
+        <title>Exercises - Solving of Cubic Equations</title>
+        <list id="id69756" display="block" list-type="enumerated">
+          <item id="uid11">Solve for <m:math overflow="scroll"><m:mi>x</m:mi></m:math>: <m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+          <item id="uid12">Solve for <m:math overflow="scroll"><m:mi>y</m:mi></m:math>: <m:math overflow="scroll"><m:mrow><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>3</m:mn><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>16</m:mn><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>12</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+          <item id="uid13">Solve for <m:math overflow="scroll"><m:mi>m</m:mi></m:math>: <m:math overflow="scroll"><m:mrow><m:msup><m:mi>m</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:msup><m:mi>m</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>m</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></item>
+          <item id="uid14">Solve for <m:math overflow="scroll"><m:mi>x</m:mi></m:math>: <m:math overflow="scroll"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+<note id="notfhsst_id2050" type="tip">:</note>Remove brackets and write as an equation equal to zero.
+</item>
+          <item id="uid15">Solve for <m:math overflow="scroll"><m:mi>x</m:mi></m:math> if <m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math></item>
+        </list>
+      </section>
+    </section>
+    <section id="cid7">
+      <title>End of Chapter Exercises</title>
+      <list id="id70082" display="block" list-type="enumerated">
+        <item id="uid16">Solve for <m:math overflow="scroll"><m:mi>x</m:mi></m:math>: <m:math overflow="scroll"><m:mrow><m:mn>16</m:mn><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item>
+        <item id="uid17">
+          <list id="id70154" display="block" list-type="enumerated">
+            <item id="uid18">Show that <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:math> is a factor of <m:math overflow="scroll"><m:mrow><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>11</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow></m:math></item>
+            <item id="uid19">Hence, by factorising completely, solve the equation
+<equation id="id70235"><m:math overflow="scroll" mode="display"><m:mrow><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>11</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></equation></item>
+          </list>
+        </item>
+        <item id="uid20"><m:math overflow="scroll"><m:mrow><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mi>Q</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>R</m:mi></m:mrow></m:math> for all values of <m:math overflow="scroll"><m:mi>x</m:mi></m:math>. What is the value of <m:math overflow="scroll"><m:mi>R</m:mi></m:math>?
+</item>
+        <item id="uid21">
+          <list id="id70388" display="block" list-type="enumerated">
+            <item id="uid22">Use the factor theorem to solve the following equation for <m:math overflow="scroll"><m:mi>m</m:mi></m:math>:
+<equation id="id70413"><m:math overflow="scroll" mode="display"><m:mrow><m:mn>8</m:mn><m:msup><m:mi>m</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>7</m:mn><m:msup><m:mi>m</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>17</m:mn><m:mi>m</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></equation></item>
+            <item id="uid23">Hence, or otherwise, solve for <m:math overflow="scroll"><m:mi>x</m:mi></m:math>:
+<equation id="id70480"><m:math overflow="scroll" mode="display"><m:mrow><m:msup><m:mn>2</m:mn><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:msup><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>·</m:mo><m:msup><m:mn>2</m:mn><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>17</m:mn><m:mo>·</m:mo><m:msup><m:mn>2</m:mn><m:mi>x</m:mi></m:msup></m:mrow></m:math></equation></item>
+          </list>
+        </item>
+        <item id="uid24"><emphasis effect="bold">A challenge</emphasis>:
+Determine the values of <m:math overflow="scroll"><m:mrow><m:mi>p</m:mi><m:mspace width="0.277778em"/></m:mrow></m:math> for which the function
+<equation id="id70576"><m:math overflow="scroll" mode="display"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msup><m:mi>p</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mi>p</m:mi><m:mo>-</m:mo><m:mn>7</m:mn><m:mo>)</m:mo></m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow></m:math></equation>
+leaves a remainder of 9 when it is divided by <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow></m:math>.
+</item>
+      </list>
+    </section>
+  </content>
+</document>

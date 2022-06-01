@@ -1,0 +1,2004 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Differentiation (First Principles, Rules) and Sketching Graphs</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m39313</md:content-id>
+  <md:title>Differentiation (First Principles, Rules) and Sketching Graphs</md:title>
+  <md:abstract/>
+  <md:uuid>9755f88d-083c-4d82-84fb-536bd83e178e</md:uuid>
+</metadata>
+
+<content>
+
+    <section id="cid4">
+      <title>Differentiation from First Principles</title>
+      <para id="id240394">The tangent problem has given rise to the branch of calculus called <emphasis effect="bold">differential calculus</emphasis> and the equation:
+<m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>h</m:mi><m:mo>→</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mfrac><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>h</m:mi></m:mfrac></m:mrow></m:math>
+defines the <emphasis effect="bold">derivative of the function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math>.</emphasis> Using <link target-id=""/> to calculate the derivative is called <emphasis effect="bold">finding the derivative from first principles</emphasis>.</para>
+<definition id="fhsst_id1964"><term id="termfhsst_id1964"> Derivative </term> <meaning id="meaningfhsst_id1964">
+      <para id="id240495">The derivative of a function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> is written as <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> and is defined by:</para>
+      <equation id="uid20">
+        <m:math overflow="scroll" mode="display">
+          <m:mrow>
+            <m:msup>
+              <m:mi>f</m:mi>
+              <m:mo>'</m:mo>
+            </m:msup>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:munder>
+              <m:mo movablelimits="true" form="prefix">lim</m:mo>
+              <m:mrow>
+                <m:mi>h</m:mi>
+                <m:mo>→</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+            </m:munder>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>f</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>h</m:mi>
+                <m:mo>)</m:mo>
+                <m:mo>-</m:mo>
+                <m:mi>f</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mi>h</m:mi>
+            </m:mfrac>
+          </m:mrow>
+        </m:math>
+      </equation>
+      
+      </meaning></definition>
+      <para id="id240630">There are a few different notations used to refer to derivatives. If we use the traditional notation <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> to indicate that the dependent variable is <m:math overflow="scroll"><m:mi>y</m:mi></m:math> and the independent variable is <m:math overflow="scroll"><m:mi>x</m:mi></m:math>, then some common alternative notations for the derivative are as follows:
+<m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>y</m:mi><m:mo>'</m:mo></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>f</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>D</m:mi><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>D</m:mi><m:mi>x</m:mi></m:msub><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+      <para id="id240789">The symbols <m:math overflow="scroll"><m:mi>D</m:mi></m:math> and <m:math overflow="scroll"><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac></m:math> are called <emphasis effect="bold">differential operators</emphasis> because they indicate the operation of <emphasis effect="bold">differentiation</emphasis>, which is the process of calculating a derivative. It is very important that you learn to identify these different ways of denoting the derivative, and that you are consistent in your usage of them when answering questions.</para>
+<note id="notfhsst_id2011" type="tip">Though we choose to use a fractional form of representation, <m:math overflow="scroll"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac></m:math> is a limit and <emphasis effect="bold">is not</emphasis> a fraction, i.e. <m:math overflow="scroll"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac></m:math> does not mean <m:math overflow="scroll"><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi><m:mo>÷</m:mo><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:math>. <m:math overflow="scroll"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac></m:math> means <m:math overflow="scroll"><m:mi>y</m:mi></m:math> differentiated with respect to <m:math overflow="scroll"><m:mi>x</m:mi></m:math>. Thus, <m:math overflow="scroll"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>p</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac></m:math> means <m:math overflow="scroll"><m:mi>p</m:mi></m:math> differentiated with respect to <m:math overflow="scroll"><m:mi>x</m:mi></m:math>. The `<m:math overflow="scroll"><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac></m:math>' is the “operator", operating on some
+function of <m:math overflow="scroll"><m:mi>x</m:mi></m:math>.</note>
+<para id="eip-664"><figure id="calculus-2" class="khanacademy"><title>Video on calculus - 2</title><media id="yt-media2" display="block" alt="video on calculus 2">
+	  <flash id="yt-video2" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/GpMgMcA2SBY?version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><exercise id="secfhsst_id2013"><title> Derivatives - First Principles </title>
+      <problem id="probfhsst_id2014">
+      <para id="id241014">Calculate the derivative of <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math> from first principles. </para>
+      </problem>
+      <solution id="solfhsst_id2017"> <list id="listfhsst_id2017" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Calculate the gradient at a point </label>
+      <para id="id241063">We know that the gradient at a point <m:math overflow="scroll"><m:mi>x</m:mi></m:math> is given by:
+<m:math overflow="scroll"><m:mrow><m:msup><m:mi>g</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>h</m:mi><m:mo>→</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mfrac><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>h</m:mi></m:mfrac></m:mrow></m:math></para>
+      </item> <item> <label> Write <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>)</m:mo></m:mrow></m:math> and simplify </label>
+      <para id="id241171">
+        <m:math overflow="scroll">
+          <m:mrow>
+            <m:mi>g</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>h</m:mi>
+            <m:mo>)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>h</m:mi>
+            <m:mo>-</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+        </m:math>
+      </para>
+      </item> <item> <label> Calculate limit </label>
+      <equation id="id241208">
+        <m:math overflow="scroll" mode="display">
+          <m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>g</m:mi>
+                    <m:mo>'</m:mo>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:munder>
+                    <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                    <m:mrow>
+                      <m:mi>h</m:mi>
+                      <m:mo>→</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:munder>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>g</m:mi>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>h</m:mi>
+                      <m:mo>)</m:mo>
+                      <m:mo>-</m:mo>
+                      <m:mi>g</m:mi>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mi>h</m:mi>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:munder>
+                    <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                    <m:mrow>
+                      <m:mi>h</m:mi>
+                      <m:mo>→</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:munder>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>h</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>-</m:mo>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mi>h</m:mi>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:munder>
+                    <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                    <m:mrow>
+                      <m:mi>h</m:mi>
+                      <m:mo>→</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:munder>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>h</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>-</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>h</m:mi>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:munder>
+                    <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                    <m:mrow>
+                      <m:mi>h</m:mi>
+                      <m:mo>→</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:munder>
+                  <m:mfrac>
+                    <m:mi>h</m:mi>
+                    <m:mi>h</m:mi>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:munder>
+                    <m:mo movablelimits="true" form="prefix">lim</m:mo>
+                    <m:mrow>
+                      <m:mi>h</m:mi>
+                      <m:mo>→</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:munder>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd/>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>1</m:mn>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      </item> <item> <label> Write the final answer </label>
+      <para id="id241480">The derivative <m:math overflow="scroll"><m:mrow><m:msup><m:mi>g</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> of <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math> is 1. </para>
+      </item> </list> </solution>
+</exercise>
+<section id="secfhsst_id2213"><title> Derivatives </title>
+      <list id="id241550" display="block" list-type="enumerated">
+        <item id="uid21">Given <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math><list id="id241569" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid22">determine <m:math overflow="scroll"><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>h</m:mi></m:mfrac></m:mstyle></m:math></item><item id="uid23">hence, determine <m:math overflow="scroll"><m:mrow><m:msub><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mi>h</m:mi><m:mo>→</m:mo><m:mn>0</m:mn></m:mrow></m:msub><m:mfrac><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mi>h</m:mi></m:mfrac></m:mrow></m:math></item><item id="uid24">explain the meaning of your answer in (b).
+</item></list></item>
+        <item id="uid25">Find the derivative of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:math> using first principles.
+</item>
+        <item id="uid26">Determine the derivative of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math> using first principles.
+</item>
+        <item id="uid27">Determine <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow></m:mrow></m:math> from first principles if <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>.
+</item>
+        <item id="uid28">If <m:math overflow="scroll"><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow></m:math>, determine <m:math overflow="scroll"><m:mrow><m:msup><m:mi>h</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> using first principles.
+</item>
+      </list>
+      
+</section>
+    </section>
+    <section id="cid5">
+      <title>Rules of Differentiation</title>
+      <para id="id241982">Calculating the derivative of a function from first principles is very long, and it is easy to make mistakes. Fortunately, there are rules which make calculating the derivative simple.</para>
+<section id="secfhsst_id2232"><title> Investigation : Rules of Differentiation </title>
+      <para id="id241995">From first principles, determine the derivatives of the following:</para>
+      <list id="id242001" display="block" list-type="enumerated">
+        <item id="uid29">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mi>f</m:mi>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mi>b</m:mi>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid30">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mi>f</m:mi>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mi>x</m:mi>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid31">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mi>f</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:msup>
+                <m:mi>x</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid32">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mi>f</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:msup>
+                <m:mi>x</m:mi>
+                <m:mn>3</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </item>
+        <item id="uid33">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mi>f</m:mi>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+              <m:mo>/</m:mo>
+              <m:mi>x</m:mi>
+            </m:mrow>
+          </m:math>
+        </item>
+      </list>
+      
+</section>
+      <para id="id242182">You should have found the following:</para>
+      <table id="id242186" summary="">
+        <tgroup cols="2">
+          <tbody>
+            <row>
+              <entry>
+                <m:math overflow="scroll">
+                  <m:mrow>
+                    <m:mi>f</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math overflow="scroll">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>f</m:mi>
+                      <m:mo>'</m:mo>
+                    </m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <m:math overflow="scroll">
+                  <m:mi>b</m:mi>
+                </m:math>
+              </entry>
+              <entry>0</entry>
+            </row>
+            <row>
+              <entry>
+                <m:math overflow="scroll">
+                  <m:mi>x</m:mi>
+                </m:math>
+              </entry>
+              <entry>1</entry>
+            </row>
+            <row>
+              <entry>
+                <m:math overflow="scroll">
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math overflow="scroll">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <m:math overflow="scroll">
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math overflow="scroll">
+                  <m:mrow>
+                    <m:mn>3</m:mn>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <m:math overflow="scroll">
+                  <m:mrow>
+                    <m:mn>1</m:mn>
+                    <m:mo>/</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mrow>
+                        <m:mo>-</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math overflow="scroll">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mrow>
+                        <m:mo>-</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <!--empty paragraphs get left behind.-->
+      <para id="id242461">If we examine these results we see that there is a pattern, which can be summarised by:
+<m:math overflow="scroll"><m:mrow><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mspace width="4pt"/><m:mrow><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>n</m:mi><m:msup><m:mi>x</m:mi><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:math></para>
+      <para id="id242514">There are two other rules which make differentiation simpler. For any two functions <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math>:
+<m:math overflow="scroll"><m:mrow><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>±</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>±</m:mo><m:msup><m:mi>g</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+This means that we differentiate each term separately.</para>
+      <para id="id242629">The final rule applies to a function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> that is multiplied by a constant <m:math overflow="scroll"><m:mi>k</m:mi></m:math>.
+<m:math overflow="scroll"><m:mrow><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo><m:mi>k</m:mi><m:mo>.</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>=</m:mo><m:mi>k</m:mi><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+<para id="eip-629"><figure id="calculus-3" class="khanacademy"><title>Video on calculus - 3</title><media id="yt-media3" display="block" alt="video on calculus 3">
+	  <flash id="yt-video3" mime-type="application/x-shockwave-flash" src="http://www.youtube.com/v/SjecBgK-SNY?version=3" width="425" height="344">
+	  <param name="allowscriptaccess" value="always"/>
+	  <param name="allowsfullscreen" value="true"/>
+	  </flash>
+	  </media>
+	  </figure></para><exercise id="secfhsst_id2440"><title> Rules of Differentiation </title>
+      <problem id="probfhsst_id2441">
+      <para id="id242726">Determine the derivative of <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math> using the rules of differentiation. </para>
+      </problem>
+      <solution id="solfhsst_id2444"> <list id="listfhsst_id2444" list-type="enumerated" number-style="arabic" class="stepwise">
+      <item> <label> Identify the rules that will be needed </label>
+      <para id="id242764">We will apply two rules of differentiation:
+<m:math overflow="scroll"><m:mrow><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>n</m:mi><m:msup><m:mi>x</m:mi><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mrow></m:math>
+and
+<m:math overflow="scroll"><m:mrow><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>]</m:mo></m:mrow><m:mo>-</m:mo><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mo>[</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>]</m:mo></m:mrow></m:mrow></m:math></para>
+      </item> <item> <label> Determine the derivative </label>
+      <para id="id242916">In our case <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>.
+<m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>
+and
+<m:math overflow="scroll"><m:mrow><m:msup><m:mi>g</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math></para>
+      </item> <item> <label> Write the final answer </label>
+      <para id="id243017">The derivative of <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math> is 1 which is the same result as was obtained earlier, from first principles.
+ </para>
+      </item> </list> </solution>
+</exercise>
+      <section id="uid34">
+        <title>Summary of Differentiation Rules</title>
+        <para id="id243055">Given two functions, <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>)</m:mo></m:mrow></m:math> we know that:</para>
+        <table id="id243092" summary="">
+          <tgroup cols="1">
+            <tbody>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mi>d</m:mi>
+                        <m:mrow>
+                          <m:mi>d</m:mi>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mi>b</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry/>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mi>d</m:mi>
+                        <m:mrow>
+                          <m:mi>d</m:mi>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:msup>
+                          <m:mi>x</m:mi>
+                          <m:mi>n</m:mi>
+                        </m:msup>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mi>n</m:mi>
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mrow>
+                          <m:mi>n</m:mi>
+                          <m:mo>-</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry/>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mi>d</m:mi>
+                        <m:mrow>
+                          <m:mi>d</m:mi>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>k</m:mi>
+                        <m:mi>f</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mi>k</m:mi>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>d</m:mi>
+                          <m:mi>f</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>d</m:mi>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry/>
+              </row>
+              <row>
+                <entry>
+                  <m:math overflow="scroll">
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mi>d</m:mi>
+                        <m:mrow>
+                          <m:mi>d</m:mi>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>f</m:mi>
+                        <m:mo>+</m:mo>
+                        <m:mi>g</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>d</m:mi>
+                          <m:mi>f</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>d</m:mi>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>+</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>d</m:mi>
+                          <m:mi>g</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>d</m:mi>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:math>
+                </entry>
+              </row>
+              <row>
+                <entry/>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <!--empty paragraphs get left behind.-->
+<section id="secfhsst_id2610"><title> Rules of Differentiation </title>
+        <list id="id243319" display="block" list-type="enumerated">
+          <item id="uid35">Find <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> if <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math>.
+</item>
+          <item id="uid36">Find <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> if <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>y</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:mi>y</m:mi></m:msqrt></m:mrow></m:math>.
+</item>
+          <item id="uid37">Find <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> if <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mi>z</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>z</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math>.
+</item>
+          <item id="uid38">Determine <m:math overflow="scroll"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac></m:math> if <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mrow><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>2</m:mn><m:msqrt><m:mi>x</m:mi></m:msqrt><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow><m:mi>x</m:mi></m:mfrac></m:mstyle></m:mrow></m:math>.
+</item>
+          <item id="uid39">Determine the derivative of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msqrt><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:msqrt><m:mo>+</m:mo><m:mstyle scriptlevel="0" displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math>.
+</item>
+        </list>
+        
+</section>
+      </section>
+    </section>
+    <section id="cid6">
+      <title>Applying Differentiation to Draw Graphs</title>
+      <para id="id243690">Thus far we have learnt about how to differentiate various functions, but I am sure that you are beginning to ask, <emphasis effect="italics">What is the point of learning about derivatives?</emphasis> Well, we know one important fact about a derivative: it is a gradient. So, any problems involving the calculations of gradients or rates of change can use derivatives. One simple application is to draw graphs of functions by firstly determine the gradients of straight lines and secondly to determine the turning points of the graph.</para>
+      <section id="uid40">
+        <title>Finding Equations of Tangents to Curves</title>
+        <para id="id243712">In <link target-id="uid12">"Average Gradient and Gradient at a Point"</link> we saw that finding the gradient of a tangent to a curve is the same as finding the gradient (or slope) of the same curve at the point of the tangent. We also saw that the gradient of a function at a point is just its derivative.</para>
+        <para id="id243722">Since we have the gradient of the tangent and the point on the curve through which the tangent passes, we can find the equation of the tangent.</para>
+<exercise id="secfhsst_id2634"><title> Finding the Equation of a Tangent to a Curve </title>
+        <problem id="probfhsst_id2635">
+        <para id="id243740">Find the equation of the tangent to the curve <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> at the point (1,1) and draw both functions. </para>
+        </problem>
+        <solution id="solfhsst_id2638"> <list id="listfhsst_id2638" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Determine what is required </label>
+        <para id="id243784">We are required to determine the equation of the tangent to the curve defined by <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> at the point (1,1). The tangent is a straight line and we can find the equation by using derivatives to find the gradient of the straight line. Then we will have the gradient and one point on the line, so we can find the equation using:
+<m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>-</m:mo><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo></m:mrow></m:mrow></m:math>
+from grade 11 Coordinate Geometry.</para>
+        </item> <item> <label> Differentiate the function </label>
+        <para id="id243854">Using our rules of differentiation we get:
+<m:math overflow="scroll"><m:mrow><m:msup><m:mi>y</m:mi><m:mo>'</m:mo></m:msup><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:math></para>
+        </item> <item> <label> Find the gradient at the point (1,1) </label>
+        <para id="id243883">In order to determine the gradient at the point (1,1), we substitute the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-value into the equation for the derivative. So, <m:math overflow="scroll"><m:msup><m:mi>y</m:mi><m:mo>'</m:mo></m:msup></m:math> at <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> is:
+<m:math overflow="scroll"><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+        </item> <item> <label> Find the equation of tangent </label>
+        <equation id="id243952">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>y</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mi>m</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>y</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>)</m:mo>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>y</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>y</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        </item> <item> <label> Write the final answer </label>
+        <para id="id244096">The equation of the tangent to the curve defined by <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> at the point (1,1) is <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math>.</para>
+        </item> <item> <label> Sketch both functions </label>
+        <para id="id244145">
+          <figure id="id244148">
+            <media id="id244148_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C7_005.png" id="id244148_onlineimage" width="172"><!-- NOTE: attribute width changes image size online (pixels). original width is 172. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C7_005.eps" id="id244148_printimage"/>
+            </media>
+          </figure>
+        </para>
+        
+        </item> </list> </solution>
+</exercise>
+      </section>
+      <section id="uid41">
+        <title>Curve Sketching</title>
+        <para id="id244179">Differentiation can be used to sketch the graphs of functions, by helping determine the turning points. We know that if a graph is increasing on an interval and reaches a turning point, then the graph will start decreasing after the turning point. The turning point is also known as a stationary point because the gradient at a turning point is 0. We can then use this information to calculate turning points, by calculating the points at which the derivative of a function is 0.</para>
+<note id="notfhsst_id2760" type="tip">If <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math> is a turning point of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math>, then:
+<m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>
+This means that the derivative is 0 at a turning point.</note>
+        <para id="id244255">Take the graph of <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> as an example. We know that the graph of this function has a turning point at (0,0), but we can use the derivative of the function:
+<m:math overflow="scroll"><m:mrow><m:msup><m:mi>y</m:mi><m:mo>'</m:mo></m:msup><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mrow></m:math>
+and set it equal to 0 to find the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-value for which the graph has a turning point.</para>
+        <equation id="id244310">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>x</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id244355">We then substitute this into the equation of the graph (i.e. <m:math overflow="scroll"><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>) to determine the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-coordinate of the turning point:
+<m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>
+This corresponds to the point that we have previously calculated.</para>
+<exercise id="secfhsst_id2800"><title> Calculation of Turning Points </title>
+        <problem id="probfhsst_id2801">
+        <para id="id244439">Calculate the turning points of the graph of the function <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>15</m:mn></m:mrow></m:math>. </para>
+        </problem>
+        <solution id="solfhsst_id2804"> <list id="listfhsst_id2804" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Determine the derivative of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> </label>
+        <para id="id244532">Using the rules of differentiation we get:
+<m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>18</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn></m:mrow></m:math></para>
+        </item> <item> <label> Set <m:math overflow="scroll"><m:mrow><m:msup><m:mi>f</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and calculate <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-coordinate of turning point </label>
+        <equation id="id244619">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>6</m:mn>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>18</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>12</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>)</m:mo>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id244732">Therefore, the turning points are at <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>.</para>
+        </item> <item> <label> Substitute <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-coordinate of turning point into <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> to determine <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-coordinates </label>
+        <equation id="id244805">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>f</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>2</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>2</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>12</m:mn>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mn>15</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>16</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>36</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>24</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>15</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mn>11</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <equation id="id244925">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>f</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>12</m:mn>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mn>15</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>12</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>15</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mn>10</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        </item> <item> <label> Write final answer </label>
+        <para id="id245049">The turning points of the graph of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>15</m:mn></m:mrow></m:math> are (2,-11) and (1,-10). </para>
+        </item> </list> </solution>
+</exercise>
+        <para id="id245116">We are now ready to sketch graphs of functions.</para>
+        <para id="id245120">
+          <emphasis effect="bold">Method:</emphasis>
+        </para>
+        <para id="id245129">Sketching Graphs: 
+Suppose we are given that <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>d</m:mi></m:mrow></m:math>, then there are <emphasis effect="bold">five</emphasis> steps to be followed to sketch the graph of the function:</para>
+        <!--empty paragraphs get left behind.-->
+        <list id="id245197" display="block" list-type="enumerated">
+          <item id="uid42">If <m:math overflow="scroll"><m:mrow><m:mi>a</m:mi><m:mo>&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:math>, then the graph is increasing from left to right, and may have a maximum and a minimum. As <m:math overflow="scroll"><m:mi>x</m:mi></m:math> increases, so does <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math>. If <m:math overflow="scroll"><m:mrow><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow></m:math>, then the graph decreasing is from left to right, and has first a minimum and then a maximum. <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> decreases as <m:math overflow="scroll"><m:mi>x</m:mi></m:math> increases.
+</item>
+          <item id="uid43">Determine the value of the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-intercept by substituting <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> into <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math></item>
+          <item id="uid44">Determine the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-intercepts by factorising <m:math overflow="scroll"><m:mrow><m:mi>a</m:mi><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>c</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and solving for <m:math overflow="scroll"><m:mi>x</m:mi></m:math>. First try to eliminate constant common factors, and to group like terms together so that the expression is expressed as economically as possible. Use the factor theorem if necessary.
+</item>
+          <item id="uid45">Find the turning points of the function by working out the derivative <m:math overflow="scroll"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>f</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac></m:math> and setting it to zero, and solving for <m:math overflow="scroll"><m:mi>x</m:mi></m:math>.
+</item>
+          <item id="uid46">Determine the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-coordinates of the turning points by substituting the <m:math overflow="scroll"><m:mi>x</m:mi></m:math> values obtained in the previous step, into the expression for <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math>.
+</item>
+          <item id="uid47">Use the information you're given to plot the points and get a rough idea of the gradients between points. Then fill in the missing parts of the function in a smooth, continuous curve.
+</item>
+        </list>
+<exercise id="secfhsst_id3066"><title> Sketching Graphs </title>
+        <problem id="probfhsst_id3067">
+        <para id="id245533">Draw the graph of <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math> </para>
+        </problem>
+        <solution id="solfhsst_id3070"> <list id="listfhsst_id3070" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Determine the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-intercept </label>
+        <para id="id245601">The <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-intercept is obtained by setting <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>.
+<m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>
+The turning point is at (0,2).</para>
+        </item> <item> <label> Determine the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-intercepts </label>
+        <para id="id245685">The <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-intercepts are found by setting <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>.</para>
+        <equation id="id245718">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>g</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id245797">Using the quadratic formula and looking at <m:math overflow="scroll"><m:mrow><m:msup><m:mi>b</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi></m:mrow></m:math> we can see that this would be negative and so this function does not have real roots. Therefore, the graph of <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> does not have any <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-intercepts.</para>
+        </item> <item> <label> Find the turning points of the function </label>
+        <para id="id245857">Work out the derivative <m:math overflow="scroll"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>g</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac></m:math> and set it to zero to for the <m:math overflow="scroll"><m:mi>x</m:mi></m:math> coordinate of the turning point.
+<m:math overflow="scroll"><m:mrow><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>g</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+        <equation id="id245920">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>d</m:mi>
+                      <m:mi>g</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mi>d</m:mi>
+                      <m:mi>x</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>1</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>x</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        </item> <item> <label> Determine the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-coordinates of the turning points by substituting the <m:math overflow="scroll"><m:mi>x</m:mi></m:math> values obtained in the previous step, into the expression for <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math>. </label>
+        <para id="id246056"><m:math overflow="scroll"><m:mi>y</m:mi></m:math> coordinate of turning point is given by calculating <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:math>.</para>
+        <equation id="id246087">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>g</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>4</m:mn>
+                    </m:mfrac>
+                    <m:mo>-</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mn>7</m:mn>
+                    <m:mn>4</m:mn>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id246204">The turning point is at <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mn>7</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:math></para>
+        </item> <item> <label> Draw a neat sketch </label>
+        <para id="id246240">
+          <figure id="id246243">
+            <media id="id246243_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C7_006.png" id="id246243_onlineimage" width="212"><!-- NOTE: attribute width changes image size online (pixels). original width is 212. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C7_006.eps" id="id246243_printimage"/>
+            </media>
+          </figure>
+        </para>
+        
+        </item> </list> </solution>
+</exercise>
+<exercise id="secfhsst_id3298"><title> Sketching Graphs </title>
+        <problem id="probfhsst_id3299">
+        <para id="id246277">Sketch the graph of <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math>. </para>
+        </problem>
+        <solution id="solfhsst_id3302"> <list id="listfhsst_id3302" list-type="enumerated" number-style="arabic" class="stepwise">
+        <item> <label> Calculate the turning points </label>
+        <para id="id246352">Find the turning points by setting <m:math overflow="scroll"><m:mrow><m:msup><m:mi>g</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>.</para>
+        <para id="id246384">If we use the rules of differentiation we get
+<m:math overflow="scroll"><m:mrow><m:msup><m:mi>g</m:mi><m:mo>'</m:mo></m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>9</m:mn></m:mrow></m:math></para>
+        <equation id="id246433">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>g</m:mi>
+                      <m:mo>'</m:mo>
+                    </m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>12</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>4</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>3</m:mn>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:mo>)</m:mo>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id246578">The <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-coordinates of the turning points are: <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>.</para>
+        <para id="id246620">The <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-coordinates of the turning points are calculated as:</para>
+        <equation id="id246632">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>g</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>6</m:mn>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>g</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>6</m:mn>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>6</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <equation id="id246804">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>g</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>6</m:mn>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>g</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>3</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>6</m:mn>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>3</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>3</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mn>27</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>54</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>27</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>4</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id246977">Therefore the turning points are: <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:math> and <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow></m:math>.</para>
+        </item> <item> <label> Determine the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-intercepts </label>
+        <para id="id247030">We find the <m:math overflow="scroll"><m:mi>y</m:mi></m:math>-intercepts by finding the value for <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:math>.</para>
+        <equation id="id247059">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>g</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>6</m:mn>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mi>n</m:mi>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mi>g</m:mi>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>0</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>6</m:mn>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>0</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>4</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        </item> <item> <label> Determine the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-intercepts </label>
+        <para id="id247234">We find the <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-intercepts by finding the points for which the function <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>.</para>
+        <para id="id247266">
+          <m:math overflow="scroll">
+            <m:mrow>
+              <m:mi>g</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mo>-</m:mo>
+              <m:msup>
+                <m:mi>x</m:mi>
+                <m:mn>3</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:mn>6</m:mn>
+              <m:msup>
+                <m:mi>x</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>-</m:mo>
+              <m:mn>9</m:mn>
+              <m:mi>x</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>4</m:mn>
+            </m:mrow>
+          </m:math>
+        </para>
+        <para id="id247319">Use the factor theorem to confirm that <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> is a factor. If <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, then <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> is a factor.</para>
+        <equation id="id247380">
+          <m:math overflow="scroll" mode="display">
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>g</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>6</m:mn>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:mi>x</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mrow>
+                    <m:mi>g</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>6</m:mn>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>6</m:mn>
+                    <m:mo>-</m:mo>
+                    <m:mn>9</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="id247552">Therefore, <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> is a factor.</para>
+        <para id="id247577">If we divide <m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> by <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> we are left with:
+<m:math overflow="scroll"><m:mrow><m:mo>-</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow></m:math>
+This has factors
+<m:math overflow="scroll"><m:mrow><m:mo>-</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math></para>
+        <para id="id247673">Therefore:
+<m:math overflow="scroll"><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow></m:math></para>
+        <para id="id247728">The <m:math overflow="scroll"><m:mi>x</m:mi></m:math>-intercepts are: <m:math overflow="scroll"><m:mrow><m:msub><m:mi>x</m:mi><m:mrow><m:mi>i</m:mi><m:mi>n</m:mi><m:mi>t</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow></m:math></para>
+        </item> <item> <label> Draw a neat sketch </label>
+        <para id="id247771">
+          <figure id="id247774">
+            <media id="id247774_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C7_007.png" id="id247774_onlineimage" width="182"><!-- NOTE: attribute width changes image size online (pixels). original width is 182. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C7_007.eps" id="id247774_printimage"/>
+            </media>
+          </figure>
+        </para>
+        
+        </item> </list> </solution>
+</exercise>
+<section id="secfhsst_id3894"><title> Sketching Graphs </title>
+        <list id="id247803" display="block" list-type="enumerated">
+          <item id="uid48">Given <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math>:
+<list id="id247866" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid49">Show that <m:math overflow="scroll"><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> is a factor of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> and hence fatorise <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> fully.
+</item><item id="uid50">Find the coordinates of the intercepts with the axes and the turning points and sketch the graph
+</item></list></item>
+          <item id="uid51">Sketch the graph of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>30</m:mn></m:mrow></m:math> showing all the relative turning points and intercepts with the axes.
+</item>
+          <item id="uid52">
+            <list id="id248016" display="block" list-type="enumerated" number-style="lower-alpha"><item id="uid53">Sketch the graph of <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>x</m:mi><m:mn>3</m:mn></m:msup><m:mo>-</m:mo><m:mn>9</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mn>24</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>20</m:mn></m:mrow></m:math>, showing all intercepts with the axes and turning points.
+</item>
+              <item id="uid54">Find the equation of the tangent to <m:math overflow="scroll"><m:mrow><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> at <m:math overflow="scroll"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math>.
+</item>
+            </list>
+          </item>
+        </list>
+        
+</section>
+      </section>
+      <section id="uid55">
+        <title>Local minimum, Local maximum and Point of Inflextion</title>
+        <para id="id248144">If the derivative (<m:math overflow="scroll"><m:mfrac><m:mrow><m:mi>d</m:mi><m:mi>y</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mi>x</m:mi></m:mrow></m:mfrac></m:math>) is zero at a point, the gradient of the tangent at that point is zero. It means that a turning point occurs as seen in the previous example.</para>
+        <para id="id248169">
+          <figure id="id248172">
+            <media id="id248172_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C7_008.png" id="id248172_onlineimage" width="182"><!-- NOTE: attribute width changes image size online (pixels). original width is 182. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C7_008.eps" id="id248172_printimage"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id248178">From the drawing the point (1;0) represents a <emphasis effect="bold">local minimum</emphasis> and the point (3;4) the <emphasis effect="bold">local maximum</emphasis>.</para>
+        <para id="id248194">A graph has a horizontal <emphasis effect="bold">point of inflexion</emphasis> where the derivative is zero but the sign of the sign of the gradient does not change. That means the graph always increases or always decreases.</para>
+        <para id="id248204">
+          <figure id="id248208">
+            <media id="id248208_media" alt="">
+              <image mime-type="image/png" src="../../media/MG12C7_009.png" id="id248208_onlineimage" width="373"><!-- NOTE: attribute width changes image size online (pixels). original width is 373. --></image>
+              <image mime-type="application/postscript" for="pdf" src="../../media/MG12C7_009.eps" id="id248208_printimage"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id248214">From this drawing, the point (3;1) is a horizontal point of inflexion, because the sign of the derivative does not change from positive to negative.</para>
+      </section>
+    
+    </section>
+  </content>
+</document>
