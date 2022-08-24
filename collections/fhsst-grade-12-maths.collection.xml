@@ -1,3 +1,86 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">  <md:content-id>col11242</md:content-id>  <md:title>Siyavula textbooks: Grade 12 Maths</md:title>      <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0</md:license>  <md:language>en</md:language>              <md:uuid>c7e4a6dc-78f2-48d7-aa03-bcab201dfc9d</md:uuid>
-<md:slug>fhsst-grade-12-maths</md:slug>
-</metadata>  <col:content>          <col:module document="m31883"/>                                          <col:subcollection>        <md:title>Sequences and series</md:title>                                <col:content>                    <col:module document="m39302"/>                            <col:module document="m39301"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Finance</md:title>                                <col:content>                    <col:module document="m39196"/>                            <col:module document="m39194"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Factorising cubic polynomials</md:title>                                <col:content>                    <col:module document="m39279"/>                            <col:module document="m39276"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Functions and graphs</md:title>                                <col:content>                    <col:module document="m39286"/>                            <col:module document="m39282"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Differential calculus</md:title>                                <col:content>                    <col:module document="m39270"/>                            <col:module document="m39313"/>                            <col:module document="m39273"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Linear programming</md:title>                                <col:content>                    <col:module document="m39293"/>                            <col:module document="m39297"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Geometry</md:title>                                <col:content>                    <col:module document="m39327"/>                            <col:module document="m39288"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Trigonometry</md:title>                                <col:content>                    <col:module document="m39319"/>                            <col:module document="m39310"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Statistics</md:title>                                <col:content>                    <col:module document="m39305"/>                            <col:module document="m39324"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Combinations and permutations</md:title>                                <col:content>                    <col:module document="m39100"/>                            <col:module document="m39106"/>                            <col:module document="m39103"/>                          </col:content>      </col:subcollection>      </col:content></col:collection>
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" authors="Free High School Science Texts Project">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col11242</md:content-id>
+    <md:title>Siyavula textbooks: Grade 12 Maths</md:title>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0</md:license>
+    <md:language>en</md:language>
+    <md:uuid>c7e4a6dc-78f2-48d7-aa03-bcab201dfc9d</md:uuid>
+    <md:slug>fhsst-grade-12-maths</md:slug>
+  </metadata>
+  <col:content>
+    <col:module document="m31883"/>
+    <col:subcollection>
+      <md:title>Sequences and series</md:title>
+      <col:content>
+        <col:module document="m39302"/>
+        <col:module document="m39301"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Finance</md:title>
+      <col:content>
+        <col:module document="m39196"/>
+        <col:module document="m39194"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Factorising cubic polynomials</md:title>
+      <col:content>
+        <col:module document="m39279"/>
+        <col:module document="m39276"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Functions and graphs</md:title>
+      <col:content>
+        <col:module document="m39286"/>
+        <col:module document="m39282"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Differential calculus</md:title>
+      <col:content>
+        <col:module document="m39270"/>
+        <col:module document="m39313"/>
+        <col:module document="m39273"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Linear programming</md:title>
+      <col:content>
+        <col:module document="m39293"/>
+        <col:module document="m39297"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Geometry</md:title>
+      <col:content>
+        <col:module document="m39327"/>
+        <col:module document="m39288"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Trigonometry</md:title>
+      <col:content>
+        <col:module document="m39319"/>
+        <col:module document="m39310"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Statistics</md:title>
+      <col:content>
+        <col:module document="m39305"/>
+        <col:module document="m39324"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Combinations and permutations</md:title>
+      <col:content>
+        <col:module document="m39100"/>
+        <col:module document="m39106"/>
+        <col:module document="m39103"/>
+      </col:content>
+    </col:subcollection>
+  </col:content>
+</col:collection>
