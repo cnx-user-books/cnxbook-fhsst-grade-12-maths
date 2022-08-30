@@ -1351,10 +1351,10 @@ First prove that <m:math overflow="scroll"><m:mrow><m:mover accent="true"><m:mro
                   </m:mtd>
                   <m:mtd columnalign="left">
                     <m:mrow>
-                      <m:msup>
+                      <m:mmultiscripts>
                         <m:mn>90</m:mn>
-                        <m:mo>∘</m:mo><m:mspace width="3pt"/>
-                      </m:msup>
+                        <m:mspace width="3pt"/>
+                      <m:mo>∘</m:mo></m:mmultiscripts>
                       <m:mo>(</m:mo>
                       <m:mi>∠</m:mi><m:mspace width="2pt"/>
                       <m:mrow>
